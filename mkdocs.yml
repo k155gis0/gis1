@@ -11,7 +11,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-  language: en
+  language: cs
   palette:
     - scheme: default
       toggle:
@@ -25,3 +25,17 @@ theme:
         name: Switch to light mode
       primary: teal
       accent: lime
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/CTUGeomatics
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/geomatics.ctu
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/geomatics.ctu
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
