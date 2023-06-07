@@ -86,10 +86,10 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 
 ### Použité datové podklady
 
-- [ArcČR 500](../data#arccr-500)
-- [Císařské otisky stabilního katastru](../data#cisarske-otisky-stabilniho-katastru)
-- [DMR 5G](../data#dmr-5g)
-- [RÚIAN](../data#ruian)
+- [ArcČR 500](../data/#arccr-500)
+- [Císařské otisky stabilního katastru](../data/#cisarske-otisky-stabilniho-katastru)
+- [DMR 5G](../data/#dmr-5g)
+- [RÚIAN](../data/#ruian)
 
 ### Náplň cvičení
 
@@ -108,14 +108,14 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 
 4. Ořez DMR dle hranic vybraného okresu
 
-   1. Clip Raster - vytvoří ořez dle nejmenšího ohraničujícího obdélníka
+   1. [Clip Raster](../videa/#clip-raster) - vytvoří ořez dle nejmenšího ohraničujícího obdélníka
 
 <figure markdown>
 ![Clip raster](../assets/cviceni5/dmr_clip_raster.png "Clip raster")
     <figcaption>Clip raster</figcaption>
 </figure>
 
-2.  Extract by Mask - ořízne rastr přesně dle polygonu (s přesností na pixely)
+2. [Extract by Mask](../videa/#extract-by-mask) - ořízne rastr přesně dle polygonu (s přesností na pixely)
 
 <figure markdown>
 ![Extract by mask](../assets/cviceni5/dmr_extract_by_mask.png "Extract by mask")
