@@ -86,10 +86,26 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 2. Výběr okresu k ořezu rastru (OkresyPolygony)
 3. Export vybraného okresu do samostatné vrstvy - pravý klik na vybranou vrstvu -> Data -> Export Features
 
+<figure markdown>
+  ![Export features](assets\cviceni5\export_features.png "Export features"){ width="800" }
+  <figcaption>Export features</figcaption>
+</figure>
 
 4. Ořez DMR dle hranic vybraného okresu
+
    1. Clip Raster - vytvoří ořez dle nejmenšího ohraničujícího obdélníka
-   2. Extract by Mask - ořízne rastr přesně dle polygonu (s přesností na pixely)
+
+<figure markdown>
+![Export features](assets\cviceni5\dmr_clip_raster.png "Export features")
+    <figcaption>Clip raster</figcaption>
+</figure>
+
+2.  Extract by Mask - ořízne rastr přesně dle polygonu (s přesností na pixely)
+
+<figure markdown>
+![Export features](assets\cviceni5\dmr_extract_by_mask.png "Export features")
+    <figcaption>Extract by mask</figcaption>
+</figure>
 
 #### Georeferencování rastru
 
