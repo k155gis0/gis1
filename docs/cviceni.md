@@ -2,51 +2,66 @@
 
 ## Cvičení 1
 
-Úvod do práce v prostředí ArcGIS, datové formáty, geodatabáze
+<span style="font-size:2em;">Úvod do práce v prostředí ArcGIS, datové formáty, geodatabáze
 
-### Data
+</span>
 
-### Použitá videa
+### Cíl cvičen
 
-### Postup
+### Základní pojmy
 
-### Odevzdání
+### Použité datové podklady
+
+### Náplň cvičení
+
+### Zadání domácího úkolu k semestrální práci
 
 ## Cvičení 2
 
-Vektorová data, atributové dotazy, prostorové dotazy
+<span style="font-size:2em;">Vektorová data, atributové dotazy, prostorové dotazy
 
-### Data
+</span>
 
-### Použitá videa
+### Cíl cvičen
 
-### Postup
+### Základní pojmy
 
-### Odevzdání
+### Použité datové podklady
+
+### Náplň cvičení
+
+### Zadání domácího úkolu k semestrální práci
 
 ## Cvičení 3
 
-Prostorové funkce (geoprocessing)
+<span style="font-size:2em;">Prostorové funkce (geoprocessing)
 
-### Data
+</span>
 
-### Použitá videa
+### Cíl cvičen
 
-### Postup
+### Základní pojmy
 
-### Odevzdání
+### Použité datové podklady
+
+### Náplň cvičení
+
+### Zadání domácího úkolu k semestrální práci
 
 ## Cvičení 4
 
-Souř. připojení prostorových dat (práce s externími daty Excel, CSV), join, spatial join
+<span style="font-size:2em;">Souř. připojení prostorových dat (práce s externími daty Excel, CSV), join, spatial join
+</span>
 
-### Data
+### Cíl cvičen
 
-### Použitá videa
+### Základní pojmy
 
-### Postup
+### Použité datové podklady
 
-### Odevzdání
+### Náplň cvičení
+
+### Zadání domácího úkolu k semestrální práci
 
 ## Cvičení 5
 
@@ -111,93 +126,122 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 
 1. Načtení rastru do mapového okna
 2. Zapnutí funkce Georeference: záložka Imagery -> Georeference
-3. Postup dle následujícího videa: https://youtu.be/H7m7rX9fswE
+3. Postup dle následujícího videa:
+
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H7m7rX9fswE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 ### Zadání domácího úkolu k semestrální práci
 
 1. Vytvořte ořez DMR 5G pro území zadané obce.
 2. Vytvořte bezešvou mozaiku georeferencovaných rastrů císařských otisků stabilního katastru pro území zadané obce.
 
-## Cvičení 5
+## Cvičení 6
 
-Vektorizace, tvorba geodatabáze, kontrola topologie
+<span style="font-size:2em;">Vektorizace, tvorba geodatabáze, kontrola topologie
 
-### Data
+</span>
 
-### Použitá videa
+### Cíl cvičen
 
-### Postup
+### Základní pojmy
 
-### Odevzdání
+### Použité datové podklady
+
+### Náplň cvičení
+
+### Zadání domácího úkolu k semestrální práci
 
 ## Cvičení 7
 
-ModelBuilder (opakování všech předchozích cvičení, ale trochu víc automatizovaně), Batch Processing
+<span style="font-size:2em;">ModelBuilder (opakování všech předchozích cvičení, ale trochu víc automatizovaně), Batch Processing
+</span>
 
-### Data
+### Cíl cvičen
 
-### Použitá videa
+### Základní pojmy
 
-### Postup
+### Použité datové podklady
 
-### Odevzdání
+### Náplň cvičení
+
+### Zadání domácího úkolu k semestrální práci
 
 ## Cvičení 8
 
-ArcGIS Online, webové služby, připojení do APRO
+<span style="font-size:2em;">ArcGIS Online, webové služby, připojení do APRO
 
-### Data
+</span>
 
-### Použitá videa
+### Cíl cvičen
 
-### Postup
+### Základní pojmy
 
-### Odevzdání
+### Použité datové podklady
+
+### Náplň cvičení
+
+### Zadání domácího úkolu k semestrální práci
 
 ## Cvičení 9
 
-Ukázky webové prezentace map, Experience Builder, Instant Apps, Dashboards
+<span style="font-size:2em;">Ukázky webové prezentace map, Experience Builder, Instant Apps, Dashboards
 
-### Data
+</span>
 
-### Použitá videa
+### Cíl cvičen
 
-### Postup
+### Základní pojmy
 
-### Odevzdání
+### Použité datové podklady
+
+### Náplň cvičení
+
+### Zadání domácího úkolu k semestrální práci
 
 ## Cvičení 10
 
-QGIS1
+<span style="font-size:2em;">QGIS 1
+</span>
 
-### Data
+### Cíl cvičen
 
-### Použitá videa
+### Základní pojmy
 
-### Postup
+### Použité datové podklady
 
-### Odevzdání
+### Náplň cvičení
+
+### Zadání domácího úkolu k semestrální práci
 
 ## Cvičení 11
 
-QGIS2
+<span style="font-size:2em;">QGIS 2
+</span>
 
-### Data
+### Cíl cvičen
 
-### Použitá videa
+### Základní pojmy
 
-### Postup
+### Použité datové podklady
 
-### Odevzdání
+### Náplň cvičení
+
+### Zadání domácího úkolu k semestrální práci
 
 ## Cvičení 12
 
-rezerva
+<span style="font-size:2em;">rezerva
 
-### Data
+</span>
 
-### Použitá videa
+### Cíl cvičen
 
-### Postup
+### Základní pojmy
 
-### Odevzdání
+### Použité datové podklady
+
+### Náplň cvičení
+
+### Zadání domácího úkolu k semestrální práci
