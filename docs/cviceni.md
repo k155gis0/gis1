@@ -87,7 +87,7 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 3. Export vybraného okresu do samostatné vrstvy - pravý klik na vybranou vrstvu -> Data -> Export Features
 
 <figure markdown>
-  ![Export features](/assets/cviceni5/export_features.png "Export features"){ width="800" }
+  ![Export features](../assets/cviceni5/export_features.png "Export features"){ width="800" }
   <figcaption>Export features</figcaption>
 </figure>
 
@@ -96,13 +96,8 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
    1. Clip Raster - vytvoří ořez dle nejmenšího ohraničujícího obdélníka
 
 <figure markdown>
-![Clip raster](/assets/cviceni5/dmr_clip_raster.png "Clip raster")
+![Clip raster](../assets/cviceni5/dmr_clip_raster.png "Clip raster")
     <figcaption>Clip raster</figcaption>
-</figure>
-
-<figure markdown>
-![Clip raster2](https://github.com/Hoffmma5/155gis1/blob/main/docs/assets/cviceni5/dmr_clip_raster.png "Clip raster2")
-    <figcaption>Clip raster2</figcaption>
 </figure>
 
 2.  Extract by Mask - ořízne rastr přesně dle polygonu (s přesností na pixely)
