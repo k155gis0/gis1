@@ -86,10 +86,10 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 
 ### Použité datové podklady
 
-- ArcČR 500
-- Císařské otisky stabilního katastru
-- DMR 5G
-- RÚIAN
+- [ArcČR 500](/data#arccr-500)
+- [Císařské otisky stabilního katastru](/data#cisarske-otisky-stabilniho-katastru)
+- [DMR 5G](/data#dmr-5g)
+- [RÚIAN](/data#ruian)
 
 ### Náplň cvičení
 
