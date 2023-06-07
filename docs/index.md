@@ -10,4 +10,6 @@
 
 <span style="font-family:Papyrus; font-size:6em; display: flex; justify-content: center">:heart: </span>
 
-![The San Juan Mountains are beautiful!](docs\assets\cviceni5\export_features.png "San Juan Mountains")
+![The San Juan Mountains are beautiful!]()
+
+![Image title](https://github.com/Hoffmma5/155gis1/blob/main/docs/assets/cviceni5/export_features.png){ width="600" align=right}
