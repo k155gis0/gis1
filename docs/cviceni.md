@@ -8,6 +8,8 @@
 
 ### Cíl cvičen
 
+já nevim zkouším
+
 ### Základní pojmy
 
 ### Použité datové podklady
