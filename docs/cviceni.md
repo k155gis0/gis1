@@ -10,6 +10,8 @@
 
 já nevim zkouším
 
+JEŠTĚ ZKOUŠÍM
+
 ### Základní pojmy
 
 ### Použité datové podklady
