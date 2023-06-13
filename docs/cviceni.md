@@ -12,6 +12,8 @@ já nevim zkouším
 
 JEŠTĚ ZKOUŠÍM
 
+hgjhghjghjg
+
 ### Základní pojmy
 
 ### Použité datové podklady
