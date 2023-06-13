@@ -1,17 +1,11 @@
 # Cvičení
 
-## Cvičení 15
+## Cvičení 1
 
 <span style="font-size:2em;">Úvod do práce v prostředí ArcGIS, datové formáty, geodatabáze
 </span>
 
-### Cíl cvičen
-
-já nevim zkouším
-
-JEŠTĚ ZKOUŠÍM
-
-hgjhghjghjg
+### Cíl cvičení
 
 ### Základní pojmy
 
@@ -27,7 +21,7 @@ hgjhghjghjg
 
 </span>
 
-### Cíl cvičen
+### Cíl cvičení
 
 ### Základní pojmy
 
@@ -74,7 +68,7 @@ jknkfjdaskfjadsfads
 
 ### Zadání domácího úkolu k semestrální práci
 
-## Cvičení 56789
+## Cvičení 5
 
 <span style="font-size:2em;">Rastrová data, georeference - zkušební cvičení
 </span>
