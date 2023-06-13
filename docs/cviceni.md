@@ -3,7 +3,6 @@
 ## Cvičení 1
 
 <span style="font-size:2em;">Úvod do práce v prostředí ArcGIS, datové formáty, geodatabáze
-
 </span>
 
 ### Cíl cvičen
@@ -59,6 +58,12 @@ hgjhghjghjg
 <span style="font-size:2em;">Souř. připojení prostorových dat (práce s externími daty Excel, CSV), join, spatial join
 </span>
 
+fsljflksdjflkdjasflkdas
+fdsklafdsaklfjadlskjfads
+fdskafkjdsafkhdkasf
+jdkasfkjadskjfadsf
+jknkfjdaskfjadsfads
+
 ### Cíl cvičen
 
 ### Základní pojmy
@@ -81,7 +86,7 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 ### Základní pojmy
 
 - **rastr** - datová struktura založená na buňkách uspořádaných do řádek a sloupců, kde hodnota každé buňky reprezentuje hodnotu jevu
-  - rastrová data - prostorová data vyjádřená formou matice buněk nebo pixelů; spojitá data (nejčastěji digitální modely terénu, digitalizované mapy)
+  - **rastrová data** - prostorová data vyjádřená formou matice buněk nebo pixelů; spojitá data (nejčastěji digitální modely terénu, digitalizované mapy)
   - **pixel (buňka)** - základní geometrický prvek zpravidla čtvercového tvaru; jeho množina vytváří rastrový digitální obraz; 1 buňka = 1 hodnota
   - **prostorové rozlišení rastru** - velikost 1 buňky (pixelu) rastru (cell size)
   - **digitální model reliéfu (DMR)** - digitální reprezentace zemského povrchu; rastr; neobsahuje lidské stavby
