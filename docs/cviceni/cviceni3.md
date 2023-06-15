@@ -48,9 +48,34 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
   <figcaption>Definition query pro vrstvu poboček pošty</figcaption>
 </figure>
 
-2. Spatial join: výběr obcí + pobočky (přidat nové pole count(ID))
-3. Výběr obcí nad 2500 obyvatel & více než 1 pobočkou
+<figure markdown>
+  ![Export features](../assets/cviceni3/MAP_pred-spatial-join.png "Mapa 1")
+  <figcaption>Vizualizace stavu nad podkladovou mapou</figcaption>
+</figure>
+
+2. Spatial join: k výběru obcí připojit na základě polohy pobočky a zároveň přidat nový atribut POCET_POBOCEK, který bude určen na základě pravidla count(GmIID))
+
+<figure markdown>
+  ![Export features](../assets/cviceni3/SPATIALJOIN_obce-pobocky.png "Spatial join")
+  <figcaption>Spatial join</figcaption>
+</figure>
+
+3. Výběr obcí s více než 1 pobočkou
+
+<figure markdown>
+  ![Export features](../assets/cviceni3/DQ_vice-pobocek.png "Definition query")
+  <figcaption>Definition query pro vrstvu obcí</figcaption>
+</figure>
+
 4. Výběr poboček, které se nachází v těchto obcích (prostorový dotaz)
+
+TBA CLIP!!!
+
+<figure markdown>
+  ![Export features](../assets/cviceni3/MAP_spatial-join-plus-dq.png "Mapa 2")
+  <figcaption>Vizualizace stavu po provedení spatial join a filtraci obcí s více pobočkami</figcaption>
+</figure>
+
 5. Obalová zóna 3 km kolem výběru poboček ČP
 6. Vizuální vytipování poboček ke zrušení
 7. Ve vrstvě poboček tvorba pomocného atributu RUSENO (short), defaultní hodnota 0
