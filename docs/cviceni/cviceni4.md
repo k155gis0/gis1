@@ -1,4 +1,4 @@
-# Souř. připojení prostorových dat (práce s externími daty Excel, CSV), join, spatial join
+# Souř. připojení prostorových dat (práce s externími daty Excel, CSV), join
 
 ## Cíl cvičení
 

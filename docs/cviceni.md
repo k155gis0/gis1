@@ -5,7 +5,7 @@
 <span style="font-size:2em;">Úvod do práce v prostředí ArcGIS, datové formáty, geodatabáze
 </span>
 
-### Cíl cvičen
+### Cíl cvičení
 
 ### Základní pojmy
 
@@ -33,11 +33,11 @@
 
 ## Cvičení 3
 
-<span style="font-size:2em;">Prostorové funkce (geoprocessing)
+<span style="font-size:2em;">Prostorové funkce (geoprocessing), spatial join
 
 </span>
 
-### Cíl cvičen
+### Cíl cvičení
 
 ### Základní pojmy
 
@@ -49,10 +49,10 @@
 
 ## Cvičení 4
 
-<span style="font-size:2em;">Souř. připojení prostorových dat (práce s externími daty Excel, CSV), join, spatial join
+<span style="font-size:2em;">Souř. připojení prostorových dat (práce s externími daty Excel, CSV), join
 </span>
 
-### Cíl cvičen
+### Cíl cvičení
 
 ### Základní pojmy
 
@@ -142,7 +142,7 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 
 </span>
 
-### Cíl cvičen
+### Cíl cvičení
 
 ### Základní pojmy
 
@@ -157,7 +157,7 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 <span style="font-size:2em;">ModelBuilder (opakování všech předchozích cvičení, ale trochu víc automatizovaně), Batch Processing
 </span>
 
-### Cíl cvičen
+### Cíl cvičení
 
 ### Základní pojmy
 
@@ -173,7 +173,7 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 
 </span>
 
-### Cíl cvičen
+### Cíl cvičení
 
 ### Základní pojmy
 
@@ -189,7 +189,7 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 
 </span>
 
-### Cíl cvičen
+### Cíl cvičení
 
 ### Základní pojmy
 
@@ -204,7 +204,7 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 <span style="font-size:2em;">QGIS 1
 </span>
 
-### Cíl cvičen
+### Cíl cvičení
 
 ### Základní pojmy
 
@@ -219,7 +219,7 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 <span style="font-size:2em;">QGIS 2
 </span>
 
-### Cíl cvičen
+### Cíl cvičení
 
 ### Základní pojmy
 
@@ -235,7 +235,7 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 
 </span>
 
-### Cíl cvičen
+### Cíl cvičení
 
 ### Základní pojmy
 
