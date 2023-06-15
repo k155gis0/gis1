@@ -34,8 +34,20 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
 
 ## Pracovní postup
 
-1. Výběr obcí nad 2500 obyvatel (atributový dotaz)
+1. Výběr obcí v Plzeňském kraji s více než 2500 obyvateli (atributový dotaz)
+
+<figure markdown>
+  ![Export features](../assets/cviceni3/SELECT_obce.png "Select obce"){ width="800" }
+  <figcaption>Select obce</figcaption>
+</figure>
+
 2. Výběr typu pobočky (DQ: ZKRNAZ_DRU = 'pošta')
+
+<figure markdown>
+  ![Export features](../assets/cviceni3/DQ_posty.png "Definition query pošty"){ width="800" }
+  <figcaption>Definition query pošty</figcaption>
+</figure>
+
 2. Spatial join: výběr obcí + pobočky (přidat nové pole count(ID))
 3. Výběr obcí nad 2500 obyvatel & více než 1 pobočkou
 4. Výběr poboček, které se nachází v těchto obcích (prostorový dotaz)
