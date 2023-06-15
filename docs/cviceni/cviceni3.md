@@ -37,15 +37,15 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
 1. Výběr obcí v Plzeňském kraji s více než 2500 obyvateli (atributový dotaz)
 
 <figure markdown>
-  ![Export features](../assets/cviceni3/SELECT_obce.png "Select obce"){ width="800" }
-  <figcaption>Select obce</figcaption>
+  ![Export features](../assets/cviceni3/SELECT_obce.png "Select obce")
+  <figcaption>Atributový dotaz na vrstvu obcí</figcaption>
 </figure>
 
 2. Výběr typu pobočky (DQ: ZKRNAZ_DRU = 'pošta')
 
 <figure markdown>
-  ![Export features](../assets/cviceni3/DQ_posty.png "Definition query pošty"){ width="800" }
-  <figcaption>Definition query pošty</figcaption>
+  ![Export features](../assets/cviceni3/DQ_posta.png "Definition query pošty")
+  <figcaption>Definition query pro vrstvu poboček pošty</figcaption>
 </figure>
 
 2. Spatial join: výběr obcí + pobočky (přidat nové pole count(ID))
