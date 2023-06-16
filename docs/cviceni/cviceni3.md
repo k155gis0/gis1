@@ -34,14 +34,14 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
 
 ## Pracovní postup
 
-1. Výběr obcí v Plzeňském kraji s více než 2500 obyvateli (atributový dotaz)
+**1.** Výběr obcí v Plzeňském kraji s více než 2500 obyvateli (atributový dotaz) a tvorba samostatné vrstvy selektovaných prvků.
 
 <figure markdown>
   ![Export features](../assets/cviceni3/SELECT_obce.png "Select obce")
   <figcaption>Atributový dotaz na vrstvu obcí</figcaption>
 </figure>
 
-2. Výběr typu pobočky (DQ: ZKRNAZ_DRU = 'pošta')
+**2.** Výběr typu pobočky pomocí zavedení definition query (výraz: ZKRNAZ_DRU = 'pošta').
 
 <figure markdown>
   ![Export features](../assets/cviceni3/DQ_posta.png "Definition query pošty")
@@ -53,33 +53,31 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
   <figcaption>Vizualizace stavu nad podkladovou mapou</figcaption>
 </figure>
 
-2. Spatial join: k výběru obcí připojit na základě polohy pobočky a zároveň přidat nový atribut POCET_POBOCEK, který bude určen na základě pravidla count(GmIID))
+**3.** Spatial join: k výběru obcí připojit pobočky na základě jejich polohy. Zároveň přidat nový atribut POCET_POBOCEK, který bude určen na základě pravidla sumy některého z atributů (např. count(GmIID)).
 
 <figure markdown>
   ![Export features](../assets/cviceni3/SPATIALJOIN_obce-pobocky.png "Spatial join")
   <figcaption>Spatial join</figcaption>
 </figure>
 
-3. Výběr obcí s více než 1 pobočkou
+**4**. Následně lze učinit výběr obcí s více než 1 pobočkou zavedením definition query (podmínka: POCET_POBOCEK *is greater than* 1).
 
 <figure markdown>
   ![Export features](../assets/cviceni3/DQ_vice-pobocek.png "Definition query")
   <figcaption>Definition query pro vrstvu obcí</figcaption>
 </figure>
 
-4. Výběr poboček, které se nachází v těchto obcích (prostorový dotaz)
-
-TBA CLIP!!!
+**5**. V dalším kroku s využitím nástroje *CLIP* vytvoříme novou vrstvu obsahující všechny pobočky pošty, které se nachází v obcích s více než 1 pobočkou.
 
 <figure markdown>
   ![Export features](../assets/cviceni3/MAP_spatial-join-plus-dq.png "Mapa 2")
   <figcaption>Vizualizace stavu po provedení spatial join a filtraci obcí s více pobočkami</figcaption>
 </figure>
 
-5. Obalová zóna 3 km kolem výběru poboček ČP
-6. Vizuální vytipování poboček ke zrušení
-7. Ve vrstvě poboček tvorba pomocného atributu RUSENO (short), defaultní hodnota 0
-8. Manuální výběr poboček ke zrušení, změna hodnoty atributu RUSENO na 1
-9. Zobrazení rušených poboček, sumarizace (DQ: RUSENO = 1)
+**6**. Obalová zóna 3 km kolem výběru poboček ČP
+**7**. Vizuální vytipování poboček ke zrušení
+**8**. Ve vrstvě poboček tvorba pomocného atributu RUSENO (short), defaultní hodnota 0
+**9**. Manuální výběr poboček ke zrušení, změna hodnoty atributu RUSENO na 1
+**10**. Zobrazení rušených poboček, sumarizace (DQ: RUSENO = 1)
 
 ## Zadání domácího úkolu k semestrální práci
