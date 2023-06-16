@@ -37,60 +37,60 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
 **1.** Výběr obcí v Plzeňském kraji s více než 2500 obyvateli (atributový dotaz) a tvorba samostatné vrstvy selektovaných prvků.
 
 <figure markdown>
-  ![Export features](../assets/cviceni3/SELECT_obce.png "Select obce")
+  ![Select](../assets/cviceni3/SELECT_obce.png "Select obce")
   <figcaption>Atributový dotaz na vrstvu obcí</figcaption>
 </figure>
 
 **2.** Výběr typu pobočky zavedením definition query (výraz: ZKRNAZ_DRU = 'pošta').
 
 <figure markdown>
-  ![Export features](../assets/cviceni3/DQ_posta.png "Definition query pošty")
+  ![DQ](../assets/cviceni3/DQ_posta.png "Definition query pošty")
   <figcaption>Definition query pro vrstvu poboček pošty</figcaption>
 </figure>
 
 <figure markdown>
-  ![Export features](../assets/cviceni3/MAP_pred-spatial-join.png "Mapa 1")
+  ![Map 1](../assets/cviceni3/MAP_pred-spatial-join.png "Mapa 1")
   <figcaption>Vizualizace stavu nad podkladovou mapou</figcaption>
 </figure>
 
 **3.** Spatial join: k výběru obcí připojíme pobočky na základě jejich polohy. Zároveň přidáme nový atribut POCET_POBOCEK, který bude určen na základě sumy libovolného ze stávajících atributů vrstvy poboček (např. count(GmIID)).
 
 <figure markdown>
-  ![Export features](../assets/cviceni3/SPATIALJOIN_obce-pobocky.png "Spatial join")
+  ![Spatial join](../assets/cviceni3/SPATIALJOIN_obce-pobocky.png "Spatial join")
   <figcaption>Spatial join</figcaption>
 </figure>
 
 **4**. Následně zadáme atributový dotaz na vrstvu obcí, který vybere prvky s více než 1 pobočkou (POCET_POBOCEK *is greater than* 1).
 
 <figure markdown>
-  ![Export features](../assets/cviceni3/SELECT_pocet-pobocek.png "Atributový dotaz")
+  ![Select by attribute](../assets/cviceni3/SELECT_pocet-pobocek.png "Atributový dotaz")
   <figcaption>Atributový dotaz na vrstvu obcí</figcaption>
 </figure>
 
 **5**. V dalším kroku použijeme nástroj *CLIP* a vytvoříme novou vrstvu obsahující takové pobočky pošty, které se nacházejí v obcích s více než 1 pobočkou. Tím, že v předchozím kroku byla provedena selekce pouze některých prvků z vrstvy obcí, do funkce *CLIP* vstoupí pouze tento aktivní výběr.
 
 <figure markdown>
-  ![Export features](../assets/cviceni3/CLIP_pobocky.png "Clip")
+  ![Clip features](../assets/cviceni3/CLIP_pobocky.png "Clip"){: .right}
   <figcaption>Oříznutí vrstvy poboček aktivními prvky ve vrstvě obcí.</figcaption>
 </figure>
 
 <figure markdown>
-  ![Export features](../assets/cviceni3/MAP_spatial-join-plus-dq.png "Mapa 2")
+  ![Map 2](../assets/cviceni3/MAP_spatial-join-plus-dq.png "Mapa 2")
   <figcaption>Vizualizace stavu po ořezu.</figcaption>
 </figure>
 
 **6**. S využitím nástroje *BUFFER* vytvoříme obalovou zónu kolem každé pobočky o poloměru 3 km.
 
 <figure markdown>
-  ![Export features](../assets/cviceni3/BUFFER_pobocky.png "Buffer")
+  ![Buffer](../assets/cviceni3/BUFFER_pobocky.png "Buffer")
   <figcaption>Parametry nástroje *BUFFER* pro tvorbu obalové zóny (rádius 3 km)</figcaption>
 </figure>
 
-**7**. Nyní přistoupíme k vizuálnímu vyhodnocení poboček vhodných ke zrušení.
+**7**. Nyní přistoupíme k vizuálnímu vyhodnocení poboček vhodných ke zrušení. Např. v Klatovech lze při dodržení zadaných kritérií zrušit právě 2 pobočky České pošty (zvýrazněné včetně svých obalových zón), resp. zachovat maximálně 2 pobočky (viz níže).
 
 <figure markdown>
-  ![Export features](../assets/cviceni3/MAP_buffer-Klatovy.png "Mapa 3"){ width="500" }
-  <figcaption>Např. v Klatovech lze při dodržení zadaných kritérií zrušit právě tyto 2 pobočky České pošty (zvýrazněné včetně svých obalových zón), resp. zachovat maximálně 2 pobočky.</figcaption>
+  ![Map 3](../assets/cviceni3/MAP_buffer-Klatovy.png "Mapa 3"){ width="500" }
+  <figcaption>Příklad poboček aspirujících na zrušení.</figcaption>
 </figure>
 
 **8**. Ve vrstvě poboček tvorba pomocného atributu RUSENO (short), defaultní hodnota 0
