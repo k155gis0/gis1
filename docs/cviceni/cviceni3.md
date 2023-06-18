@@ -70,7 +70,7 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
 **5**. V dalším kroku použijeme nástroj *CLIP* a vytvoříme novou vrstvu obsahující takové pobočky pošty, které se nacházejí v obcích s více než 1 pobočkou. Tím, že v předchozím kroku byla provedena selekce pouze některých prvků z vrstvy obcí, do funkce *CLIP* vstoupí pouze tento aktivní výběr.
 
 <figure markdown>
-  ![Clip features](../assets/cviceni3/CLIP_pobocky.png "Clip"){: .right}
+  ![Clip features](../assets/cviceni3/CLIP_pobocky.png "Clip")
   <figcaption>Oříznutí vrstvy poboček aktivními prvky ve vrstvě obcí.</figcaption>
 </figure>
 
@@ -90,14 +90,19 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
 
 <figure markdown>
   ![Map 3](../assets/cviceni3/MAP_buffer-Klatovy.png "Mapa 3"){ width="500" }
-  <figcaption>Příklad poboček aspirujících na zrušení.</figcaption>
+  <figcaption>Příklad poboček aspirujících na zrušení</figcaption>
 </figure>
 
-**8**. Ve vrstvě poboček tvorba pomocného atributu RUSENO (short), defaultní hodnota 0
+**8**. V atributové tabulce poboček vytvoříme pomocí *Add Field* pomocný atribut RUSENO (datový typ *short*, defaultní hodnota 0).
 
-**9**. Manuální výběr poboček ke zrušení, změna hodnoty atributu RUSENO na 1
+<figure markdown>
+  ![Map 3](../assets/cviceni3/AT_add-field.png "Přidání atributu")
+  <figcaption>Přidání nového pole do atributové tabulky</figcaption>
+</figure>
 
-**10**. Zobrazení rušených poboček, sumarizace (DQ: RUSENO = 1)
+**9**. Manuální vybereme pobočky ke zrušení změnou hodnoty atributu RUSENO na 1.
+
+**10**. Nyní je možné zobrazit rušené poboček zavedením definition query (výraz RUSENO = 1)
 
 **11**. Závěrem můžete porovnat, jak rušení poboček České pošty v r. 2023 skutečně proběhlo; přehled naleznete např. [zde](https://www.seznamzpravy.cz/clanek/fakta-ceska-posta-zrusene-pobocky-seznam-mapa-231064). Celý problém je samozřejmě složitější, jelikož finální výběr ovlivnily další faktory jako priorita pobočky (hlavní vs. vedljší), bezbariérovost, apod.
 
