@@ -2,7 +2,7 @@
 
 ## Cíl cvičení
 
-Seznámení se se základními geoprocessingovými nástroji v GISu v rámci řešení komplexní úlohy.
+Seznámení se se základními geoprocessingovými nástroji v GIS v rámci řešení komplexní úlohy.
 
 ## Základní pojmy
 
@@ -19,8 +19,8 @@ Seznámení se se základními geoprocessingovými nástroji v GISu v rámci ře
 
 ## Použité datové podklady
 
-- Pobočky České pošty v Plzeňském kraji (bodová vrstva)
-- Obce ČR (ArcČR 500, polygonová vrstva)
+- [Pobočky](../assets/cviceni3/PobockyCP_PlzenskyKraj.zip) České pošty v Plzeňském kraji (bodová vrstva)
+- Obce ČR ([ArcČR 500](../data/#arccr-500), polygonová vrstva)
 
 ## Náplň cvičení
 
@@ -41,11 +41,11 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
   <figcaption>Atributový dotaz na vrstvu obcí</figcaption>
 </figure>
 
-**2.** Výběr typu pobočky zavedením definition query (výraz: ZKRNAZ_DRU = 'pošta').
+**2.** Výběr typu pobočky zavedením *Definition Query* (výraz: ZKRNAZ_DRU = 'pošta').
 
 <figure markdown>
-  ![DQ](../assets/cviceni3/DQ_posta.png "Definition query pošty")
-  <figcaption>Definition query pro vrstvu poboček pošty</figcaption>
+  ![DQ](../assets/cviceni3/DQ_posta.png "Definition Query pošty")
+  <figcaption>Definition Query pro vrstvu poboček pošty</figcaption>
 </figure>
 
 <figure markdown>
@@ -83,7 +83,7 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
 
 <figure markdown>
   ![Buffer](../assets/cviceni3/BUFFER_pobocky.png "Buffer")
-  <figcaption>Parametry nástroje *BUFFER* pro tvorbu obalové zóny (rádius 3 km)</figcaption>
+  <figcaption>Parametry nástroje BUFFER pro tvorbu obalové zóny (rádius 3 km)</figcaption>
 </figure>
 
 **7**. Nyní přistoupíme k vizuálnímu vyhodnocení poboček vhodných ke zrušení. Např. v Klatovech lze při dodržení zadaných kritérií zrušit právě 2 pobočky České pošty (zvýrazněné včetně svých obalových zón), resp. zachovat maximálně 2 pobočky (viz níže).
@@ -96,14 +96,19 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
 **8**. V atributové tabulce poboček vytvoříme pomocí *Add Field* pomocný atribut RUSENO (datový typ *short*, defaultní hodnota 0).
 
 <figure markdown>
-  ![Map 3](../assets/cviceni3/AT_add-field.png "Přidání atributu")
+  ![Add field](../assets/cviceni3/AT_add-field.png "Přidání atributu")
   <figcaption>Přidání nového pole do atributové tabulky</figcaption>
 </figure>
 
-**9**. Manuální vybereme pobočky ke zrušení změnou hodnoty atributu RUSENO na 1.
+**9**. Manuálně vybereme (pomocí *Select*) pobočky vyhovující kritériím zrušení změnou hodnoty atributu RUSENO na 1.
 
-**10**. Nyní je možné zobrazit rušené poboček zavedením definition query (výraz RUSENO = 1)
+**10**. Nyní je možné zobrazit rušené pobočky zavedením *Definition Query* (výraz RUSENO = 1) nebo naopak pobočky splňující podmínky, aby byly zachovány (výraz RUSENO = 0).
 
-**11**. Závěrem můžete porovnat, jak rušení poboček České pošty v r. 2023 skutečně proběhlo; přehled naleznete např. [zde](https://www.seznamzpravy.cz/clanek/fakta-ceska-posta-zrusene-pobocky-seznam-mapa-231064). Celý problém je samozřejmě složitější, jelikož finální výběr ovlivnily další faktory jako priorita pobočky (hlavní vs. vedljší), bezbariérovost, apod.
+<figure markdown>
+  ![Map 4](../assets/cviceni3/MAP_zachovane-pobocky.png "Mapa poboček")
+  <figcaption>Pobočky pošty, kterou mohou být zachovány.</figcaption>
+</figure>
+
+**11**. Závěrem lze porovnat, jak rušení poboček České pošty v r. 2023 skutečně proběhlo; přehled naleznete např. [zde](https://www.seznamzpravy.cz/clanek/fakta-ceska-posta-zrusene-pobocky-seznam-mapa-231064). Celý problém je samozřejmě složitější, jelikož finální výběr ovlivnily další faktory jako priorita pobočky (hlavní vs. vedljší), bezbariérovost, apod.
 
 ## Zadání domácího úkolu k semestrální práci
