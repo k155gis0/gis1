@@ -1,14 +1,14 @@
 # 155gis1
 
-**Funkce** - velká písmena + kurzíva: *CLIP RASTER*
+**Funkce** – velká písmena + kurzíva: *CLIP RASTER*
 
-**Vrstvy** - kurzíva: *KrajeBody*
+**Vrstvy** – kurzíva: *KrajeBody*
 
-**Tlačítka a názvy sekcí** - kurzíva: *Add Control Points*, *Catalog*
+**Tlačítka a názvy sekcí** – kurzíva: *Add Control Points*, *Catalog*
 
-**Pevná mezera** - alt + 0160
+**Pevná mezera** – alt + 0160
 
-**Pomlčka** - alt+0150
+**Pomlčka** – alt+0150
 
 Celkově psát text stylem "Importujeme data ze souboru" a NE "Importovat data ze souboru" (zkrátka snažit se nepoužívat trpný rod, aby dokumentace vypadala přívětivěji a ne jako diplomka)
 
