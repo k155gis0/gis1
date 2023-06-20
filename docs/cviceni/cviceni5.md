@@ -20,7 +20,6 @@ Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Sou�
 
 ## Použité datové podklady
 
-<<<<<<< HEAD
 - [ArcČR 500](../data/#arccr-500)
 - [Císařské otisky stabilního katastru](../data/#cisarske-otisky-stabilniho-katastru)
 - [DMR 4G](../data/#dmr-5g)
@@ -29,22 +28,12 @@ Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Sou�
 - video georeferencování
 - studenti budou používat data stabilního katastru Zhůří. Většinu mapových listů dostanou georeferencoanou a jeden budou muset oklikat sami.
 - rozmyslet zadání dú
-=======
-- [ArcČR 500](../../data/#arccr-500)
-- [Císařské otisky stabilního katastru](../../data/#cisarske-otisky-stabilniho-katastru)
-- [DMR 5G](../../data/#dmr-5g)
-- [RÚIAN](../../data/#ruian)
->>>>>>> 34fc9e84724730b0be21883d656aa51d1a982179
 
 ## Náplň cvičení
 
 ### Ukázka nejčastějších rastrových typů dat
-<<<<<<< HEAD
-**1. Digitální model terénu/reliéfu**
-=======
 
-1. **Digitální model terénu/reliéfu**
->>>>>>> 34fc9e84724730b0be21883d656aa51d1a982179
+**1. Digitální model terénu/reliéfu**
 
 <figure markdown>
 ![DMR](../assets/cviceni5/dmr_ukazka.png "DMR 4G"){ width="800" }
@@ -71,18 +60,12 @@ DMR 4G představuje hodnoty nadmořské výšky pro Českou republiku s rozliš
 
 **1.** Načteme DMR 4G z databáze ArcČR (vrstva *DigitalniModelReliefu*).
 
-<<<<<<< HEAD
 **2.** Zjištění prostorového rozlišení rastru (pravý klik na daný rastr v záložce *Contents* -> *Properties* -> *Source* -> *Raster Information* -> *Cell Size X/Y*).
 
 **3.** Vybereme okres pro ořez rastru (*OkresyPolygony*).
 
 **4.** Export vybraného okresu do samostatné vrstvy provedeme přes pravý klik myši na vybranou vrstvu -> *Data* -> *Export Features*.
-=======
-**1.** Načtení DMR 4G z databáze ArcČR (vrstva _DigitalniModelReliefu_)
-**2.** Zjištění prostorového rozlišení rastru (pravý klik na daný rastr v záložce Contents -> Properties -> Source -> Raster Information -> Cell Size X/Y)
-**3.** Výběr okresu k ořezu rastru (_OkresyPolygony_)
-**4.** Export vybraného okresu do samostatné vrstvy - pravý klik na vybranou vrstvu -> Data -> Export Features
->>>>>>> 34fc9e84724730b0be21883d656aa51d1a982179
+
 
 <figure markdown>
   ![Export features](../assets/cviceni5/export_features.png "Export features"){ width="800" }
@@ -104,12 +87,8 @@ DMR 4G představuje hodnoty nadmořské výšky pro Českou republiku s rozliš
 </figure>
 
 ### Ukázka změny symbologie rastru
-<<<<<<< HEAD
-Rastrovým vrstvám lze (stejně jako vektorovým) měnit vzhled v záložce [*Symbology*](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/symbology-pane.htm). Nabídka se zobrazí pravým klinutím myši na danou vrstvu -> *Symbology*.
-=======
 
-Rastrovým vrstvám se (stejně jako vektorovým) může měnit vzhled v záložce [Symbology](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/symbology-pane.htm). Nabídka se zobrazí pravým klinutím myši na danou vrstvu -> Symbology.
->>>>>>> 34fc9e84724730b0be21883d656aa51d1a982179
+Rastrovým vrstvám lze (stejně jako vektorovým) měnit vzhled v záložce [*Symbology*](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/symbology-pane.htm). Nabídka se zobrazí pravým klinutím myši na danou vrstvu -> *Symbology*.
 
 <figure markdown>
   ![dmr_symbol](../assets/cviceni5/dmr_symbol.png "Nastavení symbologie DMR")
