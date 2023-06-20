@@ -6,7 +6,7 @@
 
 **Tlačítka a názvy sekcí** - kurzíva: *Add Control Points*, *Catalog*
 
-**Pevná mezera** - alt + 0 + 1 + 6 + 0
+**Pevná mezera** - alt + 0160
 
 Celkově psát text stylem "Importujeme data ze souboru" a NE "Importovat data ze souboru" (zkrátka snažit se nepoužívat trpný rod, aby dokumentace vypadala přívětivěji a ne jako diplomka)
 
