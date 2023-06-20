@@ -1,5 +1,9 @@
 # 155gis1
 
+Funkce - velká písmena + kurzíva: *CLIP RASTER*
+Vrstvy - kurzíva: *KrajeBody*
+Tlačítka a názvy sekcí - kurzíva: *Add Control Points*, *Catalog*
+
 [Project Homepage](https://k155cvut.github.io/gis1/)
 
 MkDocs Material dokumentace
