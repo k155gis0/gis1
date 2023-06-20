@@ -19,14 +19,15 @@ Seznámení se s rastrovými daty v GISu a ukázka využití těchto dat. Souřa
 
 ## Použité datové podklady
 
-- [ArcČR 500](../data/#arccr-500)
-- [Císařské otisky stabilního katastru](../data/#cisarske-otisky-stabilniho-katastru)
-- [DMR 5G](../data/#dmr-5g)
-- [RÚIAN](../data/#ruian)
+- [ArcČR 500](../../data/#arccr-500)
+- [Císařské otisky stabilního katastru](../../data/#cisarske-otisky-stabilniho-katastru)
+- [DMR 5G](../../data/#dmr-5g)
+- [RÚIAN](../../data/#ruian)
 
 ## Náplň cvičení
 
 ### Ukázka nejčastějších rastrových typů dat
+
 1. **Digitální model terénu/reliéfu**
 
 <figure markdown>
@@ -54,9 +55,9 @@ DMR 4G představuje hodnoty nadmořské výšky pro Českou republiku s rozliše
 
 Cílem této úlohy je seznámení se se základními pracemi s rastrovými daty.
 
-**1.** Načtení DMR 4G z databáze ArcČR (vrstva *DigitalniModelReliefu*)
+**1.** Načtení DMR 4G z databáze ArcČR (vrstva _DigitalniModelReliefu_)
 **2.** Zjištění prostorového rozlišení rastru (pravý klik na daný rastr v záložce Contents -> Properties -> Source -> Raster Information -> Cell Size X/Y)
-**3.** Výběr okresu k ořezu rastru (*OkresyPolygony*)
+**3.** Výběr okresu k ořezu rastru (_OkresyPolygony_)
 **4.** Export vybraného okresu do samostatné vrstvy - pravý klik na vybranou vrstvu -> Data -> Export Features
 
 <figure markdown>
@@ -81,6 +82,7 @@ Cílem této úlohy je seznámení se se základními pracemi s rastrovými daty
 </figure>
 
 ### Ukázka změny symbologie rastru
+
 Rastrovým vrstvám se (stejně jako vektorovým) může měnit vzhled v záložce [Symbology](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/symbology-pane.htm). Nabídka se zobrazí pravým klinutím myši na danou vrstvu -> Symbology.
 
 <figure markdown>

@@ -20,7 +20,7 @@ Seznámení se se základními geoprocessingovými nástroji v GIS v rámci ře�
 ## Použité datové podklady
 
 - [Pobočky](../assets/cviceni3/PobockyCP_PlzenskyKraj.zip) České pošty v Plzeňském kraji (bodová vrstva)
-- Obce ČR ([ArcČR 500](../data/#arccr-500), polygonová vrstva)
+- Obce ČR ([ArcČR 500](../../data/#arccr-500), polygonová vrstva)
 
 ## Náplň cvičení
 
@@ -41,7 +41,7 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
   <figcaption>Atributový dotaz na vrstvu obcí</figcaption>
 </figure>
 
-**2.** Výběr typu pobočky zavedením *Definition Query* (výraz: ZKRNAZ_DRU = 'pošta').
+**2.** Výběr typu pobočky zavedením _Definition Query_ (výraz: ZKRNAZ_DRU = 'pošta').
 
 <figure markdown>
   ![DQ](../assets/cviceni3/DQ_posta.png "Definition Query pošty")
@@ -60,14 +60,14 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
   <figcaption>Spatial join</figcaption>
 </figure>
 
-**4**. Následně zadáme atributový dotaz na vrstvu obcí, který vybere prvky s více než 1 pobočkou (POCET_POBOCEK *is greater than* 1).
+**4**. Následně zadáme atributový dotaz na vrstvu obcí, který vybere prvky s více než 1 pobočkou (POCET*POBOCEK \_is greater than* 1).
 
 <figure markdown>
   ![Select by attribute](../assets/cviceni3/SELECT_pocet-pobocek.png "Atributový dotaz")
   <figcaption>Atributový dotaz na vrstvu obcí</figcaption>
 </figure>
 
-**5**. V dalším kroku použijeme nástroj *CLIP* a vytvoříme novou vrstvu obsahující takové pobočky pošty, které se nacházejí v obcích s více než 1 pobočkou. Tím, že v předchozím kroku byla provedena selekce pouze některých prvků z vrstvy obcí, do funkce *CLIP* vstoupí pouze tento aktivní výběr.
+**5**. V dalším kroku použijeme nástroj _CLIP_ a vytvoříme novou vrstvu obsahující takové pobočky pošty, které se nacházejí v obcích s více než 1 pobočkou. Tím, že v předchozím kroku byla provedena selekce pouze některých prvků z vrstvy obcí, do funkce _CLIP_ vstoupí pouze tento aktivní výběr.
 
 <figure markdown>
   ![Clip features](../assets/cviceni3/CLIP_pobocky.png "Clip")
@@ -79,7 +79,7 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
   <figcaption>Vizualizace stavu po ořezu.</figcaption>
 </figure>
 
-**6**. S využitím nástroje *BUFFER* vytvoříme obalovou zónu kolem každé pobočky o poloměru 3 km.
+**6**. S využitím nástroje _BUFFER_ vytvoříme obalovou zónu kolem každé pobočky o poloměru 3 km.
 
 <figure markdown>
   ![Buffer](../assets/cviceni3/BUFFER_pobocky.png "Buffer")
@@ -93,16 +93,16 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
   <figcaption>Příklad poboček aspirujících na zrušení</figcaption>
 </figure>
 
-**8**. V atributové tabulce poboček vytvoříme pomocí *Add Field* pomocný atribut RUSENO (datový typ *short*, defaultní hodnota 0).
+**8**. V atributové tabulce poboček vytvoříme pomocí _Add Field_ pomocný atribut RUSENO (datový typ _short_, defaultní hodnota 0).
 
 <figure markdown>
   ![Add field](../assets/cviceni3/AT_add-field.png "Přidání atributu")
   <figcaption>Přidání nového pole do atributové tabulky</figcaption>
 </figure>
 
-**9**. Manuálně vybereme (pomocí *Select*) pobočky vyhovující kritériím zrušení změnou hodnoty atributu RUSENO na 1.
+**9**. Manuálně vybereme (pomocí _Select_) pobočky vyhovující kritériím zrušení změnou hodnoty atributu RUSENO na 1.
 
-**10**. Nyní je možné zobrazit rušené pobočky zavedením *Definition Query* (výraz RUSENO = 1) nebo naopak pobočky splňující podmínky, aby byly zachovány (výraz RUSENO = 0).
+**10**. Nyní je možné zobrazit rušené pobočky zavedením _Definition Query_ (výraz RUSENO = 1) nebo naopak pobočky splňující podmínky, aby byly zachovány (výraz RUSENO = 0).
 
 <figure markdown>
   ![Map 4](../assets/cviceni3/MAP_zachovane-pobocky.png "Mapa poboček")
