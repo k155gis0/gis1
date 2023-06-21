@@ -1,5 +1,23 @@
 # Charakteristika předmětu
 
+
+Cvičení z předmětu GIS 1 vás seznámí ze základy geografických informačních systémů (GIS).
+
+Naučíte se:
+- **zpracovávat** a **analyzovat** prostorová (geografická, mapová) data
+- porozumět rozdílu mezi **vektorovými** a **rastrovými** daty
+- **filtrovat** data pomocí atributových a prostorových dotazů
+- aplikovat základní **prostorové funkce** (nástroje geoprocessingu)
+- **tvořit** a **editovat** data
+- tvořit modely pro **automatizované zpracování** (nástroj *ModelBuilder*)
+- **sdílet** data prostřednictvím webu (systém *ArcGIS Online*, webové mapové aplikace)
+- používat **alternativní GIS software** (*QGIS*)
+
+Během výuky bude používán zpravidla software Esri ArcGIS Pro, ke konci kurzu bude pak věnován prostor i možným alternativám (program QGIS).  
+  
+  
+
+
 Princip geografických informačních systémů, čas a prostor v GIS, možnosti prostorové reprezentace, prostorová analýza, analýza kvality dat, technické nástroje GIS.
 
 ![Image title](https://i.guim.co.uk/img/media/43352be36da0eb156e8551d775a57fadba8ae6d7/0_0_1440_864/master/1440.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=1829611852af3ffc6460b4068e20bcbc){ width="600" align=right}
