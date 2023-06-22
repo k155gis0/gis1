@@ -13,9 +13,6 @@ Naučíte se:
 - **sdílet** data prostřednictvím webu (systém _ArcGIS Online_, webové mapové aplikace)
 - používat **alternativní GIS software** (_QGIS_)
 
-* kljdkfd
-* kjdslkjfdsf
-
 Během výuky bude používán zpravidla software Esri ArcGIS Pro, ke konci kurzu bude pak věnován prostor i možným alternativám (program QGIS).
 
 Princip geografických informačních systémů, čas a prostor v GIS, možnosti prostorové reprezentace, prostorová analýza, analýza kvality dat, technické nástroje GIS.
