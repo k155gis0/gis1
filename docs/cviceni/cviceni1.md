@@ -26,7 +26,7 @@ Uživatelé mohou vytvářet a upravovat **atributy** a **geometrii** prvků, pr
 ### Spuštění a základní orientace v programu
 Při spuštění probíhá ověření licence přes příslušnost k organizaci (ČVUT v Praze) – pomocí přihlášení k univerzitnímu účtu. Adresa (URL) pro ČVUT je *ctuprague.maps.arcgis.com* – poté proběhne automatické přesměrování na stránku s univerzitním přihlášením (ve formátu *username@cvut.cz* a heslo to KOSu).
 <div style="text-align: center;">
-<iframe width="40%" src="https://www.youtube.com/watch?v=8nDVpVmxM-0" allowfullscreen></iframe>
+<iframe width="40%" src="https://www.youtube.com/embed/8nDVpVmxM-0" allowfullscreen></iframe>
 </div>
 
 
