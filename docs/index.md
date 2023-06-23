@@ -2,6 +2,8 @@
 
 Cvičení z předmětu GIS 1 vás seznámí ze základy geografických informačních systémů (GIS).
 
+zmena
+
 Naučíte se:
 
 - **zpracovávat** a **analyzovat** prostorová (geografická, mapová) data
