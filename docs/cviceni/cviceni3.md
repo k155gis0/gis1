@@ -20,7 +20,7 @@ Seznámení se se základními geoprocessingovými nástroji v GIS v rámci ře�
 ## Použité datové podklady
 
 - [Pobočky](../assets/cviceni3/PobockyCP_PlzenskyKraj.zip) České pošty v Plzeňském kraji (bodová vrstva)
-- Obce ČR ([ArcČR 500](../data/#arccr-500), polygonová vrstva)
+- Obce ČR ([ArcČR 500](../../data/#arccr-500), polygonová vrstva)
 
 ## Náplň cvičení
 

@@ -20,11 +20,12 @@ Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Sou�
 
 ## Použité datové podklady
 
-- [ArcČR 500](../data/#arccr-500)
-- [Císařské otisky stabilního katastru](../data/#cisarske-otisky-stabilniho-katastru)
-- [DMR 4G](../data/#dmr-5g)
+- [ArcČR 500](../../data/#arccr-500)
+- [Císařské otisky stabilního katastru](../../data/#cisarske-otisky-stabilniho-katastru)
+- [DMR 4G](../../data/#dmr-5g)
 
 ## Pozn
+
 - video georeferencování
 - studenti budou používat data stabilního katastru Zhůří. Většinu mapových listů dostanou georeferencoanou a jeden budou muset oklikat sami.
 - rozmyslet zadání dú
@@ -48,6 +49,7 @@ Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Sou�
 </figure>
 
 **3. Naskenovaný mapový list**
+
 <figure markdown>
 ![CO](../assets/cviceni5/co.jpg "Císařské otisky stabilního katastru"){ width="800" }
     <figcaption>Císařské otisky stabilního katastru (zdroj: ČÚZK)</figcaption>
@@ -55,17 +57,16 @@ Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Sou�
 
 ### Práce s digitálním modelem reliéfu
 
-**Zdroj dat** – DMR 4G ([ArcČR 500](../data/#arccr-500))  
+**Zdroj dat** – DMR 4G ([ArcČR 500](../../data/#arccr-500))  
 DMR 4G představuje hodnoty nadmořské výšky pro Českou republiku s rozlišením 5x5 metrů. Verze z ArcČR je však převzorkovaná a má velikost 1 pixelu 50x50 metrů.
 
-**1.** Načteme DMR 4G z databáze ArcČR (vrstva *DigitalniModelReliefu*).
+**1.** Načteme DMR 4G z databáze ArcČR (vrstva _DigitalniModelReliefu_).
 
-**2.** Zjištění prostorového rozlišení rastru (pravý klik na daný rastr v záložce *Contents* -> *Properties* -> *Source* -> *Raster Information* -> *Cell Size X/Y*).
+**2.** Zjištění prostorového rozlišení rastru (pravý klik na daný rastr v záložce _Contents_ -> _Properties_ -> _Source_ -> _Raster Information_ -> _Cell Size X/Y_).
 
-**3.** Vybereme okres pro ořez rastru (*OkresyPolygony*).
+**3.** Vybereme okres pro ořez rastru (_OkresyPolygony_).
 
-**4.** Export vybraného okresu do samostatné vrstvy provedeme přes pravý klik myši na vybranou vrstvu -> *Data* -> *Export Features*.
-
+**4.** Export vybraného okresu do samostatné vrstvy provedeme přes pravý klik myši na vybranou vrstvu -> _Data_ -> _Export Features_.
 
 <figure markdown>
   ![Export features](../assets/cviceni5/export_features.png "Export features"){ width="800" }
@@ -88,7 +89,7 @@ DMR 4G představuje hodnoty nadmořské výšky pro Českou republiku s rozliš
 
 ### Ukázka změny symbologie rastru
 
-Rastrovým vrstvám lze (stejně jako vektorovým) měnit vzhled v záložce [*Symbology*](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/symbology-pane.htm). Nabídka se zobrazí pravým klinutím myši na danou vrstvu -> *Symbology*.
+Rastrovým vrstvám lze (stejně jako vektorovým) měnit vzhled v záložce [_Symbology_](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/symbology-pane.htm). Nabídka se zobrazí pravým klinutím myši na danou vrstvu -> _Symbology_.
 
 <figure markdown>
   ![dmr_symbol](../assets/cviceni5/dmr_symbol.png "Nastavení symbologie DMR")
@@ -96,72 +97,75 @@ Rastrovým vrstvám lze (stejně jako vektorovým) měnit vzhled v záložce [*
 </figure>
 
 ### Georeferencování rastru
-**Zdroj dat** – ČÚZK 
+
+**Zdroj dat** – ČÚZK
 
 **Návod ke georeferencování:**
 
-**1.** Načtení rastru do mapového okna z adresáře v záložce *Catalog*. Rastr se umístí po počátku aktuálního souřadnicového systému. Přiblížit se na něj lze po kliknutí pravým tlačítkem na jeho název v záložce *Contents* -> *Zoom To Layer*.
+**1.** Načtení rastru do mapového okna z adresáře v záložce _Catalog_. Rastr se umístí po počátku aktuálního souřadnicového systému. Přiblížit se na něj lze po kliknutí pravým tlačítkem na jeho název v záložce _Contents_ -> _Zoom To Layer_.
 
-**2.** Následně zapneme funkci Georeference: záložka *Imagery* -> *Georeference*.
+**2.** Následně zapneme funkci Georeference: záložka _Imagery_ -> _Georeference_.
 
 <figure markdown>
   ![gref1](../assets/cviceni5/gref1.png "Georeferencování rastru")
   <figcaption>Georeferencování rastru</figcaption>
 </figure>
 
-**3.** V nástroji *Georeference* je potřeba nastavit identické body, na základě kterých se mapový list transformuje do souřadnicového systému mapy.
+**3.** V nástroji _Georeference_ je potřeba nastavit identické body, na základě kterých se mapový list transformuje do souřadnicového systému mapy.
 
-**4.** Mapu přiblížíme na výřez obrazovky tlačítkem *Fit to Display*. 
+**4.** Mapu přiblížíme na výřez obrazovky tlačítkem _Fit to Display_.
 
-**5.** Pokud již známe identické body, je možné je importovat pomocí *Import Control Points*. Jestliže tyto body nemáme, musíme je ručně vytvořit tlačítkem *Add Control Points*.
+**5.** Pokud již známe identické body, je možné je importovat pomocí _Import Control Points_. Jestliže tyto body nemáme, musíme je ručně vytvořit tlačítkem _Add Control Points_.
 
-**6.** Při vkládání bodů se nejprve určí bod ze vstupního mapového listu (*source*) a následně jeho ekvivalent v mapě (*target*). Důležité je vybírat identické body rovnoměrně po celé ploše mapového listu a ideálně vybírat taková místa, která jsou na obou vrstvách (mapový list a podkladová mapa) totožná. Nejčastěji se jedná o rohy významných budov (kostely), křížení silnic či boží muka. Identické body a jejich přesnost určujeme dle měřítka georeferencované mapy.
+**6.** Při vkládání bodů se nejprve určí bod ze vstupního mapového listu (_source_) a následně jeho ekvivalent v mapě (_target_). Důležité je vybírat identické body rovnoměrně po celé ploše mapového listu a ideálně vybírat taková místa, která jsou na obou vrstvách (mapový list a podkladová mapa) totožná. Nejčastěji se jedná o rohy významných budov (kostely), křížení silnic či boží muka. Identické body a jejich přesnost určujeme dle měřítka georeferencované mapy.
 
-**7.** V některých případech je velmi obtížné najít identické body, zejména u starších archiválií. Na příkladu, který je uveden v tomto návodu, je patrná obrovská změna využití ploch v České Třebové. 
+**7.** V některých případech je velmi obtížné najít identické body, zejména u starších archiválií. Na příkladu, který je uveden v tomto návodu, je patrná obrovská změna využití ploch v České Třebové.
 
 <figure markdown>
   ![gref2](../assets/cviceni5/gref2.png "Georeferencovaný mapový list")
   <figcaption>Georeferencovaný mapový list</figcaption>
 </figure>
 
-**8.** Během procesu georeference je nutné sledovat přesnost výsledného souřadnicoého umístění dat. Tu na jdeme v tabulce *Control Point Table* v nástroji *Georeference*. V této tabulce se nachází přehled všech identických bodů včetně jejich souřadnicových přesností. Můžeme zde také body mazat nebo je vyřadit z výpočtu transformace. Body jsou zároveň znázorněny v mapovém okně.
+**8.** Během procesu georeference je nutné sledovat přesnost výsledného souřadnicoého umístění dat. Tu na jdeme v tabulce _Control Point Table_ v nástroji _Georeference_. V této tabulce se nachází přehled všech identických bodů včetně jejich souřadnicových přesností. Můžeme zde také body mazat nebo je vyřadit z výpočtu transformace. Body jsou zároveň znázorněny v mapovém okně.
 
 **9.** Při georeferencování v *ArcGIS Pro* lze použít několik druhů souřadnicových transformací. Druh transforamce volíme na základě vstupních dat. Pro ukázku s císařskými otisky stabilního katastru, je ideální afinní transformace, která se nabízí jako výchozí.
 
-**10.** Pokud jsme spokojeni s georeferencováním, uložíme jej tlačítkem *Save*. Jestliže by bylo potřeba, je možné nastavení souřadnicového umístění změnit. Nástroj Georeference můžeme nyní zavřít *Close*.
+**10.** Pokud jsme spokojeni s georeferencováním, uložíme jej tlačítkem _Save_. Jestliže by bylo potřeba, je možné nastavení souřadnicového umístění změnit. Nástroj Georeference můžeme nyní zavřít _Close_.
 
 **Video-návod ke georeferencování map:**
+
 <div style="text-align: center;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/H7m7rX9fswE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 ### Vytvoření mozaiky
-Pro vytvoření ucelené mapové vrstvy a následné zpracování rastrů, se využívá *Mosaic Dataset*. Do mozaiky přesuneme požadované rastry. Mozaika vygeneruje vektorové vrstvy *Footprint* a *Boundary*. *Footprint* slouží k ořezu mimorámových údajů každého rastru a *Boundary* je ohraničení celé mozaiky.
 
-**1.** *Mosaic Dataset* vytvoříme kliknutím pravého tlačítka myši na geodatabázi v záložce *Catalog* -> *New* -> *Mosaic Dataset*.
+Pro vytvoření ucelené mapové vrstvy a následné zpracování rastrů, se využívá _Mosaic Dataset_. Do mozaiky přesuneme požadované rastry. Mozaika vygeneruje vektorové vrstvy _Footprint_ a *Boundary*. _Footprint_ slouží k ořezu mimorámových údajů každého rastru a *Boundary* je ohraničení celé mozaiky.
+
+**1.** _Mosaic Dataset_ vytvoříme kliknutím pravého tlačítka myši na geodatabázi v záložce _Catalog_ -> _New_ -> _Mosaic Dataset_.
 
 <figure markdown>
   ![mosaic1](../assets/cviceni5/mosaic1.png "Vytvoření Mosaic Dataset")
   <figcaption>Vytvoření Mosaic Dataset</figcaption>
 </figure>
 
-**2.** V záložce *Geoprocessing* vyplníme název mozaiky *Mosaic Dataset Name* a příslušný souřadnicový systém *Coordinate System* (ten je vhodné zvolit stejný jako v mapě – *Current Map*). Ostaní parametry ponecháme ve výchozím nastavení. 
+**2.** V záložce _Geoprocessing_ vyplníme název mozaiky _Mosaic Dataset Name_ a příslušný souřadnicový systém _Coordinate System_ (ten je vhodné zvolit stejný jako v mapě – _Current Map_). Ostaní parametry ponecháme ve výchozím nastavení.
 
 <figure markdown>
   ![mosaic2](../assets/cviceni5/mosaic2.png "Vytvoření Mosaic Dataset")
   <figcaption>Vytvoření Mosaic Dataset</figcaption>
 </figure>
 
-**3.** Vytvořená mozaika se rovnou přidá do mapy, tudíž její vrstvu vidíme v záložce *Contents*. Mozaika je stále prázdná, musíme do ní tedy přidat georeferencované rastry.
+**3.** Vytvořená mozaika se rovnou přidá do mapy, tudíž její vrstvu vidíme v záložce _Contents_. Mozaika je stále prázdná, musíme do ní tedy přidat georeferencované rastry.
 
-**4.** Pravým kliknutím na mozaiku v záložce *Catalog* -> *Add Rasters* otevřeme funkci importu rastrů do mozaiky. Funkci lze najít i v záložce *Geoprocessing*.
+**4.** Pravým kliknutím na mozaiku v záložce _Catalog_ -> _Add Rasters_ otevřeme funkci importu rastrů do mozaiky. Funkci lze najít i v záložce _Geoprocessing_.
 
 <figure markdown>
   ![mosaic3](../assets/cviceni5/mosaic3.png "Přidání rastrů do mozaiky")
   <figcaption>Přidání rastrů do mozaiky</figcaption>
 </figure>
 
-**5.** Ve funkci *Add Rasters To Mosaic Dataset* zvolíme výstupní mozaiku a ikonou s plusem v části *Input Data* nahrajeme soubory. Pokud máme více georeferencovaných rastrů, je vhodné je uchovávat v jedné složce (včetně souborů určujících parametry transformace), kterou pak do mozaiky nahrajeme celou. V jiném případě můžeme nahrát přímo soubor tak, že změníme v *Input Data* *Folder* na *File*. Při výběru souboru v průzkumníku pak změníme CSV na všechny typy souborů a najdeme potřebné soubory. Ostatní parametry nyní ponecháme ve výchozím stavu.
+**5.** Ve funkci _Add Rasters To Mosaic Dataset_ zvolíme výstupní mozaiku a ikonou s plusem v části _Input Data_ nahrajeme soubory. Pokud máme více georeferencovaných rastrů, je vhodné je uchovávat v jedné složce (včetně souborů určujících parametry transformace), kterou pak do mozaiky nahrajeme celou. V jiném případě můžeme nahrát přímo soubor tak, že změníme v *Input Data* _Folder_ na _File_. Při výběru souboru v průzkumníku pak změníme CSV na všechny typy souborů a najdeme potřebné soubory. Ostatní parametry nyní ponecháme ve výchozím stavu.
 
 <figure markdown>
   ![mosaic4](../assets/cviceni5/mosaic4.png "Přidání rastrů do mozaiky")
@@ -170,18 +174,18 @@ Pro vytvoření ucelené mapové vrstvy a následné zpracování rastrů, se v
 
 ### Editování mozaiky
 
-**1.** Pro vytvoření bezešvé mozaiky je potřeba nastavit hranice vrstvy *Footprint* dle požadovaného ořezu dat. 
+**1.** Pro vytvoření bezešvé mozaiky je potřeba nastavit hranice vrstvy _Footprint_ dle požadovaného ořezu dat.
 
-**2.** V záložce *Edit* zvolíme *Edit Vertices* a pro přidání, odebrání či posunutí lomových bodů využíváme nově otevřenou nabídku ikon v dolní části obrazovky. Pro uložení editace musíme stisknout ikonu *Finish* dole ve zmíněné nabídce ikon a následovně *Save* nahoře vlevo v záložce *Edit*. Vzhledem k tomu, že císařské otisky stabilního katastru jsou mapy bez pravidelného jednotného kladu mapových listů, je nutné editaci *Footprintu* oklikat ručně. Automatický ořez *Footprintu* lze použít například na data Státní mapy 1 : 5 000 – odvozené. Tato metoda je probírána v následujícím cvičení.
+**2.** V záložce _Edit_ zvolíme _Edit Vertices_ a pro přidání, odebrání či posunutí lomových bodů využíváme nově otevřenou nabídku ikon v dolní části obrazovky. Pro uložení editace musíme stisknout ikonu _Finish_ dole ve zmíněné nabídce ikon a následovně _Save_ nahoře vlevo v záložce _Edit_. Vzhledem k tomu, že císařské otisky stabilního katastru jsou mapy bez pravidelného jednotného kladu mapových listů, je nutné editaci _Footprintu_ oklikat ručně. Automatický ořez _Footprintu_ lze použít například na data Státní mapy 1 : 5 000 – odvozené. Tato metoda je probírána v následujícím cvičení.
 
 <figure markdown>
   ![mosaic5](../assets/cviceni5/mosaic5.png "Editace Footprintu")
   <figcaption>Editace Footprintu</figcaption>
 </figure>
 
-**3.** Při editaci sousedících mapových listů je nutné lomové body přichytit na sebe se zapnutou funkcí *Snapping* v záložce *Edit*. Jinak by nebyla mozaika bezešvá a obsahovala by díry.
+**3.** Při editaci sousedících mapových listů je nutné lomové body přichytit na sebe se zapnutou funkcí _Snapping_ v záložce _Edit_. Jinak by nebyla mozaika bezešvá a obsahovala by díry.
 
-**4.** Ořez rastru dle *Footprintu* je nutné nastavit v parametrech mozaiky: v *Catalogu* -> kliknutím pravého tlačítka na mozaiku -> *Properties* -> *Defaults* -> zaškrtnout *Always Clip the Raster to its Footprint*. Pokud se nebudou další případné změny *Footprintu* projevovat v mapě, je potřeba ve stejné nabídce vždy změnit *Default Mosaic Operator* z *First* na *Last* a naopak. 
+**4.** Ořez rastru dle _Footprintu_ je nutné nastavit v parametrech mozaiky: v *Catalogu* -> kliknutím pravého tlačítka na mozaiku -> _Properties_ -> _Defaults_ -> zaškrtnout _Always Clip the Raster to its Footprint_. Pokud se nebudou další případné změny _Footprintu_ projevovat v mapě, je potřeba ve stejné nabídce vždy změnit _Default Mosaic Operator_ z *First* na _Last_ a naopak.
 
 <figure markdown>
   ![mosaic6](../assets/cviceni5/mosaic6.png "Parametry mozaiky")
