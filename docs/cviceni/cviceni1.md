@@ -3,8 +3,7 @@
 ---
 
 ## Cíl cvičení
-hsdfkjlahds flkjahd fjlk ahdflkj hadljkfha lkjdhah ůlkdjgf ůlkajfůlka jdfůlkajs<br>
-adh gfuiadfhg ijaudfgh
+xx
 
 ---
 
