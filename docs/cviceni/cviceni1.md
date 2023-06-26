@@ -3,7 +3,7 @@
 ---
 
 ## Cíl cvičení
-xx
+xxyy
 
 ---
 
