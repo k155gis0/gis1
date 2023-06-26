@@ -9,3 +9,5 @@
 ## Náplň cvičení
 
 ## Zadání domácího úkolu k semestrální práci
+
+pokus1
