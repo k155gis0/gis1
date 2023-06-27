@@ -1,5 +1,7 @@
 <style>
   .md-button--primary:hover {background-color:#46817b !important; color:#eee !important;border-color:#46817b !important}
+  .md-typeset__table {width:100%;}
+  tbody {width: 100%;display: table;}
 </style>
 
 # Úvod do práce v prostředí ArcGIS, datové formáty, geodatabáze
@@ -35,22 +37,27 @@ Při spuštění probíhá ověření licence přes příslušnost k organizaci 
 
 ---
 <br>
-![Albuquerque, New Mexico](/assets/cviceni1/výkres3.png)
+![Albuquerque, New Mexico](/assets/cviceni1/img_01.png)
 
-<table style="width: 100%;min-width: 100%" rules="rows" cellspacing="1" cellpadding="1" align="center">
-  <tr>
-    <td><strong>RIBBON</strong> <br>(Pás karet)</td>
-    <td>nabídka funkcí programu (prvek shodný s jinými programy, např. Microsoft Word), nabídka se kontextově mění podle činnosti uživatele</td>
-  </tr>
-  <tr>
-    <td><strong>VIEW</strong></td>
-    <td>okno s mapou (2D) nebo scénou (3D)</td>
-  </tr>
-  <tr>
-    <td><strong>PANE</strong></td>
-    <td>panely a vlastnosti funkcí, mnoho funkcí spouští svůj Pane, přes který se daná funkce ovládá, např. Obsah mapy (Contents), Symbologie</td>
-  </tr>
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <td markdown><strong>RIBBON(1){ .annotate }</strong> <br>(Pás karet)</td>
+      <td>nabídka funkcí programu (prvek shodný s jinými programy, např. Microsoft Word), nabídka se kontextově mění podle činnosti uživatele</td>
+    </tr>
+    <tr>
+      <td><strong>VIEW</strong></td>
+      <td>okno s mapou (2D) nebo scénou (3D)</td>
+    </tr>
+    <tr>
+      <td><strong>PANE</strong></td>
+      <td>panely a vlastnosti funkcí, mnoho funkcí spouští svůj Pane, přes který se daná funkce ovládá, např. Obsah mapy (Contents), Symbologie</td>
+    </tr>
+  </tbody style="width:100%">
 </table>
+
+1.  :man_raising_hand: I'm an annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be expressed in Markdown.
 
 ![Image title](https://dummyimage.com/600x400/eee/aaa){ width="300" }
 ![Image title](https://dummyimage.com/600x400/eee/aaa){ width="300" }
