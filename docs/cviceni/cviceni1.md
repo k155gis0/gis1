@@ -1,7 +1,16 @@
 <style>
-  .md-button--primary:hover {background-color:#46817b !important; color:#eee !important;border-color:#46817b !important}
   .md-typeset__table {width:100%;}
   tbody {width: 100%;display: table;}
+  h2 {font-weight:700 !important;}
+  /*h3 {text-transform:uppercase !important;}*/
+  .md-button {line-height:1.2; text-align:center;padding-top:5px !important;transition: all .1s ease-in-out !important;}
+  .md-button:hover {transform: scale(1.04)}
+  .md-button:hover {background-color:#46817b !important; color:#eee !important;border-color:#46817b !important}
+  .md-button:focus {background-color:#46817b !important; color:#eee !important;border-color:#46817b !important}
+  .md-button-top-text {font-size:.7em;font-weight:300;}
+  .md-button-top-text-icon {font-size:smaller;vertical-align: -0px;}
+  /*.p-align-center{text-align:center;}*/
+  figcaption {font-size:12px;margin-top:5px !important;text-align:center;line-height:1.2em;}
 </style>
 
 # Úvod do práce v prostředí ArcGIS, datové formáty, geodatabáze
@@ -42,7 +51,7 @@ Při spuštění probíhá ověření licence přes příslušnost k organizaci 
 <table style="width: 100%;">
   <tbody>
     <tr>
-      <td markdown><strong>RIBBON(1){ .annotate }</strong> <br>(Pás karet)</td>
+      <td markdown><strong>RIBBON</strong></td>
       <td>nabídka funkcí programu (prvek shodný s jinými programy, např. Microsoft Word), nabídka se kontextově mění podle činnosti uživatele</td>
     </tr>
     <tr>
@@ -53,23 +62,28 @@ Při spuštění probíhá ověření licence přes příslušnost k organizaci 
       <td><strong>PANE</strong></td>
       <td>panely a vlastnosti funkcí, mnoho funkcí spouští svůj Pane, přes který se daná funkce ovládá, např. Obsah mapy (Contents), Symbologie</td>
     </tr>
-  </tbody style="width:100%">
+  </tbody>
 </table>
 
-1.  :man_raising_hand: I'm an annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be expressed in Markdown.
-
-![Image title](https://dummyimage.com/600x400/eee/aaa){ width="300" }
-![Image title](https://dummyimage.com/600x400/eee/aaa){ width="300" }
-
 <figure markdown>
-  ![Image title](https://dummyimage.com/600x400/eee/aaa){ width="300" align=left }
-  ![Image title](https://dummyimage.com/600x400/eee/aaa){ width="300" align=right }
+  ![](/assets/cviceni1/img_02.png){ style="height:150px;" align=left }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  ![](/assets/cviceni1/img_03.png){ style="height:150px;" align=right }
+  <figcaption>Všechny VIEWs a PANEs jsou dokovatelné – je možné je libovolně přemisťovat po obrazovce a přichytávat k ostatním prvkům</figcaption>
 </figure>
 
 
-[Subscribe to our newsletter](#){ .md-button .md-button--primary }
+[<span class="md-button-top-text"><span class="md-button-top-text-icon">:material-open-in-new:</span> pro.arcgis.com</span><br>Subscribe to our newsletter](#){ .md-button .md-button--primary .text-align-centera}
+{: align=center }
 
+
+[<span class="md-button-top-text"><span class="md-button-top-text-icon">:material-open-in-new:</span> pro.arcgis.com</span><br>Subscribe to our newsletter](#){ .md-button .md-button--primary .text-align-center}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[<span class="md-button-top-text"><span class="md-button-top-text-icon">:material-open-in-new:</span> pro.arcgis.com</span><br>Subscribe to our newsletter](#){ .md-button .md-button--primary .text-align-center}
+{: align=center }
+
+![](/assets/cviceni1/img_02.png){ style="height:150px;"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![](/assets/cviceni1/img_03.png){ style="height:150px;"}
+{: style="margin-bottom:0px;" align=center }
+<figcaption>Všechny VIEWs a PANEs jsou dokovatelné – je možné je libovolně přemisťovat po obrazovce a přichytávat k ostatním prvkům</figcaption>
 
 
 Grafické prostředí je rozděleno na několik základních částí:
