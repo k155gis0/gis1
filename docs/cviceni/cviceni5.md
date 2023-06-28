@@ -27,7 +27,7 @@ Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Sou�
 ## Pozn
 
 - video georeferencování
-- studenti budou používat data stabilního katastru Zhůří. Většinu mapových listů dostanou georeferencoanou a jeden budou muset oklikat sami.
+- studenti budou používat data stabilního katastru Zhůří. Většinu mapových listů dostanou georeferencovanou a jeden budou muset oklikat sami.
 - rozmyslet zadání dú
 
 ## Náplň cvičení
@@ -131,6 +131,12 @@ Rastrovým vrstvám lze (stejně jako vektorovým) měnit vzhled v záložce [_
 **9.** Při georeferencování v *ArcGIS Pro* lze použít několik druhů souřadnicových transformací. Druh transforamce volíme na základě vstupních dat. Pro ukázku s císařskými otisky stabilního katastru, je ideální afinní transformace, která se nabízí jako výchozí.
 
 **10.** Pokud jsme spokojeni s georeferencováním, uložíme jej tlačítkem _Save_. Jestliže by bylo potřeba, je možné nastavení souřadnicového umístění změnit. Nástroj Georeference můžeme nyní zavřít _Close_.
+
+Georeferencování vytvoří pro každý rastr dva další soubory s parametry:
+
+- JGWX – transformační klíč
+
+- XML – informace o souřadnicovém systému a parametrech georeference
 
 **Video-návod ke georeferencování map:**
 
