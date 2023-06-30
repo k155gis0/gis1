@@ -27,8 +27,10 @@ Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Sou�
 ## Pozn
 
 - video georeferencování
-- studenti budou používat data stabilního katastru Zhůří. Většinu mapových listů dostanou georeferencovanou a jeden budou muset oklikat sami.
-- rozmyslet zadání dú
+- data pro cvičení - buď Netolice nebo Zhůří (Zhůří není moc vhodné, když tam teď nic není)
+- data pro sem. práci - ideálně každý jinou obec- promyslet a domluvit s ČUZK
+- nahrát data CO
+
 
 ## Náplň cvičení
 
@@ -126,17 +128,19 @@ Rastrovým vrstvám lze (stejně jako vektorovým) měnit vzhled v záložce [_
   <figcaption>Georeferencovaný mapový list</figcaption>
 </figure>
 
+???+ note "&nbsp;<span style="color:#448aff">Zadávání souřadnic identických bodů:</span>"
+      Pokud známe souřadnice identického bodu, lze je zapsat ručně: klikneme na bod v připojované mapě -> pravým kliknutím myši následně otevřeme nabídku, ve které se zadají souřadnice identického bodu v cílové mapě. Tuto metodu lze využít při georeferencování na geodeticky zaměřené body nebo na rohy mapového listů o známých souřadnicích (např. Topografické mapy v systému S–52).
+
 **8.** Během procesu georeference je nutné sledovat přesnost výsledného souřadnicoého umístění dat. Tu na jdeme v tabulce _Control Point Table_ v nástroji _Georeference_. V této tabulce se nachází přehled všech identických bodů včetně jejich souřadnicových přesností. Můžeme zde také body mazat nebo je vyřadit z výpočtu transformace. Body jsou zároveň znázorněny v mapovém okně.
 
 **9.** Při georeferencování v *ArcGIS Pro* lze použít několik druhů souřadnicových transformací. Druh transforamce volíme na základě vstupních dat. Pro ukázku s císařskými otisky stabilního katastru, je ideální afinní transformace, která se nabízí jako výchozí.
 
 **10.** Pokud jsme spokojeni s georeferencováním, uložíme jej tlačítkem _Save_. Jestliže by bylo potřeba, je možné nastavení souřadnicového umístění změnit. Nástroj Georeference můžeme nyní zavřít _Close_.
 
-Georeferencování vytvoří pro každý rastr dva další soubory s parametry:
+???+ note "&nbsp;<span style="color:#448aff">Georeferencování vytvoří pro každý rastr dva další soubory s parametry:</span>"
+      - JGWX – transformační klíč
 
-- JGWX – transformační klíč
-
-- XML – informace o souřadnicovém systému a parametrech georeference
+      - XML – informace o souřadnicovém systému a parametrech georeference
 
 **Video-návod ke georeferencování map:**
 
