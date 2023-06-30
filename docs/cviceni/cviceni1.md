@@ -7,8 +7,9 @@
   .md-button:hover {transform: scale(1.04)}
   .md-button:hover {background-color:#46817b !important; color:#eee !important;border-color:#46817b !important}
   .md-button:focus {background-color:#46817b !important; color:#eee !important;border-color:#46817b !important}
+  .md-button:first-child{color:red;}
   .md-button-top-text {font-size:.7em;font-weight:300;}
-  .md-button-top-text-icon {font-size:smaller;vertical-align: -0px;}
+  /*.md-button-top-text-icon {font-size:smaller;vertical-align: -0px;}*/
   /*.p-align-center{text-align:center;}*/
   figcaption {font-size:12px;margin-top:5px !important;text-align:center;line-height:1.2em;}
 </style>
@@ -51,43 +52,11 @@ Při spuštění probíhá ověření licence přes příslušnost k organizaci 
 <br>
 ![Albuquerque, New Mexico](../assets/cviceni1/img_01.png)
 
-<div class="grid cards" markdown>
--   :material-tab: __RIBBON__
-
-    ---
-
-    nabídka funkcí programu (prvek shodný s jinými programy, např. Microsoft Word), nabídka se kontextově mění podle akcí uživatele
-
--   :material-map: __VIEW__
-
-    ---
-    
-    okno s mapou (2D) nebo scénou (3D)
-
--   :fontawesome-solid-table-columns: __PANE__
-
-    ---
-    
-    panely a vlastnosti funkcí, mnoho funkcí spouští svůj Pane, přes který se daná funkce ovládá, např. Obsah mapy (Contents), Symbologie
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <table style="width: 100%;">
   <tbody>
     <tr>
       <td markdown><strong>RIBBON</strong></td>
-      <td>nabídka funkcí programu (prvek shodný s jinými programy, např. Microsoft Word), nabídka se kontextově mění podle činnosti uživatele</td>
+      <td>nabídka funkcí programu (prvek shodný s jinými programy, např. Microsoft Word), nabídka se kontextově mění podle akcí uživatele</td>
     </tr>
     <tr>
       <td><strong>VIEW</strong></td>
