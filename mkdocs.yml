@@ -19,6 +19,7 @@ nav:
   - Semestrální práce: semestralka.md
   - Výuková videa: videa.md
 plugins:
+  - search
   - glightbox:
       touchNavigation: true
       loop: false
