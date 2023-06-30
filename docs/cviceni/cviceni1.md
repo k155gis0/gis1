@@ -51,6 +51,38 @@ Při spuštění probíhá ověření licence přes příslušnost k organizaci 
 <br>
 ![Albuquerque, New Mexico](../assets/cviceni1/img_01.png)
 
+<div class="grid cards" markdown>
+-   :material-tab: __RIBBON__
+
+    ---
+
+    nabídka funkcí programu (prvek shodný s jinými programy, např. Microsoft Word), nabídka se kontextově mění podle akcí uživatele
+
+-   :material-map: __VIEW__
+
+    ---
+    
+    okno s mapou (2D) nebo scénou (3D)
+
+-   :fontawesome-solid-table-columns: __PANE__
+
+    ---
+    
+    panely a vlastnosti funkcí, mnoho funkcí spouští svůj Pane, přes který se daná funkce ovládá, např. Obsah mapy (Contents), Symbologie
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <table style="width: 100%;">
   <tbody>
     <tr>
@@ -83,8 +115,8 @@ Při spuštění probíhá ověření licence přes příslušnost k organizaci 
 [<span class="md-button-top-text"><span class="md-button-top-text-icon">:material-open-in-new:</span> pro.arcgis.com</span><br>Subscribe to our newsletter](#){ .md-button .md-button--primary .text-align-center}
 {: align=center }
 
-![](/assets/cviceni1/img_02.png){ style="height:150px;"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![](/assets/cviceni1/img_03.png){ style="height:150px;"}
+![](../assets/cviceni1/img_02.png){ style="height:150px;"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![](../assets/cviceni1/img_03.png){ style="height:150px;"}
 {: style="margin-bottom:0px;" align=center }
 <figcaption>Všechny VIEWs a PANEs jsou dokovatelné – je možné je libovolně přemisťovat po obrazovce a přichytávat k ostatním prvkům</figcaption>
 
