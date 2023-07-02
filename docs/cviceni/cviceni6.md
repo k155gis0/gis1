@@ -2,7 +2,7 @@
 
 ## Cíl cvičení
 
-Navázání na minulé cvičení. Ukázka automatického ořezu footprintu. Tvorba vlastní geodatabáze, vektorizace a práce s atributy. Ukázka kontroly topologie vektorových dat.
+Ukázka automatického ořezu footprintu. Tvorba vlastní geodatabáze, vektorizace a práce s atributy. Kontrola topologie vektorových dat.
 
 ## Základní pojmy
 
@@ -35,7 +35,7 @@ Navázání na minulé cvičení. Ukázka automatického ořezu footprintu. Tvor
 **1.** Geodatabázi vytvoříme kliknutím pravým tlačítkem myši na složku našeho projektu v záložce *Catalog* -> *New* -> *File Geodatabase*.
 
 ???+ note "&nbsp;<span style="color:#448aff">Poznámka ke geodatabázi:</span>"
-      Takto vytvořenou geodatabázi můžeme otevřít v jakémkoliv jiném ArcGIS Pro Projektu. Geodatabáze je vhodná pro sdílení GIS dat – lze jí otevřít také v jiných GIS softwarech (např. QGIS)
+      Takto vytvořenou geodatabázi můžeme otevřít v jakémkoliv GIS softwaru (např. ArcGIS PRO, QGIS). Je proto vhodná pro sdílení dat.
 
 <figure markdown>
 ![new_gdb](../assets/cviceni6/new_gdb.png "Tvorba nové geodatabáze")
@@ -48,13 +48,13 @@ Navázání na minulé cvičení. Ukázka automatického ořezu footprintu. Tvor
 
 **2.** Oproti císařským otiskům stabilního katastru, které se georeferencují na identické body v mapě, lze SMO5 georeferencovat na rohové body mapových listů, které mají dané souřadnice v sysému S–JTSK (EPSG:5514). Pro georeferencování použijeme síť kladu mapových listů SMO5 (síť o rozměrech 2,5x2 km).
 
-**3.** Dle postupu z minulého cvičení si georeferencujeme zbývající souřadnicově nepřipojené mapové listy. Následně vytvoříme v nové geodatabázi mozaiku, do které georeferencované rastry importujeme.
+**3.** Dle postupu z minulého cvičení si případně georeferencujeme zbývající souřadnicově nepřipojené mapové listy. Následně vytvoříme v nové geodatabázi mozaiku, do které georeferencované rastry importujeme.
 
 ### Automatický ořez footprintu
 
 Ve stavu, kdy máme přidané georeferencované rastry do mozaiky, je potřeba oříznout jejich footprint tak, aby se vytvořila bezešvá mapová vrstva. Footprint lze upravit ručně (viz minulé cvičení) nebo automaticky načtením kladu mapových listů.
 
-**1.** V mapovém okně otevřeme mozaiku a klad mapových listů. Kladu mapových listů změníme symbologii tak, abychom viděli pouze hrany listů. 
+**1.** V mapovém okně otevřeme mozaiku a klad mapových listů. Kladu změníme symbologii tak, abychom viděli pouze hrany listů. 
 
 <figure markdown>
 ![klad](../assets/cviceni6/klad.png "Mozaika a klad mapových listů v mapovém okně")
@@ -68,7 +68,7 @@ Ve stavu, kdy máme přidané georeferencované rastry do mozaiky, je potřeba o
     <figcaption>Ukázka atributových tabulek předpřipravených vrstev</figcaption>
 </figure>
 
-**3.** Automatický ožez footprintu probíhá následovně: pravým kliknutím myši na danou mozaiku -> *Modify* -> *Import Footprints or Boundary*. 
+**3.** Automatický ořez footprintu se nastaví pravým kliknutím myši na danou mozaiku -> *Modify* -> *Import Footprints or Boundary*. 
 
 **4.** Ve funkci *Import Mosaic Dataset Geometry* nastavíme parametry dle obrázku níže.
 
@@ -126,7 +126,7 @@ Pro analýzu rastrových map, je téměř vždy nutná jejich vektorizace, tedy 
 
 **2.** Pro vytvoření třídy prvků musíme kliknout pravým tlačítkem na příslušný *Feature Dataset* v *Catalogu* -> *New* -> *Feature Class*.
 
-**3.** V této ukázce vytvoříme 4 třídy prvků (plochy, domy, vodstvo a cesty). Ve funkci *Create Feature Class* zvolíme jméno třídy a její typ (pro nás *Polygon*). Následně klineme na *Next*.
+**3.** V této ukázce vytvoříme 4 třídy prvků (plochy, domy, vodstvo a cesty). Ve funkci *Create Feature Class* zvolíme jméno třídy a její typ (pro nás *Polygon*). Následně klikneme na *Next*.
 
 **4.** Na druhé stránce funkce *Create Feature Class* nastavujeme atributová pole třídy. Zde vytvoříme nové pole s názvem *druh_pozemku* po kliknutí na tlačítko *Click here to add a new field*. Datový typ přiřadíme číselný, například *Long Integer*. Tato čísla budou reprezentovat kódy různých druhů pozemku v mapě. Pokračujeme tlačítkem *Next*.
 
@@ -139,7 +139,7 @@ Pro analýzu rastrových map, je téměř vždy nutná jejich vektorizace, tedy 
 
 #### Práce se subtypy
 
-Pro kategorizaci dat v atributové tabulce je vhodné používat subtypy. V jednoduchosti se jedná o kódy jednotlivých typů atributů v tabulce, kterám je přiřazen popis pro přehlednější práci. V této ukázce vytvoříme subtypy pro třídu prvků *Plochy*, který nám bude určovat druh využití pozemku.
+Pro kategorizaci dat v atributové tabulce je vhodné používat subtypy. V jednoduchosti se jedná o kódy jednotlivých typů atributů v tabulce, kterým je přiřazen popis pro přehlednější práci. V této ukázce vytvoříme subtypy pro třídu prvků *Plochy*, který nám bude určovat druh využití pozemku.
 
 **1.** Zobrazíme si atributovou tabulku vrstvy *Plochy*. 
 
@@ -184,29 +184,96 @@ Následuje samotný proces vektorizace, tedy "obkeslení" rastrových dat a vytv
     <figcaption>Vektorizace rastrové mapy</figcaption>
 </figure>
 
-**Popis nejčastěji používaných funkcí a klávesových zkratek pro vektorizaci dat:**
+**Popis nejčastěji používaných funkcí a klávesových zkratek pro editaci vektorových dat:**
 
-- *Right Angle Line* – pravoúhlá linie
-- *Direction Direction* – průsečík dvou linií
-- *Arc Segment* – oblouk
-- *Trace* - přichycení na jiný vektorový prvek v mapě
-- stisknutí D – určení délky linie
-- stisknutí A – určení úhlu linie
-- stisknutí P – rovnoběžná kresba s linií určenou kurzorem myši
-- držení T – zobrazení lomových bodů v okolí kurzoru
-- stisknutí F2 – dokončení kresby
-- stisknutí F3 – dokončení kresby v pravém úhlu
-- stisknutí pravého tlačítka myši – zobrazení dalších možností kresby
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <td markdown><strong>Right Angle Line</strong></td>
+      <td>pravoúhlá linie</td>
+    </tr>
+    <tr>
+      <td><strong>Direction Direction</strong></td>
+      <td>průsečík dvou linií</td>
+    </tr>
+    <tr>
+      <td><strong>Arc Segment</strong></td>
+      <td>oblouk</td>
+    </tr>
+        <tr>
+      <td><strong>Trace</strong></td>
+      <td>přichycení na jiný vektorový prvek v mapě</td>
+    </tr>
+        <tr>
+      <td><strong>stisknutí D</strong></td>
+      <td>určení délky linie</td>
+    </tr>
+        <tr>
+      <td><strong>stisknutí A</strong></td>
+      <td>určení úhlu linie</td>
+    </tr>
+        <tr>
+      <td><strong>stisknutí P</strong></td>
+      <td>rovnoběžná kresba s linií určenou kurzorem myši</td>
+    </tr>
+        <tr>
+      <td><strong>držení T</strong></td>
+      <td>zobrazení lomových bodů v okolí kurzoru</td>
+    </tr>
+        <tr>
+      <td><strong>stisknutí F2</strong></td>
+      <td>dokončení kresby</td>
+    </tr>
+        <tr>
+      <td><strong>stisknutí F3</strong></td>
+      <td>dokončení kresby v pravém úhlu</td>
+    </tr>
+        <tr>
+      <td><strong>stisknutí pravého tlačítka myši</strong></td>
+      <td>zobrazení dalších možností kresby</td>
+    </tr>
+  </tbody>
+</table>
 
 ???+ note "&nbsp;<span style="color:#448aff">Uložení editace:</span>"
-      Po provedení změn v editaci vektorových dat, je nutné stiknout tlačítko *Save* v záložce *Edit*.
-
+      Po provedení změn v editaci vektorových dat, je nutné je uložit tlačítkem *Save* v záložce *Edit*.
 
 ### Kontrola topologie vektorových dat
 
+Jestliže chceme zkontrolovat topologickou čistotu vektorových dat, musejí být veškerá kontrolovaná data uložena uvnitř jednoho datasetu.
 
+**1.** Pro vytvoření nové topologie klikneme pravým tlačítkem myši na dataset -> *New* -> *Topology*.
 
+**2.** Na první stránce otevřeného okna *Create Topology Wizard* se definují parametry topologie, tedy její název, přesnost a vstupní vrstvy.
 
+**3.** Druhá stránka obsahuje definice jednotlivých kontrolovaných topologických pravidel. Ta se nastaví dle potřeby. V této ukázce proběhne kontrola pravidel *Must Not Have Gaps (Area)* (data nesmí obsahovat mezery), *Must Not Overlap With (Area-Area)* (vrstvy se vzájemně nesmějí překrývat) a *Must Not Overlap (Area)* (jednotlivé vrstvy sami sebe nesmějí překrývat).
+
+**4.** Třetí stránka obsahuje souhrn celé topologie. Tlačítkem *Finish* spustíme kontrolu.
+
+**5.** Pokud se ve výstupním datasetu topologie nezobrazí, aktualizujeme jeho obsah kliknutím pravého tlačítka myši -> *Refresh*.
+
+<figure markdown>
+![topo](../assets/cviceni6/topo.png "Nastavení topologie")
+    <figcaption>Nastavení topologie</figcaption>
+</figure>
+
+**6.** V následujícím kroku je potřeba kontrolu topologie validovat kliknutím pravým tlačítkem na topologii v *Catalogu* -> *Validate*.
+
+**7.** Po validování přesuneme vrstvu topologie do mapového okna a měly bychom vidět objevené chyby.
+
+**8.** Pomocí nástrojů *Edit* opravíme vyznačené chyby v původních datech. Po editaci topologii znovu validujeme a jestliže kontrola topologie neobjeví žádné chyby, znamená to, že kontrolované vrstvy jsou topologicky korektní.
+
+Na obrázku níže je zobrazena ukázka dvou nalezených topologických chyb (levý horní snímek). Pravý horní snímek zobrazuje pohled na data bez opravy topologie. Při porovnání s pravým dolním snímkem je zřejmé, že vektorizace cesty chybně překryla vektorizaci pastviny. Snímek vlevo dole zobrazuje druhou chybu, tedy vzájemný překryv dvou prvků patřících do vrstvy *Cesty*.
+
+<figure markdown>
+![topo2](../assets/cviceni6/topo2.png "Ukázka topologických chyb")
+    <figcaption>Ukázka topologických chyb</figcaption>
+</figure>
+
+???+ note "&nbsp;<span style="color:#448aff">Tipy po urychlení kontroly topologie:</span>"
+      - Pokud je to možné, lze u dat se stejným atributem (např. les, louka) provést [*Dissolve*](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/dissolve.htm), kterým ze sloučených dat odstraníme případné chyby z překryvu stejnou vrstvou (třeba dvě louky vzájemně se překrývající).
+      - Pro zjednodušení kontroly topologie je možné všechna kontrolovaná data sloučit do jedné vrstvy, kterou následně zkontrolujeme samotnou. Nemusíme tedy řešit překryvy jednotlivých vrstev mezi sebou (*Must Not Overlap With*), ale zkontrolujeme pouze novou vrstvu samostatně vůči sobě (*Must Not Overlap*). Důležité je však po kontrole nezapomenou opravit případné chyby v původních datech.
+      - Odkaz na schématicky popsaná pravidla kontroly topologie je [**ZDE**](https://pro.arcgis.com/en/pro-app/latest/help/editing/pdf/topology_rules_poster.pdf).
 
 
 ## Zadání domácího úkolu k semestrální práci
