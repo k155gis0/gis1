@@ -87,7 +87,7 @@ Při spuštění probíhá ověření licence přes příslušnost k organizaci 
 
 <div class="process_container">
   <div class="process_image"><iframe src="https://www.youtube.com/embed/8nDVpVmxM-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-  <div class="process_image"><img src="/assets/cviceni1/img_01.png"></div>
+  <div class="process_image"><img src="../assets/cviceni1/img_01.png"></div>
 </div>
 
 <table>
@@ -107,10 +107,10 @@ Při spuštění probíhá ověření licence přes příslušnost k organizaci 
   </tbody>
 </table>
 
+![](../assets/cviceni1/img_02.png)
+![](../assets/cviceni1/img_03.png)
+{: .process_container}
 
-![](../assets/cviceni1/img_02.png){ style="height:150px;"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![](../assets/cviceni1/img_03.png){ style="height:150px;"}
-{: style="margin-bottom:0px;" align=center }
 <figcaption>Všechny VIEWs a PANEs jsou dokovatelné – je možné je libovolně přemisťovat po obrazovce a přichytávat k ostatním prvkům</figcaption>
 
 <!-- :fontawesome-brands-youtube:{: style="color: #EE0F0F" } [__Working with Panes in ArcGIS Pro__](https://www.youtube.com/watch?v=qNDwVJV_kFk).
@@ -132,10 +132,9 @@ Při spuštění probíhá ověření licence přes příslušnost k organizaci 
 
 ### Přidání dat do mapy
 
-<div class="process_container" style="justify-content: flex-start;">
-  <div class="process_image"><strong>Vytvoření mapy</strong>:&nbsp;<em>Insert → New Map</em></div>
-  <div class="process_image"><img src="/assets/cviceni1/img_09.png"></div>
-</div>
+__Vytvoření mapy__:&nbsp;_Insert → New Map_
+![](../assets/cviceni1/img_09.png){: style="margin-left:calc((100vw * 0.03) - 6px)"}
+{: style="display:flex !important; justify-content:flex-start; align-items:center;"}
 
 [:material-open-in-new: Create a map or scene](https://pro.arcgis.com/en/pro-app/latest/help/projects/add-maps-to-a-project.htm#GUID-660CA711-919A-44B0-952A-F2054937077B){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
@@ -144,13 +143,13 @@ Při spuštění probíhá ověření licence přes příslušnost k organizaci 
 
 __Přidání dat do mapy__: _Map → Add Data → Data → vybrat soubor..._
 
-<div class="process_container">
-  <div class="process_image"><img src="/assets/cviceni1/img_10.png"></div>
-  <div class="process_icon" ><svg height="100%"><use href="#rect-arrow-right" /></svg></div>
-  <div class="process_image"><img src="/assets/cviceni1/img_11.png"></div>
-  <div class="process_icon" ><svg height="100%"><use href="#rect-arrow-right" /></svg></div>
-  <div class="process_image"><img src="/assets/cviceni1/img_12.png"></div>
-</div>
+![](../assets/cviceni1/img_10.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_11.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_12.png)
+{: .process_container}
+
 <figcaption>Pokud se soubor ve struktuře neobjevuje, lze dialog obnovit klávesou F5</figcaption>
 
 [:material-open-in-new: Add data from the Add Data dialog box](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/add-layers-to-a-map.htm#ESRI_SECTION2_1C48753A1FD546F385580EF9197DBB8C){ .md-button .md-button--primary .button_smaller target="_blank"}
@@ -162,15 +161,15 @@ Aby pro procházení dat nebylo nutné pokaždé procházet adresářovou strukt
 
 __Připojení adresáře do projektu__: V _Catalog Pane_ (_View → Catalog Pane_) přes pravé tl. myši na "_Folders_" vybrat "_Add Folder Connection_" → vložit nebo zvolit cestu... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
 
-<div class="process_container">
-  <div class="process_image"><img src="/assets/cviceni1/img_05.png"></div>
-  <div class="process_icon" ><svg height="100%"><use href="#rect-arrow-right" /></svg></div>
-  <div class="process_image"><img src="/assets/cviceni1/img_04.png"></div>
-  <div class="process_icon" ><svg height="100%"><use href="#rect-arrow-right" /></svg></div>
-  <div class="process_image"><img src="/assets/cviceni1/img_06.png"></div>
-  <div class="process_icon" ><svg height="100%"><use href="#rect-arrow-right" /></svg></div>
-  <div class="process_image"><img src="/assets/cviceni1/img_23.png"></div>
-</div>
+![](../assets/cviceni1/img_05.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_04.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_06.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_23.png)
+{: .process_container}
+
 <figcaption>Cesta ke zvolenému adresáři zůstane v nabídce mezi položkami "Folders". Adresář nemusí být lokální, lze takto připojit i např. fakultní disk H:\.</figcaption>
 
 [:material-open-in-new: Connect to a folder](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-a-folder.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
@@ -182,15 +181,16 @@ __Připojení adresáře do projektu__: V _Catalog Pane_ (_View → Catalog Pane
 ...totéž lze udělat s geodatabází. V geodatabázi jsou data uložena efektivněji, nelze do ní však vložit cokoli.
 
 __Připojení geodatabáze do projektu__: V _Catalog Pane_ (_View → Catalog Pane_) přes pravé tl. myši na "_Databases_" vybrat "_Add Database_" → vložit nebo zvolit cestu ke geodatabázi... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
-<div class="process_container">
-  <div class="process_image"><img src="/assets/cviceni1/img_05.png"></div>
-  <div class="process_icon" ><svg height="100%"><use href="#rect-arrow-right" /></svg></div>
-  <div class="process_image"><img src="/assets/cviceni1/img_07.png"></div>
-  <div class="process_icon" ><svg height="100%"><use href="#rect-arrow-right" /></svg></div>
-  <div class="process_image"><img src="/assets/cviceni1/img_08.png"></div>
-  <div class="process_icon" ><svg height="100%"><use href="#rect-arrow-right" /></svg></div>
-  <div class="process_image"><img src="/assets/cviceni1/img_24.png"></div>
-</div>
+
+![](../assets/cviceni1/img_05.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_07.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_08.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_24.png)
+{: .process_container}
+
 <figcaption>Cesta ke zvolené geodatabázi zůstane v nabídce mezi položkami "Databases". Cesta opět nemusí být pouze lokální.</figcaption>
 
 [:material-open-in-new: Connect to a database](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-a-database.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
@@ -200,25 +200,26 @@ __Připojení geodatabáze do projektu__: V _Catalog Pane_ (_View → Catalog Pa
 
 __Pořadí vrstev__: V obsahu mapy (_Contents Pane_) se zobrazují všechny vrstvy obsažené v mapě. Zaškrtávacím políčkem vlevo lze jednotlivým vrstvám přepínat viditelnost. Výměnou pořadí vrstev v obsahu se změní jejich pořadí vykreslování v mapě.
 
-<div class="process_container">
-  <div class="process_image"><img src="/assets/cviceni1/img_29.png"></div>
-  <div class="process_icon" ><svg height="100%"><use href="#rect-arrow-right" /></svg></div>
-  <div class="process_image"><img src="/assets/cviceni1/img_30.png"></div>
-  <div class="process_icon" ><svg height="100%"><use href="#rect-arrow-right" /></svg></div>
-  <div class="process_image"><img src="/assets/cviceni1/img_31.png"></div>
-</div>
+![](../assets/cviceni1/img_29.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_30.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_31.png)
+{: .process_container}
+
 <figcaption>Contents Pane a změna pořadí a přepínání viditelnosti vrstev</figcaption>
 
 ---
 
 __Nastavení (vlastnosti) mapy__: V _Contents Pane_ (Obsah) přes pravé tl. myši na název mapy vybrat "_Properties_"
-<div class="process_container">
-  <div class="process_image"><img src="/assets/cviceni1/img_21.png"></div>
-  <div class="process_icon" ><svg height="100%"><use href="#rect-arrow-right" /></svg></div>
-  <div class="process_image"><img src="/assets/cviceni1/img_22.png"></div>
-  <div class="process_icon" ><svg height="100%"><use href="#rect-arrow-right" /></svg></div>
-  <div class="process_image"><img src="/assets/cviceni1/img_25.png"></div>
-</div>
+
+![](../assets/cviceni1/img_21.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_22.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_25.png)
+{: .process_container}
+
 Pro začátek jsou zajímavé tyto položky:
 
 - __Záložka "_General_"__:
@@ -270,15 +271,14 @@ __Explore Tool__: Pohyb v mapě a vyvolávání pop-upů (vyskakovacích oken), 
 - __Měřítko mapy__: Udává poměr zmenšení mapy vzhledem ke skutečnosti. V rohu mapového okna (obr.) lze vybrat z nabízených měřítek nebo i nastavit libovolnou vlastní hodnotu.
 [:material-open-in-new: Map scales and scale properties](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/map-scales-and-scale-properties.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
 
-<div class="process_container">
-  <div><img src="/assets/cviceni1/img_13.png"></div>
-  <div class="process_icon" ><svg><use href="#rect-arrow-right" /></svg></div>
-  <div><img src="/assets/cviceni1/img_16.png"></div>
-  <div class="process_icon" ><svg><use href="#rect-arrow-right" /></svg></div>
-  <div><img src="/assets/cviceni1/img_26.png"></div>
-  <div class="process_icon" ><svg><use href="#rect-arrow-right" /></svg></div>
-  <div><img src="/assets/cviceni1/img_27.png"></div>
-</div>
+![](../assets/cviceni1/img_13.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_16.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_26.png)
+![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
+![](../assets/cviceni1/img_27.png)
+{: .process_container}
 
 [:material-open-in-new: Navigation](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/navigation-in-arcgis-pro.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
 [:material-open-in-new: Navigate maps and scenes](https://pro.arcgis.com/en/pro-app/latest/get-started/navigate-your-data.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
