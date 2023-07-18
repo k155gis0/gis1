@@ -20,10 +20,13 @@
   .process_container {display:flex !important; justify-content:center; align-items:center; column-gap:calc((100vw * 0.03) - 6px);} /* Kontejner pro content = FlexBox */
   .process_container div {display:flex;}                                                                                           /* Obsah (obrazky a sipky) */
   .process_container .process_icon {width:/*40px*/calc((100vw * 0.01) + 25px); flex-shrink:0;filter:none !important;}              /* Velikost ikony (bacha na mobily) */
-  .process_container img {max-height:150px;}
+  .process_container img {max-height:150px;}                                                                                       /* Obrazky ve flexboxech maji maximalni vysku */
+
+  code.AGPF {border:2px solid var(--md-primary-fg-color);padding:.1em .4em !important;/*transition: all .1s ease-in-out !important; display:inline-block !important;*/}
+  code.AGPF .twemoji {vertical-align:-10% !important;}
 </style>
 
-<!-- Definice sipky do FlexBoxu (pro referenci) – UZ NENI TREBA -->
+<!-- Definice sipky do FlexBoxu (pro referenci) – UZ NENI TREBA
 <svg style="display: none" version="2.0">
   <defs>
     <symbol id="rect-arrow-right" viewBox="0 0 24 24">
@@ -34,7 +37,7 @@
       <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" style="fill:var(--md-primary-fg-color)" />
     </symbol>
   <defs>
-</svg>
+</svg> -->
 
 # Úvod do práce v prostředí ArcGIS, prostorová data, datové zdroje
 
@@ -59,7 +62,7 @@ Uživatelé mohou vytvářet a upravovat **atributy** a **geometrii** prvků, pr
 ???+ note "&nbsp;<span style="color:#448aff">Pozn.</span>"
       Vzhledem k vysokým pořizovacím nákladům se systém ArcGIS využívá především ve velkých firmách a orgánech státní správy. V menších podnicích je rozšířenější jeho open source alternativa QGIS (tomu bude věnována pozornost v závěru kurzu).
 
-### Prostorová (GIS) data
+### Prostorová (GIS) data <span style="font-size:60%;font-style:italic;vertical-align:10%;margin-left:15px;">(vektorová)</span>
 Geografický informační systém (GIS) využívá obecně jakákoliv data obsahující __prostorovou (polohovou) informaci__. Poloha může být reprezentována nejen kombinací souřadnic (_X + Y_, _šířka + délka_ aj.), ale také např. adresou (o libovolné podrobnosti). Doplňkem k polohové informaci obvykle bývá připojena jakákoliv další informace formou atributů v __atributové tabulce__.
 
 ![](../assets/cviceni1/img_28.png){ style="width:80%;"}
@@ -69,13 +72,13 @@ Geografický informační systém (GIS) využívá obecně jakákoliv data obsah
 __Ukládání prostorových dat__: Data lze ukládat mnoha různými způsoby. Datových formátů existuje mnoho, pro začátek uvedeme některé základní.
 
 - __Shapefile__: formát od spol. _Esri_ s převážně otevřenou specifikací, obsahuje geometrii a vlastnosti (atributy) prostorových prvků, v současnosti asi nejpoužívanější, přestože má mnoho nevýhod a z dnešního pohledu je poněkud zastaralý, jedna z charakteristik formátu je povinné rozdělení do více souborů (`.shp`, `.shx` a `.dbf`, příp. další nepovinné), což přináší obtíže při přesouvání, kopírování apod.
-- __Geodatabáze (GDB)__: nativní datová struktura systému _ArcGIS_ – primární datový formát pro správu a editaci dat, obsahuje kolekci datasetů různých typů (vektor, rastr i jiné), zároveň dokáže uchovávat data o datové integritě (domény, subtypy apod.) nebo topologii
+- __Geodatabáze (GDB)__: nativní datová struktura systému _ArcGIS_ – primární datový formát pro správu a editaci dat, obsahuje kolekci datasetů různých typů (vektor, rastr i jiné), zároveň dokáže uchovávat údaje o datové integritě (domény, subtypy apod.) nebo topologii
 - __GeoJSON__: otevřený standard reprezentující vektorová data a přiřazené atributy, založen na formátu `JSON` a je tedy uživatelsky čitelný a velmi rozšířený
 - __GML / KML__: podobně jako GeoJSON – otevřený standard reprezentující vektorová data a přiřazené atributy, založen na formátu `XML`, tedy opět uživatelsky čitelný
 - __GeoPackage (GPKG)__: relativně nový formát _standardu OGC_, podporuje vektorová i rastrová data, překonává mnoho limitů formátu `Shapefile` (např. se jedná o pouze 1 soubor), výchozí formát systému _QGIS_
 - __CSV__: sice není formátem přímo určeným pro prostorová data, nicméně často se jako výměnný formát používá, soubor obsahuje pouze atributy, z nichž některé mohou reprezentovat prostorovou složku (souřadnice či adresu) – tu pak GIS software rozpozná a polohově vizualizuje
 
-Ve výčtu chybí některé __rastrové formáty__, těm se bude výuka věnovat v průběhu pozdějších cvičení.
+<!-- Ve výčtu chybí některé __rastrové formáty__, těm se bude výuka věnovat v průběhu pozdějších cvičení. -->
 
 <hr class="l1">
 
@@ -87,7 +90,7 @@ Při spuštění probíhá ověření licence přes příslušnost k organizaci 
 
 <div class="process_container">
   <div class="process_image"><iframe src="https://www.youtube.com/embed/8nDVpVmxM-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-  <div class="process_image"><img src="../assets/cviceni1/img_01.png"></div>
+  <div class="process_image"><img src="../../assets/cviceni1/img_01.png"></div>
 </div>
 
 <table>
@@ -132,7 +135,7 @@ Při spuštění probíhá ověření licence přes příslušnost k organizaci 
 
 ### Přidání dat do mapy
 
-__Vytvoření mapy__:&nbsp;_Insert → New Map_
+__Vytvoření mapy__:&nbsp;<code class="AGPF">:material-tab: Insert</code>&nbsp;→&nbsp;<code class="AGPF">:material-button-cursor: New Map</code>
 ![](../assets/cviceni1/img_09.png){: style="margin-left:calc((100vw * 0.03) - 6px)"}
 {: style="display:flex !important; justify-content:flex-start; align-items:center;"}
 
@@ -141,7 +144,7 @@ __Vytvoření mapy__:&nbsp;_Insert → New Map_
 
 ---
 
-__Přidání dat do mapy__: _Map → Add Data → Data → vybrat soubor..._
+__Přidání dat do mapy__ (lokálně uložených): <code class="AGPF">:material-tab: Map</code> → <code class="AGPF">:material-button-cursor: Add Data</code> → <code class="AGPF">:material-button-cursor: Data</code> → vybrat soubor...
 
 ![](../assets/cviceni1/img_10.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -159,7 +162,7 @@ __Přidání dat do mapy__: _Map → Add Data → Data → vybrat soubor..._
 
 Aby pro procházení dat nebylo nutné pokaždé procházet adresářovou strukturu, hodí se si adresáře s daty _připojit do projektu_.
 
-__Připojení adresáře do projektu__: V _Catalog Pane_ (_View → Catalog Pane_) přes pravé tl. myši na "_Folders_" vybrat "_Add Folder Connection_" → vložit nebo zvolit cestu... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
+__Připojení adresáře do projektu__: V _Catalog Pane_ ( <code class="AGPF">:material-tab: View</code> → <code class="AGPF">:material-button-cursor: Catalog Pane</code> ) přes pravé tl. myši na "_Folders_" vybrat <code class="AGPF">:material-form-dropdown: Add Folder Connection</code> → vložit nebo zvolit cestu... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
 
 ![](../assets/cviceni1/img_05.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -180,7 +183,7 @@ __Připojení adresáře do projektu__: V _Catalog Pane_ (_View → Catalog Pane
 
 ...totéž lze udělat s geodatabází. V geodatabázi jsou data uložena efektivněji, nelze do ní však vložit cokoli.
 
-__Připojení geodatabáze do projektu__: V _Catalog Pane_ (_View → Catalog Pane_) přes pravé tl. myši na "_Databases_" vybrat "_Add Database_" → vložit nebo zvolit cestu ke geodatabázi... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
+__Připojení geodatabáze do projektu__: V _Catalog Pane_ ( <code class="AGPF">:material-tab: View</code> → <code class="AGPF">:material-button-cursor: Catalog Pane</code> ) přes pravé tl. myši na "_Databases_" vybrat <code class="AGPF">:material-form-dropdown: Add Database</code> → vložit nebo zvolit cestu ke geodatabázi... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
 
 ![](../assets/cviceni1/img_05.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -211,7 +214,7 @@ __Pořadí vrstev__: V obsahu mapy (_Contents Pane_) se zobrazují všechny vrst
 
 ---
 
-__Nastavení (vlastnosti) mapy__: V _Contents Pane_ (Obsah) přes pravé tl. myši na název mapy vybrat "_Properties_"
+__Nastavení (vlastnosti) mapy__: V _Contents Pane_ (Obsah) přes pravé tl. myši na název mapy vybrat <code class="AGPF">:material-form-dropdown: Properties</code>
 
 ![](../assets/cviceni1/img_21.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -239,11 +242,13 @@ Pro začátek jsou zajímavé tyto položky:
 
 ### Kde získat data
 
-__Lokálně uložené soubory__:  přístup přes systémovou cestu
+__Lokálně uložené soubory__:  přístup přes systémovou cestu, např.:
 
-_C:\Users\Student1\Documents\Geodatabase.gdb\Layer1_  
+_C:\Users\Student1\Documents\Geodatabase.gdb\Layer1_
+{: align="center" style="font-size:smaller;line-height:1.1;"}
+
 _\\\\data.fsv.cvut.cz\Shares\K155\Public\data\PragueRoads.gdb_
-{: align="center" style="font-size:smaller;"}
+{: align="center" style="font-size:smaller;line-height:1.1;"}
 
 __Data online ke stažení__: stažení z libovolného zdroje na lokální disk ve formě souborů, dále shodný přístup jako s lokálně uloženými soubory (viz výše)
 
@@ -287,6 +292,7 @@ __Explore Tool__: Pohyb v mapě a vyvolávání pop-upů (vyskakovacích oken), 
 ---
 
 __Select Tool__: Pohyb v mapě a interaktivní vybírání prvků kurzorem. Zrušení výběru viz obr.
+{: #select-tool}
 
 ![](../assets/cviceni1/img_14.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
