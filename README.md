@@ -18,7 +18,7 @@
 
 - Celkově psát text stylem "Importujeme data ze souboru" a NE "Importovat data ze souboru" (zkrátka snažit se nepoužívat trpný rod, aby dokumentace vypadala přívětivěji a ne jako diplomka)
 
-- **Struktura**
+**Struktura**
 
 - .github/workflows/ci.yml - konfigurační soubor GitHub
 - docs
