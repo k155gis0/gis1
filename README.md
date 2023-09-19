@@ -1,4 +1,4 @@
-# 155gis1
+# 155dprz
 
 [Project Homepage](https://k155cvut.github.io/gis-1/)
 

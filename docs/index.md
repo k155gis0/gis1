@@ -2,8 +2,6 @@
 
 Cvičení z předmětu GIS 1 vás seznámí ze základy geografických informačních systémů (GIS).
 
-zmena
-
 Naučíte se:
 
 - **zpracovávat** a **analyzovat** prostorová (geografická, mapová) data
@@ -59,9 +57,7 @@ Přednášející: doc. Ing. Lena Halounová, CSc.
   </div>
 </div> -->
 
-
 <div style="margin:3cm">&nbsp;</div>
-
 
 <style>
   /*tbody {width: 100% !important;display: table !important;}*/
@@ -72,7 +68,6 @@ Přednášející: doc. Ing. Lena Halounová, CSc.
 </style>
 
 <h2 style="font-weight:bold;margin-bottom:0;">Přednášky</h2>
-
 
 účast doporučená
 {: style="opacity:50%;margin-top:0;"}
@@ -126,7 +121,6 @@ Přednášející: doc. Ing. Lena Halounová, CSc.
   </tbody>
 </table>
 
-
 <div style="margin:3cm">&nbsp;</div>
 
 <style>
@@ -139,62 +133,27 @@ Přednášející: doc. Ing. Lena Halounová, CSc.
   details.lecture summary:first-child::after  {color:var(--md-primary-fg-color) !important;}
 </style>
 
-??? lecture "Přednáška 1"
-    - definice GIS
-    - informatika
-    - základní pojmy
-    - aplikační oblasti GIS
-    - prostor
-    - topologie
-    - historie GIS
+??? lecture "Přednáška 1" - definice GIS - informatika - základní pojmy - aplikační oblasti GIS - prostor - topologie - historie GIS
 
-??? lecture "Přednáška 2"
-    - reálný svět x GIS
-    - model v GIS
-    - vztahy objektů
-    - typy modelů
-    - geometrické typy objektů
-    - rozlišovací schopnost
+??? lecture "Přednáška 2" - reálný svět x GIS - model v GIS - vztahy objektů - typy modelů - geometrické typy objektů - rozlišovací schopnost
 
-??? lecture "Přednáška 3"
-    - geografická poloha v GIS
-    - prostorové vztahy
-    - atributy
+??? lecture "Přednáška 3" - geografická poloha v GIS - prostorové vztahy - atributy
 
-??? lecture "Přednáška 4"
-    - čas v GIS
-    - modelování
-    - druhy modelů
-    - chyby v modelování v GIS
+??? lecture "Přednáška 4" - čas v GIS - modelování - druhy modelů - chyby v modelování v GIS
 
-??? lecture "Přednáška 5"
-    - vektorový a rastrový GIS
-    - datová struktura
+??? lecture "Přednáška 5" - vektorový a rastrový GIS - datová struktura
 
-??? lecture "Přednáška 6"
-    - rastrový GIS
-    - atributová data
+??? lecture "Přednáška 6" - rastrový GIS - atributová data
 
-??? lecture "Přednáška 7"
-    - vektorový GIS
-    - druhy objektů
+??? lecture "Přednáška 7" - vektorový GIS - druhy objektů
 
-??? lecture "Přednáška 8"
-    - geometrické a topologické vlastnosti objektů ve vektorovém GIS
+??? lecture "Přednáška 8" - geometrické a topologické vlastnosti objektů ve vektorovém GIS
 
-??? lecture "Přednáška 9"
-    - vektorová a rastrová reprezentace prostorových objektů
+??? lecture "Přednáška 9" - vektorová a rastrová reprezentace prostorových objektů
 
-??? lecture "Přednáška 10"
-    - rastrová reprezentace prostorových objektů
-    - způsob ukládání rastrových objektů
-
-
+??? lecture "Přednáška 10" - rastrová reprezentace prostorových objektů - způsob ukládání rastrových objektů
 
 <div style="margin:3cm">&nbsp;</div>
-
-
-
 
 <style>
   .connected{margin:0 !important;border-top:none !important; border-bottom:none !important;border-radius:0 !important;box-shadow:none !important;}
@@ -202,78 +161,27 @@ Přednášející: doc. Ing. Lena Halounová, CSc.
   .connected.last {border-radius: 0 0 .1rem .1rem !important; border-bottom:.05rem solid var(--md-primary-fg-color) !important;}
 </style>
 
-??? lecture connected first "Přednáška 1"
-    - definice GIS
-    - informatika
-    - základní pojmy
-    - aplikační oblasti GIS
-    - prostor
-    - topologie
-    - historie GIS
+??? lecture connected first "Přednáška 1" - definice GIS - informatika - základní pojmy - aplikační oblasti GIS - prostor - topologie - historie GIS
 
-??? lecture connected "Přednáška 2"
-    - reálný svět x GIS
-    - model v GIS
-    - vztahy objektů
-    - typy modelů
-    - geometrické typy objektů
-    - rozlišovací schopnost
+??? lecture connected "Přednáška 2" - reálný svět x GIS - model v GIS - vztahy objektů - typy modelů - geometrické typy objektů - rozlišovací schopnost
 
-??? lecture connected "Přednáška 3"
-    - geografická poloha v GIS
-    - prostorové vztahy
-    - atributy
+??? lecture connected "Přednáška 3" - geografická poloha v GIS - prostorové vztahy - atributy
 
-??? lecture connected "Přednáška 4"
-    - čas v GIS
-    - modelování
-    - druhy modelů
-    - chyby v modelování v GIS
+??? lecture connected "Přednáška 4" - čas v GIS - modelování - druhy modelů - chyby v modelování v GIS
 
-??? lecture connected "Přednáška 5"
-    - vektorový a rastrový GIS
-    - datová struktura
+??? lecture connected "Přednáška 5" - vektorový a rastrový GIS - datová struktura
 
-??? lecture connected "Přednáška 6"
-    - rastrový GIS
-    - atributová data
+??? lecture connected "Přednáška 6" - rastrový GIS - atributová data
 
-??? lecture connected "Přednáška 7"
-    - vektorový GIS
-    - druhy objektů
+??? lecture connected "Přednáška 7" - vektorový GIS - druhy objektů
 
-??? lecture connected "Přednáška 8"
-    - geometrické a topologické vlastnosti objektů ve vektorovém GIS
+??? lecture connected "Přednáška 8" - geometrické a topologické vlastnosti objektů ve vektorovém GIS
 
-??? lecture connected "Přednáška 9"
-    - vektorová a rastrová reprezentace prostorových objektů
+??? lecture connected "Přednáška 9" - vektorová a rastrová reprezentace prostorových objektů
 
-??? lecture connected last "Přednáška 10"
-    - rastrová reprezentace prostorových objektů
-    - způsob ukládání rastrových objektů
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+??? lecture connected last "Přednáška 10" - rastrová reprezentace prostorových objektů - způsob ukládání rastrových objektů
 
 <div style="margin:3cm">&nbsp;</div>
-
-
-
-
-
 
 <style>
   .connected{margin:0 !important;border-top:none !important; border-bottom:none !important;border-radius:0 !important;box-shadow:none !important;}
@@ -304,7 +212,6 @@ Přednášející: doc. Ing. Lena Halounová, CSc.
                                                  summary img{width:1em !important; height:1em !important; object-fit:cover; border-radius:50%; vertical-align:-9%; margin-right:5px;}
   /*DESIGN INSPIRATION: https://cdn.dribbble.com/userupload/6968464/file/original-35752bb8755c7231346ed73826e77597.png*/
 </style>
-
 
 <div class="event_container">
   <details class="details_event_item connected table">
@@ -577,24 +484,5 @@ Přednášející: doc. Ing. Lena Halounová, CSc.
     </ul>
   </details>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <div style="margin:6cm">&nbsp;</div>
