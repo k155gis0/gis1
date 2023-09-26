@@ -1,4 +1,4 @@
-# ArcGIS Online, webové služby, připojení do APRO
+# Ukázky webové prezentace map, Experience Builder, Instant Apps, Dashboards
 
 ## Cíl cvičení
 

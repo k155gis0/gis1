@@ -1,4 +1,4 @@
-# QGIS 2
+# rezerva
 
 ## Cíl cvičení
 

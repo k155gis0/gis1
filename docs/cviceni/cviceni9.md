@@ -1,4 +1,4 @@
-# Ukázky webové prezentace map, Experience Builder, Instant Apps, Dashboards
+# QGIS 1
 
 ## Cíl cvičení
 

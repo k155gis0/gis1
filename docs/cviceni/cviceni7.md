@@ -1,4 +1,4 @@
-# ModelBuilder (opakování všech předchozích cvičení, ale trochu víc automatizovaně), Batch Processing
+# ArcGIS Online, webové služby, připojení do APRO
 
 ## Cíl cvičení
 

@@ -1,4 +1,4 @@
-# QGIS 1
+# QGIS 2
 
 ## Cíl cvičení
 
