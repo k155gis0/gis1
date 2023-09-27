@@ -49,7 +49,7 @@
 
 ## Cvičení 4
 
-<span style="font-size:2em;">Souř. připojení prostorových dat (práce s externími daty Excel, CSV), join
+<span style="font-size:2em;">Práce s externími daty (Excel, CSV), join
 </span>
 
 ### Cíl cvičení
