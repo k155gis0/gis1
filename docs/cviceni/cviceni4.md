@@ -42,7 +42,16 @@ Prostřednictvím společného pole (klíče) lze přiřadit záznamy v jedné t
   <figcaption>Atributové pravidlo u prostorového připojení dat</figcaption>
 </figure>
 
-**4.** Tímto způsobem se obohatí původní vrstva MČ o nová data dle definovaných pravidel. Po otevření atributové tabulky jsou nově připojené záznamy přidruženy z pravé strany. Zajímavý atribut, který se vytváří automaticky pro každý *Spatial Join*, představuje *Join_Count*. Ten obsahuje počet prvků, které byly k danému (původnímu) prvku připojeny (zde se jedná o počet poboček MPP v dané MČ). Tímto 
+**4.** Tímto způsobem se obohatí původní vrstva MČ o nová data dle definovaných pravidel. Po otevření atributové tabulky jsou nově připojené záznamy přidruženy z pravé strany. Zajímavý atribut, který se vytváří automaticky pro každý *Spatial Join*, představuje *Join_Count*. Ten obsahuje počet prvků, které byly k danému (původnímu) prvku připojeny (zde se jedná o počet poboček MPP v dané MČ). Tímto způsobem je např. možné zjistit:
+
+>>**a.** která MČ disponuje nejvíce pobočkami MPP
+
+>>**b.** ve kterých MČ není žádná pobočka MPP
+
+>>**c.** ve které MČ pracuje nejvíce pracovníků městské policie
+
+**5.** TBA TBA TBA
+Připojit data z ČSÚ, provést export do gdb, odstranit joiny... Zjistit, kolik policistů připadá na 100 obyvatel MČ.
 
 
 ## Zadání domácího úkolu k semestrální práci
