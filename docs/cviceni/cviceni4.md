@@ -52,6 +52,3 @@ Prostřednictvím společného pole (klíče) lze přiřadit záznamy v jedné t
 
 **5.** TBA TBA TBA
 Připojit data z ČSÚ, provést export do gdb, odstranit joiny... Zjistit, kolik policistů připadá na 100 obyvatel MČ.
-
-
-## Zadání domácího úkolu k semestrální práci
