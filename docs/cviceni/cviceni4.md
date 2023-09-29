@@ -35,7 +35,7 @@ Prostřednictvím společného pole (klíče) lze přiřadit záznamy v jedné t
   <figcaption>Dialogové okno pro nahrání bodových dat se souřadnicemi z tabulky</figcaption>
 </figure>
 
-**3.** V této fázi máme dvě vrstvy: bodovou (pobočky MPP) a polygonovou (MČ Prahy). Pro zopakování bude nejprve vhodné vyzkoušet prostorové připojení prvků. Např. bychom mohli zjistit, kolik poboček MPP se nachází v každé MČ Prahy a dále, jaká je jejich celková kapacita, jinými slovy, kolik příslušníků Městské policie spadá do každé městské části. Ačkoliv jsou dotazy dva, je možné je zpracovat najednou. Pravým kliknutím na vrstvu MČ vyvoláme přes *Join and Relates* a *Add Spatial Join* dialogové okno. Defaultní nastavení je nutné upravit. Za prvé, v sekci *Output Fields* lze definovat pravidla pro připojení jednotlivých polí z tabulky. Vzhledem k tomu, že úkolem je zjistit celkovou kapacitu, lze všechna pole kromě kapacity smazat a pro pole kapacita vybrat z nabídky pravidel (*Merge Rule*) sumu (viz obrázek). Za druhé je potřeba zaškrtnout parametr *Keep All Target Features*, aby byly zachovány všechny původní prvky, včetně takových, ke kterým nebude prostorově připojen žádný prvek.
+**3.** V této fázi máme dvě vrstvy: bodovou (pobočky MPP) a polygonovou (MČ Prahy). Pro zopakování bude nejprve vhodné vyzkoušet prostorové připojení prvků. Např. bychom mohli zjistit, kolik poboček MPP se nachází v každé MČ Prahy a dále, jaká je jejich celková kapacita, jinými slovy, kolik příslušníků Městské policie spadá do každé městské části. Ačkoliv jsou dotazy dva, je možné je zpracovat najednou. Pravým kliknutím na vrstvu MČ vyvoláme přes *Joins and Relates* a *Add Spatial Join* dialogové okno. Defaultní nastavení je nutné upravit. Za prvé, v sekci *Output Fields* lze definovat pravidla pro připojení jednotlivých polí z tabulky. Vzhledem k tomu, že úkolem je zjistit celkovou kapacitu, lze všechna pole kromě kapacity smazat a pro pole kapacita vybrat z nabídky pravidel (*Merge Rule*) sumu (viz obrázek). Za druhé je potřeba zaškrtnout parametr *Keep All Target Features*, aby byly zachovány všechny původní prvky, včetně takových, ke kterým nebude prostorově připojen žádný prvek.
 
 <figure markdown>
   ![SumKapacita](../assets/cviceni4/SumKapacita.png)
@@ -50,5 +50,36 @@ Prostřednictvím společného pole (klíče) lze přiřadit záznamy v jedné t
 
 >>**c.** ve které MČ pracuje nejvíce pracovníků městské policie
 
-**5.** TBA TBA TBA
-Připojit data z ČSÚ, provést export do gdb, odstranit joiny... Zjistit, kolik policistů připadá na 100 obyvatel MČ.
+**5.** K vrstvě dat je všakmožné připojit data i na základě jiného vztahu než prostorového. Např. bychom mohli zjistit, kolik policistů v dané MČ připadá na 100 místních obyvatel. Nejprve je nutné získat data: největším poskytovatelem otevřených statistických dat v ČR je Český statistický úřad. Na jeho webu v sekci [veřejná databáze](https://vdb.czso.cz/) otevřeme *vlastní výběr* a v tabulce *ukazatele* vybereme postupně *Sčítání lidu, domů a bytů 2021 – Obyvatelstvo – Počet obyvatel s obvyklým pobytem – celkem*. Vybraný ukazatel se zobrazí v pravé části okna a postoupíme dále k definici území. Zde zvolíme *městské části* a výběr omezíme filtrem na Prahu (tzn. výběr zahrne pouze 57 MČ Prahy). V dalším kroku zatrhneme nejnovější období a v interaktivním náhledu struktury tabulky prohodíme pozice *území* a *ukazatele* tak, aby MČ byly v řádcích a ukazatel ve sloupci. V posledním kroku se zobrazí náhled tabulky (viz obrázek) a data lze exportovat ve formátu XLSX (pomocí ikony diskety; není nutné zahrnouvat poznámky k textu ani hodnotám).
+
+<figure markdown>
+  ![VDB](../assets/cviceni4/VDB.png)
+  <figcaption>Náhled na první řádky vygenerované tabulky z veřejné databáze ČSÚ</figcaption>
+</figure>
+
+**6.** Po stažení tabulky s demografickým údaji MČ Prahy je vhodné data zkontrolovat a upravit. Soubor obsahuje tři listy, přičemž jsou zapsána hned na prvním (DATA). Ideální postup na úpravu dat zní následovně: vložit nový list, označit všechny buňky tabulky (57 MČ a příslušné počty obyvatel), překopírovat označené do nového listu (pomocí *Vložit jinak – Hodnoty*), přidat první řádek a pojmenovat sloupce (např. NAZEV_MC a POCET_OBYV).
+
+Dále je nutná rozvaha, na základě čeho tabulární data propojit s prostorovými. V polygonové vrstvě MČ jsou obsaženy 2 varianty názvů, které se však neshodují s názvem v tabulce. Nicméně není problém tabulku upravit: pomocí funkce *najít a nahradit* (klávesová zkratka CTRL + H) lze upravit názvy MČ. Konkrétně odstranit výrazy "městká část " a " (obec Praha)". Pozor, důležité je vždy zahrnout mezeru za, resp. před daným výrazem. Tímto postupem lze tedy vyhledat všechny výskyty daných výrazů a hromadně je nahradit prázdným řetězcem (do pole *nahradit* nevyplníte nic).
+
+Nakonec ještě pro jistotu změňte formát buněk s počty obyvatel na *číslo* (datový typ buněk lze změnit případně i v ArcGIS Pro). Takto připravená data uložte jako soubor CSV UTF-8.
+
+**7.** Následuje připojení tabulárních dat k vrstvě MČ. Znovu pomocí volby *Joins and Relates* a tentokrát *Add Join* otevřeme dialogové okno. *Input table* představuje vrstvu, ke které se data připojují, *Target table* označuje připojovanou tabulku. *Join field* pro každou z tabulek představuje atribut, na základě kterého se budou tabulky připojovat.
+
+???+ note "&nbsp;<span style="color:#448aff">Pozn.</span>"
+      Pokud připojujeme tabulky ve smyslu 1:1, jako ideální *Input/Target Join field* volte unikátní identifikátor s datovým typem integer. Textové řetězce mohou být při propojování tabulek zrádné, některé znaky nemusí být podporovány a řetězce musí být 100% shodné (např. mezera je platný znak a může způsobit nepřipojení prvků).
+
+Výběr *Target Join field* nenabízí mnoho možností: pouze název MČ a počet obyvatel. Vzhledem k tomu, že ČSÚ v datové sadě neposkytuje kódy MČ, bude nutné připojit záznamy na základě textových řetězců, proto zvolíme *MC_NAZEV*. V atributové tabulce MČ se nachází dvojice různých názvů: *NAZEV_1* a *NAZEV_MC*. Vybereme tedy jeden z nich jako *Input Join field*.
+
+<figure markdown>
+  ![Join](../assets/cviceni4/AddJoin.png)
+  <figcaption>Dialogové okno pro připojení tabulky</figcaption>
+</figure>
+
+V této fázi je vždy rozumné provést validaci pomocí *Validate Join*. Jedná se o rychlou kontrolu, resp. report o performanci připojení. Pozornost věnujte zejména posledním řádkům, ze kterých vyplývá, kolik záznámů bylo připojeno (v našem případě je nutné připojit k 57 MČ 57 záznamů z ČSÚ – viz obrázek).
+
+<figure markdown>
+  ![Validate](../assets/cviceni4/ValidateJoin.png)
+  <figcaption>Validace připojení tabulky</figcaption>
+</figure>
+
+Připojit data z ČSÚ, provést export do gdb, odstranit joiny...
