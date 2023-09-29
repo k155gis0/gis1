@@ -82,4 +82,12 @@ V této fázi je vždy rozumné provést validaci pomocí *Validate Join*. Jedn�
   <figcaption>Validace připojení tabulky</figcaption>
 </figure>
 
-Připojit data z ČSÚ, provést export do gdb, odstranit joiny...
+**8.** Nyní si lze prohlédnout atributovou tabulku MČ, ke které byla pomocí *Spatial Join* připojena bodová vrstva poboček MPP a přes *Add Join* tabulární data s počtem obyvatel. Pro výpočet úlohy s počtem policistů na 100 obyvatel je nutné vytvořit nové pole atributové tabulky (s názvem např. *PREPOCET*), ve kterém bude kýžená hodnota vypočtena pomocí *Calculate Field* a zadáním správného výrazu, který kombinuje data ze všech připojených zdrojů (celková kapacita, počet obyatel).
+
+<figure markdown>
+  ![Calculate](../assets/cviceni4/Calculate.png)
+  <figcaption>Zadání výrazu pro výpočet počtu policistů na 100 obyvatel MČ</figcaption>
+</figure>
+
+???+ note "&nbsp;<span style="color:#448aff">Pozn.</span>"
+      Pokud si přejeme vrstvu s připojenými daty trvale uložit např. do geodatabáze, lze po pravém kliknutí na vrstvu vybrat *Data* a funkci *Export Features*. Takto exportovaná data budou o nové záznamy obohacena, tzn. budou obsahovat veškerá původně připojená data. Naopak, pokud připojená data sloužila např. pouze k výpočtu nového atributu a pro další práci již nejsou potřeba, je vhodné *joiny* odstranit pomocí *Joins and relates* a *Remove Join* (s následným výběrem daného joinu) či *Remove all joins* pro kompletní odebrání připojených dat.
