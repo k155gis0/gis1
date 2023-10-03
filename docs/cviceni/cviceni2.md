@@ -146,7 +146,172 @@ Pomocí přepínátka ![](../assets/cviceni1/img_36.png){: .off-glb style="verti
 
 ### Prostorové dotazy
 
-Prostorový dotaz (Spatial Query) je metoda výběru/filtrace prvků jedné vrstvy na základě vzájemné polohy s prvky druhé vrstvy.
+Prostorový dotaz (Spatial Query) je metoda výběru/filtrace prvků jedné vrstvy na základě vzájemné polohy s prvky druhé vrstvy. Funkce využívá jako vstup <code>__vrstvu vybíraných prvků__</code>, <code>__vrstvu pro překryvnou analýzu__</code> a <code>__vztah pro překryvnou analýzu__</code>.
+
+<style>
+  .tabbed-labels {justify-content:center;}
+  .tabbed-labels::before {transition:unset !important;}
+</style>
+
+=== "Výběr BODŮ..."
+
+    === "...v překrytu s BODY"
+
+        ![](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/GUID-1ECFFABC-3608-4BB4-86A8-FD6FA0F16C13-web.gif){ style="filter:none !important;" }
+        {: align=center}
+
+        <table id="small_table_padding" style="width:unset;">
+          <tr><td>Intersect</td><td>A</td></tr>
+          <tr><td>Intersect (DBMS)</td><td>A</td></tr>
+          <tr><td>Contains</td><td>A</td></tr>
+          <tr><td>Contains Clementini</td><td>A</td></tr>
+          <tr><td>Within</td><td>A</td></tr>
+          <tr><td>Within Clementini</td><td>A</td></tr>
+          <tr><td>Are identical to</td><td>A</td></tr>
+          <tr><td>Have their center in</td><td>A</td></tr>
+        </table>
+
+    === "...v překrytu s LINIEMI"
+
+        ![](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/GUID-171AD80E-550B-4017-AEB7-1A681D722F60-web.gif){ style="filter:none !important;" }
+        {: align=center}
+
+        <table id="small_table_padding" style="width:unset;">
+          <tr><td>Intersect</td><td>A, C</td></tr>
+          <tr><td>Intersect (DBMS)</td><td>A, C</td></tr>
+          <tr><td>Within</td><td>A, C</td></tr>
+          <tr><td>Completely within</td><td>A</td></tr>
+          <tr><td>Within Clementini</td><td>A</td></tr>
+          <tr><td>Have their center in</td><td>A, C</td></tr>
+          <tr><td>Boundary touches</td><td>C</td></tr>
+        </table>
+
+    === "...v překrytu s POLYGONY"
+
+        ![](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/GUID-12153063-E9B3-42E5-A786-E3FAF6BB004E-web.gif){ style="filter:none !important;" }
+        {: align=center}
+
+        <table id="small_table_padding" style="width:unset;">
+          <tr><td>Intersect</td><td>A, C</td></tr>
+          <tr><td>Intersect (DBMS)</td><td>A, C</td></tr>
+          <tr><td>Within</td><td>A, C</td></tr>
+          <tr><td>Completely within</td><td>A</td></tr>
+          <tr><td>Within Clementini</td><td>A</td></tr>
+          <tr><td>Have their center in</td><td>A, C</td></tr>
+          <tr><td>Boundary touches</td><td>C</td></tr>
+        </table>
+
+=== "Výběr LINIÍ..."
+
+
+    === "...v překrytu s BODY"
+
+        ![](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/GUID-FD60FA73-31CD-4BD7-B03C-06806851BC9E-web.gif){ style="filter:none !important;" }
+        {: align=center}
+
+        <table id="small_table_padding" style="width:unset;">
+          <tr><td>Intersect</td><td>A, C, D</td></tr>
+          <tr><td>Intersect (DBMS)</td><td>A, C, D</td></tr>
+          <tr><td>Contains</td><td>A, C, D</td></tr>
+          <tr><td>Completely contains</td><td>A, D</td></tr>
+          <tr><td>Contains Clementini</td><td>A, D</td></tr>
+          <tr><td>Have their center in</td><td>D</td></tr>
+          <tr><td>Boundary touches</td><td>C</td></tr>
+        </table>
+
+    === "...v překrytu s LINIEMI"
+
+        ![](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/GUID-09D6FB47-31A3-47C3-A8B8-19BB659EBA8A-web.gif){ style="filter:none !important;" }
+        {: align=center}
+
+        <table id="small_table_padding" style="width:unset;">
+          <tr><td>Intersect</td><td>A, C, D, E, F, G, H, I, J</td></tr>
+          <tr><td>Intersect (DBMS)</td><td>A, C, D, E, F, G, H, I, J</td></tr>
+          <tr><td>Contains</td><td>G, H</td></tr>
+          <tr><td>Completely contains</td><td>G</td></tr>
+          <tr><td>Contains Clementini</td><td>G, H</td></tr>
+          <tr><td>Within</td><td>F, H</td></tr>
+          <tr><td>Completely within</td><td>F</td></tr>
+          <tr><td>Within Clementini</td><td>F, H</td></tr>
+          <tr><td>Are identical to</td><td>H</td></tr>
+          <tr><td>Boundary touches</td><td>C, E</td></tr>
+          <tr><td>Share a line segment with</td><td>F, G, H, I, J</td></tr>
+        </table>
+
+    === "...v překrytu s POLYGONY"
+
+        ![](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/GUID-54663F11-5B47-46A5-82C1-37FD1FDDC835-web.gif){ style="filter:none !important;" }
+        {: align=center}
+
+        <table id="small_table_padding" style="width:unset;">
+          <tr><td>Intersect</td><td>A, C, D, E, F, G, H, I, J, K, L, M, N, O</td></tr>
+          <tr><td>Intersect (DBMS)</td><td>A, C, D, E, F, G, H, I, J, K, L, M, N, O</td></tr>
+          <tr><td>Within</td><td>A, D, G, H, I, O</td></tr>
+          <tr><td>Completely within</td><td>A</td></tr>
+          <tr><td>Within Clementini</td><td>A, D, G, H, I</td></tr>
+          <tr><td>Boundary touches</td><td>F, G, H, I, K, L, M, N, O</td></tr>
+          <tr><td>Share a line segment with</td><td>G, I, J, K, M, O</td></tr>
+          <tr><td>Crossed by the outline of</td><td>C, E, H, L, N</td></tr>
+          <tr><td>Have their center in</td><td>A, C, D, E, G, H, I, J, O</td></tr>
+        </table>
+
+=== "Výběr POLYGONŮ..."
+
+
+    === "...v překrytu s BODY"
+
+        ![](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/GUID-0973BB65-5DAE-461A-8B84-E58332CDA443-web.gif){ style="filter:none !important;" }
+        {: align=center}
+
+        <table id="small_table_padding" style="width:unset;">
+          <tr><td>Intersect</td><td>A, B</td></tr>
+          <tr><td>Intersect (DBMS)</td><td>A, B</td></tr>
+          <tr><td>Contains</td><td>A, B</td></tr>
+          <tr><td>Completely contains</td><td>A</td></tr>
+          <tr><td>Contains Clementini</td><td>A</td></tr>
+          <tr><td>Have their center in</td><td>A, D</td></tr>
+          <tr><td>Boundary touches</td><td>B</td></tr>
+        </table>
+
+    === "...v překrytu s LINIEMI"
+
+        ![](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/GUID-EFDE4E93-532E-4D6E-BB29-9BBFC783CEC7-web.gif){ style="filter:none !important;" }
+        {: align=center}
+
+        <table id="small_table_padding" style="width:unset;">
+          <tr><td>Intersect</td><td>A, C, D, E, F, G, H, I, J, K, L, M, N, O</td></tr>
+          <tr><td>Intersect (DBMS)</td><td>A, C, D, E, F, G, H, I, J, K, L, M, N, O</td></tr>
+          <tr><td>Contains</td><td>A, D, G, H, I, O</td></tr>
+          <tr><td>Completely contains</td><td>A</td></tr>
+          <tr><td>Contains Clementini</td><td>A, D, G, H, I</td></tr>
+          <tr><td>Boundary touches</td><td>F, G, H, I, K, L, M, N, O</td></tr>
+          <tr><td>Share a line segment with</td><td>G, I, J, K, M, O</td></tr>
+          <tr><td>Crossed by the outline of</td><td>C, E, H, L, N</td></tr>
+          <tr><td>Have their center in</td><td>E, I, L</td></tr>
+        </table>
+
+    === "...v překrytu s POLYGONY"
+
+        ![](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/GUID-7802EBC1-8E73-4071-AE12-4445AB1C24B5-web.gif){ style="filter:none !important;" }
+        {: align=center}
+
+        <table id="small_table_padding" style="width:unset;">
+          <tr><td>Intersect</td><td>A, C, D, E, F, G, H, I, J, K, M</td></tr>
+          <tr><td>Intersect (DBMS)</td><td>A, C, D, E, F, G, H, I, J, K, M</td></tr>
+          <tr><td>Contains</td><td>C, E, H, M</td></tr>
+          <tr><td>Completely contains</td><td>C</td></tr>
+          <tr><td>Contains Clementini</td><td>C, E, H, M</td></tr>
+          <tr><td>Within</td><td>F, G, H, M</td></tr>
+          <tr><td>Completely within</td><td>F</td></tr>
+          <tr><td>Within Clementini</td><td>F, G, H, M</td></tr>
+          <tr><td>Are identical to</td><td>H, M</td></tr>
+          <tr><td>Boundary touches</td><td>D, E, G, H, I, J, M</td></tr>
+          <tr><td>Share a line segment with</td><td>D, H, I, M</td></tr>
+          <tr><td>Crossed by the outline of</td><td>A, E, G, J, K</td></tr>
+          <tr><td>Have their center in</td><td>C, E, F, G, H, K, L</td></tr>
+        </table>
+
+
 
 [:material-open-in-new: Select features by location](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/select-features-by-location.htm){ .md-button .md-button--primary .button_smaller target="\_blank"}
 [:material-open-in-new: Select Layer By Location (Data Management)](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/select-layer-by-location.htm){ .md-button .md-button--primary .button_smaller target="\_blank"}
@@ -156,3 +321,48 @@ Prostorový dotaz (Spatial Query) je metoda výběru/filtrace prvků jedné vrst
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <!-- ## Zadání domácího úkolu k semestrální práci -->
+
+
+
+
+??? note "Výběr BODŮ"
+
+    === "v překrytu s body"
+
+        a
+
+    === "v překrytu s liniemi+"
+    
+        a
+
+    === "v překrytu s polygony"
+
+        a
+
+??? note "Výběr LINIÍ"
+
+    === "v překrytu s body"
+
+        a
+
+    === "v překrytu s liniemi"
+    
+        a
+
+    === "v překrytu s polygony"
+
+        a
+
+??? note "Výběr POLYGONŮ"
+
+    === "v překrytu s body"
+
+        a
+
+    === "v překrytu s liniemi"
+    
+        a
+
+    === "v překrytu s polygony"
+
+        a
