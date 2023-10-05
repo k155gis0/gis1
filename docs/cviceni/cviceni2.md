@@ -96,9 +96,9 @@ Pomocí přepínátka ![](../assets/cviceni1/img_36.png){: .off-glb style="verti
   details.page_color_admonition {border-color: var(--md-primary-fg-color) !important;margin:50px 0px;}
   details.page_color_admonition summary {background-color: #0094851a !important;}
 </style>
-<details class="example page_color_admonition">
+<details class="example page_color_admonition" open="">
   <summary>Příklad k vyzkoušení<div style="display:inline-block; border-left: 1px solid var(--md-admonition-fg-color); height:.9rem;vertical-align:-20%;margin:0px 20px"></div><span style="font-weight:normal;">testování atributových dotazů na skutečných datech</span></summary>
-  <iframe style="filter:none !important;margin-top:.6rem;" width="100%" height="500" frameborder="0" allowfullscreen src="https://experience.arcgis.com/experience/cbee738914f543748264319797ea0711/?draft=true&org=CTUPrague"></iframe>
+  <iframe style="filter:none !important;margin-top:.6rem;" width="100%" height="500" frameborder="0" allowfullscreen src="https://geo.fsv.cvut.cz/data/hoffmann/appquery/"></iframe>
   <hr class="l1" style="margin-bottom:0px !important;">
   <div style="margin-top:10px;margin-left:10px;font-weight:bold;font-size:larger;">Schéma atributů vrstvy:</div>
   
@@ -147,6 +147,10 @@ Pomocí přepínátka ![](../assets/cviceni1/img_36.png){: .off-glb style="verti
 ### Prostorové dotazy
 
 Prostorový dotaz (Spatial Query) je metoda výběru/filtrace prvků jedné vrstvy na základě vzájemné polohy s prvky druhé vrstvy. Funkce využívá jako vstup <code>__vrstvu vybíraných prvků__</code>, <code>__vrstvu pro překryvnou analýzu__</code> a <code>__vztah pro překryvnou analýzu__</code>.
+
+![](https://geo.fsv.cvut.cz/data/cehak/155SGEA/img_01.svg){ .off-glb style="filter:none !important;" }
+![](https://geo.fsv.cvut.cz/data/cehak/155SGEA/img_02.svg){ .off-glb style="filter:none !important;" }
+{: .process_container}
 
 <style>
   .tabbed-labels {justify-content:center;}
@@ -318,51 +322,8 @@ Prostorový dotaz (Spatial Query) je metoda výběru/filtrace prvků jedné vrst
 [:material-open-in-new: Select By Location graphic examples](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/select-by-location-graphical-examples.htm){ .md-button .md-button--primary .button_smaller target="\_blank"}
 {: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
 
 <!-- ## Zadání domácího úkolu k semestrální práci -->
 
 
-
-
-??? note "Výběr BODŮ"
-
-    === "v překrytu s body"
-
-        a
-
-    === "v překrytu s liniemi+"
-    
-        a
-
-    === "v překrytu s polygony"
-
-        a
-
-??? note "Výběr LINIÍ"
-
-    === "v překrytu s body"
-
-        a
-
-    === "v překrytu s liniemi"
-    
-        a
-
-    === "v překrytu s polygony"
-
-        a
-
-??? note "Výběr POLYGONŮ"
-
-    === "v překrytu s body"
-
-        a
-
-    === "v překrytu s liniemi"
-    
-        a
-
-    === "v překrytu s polygony"
-
-        a

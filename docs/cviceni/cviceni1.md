@@ -3,7 +3,8 @@
   /* tbody {width: 100%;display: table;}                                                             /* Roztazeni tabulek na celou sirku */
   h2 {font-weight:700 !important;}                                                                   /* Pokus – zmena formatu nadpisu 2 */
   figcaption {font-size:12px;margin-top:5px !important;text-align:center;line-height:1.2em;}         /* Formatovani Popisku obrazku */
-  hr.l1 {background-color:var(--md-primary-fg-color);height:2px;margin-bottom:3em !important;}       /* Formatovani Break Line – LEVEL 1 */
+  hr.l1 {background-color:var(--md-primary-fg-color);height:2px;/* margin-bottom:3em !important; */}       /* Formatovani Break Line – LEVEL 1 */
+  hr {margin-top:2.5rem !important; margin-bottom:4rem !important;}
   /* img,iframe {box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2) !important;} /* Stin pod obrazky a videi */
   img,iframe {filter:drop-shadow(0 10px 16px rgba(0,0,0,0.2)) drop-shadow(0 6px 20px rgba(0,0,0,0.2)) !important; object-fit:contain;} /* Stin pod obrazky a videi */
 
@@ -24,6 +25,10 @@
 
   code.AGPF {border:2px solid var(--md-primary-fg-color);padding:.1em .4em !important;/*transition: all .1s ease-in-out !important; display:inline-block !important;*/}
   code.AGPF .twemoji {vertical-align:-10% !important;}
+
+    /* Grids */
+  .grid {display:inline-block !important;border:.05rem solid var(--md-default-fg-color--lightest);border-radius:.1rem;padding:.8rem;transition: all .1s ease-in-out;}
+  .grid:hover {transition: all .1s ease-in-out;box-shadow: 0 10px 16px rgba(0,0,0,0.2);}
 </style>
 
 <!-- Definice sipky do FlexBoxu (pro referenci) – UZ NENI TREBA
@@ -124,7 +129,7 @@ Při spuštění probíhá ověření licence přes příslušnost k organizaci 
 
 ---
 
-<br>
+<!-- <br> -->
 <div style="text-align:center;font-weight:bold;text-decoration:underline">Další zdroje:</div>
 
 [<span>:material-open-in-new: pro.arcgis.com</span><br>Introduction to ArcGIS Pro](https://pro.arcgis.com/en/pro-app/latest/get-started/get-started.htm){ .md-button .md-button--primary .url-name target="_blank"}
@@ -225,19 +230,23 @@ __Nastavení (vlastnosti) mapy__: V _Contents Pane_ (Obsah) přes pravé tl. my�
 
 Pro začátek jsou zajímavé tyto položky:
 
-- __Záložka "_General_"__:
+- Záložka <code class="AGPF">:material-tab: General</code>
 
     - __Name__ (Název mapy)
     - __Reference scale__ (Referenční měřítko): Zafixuje velikost mapové symbologie pro zadané měřítko. 
     [:material-open-in-new: Map reference scales](https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/map-reference-scales.htm){ .md-button .md-button--primary .button_smaller target="_blank" align=right}
     - __Rotation__: Úhel natočení mapy
 
-- __Záložka "_Coordinate systems_"__: Informace o souřadnicovém systému zobrazení mapy (zvlášť pro polohu a pro výšku).
+- Záložka  <code class="AGPF">:material-tab: Coordinate systems</code>
 
+    - Informace o souřadnicovém systému zobrazení mapy (zvlášť pro polohu a pro výšku).
     - __POZOR__, pokud se souř. systém __vložených dat__ liší od systému __mapy__, jsou data __dočasně__ převedena do souř. systému __mapy__. Jedná se však o tzv. __On-the-fly__ transformaci, která je pro kombinaci některých souř. systémů __zjednodušená__ a data na sebe nemusí správně navazovat. Tato situace se __nedoporučuje__, neboť může přinést __nepřesné výsledky__ mapové vizualizace i datových analýz. <a href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/projection-on-the-fly-and-geographic-transformations">__Podrobnější informace__</a>
     {: style="color:#888;font-size:smaller; line-height:1.1;"}
 
-<br>
+
+
+
+<!-- <br> -->
 <hr class="l1">
 
 ### Kde získat data
@@ -251,6 +260,7 @@ _\\\\data.fsv.cvut.cz\Shares\K155\Public\data\PragueRoads.gdb_
 {: align="center" style="font-size:smaller;line-height:1.1;"}
 
 __Data online ke stažení__: stažení z libovolného zdroje na lokální disk ve formě souborů, dále shodný přístup jako s lokálně uloženými soubory (viz výše)
+{: id="data_online" }
 
 [:material-open-in-new: ArcČR](https://www.arcgis.com/home/item.html?id=16fd9804dac04020938452a77c1ed350){ .md-button .md-button--primary .button_smaller target="_blank"}
 [:material-open-in-new: Geoportal Praha](https://www.geoportalpraha.cz/cs/data/otevrena-data/seznam){ .md-button .md-button--primary .button_smaller target="_blank"}
@@ -264,7 +274,7 @@ __Připojení streamovaných dat__: _bude součástí budoucích cvičení_
 - připojení datových služeb přes URL adresu, nevyžaduje ruční lokální ukládání, existuje více standardů pro poskytování těchto služeb
 {: style="color:#888;font-size:smaller; line-height:1.1;"}
 
-<br>
+<!-- <br> -->
 <hr class="l1">
 
 ### Ovládání mapy
@@ -294,13 +304,16 @@ __Explore Tool__: Pohyb v mapě a vyvolávání pop-upů (vyskakovacích oken), 
 __Select Tool__: Pohyb v mapě a interaktivní vybírání prvků kurzorem. Zrušení výběru viz obr.
 {: #select-tool}
 
+- __Přidání prvků do výběru__: `Shift + klik`
+- __Odebrání prvků z výběru__: `Ctrl + klik`
+
 ![](../assets/cviceni1/img_14.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
 ![](../assets/cviceni1/img_17.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
 ![](../assets/cviceni1/img_18.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
-![](../assets/cviceni1/img_32.png)
+![](../assets/cviceni1/img_32.png){ data-title="Zrušení výběru" data-description="" }
 {: .process_container}
 
 [:material-open-in-new: Select features interactively](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/select-features-interactively.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
@@ -321,29 +334,34 @@ __Measure Tool__: Interaktivní měření vzdáleností, úhlů apod.
 [:material-open-in-new: Measure](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/measure.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
 
-<br>
+<!-- <br> -->
 <hr class="l1">
 
-<br>
+<!-- <br> -->
 <div style="text-align:center;font-weight:bold;text-decoration:underline">Doplňkové zdroje:</div>
 
 [<span>:material-open-in-new: pro.arcgis.com</span><br>ArcGIS Pro keyboard shortcuts](https://pro.arcgis.com/en/pro-app/latest/get-started/arcgis-pro-keyboard-shortcuts.htm){ .md-button .md-button--primary .url-name target="_blank"}
 [<span>:material-open-in-new: PDF</span><br>ArcGIS Pro shortcuts](https://www.esri.com/content/dam/esrisites/en-us/media/pdf/g526942-arcgis-pro-kybrd-shrtct-FINAL.pdf){ .md-button .md-button--primary .url-name target="_blank"}
 {: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
 
-<br>
+<!-- <br> -->
 <hr class="l1">
 
-## Úloha (DODĚLAT!!)
+## Úlohy k procvičení
 
-- Najít a stáhnout data z konkrétního geoportálu (nebo něco připojit nebo obojí) v .shp
-- Nastavit mapě ref. měřítko a rotaci
-- Nastavit pořadí vrstev
-- Nastavit přesné měřítko
-- Vybrat některé konkrétní prvky (pár konkrétně zadaných)
-- Screenshot mapy splňující všechny výše popsané vlastnosti
-- Screenshot pop-upu nad zadaným prvkem
-- Napsat vzdálenost mezi konkrétními dvěma prvky
+!!! tip "Úloha"
+
+    - Zadání
+        - Zobrazte v mapovém okně zadané vrstvy z geoportálu, mapa musí mít __zadané měřítko__, __natočení__ a __projekci__ (souř. systém), vrstvy musí mít __správné pořadí__ a __výběrem označené zadané prvky__. Dále nad mapou zobrazte __vyskakovací okno__ (pop-up) zadaného prvku a správně určete __vzdálenost mezi zadanými prvky__.
+        - Použijte data z geoportálu &nbsp;[:material-open-in-new: Geoportal data.Brno](https://data.brno.cz/explore){ .md-button .md-button--primary .button_smaller target="_blank"}&nbsp; – konkrétně datovou vrstvu obsahující __`zastávky MHD`__ a __`trasy linek MHD`__, výstupní formát libovolný (doporučujeme __`Shapefile`__ nebo __`Souborová geodatabáze`__)
+
+    - Výstupy
+        - Screenshot mapy splňující všechny výše popsané vlastnosti
+        - Screenshot pop-upu nad zadaným prvkem
+        - Napsat vzdálenost mezi konkrétními dvěma prvky
+
+    - Individuální zadání
+        - DODĚLAT
 
 
 <br><br><br><br><br><br><br><br><br><br><br>
@@ -372,3 +390,5 @@ __Measure Tool__: Interaktivní měření vzdáleností, úhlů apod.
 ...další text...
 
  -->
+
+
