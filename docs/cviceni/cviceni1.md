@@ -1,58 +1,14 @@
-<style>
-  .md-typeset__scrollwrap {text-align: center;}                                                      /* Zarovnani tabulek na stred */
-  /* tbody {width: 100%;display: table;}                                                             /* Roztazeni tabulek na celou sirku */
-  h2 {font-weight:700 !important;}                                                                   /* Pokus – zmena formatu nadpisu 2 */
-  figcaption {font-size:12px;margin-top:5px !important;text-align:center;line-height:1.2em;}         /* Formatovani Popisku obrazku */
-  hr.l1 {background-color:var(--md-primary-fg-color);height:2px;/* margin-bottom:3em !important; */}       /* Formatovani Break Line – LEVEL 1 */
-  hr {margin-top:2.5rem !important; margin-bottom:4rem !important;}
-  /* img,iframe {box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2) !important;} /* Stin pod obrazky a videi */
-  img,iframe {filter:drop-shadow(0 10px 16px rgba(0,0,0,0.2)) drop-shadow(0 6px 20px rgba(0,0,0,0.2)) !important; object-fit:contain;} /* Stin pod obrazky a videi */
 
-  /* TLACITKA */
-  .md-button {text-align:center;transition: all .1s ease-in-out !important;}  /* Button – zarovnani textu */
-  .md-button:hover {transform: scale(1.04);opacity:.8;background-color:var(--md-primary-fg-color) !important;border-color:var(--md-primary-fg-color) !important;color:var(--md-primary-bg-color) !important;/*filter: brightness(80%);*/}            /* Button Hover – animace zvetseni a zmeny barvy */
-  .md-button:focus {opacity:.8;background-color:var(--md-primary-fg-color) !important;border-color:var(--md-primary-fg-color) !important;color:var(--md-primary-bg-color) !important;}                                                                /* Button Focus – stejny vzhled jako hover */
-  .url-name {line-height:1.2;/*padding-top:5px !important;*/}                 /* Button s URL */
-  .url-name span:first-child {font-size:.7em; font-weight:300;}               /* Button s URL – format*/
-  .url-name span.twemoji {vertical-align:-0px;}                               /* Button s URL – zarovnani ikony*/
-  .md-button.button_smaller {font-size:smaller; padding:1px 5px;}             /* Mensi button (bez URL) */
-
-  /* FLEXBOXY */
-  .process_container {display:flex !important; justify-content:center; align-items:center; column-gap:calc((100vw * 0.03) - 6px);} /* Kontejner pro content = FlexBox */
-  .process_container div {display:flex;}                                                                                           /* Obsah (obrazky a sipky) */
-  .process_container .process_icon {width:/*40px*/calc((100vw * 0.01) + 25px); flex-shrink:0;filter:none !important;}              /* Velikost ikony (bacha na mobily) */
-  .process_container img {max-height:150px;}                                                                                       /* Obrazky ve flexboxech maji maximalni vysku */
-
-  code.AGPF {border:2px solid var(--md-primary-fg-color);padding:.1em .4em !important;/*transition: all .1s ease-in-out !important; display:inline-block !important;*/}
-  code.AGPF .twemoji {vertical-align:-10% !important;}
-
-    /* Grids */
-  .grid {display:inline-block !important;border:.05rem solid var(--md-default-fg-color--lightest);border-radius:.1rem;padding:.8rem;transition: all .1s ease-in-out;}
-  .grid:hover {transition: all .1s ease-in-out;box-shadow: 0 10px 16px rgba(0,0,0,0.2);}
-</style>
-
-<!-- Definice sipky do FlexBoxu (pro referenci) – UZ NENI TREBA
-<svg style="display: none" version="2.0">
-  <defs>
-    <symbol id="rect-arrow-right" viewBox="0 0 24 24">
-      <path d="M5,21A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V19C21,20.11 20.1,21 19,21H5M6,13H14.5L11,16.5L12.42,17.92L18.34,12L12.42,6.08L11,7.5L14.5,11H6V13Z"
-        style="fill:var(--md-primary-fg-color)" />
-    </symbol>
-    <symbol id="caret-right" height="1em" viewBox="0 0 256 512">
-      <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" style="fill:var(--md-primary-fg-color)" />
-    </symbol>
-  <defs>
-</svg> -->
 
 # Úvod do práce v prostředí ArcGIS, prostorová data, datové zdroje
 
-<hr class="l1">
+<!-- <hr class="level-1"> -->
 
 ## Cíl cvičení
 
 Seznámení s programem ArcGIS Pro, základní orientace v prostředí programu, přidávání dat do mapy a ovládání mapy
 
-<hr class="l1">
+<hr class="level-1">
 
 ## Základní pojmy
 
@@ -60,19 +16,168 @@ Seznámení s programem ArcGIS Pro, základní orientace v prostředí programu,
 Během většiny výuky bude používán program **ArcGIS Pro** – pokročilý desktopový geografický informační systém (GIS) vyvinutý společností **Esri**. Umožňuje uživatelům **vytvářet**, **editovat**, **analyzovat** a **vizualizovat** prostorová data v různých vrstvách, včetně **rastrových** a **vektorových** map, **ortofotomap**, **digitálního výškového modelu** a dalších datasetů.  
 Uživatelé mohou vytvářet a upravovat **atributy** a **geometrii** prvků, provádět pokročilé **analýzy**, vytvářet a **publikovat mapové vrstvy** a vytvářet **interaktivní mapové aplikace**. Program obsahuje také nástroje pro **vizualizaci** dat, tvorbu mapových prezentací a **sdílení výsledků** s ostatními uživateli.  
 
-![](../assets/cviceni1/agp_logo.png#only-light){ .off-glb width=200px style="filter:none !important;"}
-![](../assets/cviceni1/agp_logo2.png#only-dark){ .off-glb width=200px style="filter:none !important;"}
+![](../assets/cviceni1/agp_logo.png#only-light){ .off-glb .no-filter width=200px}
+![](../assets/cviceni1/agp_logo2.png#only-dark){ .off-glb .no-filter width=200px}
 {: align=center}
 
-???+ note "&nbsp;<span style="color:#448aff">Pozn.</span>"
-      Vzhledem k vysokým pořizovacím nákladům se systém ArcGIS využívá především ve velkých firmách a orgánech státní správy. V menších podnicích je rozšířenější jeho open source alternativa QGIS (tomu bude věnována pozornost v závěru kurzu).
+!!! note-grey "Pozn."
+
+    Vzhledem k vysokým pořizovacím nákladům se systém ArcGIS využívá především ve velkých firmách a orgánech státní správy. V menších podnicích je rozšířenější jeho open source alternativa QGIS (tomu bude věnována pozornost v závěru kurzu).
 
 ### Prostorová (GIS) data <span style="font-size:60%;font-style:italic;vertical-align:10%;margin-left:15px;">(vektorová)</span>
 Geografický informační systém (GIS) využívá obecně jakákoliv data obsahující __prostorovou (polohovou) informaci__. Poloha může být reprezentována nejen kombinací souřadnic (_X + Y_, _šířka + délka_ aj.), ale také např. adresou (o libovolné podrobnosti). Doplňkem k polohové informaci obvykle bývá připojena jakákoliv další informace formou atributů v __atributové tabulce__.
 
-![](../assets/cviceni1/img_28.png){ style="width:80%;"}
+<!-- ![](../assets/cviceni1/img_28.png){ style="width:80%;"}
 {: style="margin-bottom:0px;" align=center }
-<figcaption>Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption>
+<figcaption>Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption> -->
+
+<style>
+    #id_01 > div > div > div.tabbed-block {
+        text-align: center;
+    }
+
+    #id_01 > div > div > div.tabbed-block > :is(p, div) {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 10px;
+        margin-right:10px;
+    }
+
+    #id_01 img {
+        height: 200px;
+    }
+
+    #id_01 .md-typeset__scrollwrap {
+        width: 300px;
+    }
+
+    @media screen and (max-width: 767px) {
+        #id_01 > div > div > div.tabbed-block > :is(p, div) {
+            margin-top:15px;
+            margin-bottom:0px;
+        }
+    }
+
+    #id_01 .md-typeset__scrollwrap::before {
+        content:"Atributová tabulka:\a";    /* source: https://www.educative.io/answers/how-to-add-a-line-break-using-css */
+        white-space: pre;
+        font-weight: bold;
+    }
+
+    #id_01 .tabbed-block:nth-child(2) .md-typeset__table::before {
+        content:"Odpadkové koše:\a";    /* source: https://www.educative.io/answers/how-to-add-a-line-break-using-css */
+        white-space: pre;
+        font-size:smaller;
+    }
+
+    #id_01 .tabbed-block:nth-child(3) .md-typeset__table::before {
+        content:"Ulice:\a";    /* source: https://www.educative.io/answers/how-to-add-a-line-break-using-css */
+        white-space: pre;
+        font-size:smaller;
+    }
+
+    #id_01 .tabbed-block:nth-child(4) .md-typeset__table::before {
+        content:"Budovy a veř. plochy:\a";    /* source: https://www.educative.io/answers/how-to-add-a-line-break-using-css */
+        white-space: pre;
+        font-size:smaller;
+    }
+</style>
+
+<!-- <div id="id_01" class="table_no_cell_padding table_no_cell_min_width centered_tab_labels" markdown>
+=== "Body"
+
+    ![](https://geo.fsv.cvut.cz/data/cehak/image001.svg)
+    
+    ![](https://geo.fsv.cvut.cz/data/cehak/image002-body.svg)
+
+    |category|load [%]|cl./week|
+    |:------:|:------:|:------:|
+    |mix|91|7|
+    |plastic|26|2|
+    |mix|14|5|
+    |mix|14|5|
+    |paper|58|2|
+
+=== "Linie"
+
+    ![](https://geo.fsv.cvut.cz/data/cehak/image001.svg)
+    
+    ![](https://geo.fsv.cvut.cz/data/cehak/image003-linie.svg)
+
+    |class|cars|trucks|length|
+    |:---:|:--:|:----:|:----:|
+    |street C1|1|yes|164,21|
+    |street C3|1|no|621,5|
+    |street C4|0|no|32,24|
+    |street C1|1|no|495,01|
+    |street C3|0|no|221,49|
+
+=== "Polygony"
+
+    ![](https://geo.fsv.cvut.cz/data/cehak/image001.svg)
+    
+    ![](https://geo.fsv.cvut.cz/data/cehak/image004-polygony.svg)
+
+    |category|administrator|status|
+    |:------:|:-----------:|:----:|
+    |public|Municipality|OK|
+    |public|Company Inc.|OK|
+    |restricted|Company Inc.|OK|
+    |restricted|Municipality|!alert!|
+    |residential|private|OK|
+</div>
+
+<figcaption style="clear:both">Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption> -->
+
+
+<div id="id_01" class="table_no_cell_padding table_no_cell_min_width centered_tab_labels" markdown>
+=== "CELÁ MAPA"
+
+    ![](https://geo.fsv.cvut.cz/data/cehak/image001.svg)
+    
+    __Mapa obsahuje 3 druhy geometrie:__  
+    (viz jednotlivé přepínací karty)
+    {: style="width:300px; height:214.9px"}
+
+=== "Body"
+    
+    ![](https://geo.fsv.cvut.cz/data/cehak/image002-body.svg)
+
+    |category|load [%]|cl./week|
+    |:------:|:------:|:------:|
+    |mix|91|7|
+    |plastic|26|2|
+    |mix|14|5|
+    |mix|14|5|
+    |paper|58|2|
+
+=== "Linie"
+
+    ![](https://geo.fsv.cvut.cz/data/cehak/image003-linie.svg)
+
+    |class|cars|trucks|length|
+    |:---:|:--:|:----:|:----:|
+    |street C1|1|yes|164,21|
+    |street C3|1|no|621,5|
+    |street C4|0|no|32,24|
+    |street C1|1|no|495,01|
+    |street C3|0|no|221,49|
+
+=== "Polygony"
+
+    ![](https://geo.fsv.cvut.cz/data/cehak/image004-polygony.svg)
+
+    |category|administrator|status|
+    |:------:|:-----------:|:----:|
+    |public|Municipality|OK|
+    |public|Company Inc.|OK|
+    |restricted|Company Inc.|OK|
+    |restricted|Municipality|!alert!|
+    |residential|private|OK|
+</div>
+
+<figcaption style="clear:both">Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption>
+
 
 __Ukládání prostorových dat__: Data lze ukládat mnoha různými způsoby. Datových formátů existuje mnoho, pro začátek uvedeme některé základní.
 
@@ -85,7 +190,7 @@ __Ukládání prostorových dat__: Data lze ukládat mnoha různými způsoby. D
 
 <!-- Ve výčtu chybí některé __rastrové formáty__, těm se bude výuka věnovat v průběhu pozdějších cvičení. -->
 
-<hr class="l1">
+<hr class="level-1">
 
 ## Náplň cvičení
 
@@ -94,26 +199,19 @@ __Ukládání prostorových dat__: Data lze ukládat mnoha různými způsoby. D
 Při spuštění probíhá ověření licence přes příslušnost k organizaci (ČVUT v Praze) – pomocí přihlášení k univerzitnímu účtu. Adresa (URL) pro ČVUT je *ctuprague.maps.arcgis.com* – poté proběhne automatické přesměrování na stránku s univerzitním přihlášením (ve formátu *username@cvut.cz* a heslo to KOSu).
 
 <div class="process_container">
-  <div class="process_image"><iframe src="https://www.youtube.com/embed/8nDVpVmxM-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  <div class="process_image"><iframe class="video" src="https://www.youtube.com/embed/8nDVpVmxM-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
   <div class="process_image"><img src="../../assets/cviceni1/img_01.png"></div>
-</div>
+</div> <!-- kvuli tomu iframe to nejde bez html (nenasel jsem zpusob) -->
 
-<table>
-  <tbody>
-    <tr>
-      <td><strong>RIBBON</strong></td>
-      <td>nabídka funkcí programu (prvek shodný s jinými programy, např. Microsoft Word), nabídka se kontextově mění podle akcí uživatele</td>
-    </tr>
-    <tr>
-      <td><strong>PANE</strong></td>
-      <td>panely a vlastnosti funkcí, mnoho funkcí spouští svůj Pane, přes který se daná funkce ovládá, např. Obsah mapy (Contents), Symbologie</td>
-    </tr>
-    <tr>
-      <td><strong>VIEW</strong></td>
-      <td>okno s mapou (2D) nebo scénou (3D)</td>
-    </tr>
-  </tbody>
-</table>
+Uživatelské protředí programu se skládá ze tří základních prvků:
+
+<div class="table_headerless table_small_padding table_centered" markdown>
+|   |   |
+| - | - |
+| __RIBBON__ | nabídka funkcí programu (prvek shodný s jinými programy, např. Microsoft Word), nabídka se kontextově mění podle akcí uživatele       |
+| __PANE__   | panely a vlastnosti funkcí, mnoho funkcí spouští svůj Pane, přes který se daná funkce ovládá, např. Obsah mapy (Contents), Symbologie |
+| __VIEW__   | okno s mapou (2D) nebo scénou (3D)                                                                                                    |
+</div>  <!-- prazdne radky nelze smazat, Markdown nebere tabulky bez zahlavi, musel jsem vyresit pres css -->
 
 ![](../assets/cviceni1/img_02.png)
 ![](../assets/cviceni1/img_03.png)
@@ -121,35 +219,33 @@ Při spuštění probíhá ověření licence přes příslušnost k organizaci 
 
 <figcaption>Všechny VIEWs a PANEs jsou dokovatelné – je možné je libovolně přemisťovat po obrazovce a přichytávat k ostatním prvkům</figcaption>
 
-<!-- :fontawesome-brands-youtube:{: style="color: #EE0F0F" } [__Working with Panes in ArcGIS Pro__](https://www.youtube.com/watch?v=qNDwVJV_kFk).
-{: align=center } -->
-
-[:material-open-in-new: Working with Panes in ArcGIS Pro](https://www.youtube.com/watch?v=qNDwVJV_kFk){ .md-button .md-button--primary .button_smaller target="_blank"}
-{: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
+[Working with Panes in ArcGIS Pro](https://www.youtube.com/watch?v=qNDwVJV_kFk){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+{: .button_array}
 
 ---
 
-<!-- <br> -->
-<div style="text-align:center;font-weight:bold;text-decoration:underline">Další zdroje:</div>
+__Další zdroje:__
+{: align=center }
 
-[<span>:material-open-in-new: pro.arcgis.com</span><br>Introduction to ArcGIS Pro](https://pro.arcgis.com/en/pro-app/latest/get-started/get-started.htm){ .md-button .md-button--primary .url-name target="_blank"}
-[<span>:material-open-in-new: pro.arcgis.com</span><br>Introducing ArcGIS Pro](https://pro.arcgis.com/en/pro-app/latest/get-started/introducing-arcgis-pro.htm){ .md-button .md-button--primary .url-name target="_blank"}
-{: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
+[<span>pro.arcgis.com</span><br>Introduction to ArcGIS Pro](https://pro.arcgis.com/en/pro-app/latest/get-started/get-started.htm){ .md-button .md-button--primary .server_name .external_link_icon_small target="_blank"}
+[<span>pro.arcgis.com</span><br>Introducing ArcGIS Pro](https://pro.arcgis.com/en/pro-app/latest/get-started/introducing-arcgis-pro.htm){ .md-button .md-button--primary .server_name .external_link_icon_small target="_blank"}
+{: .button_array}
 
-<hr class="l1">
+<hr class="level-1">
 
 ### Přidání dat do mapy
 
-__Vytvoření mapy__:&nbsp;<code class="AGPF">:material-tab: Insert</code>&nbsp;→&nbsp;<code class="AGPF">:material-button-cursor: New Map</code>
-![](../assets/cviceni1/img_09.png){: style="margin-left:calc((100vw * 0.03) - 6px)"}
-{: style="display:flex !important; justify-content:flex-start; align-items:center;"}
+__Vytvoření mapy:__ _:material-tab: Insert_{: .outlined} :octicons-arrow-right-24: _:material-button-cursor: New Map_{: .outlined}
 
-[:material-open-in-new: Create a map or scene](https://pro.arcgis.com/en/pro-app/latest/help/projects/add-maps-to-a-project.htm#GUID-660CA711-919A-44B0-952A-F2054937077B){ .md-button .md-button--primary .button_smaller target="_blank"}
-{: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
+![](../assets/cviceni1/img_09.png)
+{: .process_container}
+
+[Create a map or scene](https://pro.arcgis.com/en/pro-app/latest/help/projects/add-maps-to-a-project.htm#GUID-660CA711-919A-44B0-952A-F2054937077B){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+{: .button_array}
 
 ---
 
-__Přidání dat do mapy__ (lokálně uložených): <code class="AGPF">:material-tab: Map</code> → <code class="AGPF">:material-button-cursor: Add Data</code> → <code class="AGPF">:material-button-cursor: Data</code> → vybrat soubor...
+__Přidání dat do mapy__ (lokálně uložených): _:material-tab: Map_{: .outlined} → _:material-button-cursor: Add Data_{: .outlined} → _:material-button-cursor: Data_{: .outlined} → vybrat soubor...
 
 ![](../assets/cviceni1/img_10.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -160,14 +256,14 @@ __Přidání dat do mapy__ (lokálně uložených): <code class="AGPF">:material
 
 <figcaption>Pokud se soubor ve struktuře neobjevuje, lze dialog obnovit klávesou F5</figcaption>
 
-[:material-open-in-new: Add data from the Add Data dialog box](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/add-layers-to-a-map.htm#ESRI_SECTION2_1C48753A1FD546F385580EF9197DBB8C){ .md-button .md-button--primary .button_smaller target="_blank"}
-{: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
+[Add data from the Add Data dialog box](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/add-layers-to-a-map.htm#ESRI_SECTION2_1C48753A1FD546F385580EF9197DBB8C){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+{: .button_array}
 
 ---
 
 Aby pro procházení dat nebylo nutné pokaždé procházet adresářovou strukturu, hodí se si adresáře s daty _připojit do projektu_.
 
-__Připojení adresáře do projektu__: V _Catalog Pane_ ( <code class="AGPF">:material-tab: View</code> → <code class="AGPF">:material-button-cursor: Catalog Pane</code> ) přes pravé tl. myši na "_Folders_" vybrat <code class="AGPF">:material-form-dropdown: Add Folder Connection</code> → vložit nebo zvolit cestu... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
+__Připojení adresáře do projektu__: V _Catalog Pane_ ( _:material-tab: View_{: .outlined} → _:material-button-cursor: Catalog Pane_{: .outlined} ) přes pravé tl. myši na "_Folders_" vybrat _:material-form-dropdown: Add Folder Connection_{: .outlined} → vložit nebo zvolit cestu... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
 
 ![](../assets/cviceni1/img_05.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -180,15 +276,15 @@ __Připojení adresáře do projektu__: V _Catalog Pane_ ( <code class="AGPF">:m
 
 <figcaption>Cesta ke zvolenému adresáři zůstane v nabídce mezi položkami "Folders". Adresář nemusí být lokální, lze takto připojit i např. fakultní disk H:\.</figcaption>
 
-[:material-open-in-new: Connect to a folder](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-a-folder.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
-[:material-open-in-new: The Project Pane](https://pro.arcgis.com/en/pro-app/latest/help/projects/the-project-pane.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
-{: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
+[Connect to a folder](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-a-folder.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[The Project Pane](https://pro.arcgis.com/en/pro-app/latest/help/projects/the-project-pane.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+{: .button_array}
 
 ---
 
 ...totéž lze udělat s geodatabází. V geodatabázi jsou data uložena efektivněji, nelze do ní však vložit cokoli.
 
-__Připojení geodatabáze do projektu__: V _Catalog Pane_ ( <code class="AGPF">:material-tab: View</code> → <code class="AGPF">:material-button-cursor: Catalog Pane</code> ) přes pravé tl. myši na "_Databases_" vybrat <code class="AGPF">:material-form-dropdown: Add Database</code> → vložit nebo zvolit cestu ke geodatabázi... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
+__Připojení geodatabáze do projektu__: V _Catalog Pane_ ( _:material-tab: View_{: .outlined} → _:material-button-cursor: Catalog Pane_{: .outlined} ) přes pravé tl. myši na "_Databases_" vybrat _:material-form-dropdown: Add Database_{: .outlined} → vložit nebo zvolit cestu ke geodatabázi... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
 
 ![](../assets/cviceni1/img_05.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -202,7 +298,7 @@ __Připojení geodatabáze do projektu__: V _Catalog Pane_ ( <code class="AGPF">
 <figcaption>Cesta ke zvolené geodatabázi zůstane v nabídce mezi položkami "Databases". Cesta opět nemusí být pouze lokální.</figcaption>
 
 [:material-open-in-new: Connect to a database](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-a-database.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
-{: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
+{: .button_array}
 
 ---
 
@@ -219,7 +315,7 @@ __Pořadí vrstev__: V obsahu mapy (_Contents Pane_) se zobrazují všechny vrst
 
 ---
 
-__Nastavení (vlastnosti) mapy__: V _Contents Pane_ (Obsah) přes pravé tl. myši na název mapy vybrat <code class="AGPF">:material-form-dropdown: Properties</code>
+__Nastavení (vlastnosti) mapy__: V _Contents Pane_ (Obsah) přes pravé tl. myši na název mapy vybrat _:material-form-dropdown: Properties_{: .outlined}
 
 ![](../assets/cviceni1/img_21.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -230,43 +326,44 @@ __Nastavení (vlastnosti) mapy__: V _Contents Pane_ (Obsah) přes pravé tl. my�
 
 Pro začátek jsou zajímavé tyto položky:
 
-- Záložka <code class="AGPF">:material-tab: General</code>
+- Záložka _:material-label-outline: General_{: .outlined}
 
     - __Name__ (Název mapy)
     - __Reference scale__ (Referenční měřítko): Zafixuje velikost mapové symbologie pro zadané měřítko. 
     [:material-open-in-new: Map reference scales](https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/map-reference-scales.htm){ .md-button .md-button--primary .button_smaller target="_blank" align=right}
     - __Rotation__: Úhel natočení mapy
 
-- Záložka  <code class="AGPF">:material-tab: Coordinate systems</code>
+- Záložka _:material-label-outline: Coordinate systems_{: .outlined}
 
     - Informace o souřadnicovém systému zobrazení mapy (zvlášť pro polohu a pro výšku).
-    - __POZOR__, pokud se souř. systém __vložených dat__ liší od systému __mapy__, jsou data __dočasně__ převedena do souř. systému __mapy__. Jedná se však o tzv. __On-the-fly__ transformaci, která je pro kombinaci některých souř. systémů __zjednodušená__ a data na sebe nemusí správně navazovat. Tato situace se __nedoporučuje__, neboť může přinést __nepřesné výsledky__ mapové vizualizace i datových analýz. <a href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/projection-on-the-fly-and-geographic-transformations">__Podrobnější informace__</a>
+    - __POZOR__, pokud se souř. systém __vložených dat__ liší od systému __mapy__, jsou data __dočasně__ převedena do souř. systému __mapy__. Jedná se však o tzv. __On-the-fly__ transformaci, která je pro kombinaci některých souř. systémů __zjednodušená__ a data na sebe nemusí správně navazovat. Tato situace se __nedoporučuje__, neboť může přinést __nepřesné výsledky__ mapové vizualizace i datových analýz. [__Podrobnější informace__](https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/projection-on-the-fly-and-geographic-transformations)
     {: style="color:#888;font-size:smaller; line-height:1.1;"}
 
-
-
-
-<!-- <br> -->
-<hr class="l1">
+<hr class="level-1">
 
 ### Kde získat data
 
 __Lokálně uložené soubory__:  přístup přes systémovou cestu, např.:
 
-_C:\Users\Student1\Documents\Geodatabase.gdb\Layer1_
+<!-- _C:\Users\Student1\Documents\Geodatabase.gdb\Layer1_
 {: align="center" style="font-size:smaller;line-height:1.1;"}
 
 _\\\\data.fsv.cvut.cz\Shares\K155\Public\data\PragueRoads.gdb_
-{: align="center" style="font-size:smaller;line-height:1.1;"}
+{: align="center" style="font-size:smaller;line-height:1.1;"} -->
+
+`C:\Users\Student1\Documents\Geodatabase.gdb\Layer1`
+`\\\\data.fsv.cvut.cz\Shares\K155\Public\data\PragueRoads.gdb`
+{: align="center" style="font-size:smaller;line-height:1.1; column-gap:50px;" .button_array}
 
 __Data online ke stažení__: stažení z libovolného zdroje na lokální disk ve formě souborů, dále shodný přístup jako s lokálně uloženými soubory (viz výše)
 {: id="data_online" }
 
-[:material-open-in-new: ArcČR](https://www.arcgis.com/home/item.html?id=16fd9804dac04020938452a77c1ed350){ .md-button .md-button--primary .button_smaller target="_blank"}
-[:material-open-in-new: Geoportal Praha](https://www.geoportalpraha.cz/cs/data/otevrena-data/seznam){ .md-button .md-button--primary .button_smaller target="_blank"}
-[:material-open-in-new: Geoportal data.Brno](https://data.brno.cz/explore){ .md-button .md-button--primary .button_smaller target="_blank"}
-[:material-open-in-new: otevřená data AOPK](https://gis-aopkcr.opendata.arcgis.com/){ .md-button .md-button--primary .button_smaller target="_blank"}
-{: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
+[ArcČR](https://www.arcgis.com/home/item.html?id=16fd9804dac04020938452a77c1ed350){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[Geoportal Praha](https://www.geoportalpraha.cz/cs/data/otevrena-data/seznam){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[Geoportal data.Brno](https://data.brno.cz/explore){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[otevřená data AOPK](https://gis-aopkcr.opendata.arcgis.com/){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[geoportál ČSÚ](https://geodata.statistika.cz){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+{: .button_array}
 
 __Připojení streamovaných dat__: _bude součástí budoucích cvičení_
 {: style="color:#888"}
@@ -274,17 +371,16 @@ __Připojení streamovaných dat__: _bude součástí budoucích cvičení_
 - připojení datových služeb přes URL adresu, nevyžaduje ruční lokální ukládání, existuje více standardů pro poskytování těchto služeb
 {: style="color:#888;font-size:smaller; line-height:1.1;"}
 
-<!-- <br> -->
-<hr class="l1">
+<hr class="level-1">
 
 ### Ovládání mapy
 
 __Explore Tool__: Pohyb v mapě a vyvolávání pop-upů (vyskakovacích oken), funkce tlačítek myši viz obr.
 
 - __Pop-up__ (Vyskakovací okno): Je jedním ze základních prvků grafického prostředí GIS aplikací. Jeho (nejčastějším) účelem je poskytnout rychlý náhled informací o daném prvku po kliknutí na jeho geometrii. Podoba okna je ale konfigurovatelná a nástroje pro úpravu velice variabilní. Ve výchozím stavu pop-up zobrazuje výpis atributů ve formě tabulky (obr.).
-[:material-open-in-new: Pop-ups](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/pop-ups.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
+[Pop-ups](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/pop-ups.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 - __Měřítko mapy__: Udává poměr zmenšení mapy vzhledem ke skutečnosti. V rohu mapového okna (obr.) lze vybrat z nabízených měřítek nebo i nastavit libovolnou vlastní hodnotu.
-[:material-open-in-new: Map scales and scale properties](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/map-scales-and-scale-properties.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
+[Map scales and scale properties](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/map-scales-and-scale-properties.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 
 ![](../assets/cviceni1/img_13.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -295,14 +391,14 @@ __Explore Tool__: Pohyb v mapě a vyvolávání pop-upů (vyskakovacích oken), 
 ![](../assets/cviceni1/img_27.png)
 {: .process_container}
 
-[:material-open-in-new: Navigation](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/navigation-in-arcgis-pro.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
-[:material-open-in-new: Navigate maps and scenes](https://pro.arcgis.com/en/pro-app/latest/get-started/navigate-your-data.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
-{: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
+[Navigation](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/navigation-in-arcgis-pro.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[Navigate maps and scenes](https://pro.arcgis.com/en/pro-app/latest/get-started/navigate-your-data.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+{: .button_array}
 
 ---
 
-__Select Tool__: Pohyb v mapě a interaktivní vybírání prvků kurzorem. Zrušení výběru viz obr.
-{: #select-tool}
+<!--               ↓↓↓ odkazuje na to link ze cviceni 2! -->
+__Select Tool__{: #select-tool}: Pohyb v mapě a interaktivní vybírání prvků kurzorem. Zrušení výběru viz obr.
 
 - __Přidání prvků do výběru__: `Shift + klik`
 - __Odebrání prvků z výběru__: `Ctrl + klik`
@@ -316,9 +412,9 @@ __Select Tool__: Pohyb v mapě a interaktivní vybírání prvků kurzorem. Zru�
 ![](../assets/cviceni1/img_32.png){ data-title="Zrušení výběru" data-description="" }
 {: .process_container}
 
-[:material-open-in-new: Select features interactively](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/select-features-interactively.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
-[:material-open-in-new: Select features for editing](https://pro.arcgis.com/en/pro-app/latest/help/editing/select-features-for-editing.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
-{: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
+[Select features interactively](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/select-features-interactively.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[Select features for editing](https://pro.arcgis.com/en/pro-app/latest/help/editing/select-features-for-editing.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+{: .button_array}
 
 ---
 
@@ -331,21 +427,19 @@ __Measure Tool__: Interaktivní měření vzdáleností, úhlů apod.
 ![](../assets/cviceni1/img_20.png)
 {: .process_container}
 
-[:material-open-in-new: Measure](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/measure.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
-{: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
+[Measure](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/measure.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+{: .button_array}
 
-<!-- <br> -->
-<hr class="l1">
+<hr class="level-1">
 
-<!-- <br> -->
-<div style="text-align:center;font-weight:bold;text-decoration:underline">Doplňkové zdroje:</div>
+__Doplňkové zdroje:__
+{: align=center}
 
-[<span>:material-open-in-new: pro.arcgis.com</span><br>ArcGIS Pro keyboard shortcuts](https://pro.arcgis.com/en/pro-app/latest/get-started/arcgis-pro-keyboard-shortcuts.htm){ .md-button .md-button--primary .url-name target="_blank"}
-[<span>:material-open-in-new: PDF</span><br>ArcGIS Pro shortcuts](https://www.esri.com/content/dam/esrisites/en-us/media/pdf/g526942-arcgis-pro-kybrd-shrtct-FINAL.pdf){ .md-button .md-button--primary .url-name target="_blank"}
-{: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
+[<span>pro.arcgis.com</span><br>ArcGIS Pro keyboard shortcuts](https://pro.arcgis.com/en/pro-app/latest/get-started/arcgis-pro-keyboard-shortcuts.htm){ .md-button .md-button--primary .server_name .external_link_icon_small target="_blank"}
+[<span>:octicons-file-16: PDF</span><br>ArcGIS Pro shortcuts](https://www.esri.com/content/dam/esrisites/en-us/media/pdf/g526942-arcgis-pro-kybrd-shrtct-FINAL.pdf){ .md-button .md-button--primary .server_name target="_blank"}
+{: .button_array}
 
-<!-- <br> -->
-<hr class="l1">
+<hr class="level-1">
 
 ## Úlohy k procvičení
 
@@ -371,7 +465,7 @@ __Measure Tool__: Interaktivní měření vzdáleností, úhlů apod.
 
 
 
-<hr class="l1">
+<hr class="level-1">
 
 <span style="font-size:50px;text-transform:uppercase;font-weight:800;">Test nadpisů:</span>
 

@@ -69,6 +69,8 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/geomatics.ctu
 copyright: <a href="https://geomatics.fsv.cvut.cz" target="_blank">Katedra geomatiky</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;2023
+extra_css:
+  - stylesheets/extra.css
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -90,4 +92,5 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
+
 
