@@ -16,13 +16,13 @@ Seznámení s programem ArcGIS Pro, základní orientace v prostředí programu,
 Během většiny výuky bude používán program **ArcGIS Pro** – pokročilý desktopový geografický informační systém (GIS) vyvinutý společností **Esri**. Umožňuje uživatelům **vytvářet**, **editovat**, **analyzovat** a **vizualizovat** prostorová data v různých vrstvách, včetně **rastrových** a **vektorových** map, **ortofotomap**, **digitálního výškového modelu** a dalších datasetů.  
 Uživatelé mohou vytvářet a upravovat **atributy** a **geometrii** prvků, provádět pokročilé **analýzy**, vytvářet a **publikovat mapové vrstvy** a vytvářet **interaktivní mapové aplikace**. Program obsahuje také nástroje pro **vizualizaci** dat, tvorbu mapových prezentací a **sdílení výsledků** s ostatními uživateli.  
 
-![](../assets/cviceni1/agp_logo.png#only-light){ .off-glb .no-filter width=200px}
-![](../assets/cviceni1/agp_logo2.png#only-dark){ .off-glb .no-filter width=200px}
+![](../assets/cviceni1/agp_logo.png#only-light){ .no-filter .off-glb width=200px}
+![](../assets/cviceni1/agp_logo2.png#only-dark){ .no-filter .off-glb width=200px}
 {: align=center}
 
 !!! note-grey "Pozn."
 
-    Vzhledem k vysokým pořizovacím nákladům se systém ArcGIS využívá především ve velkých firmách a orgánech státní správy. V menších podnicích je rozšířenější jeho open source alternativa QGIS (tomu bude věnována pozornost v závěru kurzu).
+    Vzhledem k vysokým pořizovacím nákladům se systém ArcGIS využívá především ve velkých firmách a orgánech státní správy. V menších podnicích je rozšířenější jeho open source alternativa [QGIS](https://www.qgis.org/){: target="_blank"} (tomu bude věnována pozornost v [závěru kurzu](/cviceni/cviceni9/)).
 
 ### Prostorová (GIS) data <span style="font-size:60%;font-style:italic;vertical-align:10%;margin-left:15px;">(vektorová)</span>
 Geografický informační systém (GIS) využívá obecně jakákoliv data obsahující __prostorovou (polohovou) informaci__. Poloha může být reprezentována nejen kombinací souřadnic (_X + Y_, _šířka + délka_ aj.), ale také např. adresou (o libovolné podrobnosti). Doplňkem k polohové informaci obvykle bývá připojena jakákoliv další informace formou atributů v __atributové tabulce__.
@@ -77,7 +77,7 @@ Geografický informační systém (GIS) využívá obecně jakákoliv data obsah
     }
 
     #id_01 .tabbed-block:nth-child(4) .md-typeset__table::before {
-        content:"Budovy a veř. plochy:\a";    /* source: https://www.educative.io/answers/how-to-add-a-line-break-using-css */
+        content:"Budovy a veřejné plochy:\a";    /* source: https://www.educative.io/answers/how-to-add-a-line-break-using-css */
         white-space: pre;
         font-size:smaller;
     }
@@ -133,7 +133,7 @@ Geografický informační systém (GIS) využívá obecně jakákoliv data obsah
 <div id="id_01" class="table_no_cell_padding table_no_cell_min_width centered_tab_labels" markdown>
 === "CELÁ MAPA"
 
-    ![](https://geo.fsv.cvut.cz/data/cehak/image001.svg)
+    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/image001.png)
     
     __Mapa obsahuje 3 druhy geometrie:__  
     (viz jednotlivé přepínací karty)
@@ -141,10 +141,10 @@ Geografický informační systém (GIS) využívá obecně jakákoliv data obsah
 
 === "Body"
     
-    ![](https://geo.fsv.cvut.cz/data/cehak/image002-body.svg)
+    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/image002-body.png)
 
-    |category|load [%]|cl./week|
-    |:------:|:------:|:------:|
+    |category|load [%]|cleaning/week|
+    |:------:|:------:|:-----------:|
     |mix|91|7|
     |plastic|26|2|
     |mix|14|5|
@@ -153,7 +153,7 @@ Geografický informační systém (GIS) využívá obecně jakákoliv data obsah
 
 === "Linie"
 
-    ![](https://geo.fsv.cvut.cz/data/cehak/image003-linie.svg)
+    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/image003-linie.png)
 
     |class|cars|trucks|length|
     |:---:|:--:|:----:|:----:|
@@ -165,7 +165,7 @@ Geografický informační systém (GIS) využívá obecně jakákoliv data obsah
 
 === "Polygony"
 
-    ![](https://geo.fsv.cvut.cz/data/cehak/image004-polygony.svg)
+    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/image004-polygony.png)
 
     |category|administrator|status|
     |:------:|:-----------:|:----:|
@@ -176,7 +176,7 @@ Geografický informační systém (GIS) využívá obecně jakákoliv data obsah
     |residential|private|OK|
 </div>
 
-<figcaption style="clear:both">Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption>
+<figcaption>Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption>
 
 
 __Ukládání prostorových dat__: Data lze ukládat mnoha různými způsoby. Datových formátů existuje mnoho, pro začátek uvedeme některé základní.
@@ -443,7 +443,7 @@ __Doplňkové zdroje:__
 
 ## Úlohy k procvičení
 
-!!! tip "Úloha"
+!!! task-fg-color "Úloha"
 
     - Zadání
         - Zobrazte v mapovém okně zadané vrstvy z geoportálu, mapa musí mít __zadané měřítko__, __natočení__ a __projekci__ (souř. systém), vrstvy musí mít __správné pořadí__ a __výběrem označené zadané prvky__. Dále nad mapou zobrazte __vyskakovací okno__ (pop-up) zadaného prvku a správně určete __vzdálenost mezi zadanými prvky__.

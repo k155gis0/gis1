@@ -35,6 +35,7 @@ plugins:
       caption_position: bottom
 theme:
   name: material
+  favicon: assets/favicon.png
   features:
     - navigation.tabs
     # - navigation.tabs.sticky

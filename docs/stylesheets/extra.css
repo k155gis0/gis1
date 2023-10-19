@@ -1,5 +1,9 @@
 /* HEADINGS + RULES */
 h2 {font-weight: 700 !important;}                                                                   /* Pokus – zmena formatu nadpisu 2 */
+.page_title {
+  font-weight: bold !important;
+  text-align: center;
+}
 hr.level-1 {         /* Break Line – LEVEL 1 */
     background-color: var(--md-primary-fg-color);
     height: 2px;
@@ -21,6 +25,23 @@ figcaption {         /* Figure Caption Formatting */
     text-align: center;
     line-height: 1.2em;
 }
+
+.icon_important {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 160%;
+  color: var(--md-default-fg-color--light);
+  background-color: var(--md-default-fg-color--lightest);
+  border-radius: 50%;
+  height: 1.6em !important /* bez !important to funguje pouze na p.class, nikoli na .twemoji */;
+  width: 1.6em;
+  line-height: 1.6em;
+  overflow: clip;
+  flex-shrink: 0; /* mix-blend-mode: difference; */
+  margin: 0px 15px;
+}
+
 
 /* TABLES */
 div.table_headerless thead {display: none;}   /* table without header (no other way with markdown) */
@@ -65,7 +86,7 @@ div.table_centered .md-typeset__scrollwrap {text-align: center;}
 /* FLEXBOXY */
 .process_container {display:flex !important; justify-content:center; align-items:center; column-gap:calc((100vw * 0.03) - 6px);} /* Kontejner pro content = FlexBox */
 .process_container div {display:flex;}                                                                                           /* Obsah (obrazky a sipky) */
-.process_container .process_icon {width:/*40px*/calc((100vw * 0.01) + 25px); flex-shrink:0;/* filter:none !important; */}              /* Velikost ikony (bacha na mobily) */
+.process_container .process_icon {width:/*40px*/calc((100vw * 0.01) + 25px); flex-shrink:0; mix-blend-mode: difference;}         /* Velikost ikony (bacha na mobily), blending mode kvuli light/dark modu */
 .process_container img {max-height:150px;}                                                                                       /* Obrazky ve flexboxech maji maximalni vysku */
 
 /* HIGHLIGHTED */
@@ -78,8 +99,8 @@ code.outlined .twemoji {vertical-align:-10% !important;}
   font-size: .85em;
   background-color: var(--md-code-bg-color);
   color: var(--md-code-fg-color);
-  font-weight: unset; /* in case of using __content__ */
-  font-style: unset;  /* in case of using  _content_  */
+  font-weight: unset; /* in case of using __content__ (double underscore) */
+  font-style: unset;  /* in case of using  _content_  (single underscore) */
   border:2px solid var(--md-primary-fg-color);
   padding:.1em .4em;
   white-space: nowrap;
@@ -87,18 +108,60 @@ code.outlined .twemoji {vertical-align:-10% !important;}
 .outlined .twemoji {vertical-align:-10% !important;}
 
 /* GRIDS */
-.grid_item {display:inline-block !important;border:.05rem solid var(--md-default-fg-color--lightest);border-radius:.1rem;padding:.8rem;transition: all .1s ease-in-out;}
-.grid_item:hover {transition: all .1s ease-in-out;box-shadow: 0 10px 16px rgba(0,0,0,0.2);}
+.grid_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 10px 10px;
+}
+.grid_item {
+  /* display:inline-block !important; */
+  border: .05rem solid var(--md-default-fg-color--lightest);
+  border-radius: .2rem;
+  padding:.8rem;
+  transition: all .1s ease-in-out;
+}
+.grid_item_flex {
+  display: flex;
+  align-items: center;
+  /* gap: .7em; */
+  flex: 1 1 49%;
+  line-height: 1.2;
+  padding: .0rem .0rem;
+}
+
+.grid_item_flex p {margin-right: 15px;}
+
+.grid_item:hover {
+  transition: all .1s ease-in-out;
+  /* box-shadow: 0 0 10px 16px rgba(0,0,0,0.2); */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; /* SOURCE: https://getcssscan.com/css-box-shadow-examples */
+}
+
+.gallery_container p {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery_container > * > * {
+  flex: 1 1 24%;
+  min-width: 175px;
+}
+.gallery_container img {
+  display: block;
+}
 
 /* TABS */
 .centered_tab_labels .tabbed-labels {justify-content:center;}
 .centered_tab_labels .tabbed-labels::before {transition:unset !important;}
 
+
+
+
 /* ----------------------------------------------------------------------- */
 
 /* CUSTOM ADMONITION "note-grey" */
 :root {
-    --md-admonition-icon--note-grey: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg>')
+    --md-admonition-icon--note-grey: var(--md-admonition-icon--info)
   }
   .md-typeset .admonition.note-grey,
   .md-typeset details.note-grey {
@@ -113,4 +176,25 @@ code.outlined .twemoji {vertical-align:-10% !important;}
     background-color: rgb(130, 130, 130);
     -webkit-mask-image: var(--md-admonition-icon--note-grey);
             mask-image: var(--md-admonition-icon--note-grey);
+  }
+
+
+
+
+  :root {
+    --md-admonition-icon--task-fg-color: var(--md-admonition-icon--danger)
+  }
+  .md-typeset .admonition.task-fg-color,
+  .md-typeset details.task-fg-color {
+    border-color: var(--md-primary-fg-color);
+  }
+  .md-typeset .task-fg-color > .admonition-title,
+  .md-typeset .task-fg-color > summary {
+    background-color: color-mix(in srgb, var(--md-primary-fg-color) 10%, transparent); /* same color but transparent */
+  }
+  .md-typeset .task-fg-color > .admonition-title::before,
+  .md-typeset .task-fg-color > summary::before {
+    background-color: var(--md-primary-fg-color);
+    -webkit-mask-image: var(--md-admonition-icon--task-fg-color);
+            mask-image: var(--md-admonition-icon--task-fg-color);
   }

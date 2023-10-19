@@ -8,7 +8,7 @@
 
 ### Vektorová a rastrová prostorová data
 
-<div class="process_container" style="flex-wrap:wrap;align-items:stretch;">
+<div class="grid_container">
   <div class="grid_item" style="flex:1 1 300px;">
     <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 3v6h2.95l2 6H6v6h6v-4.59L17.41 11H22V5h-6v4.57L10.59 15H9.06l-2-6H8V3M4 5h2v2H4m14 0h2v2h-2M8 17h2v2H8Z"></path></svg></span>&nbsp;
     <strong>Vektorová data</strong>
@@ -63,7 +63,7 @@ Pomocí přepínátka ![](../assets/cviceni1/img_36.png){: .off-glb style="verti
   details.page_color_admonition {border-color: var(--md-primary-fg-color) !important;margin:50px 0px;}
   details.page_color_admonition summary {background-color: #0094851a !important;}
 </style>
-<details class="example page_color_admonition" open="">
+<details class="task-fg-color page_color_admonition" open="">
   <summary>Příklad k vyzkoušení<div style="display:inline-block; border-left: 1px solid var(--md-admonition-fg-color); height:.9rem;vertical-align:-20%;margin:0px 20px"></div><span style="font-weight:normal;">testování atributových dotazů na skutečných datech</span></summary>
   <iframe style="filter:none !important;margin-top:.6rem;" width="100%" height="500" frameborder="0" allowfullscreen src="https://geo.fsv.cvut.cz/data/hoffmann/appquery/"></iframe>
   <hr class="level-1" style="margin-top:5px !important; margin-bottom:0px !important;">
@@ -111,9 +111,9 @@ Pomocí přepínátka ![](../assets/cviceni1/img_36.png){: .off-glb style="verti
 
 Prostorový dotaz (Spatial Query) je metoda výběru/filtrace prvků jedné vrstvy na základě vzájemné polohy s prvky druhé vrstvy. Funkce využívá jako vstup <code>__vrstvu vybíraných prvků__</code>, <code>__vrstvu pro překryvnou analýzu__</code> a <code>__vztah pro překryvnou analýzu__</code>.
 
-![](https://geo.fsv.cvut.cz/data/cehak/155SGEA/img_01.svg){ .off-glb style="filter:none !important;" }
-![](https://geo.fsv.cvut.cz/data/cehak/155SGEA/img_02.svg){ .off-glb style="filter:none !important;" }
-{: .process_container}
+![](https://geo.fsv.cvut.cz/data/cehak/155SGEA/img_01.svg){ .off-glb .no-filter }
+![](https://geo.fsv.cvut.cz/data/cehak/155SGEA/img_02.svg){ .off-glb .no-filter }
+{: .process_container style="flex-wrap:wrap; row-gap: 10px;"}
 
 <div class="table_headerless table_small_padding table_centered centered_tab_labels" markdown> <!-- trik: vlastnosti tabulky pro vsechny podrizene -->
 
