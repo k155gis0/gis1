@@ -35,6 +35,9 @@ V Zeměměřickém úřadu tato databáze slouží jako zdroj pro tvorbu kartogr
 ## [Data50](https://geoportal.cuzk.cz/(S(htwtba15ms3bpwjajv0aqpxq))/Default.aspx?mode=TextMeta&side=mapy_data50&text=dSady_mapyData50 "Databáze Data50")
 Data50 je digitální geografický model území České republiky odvozený z kartografické databáze pro Základní mapu ČR 1 : 50 000. Souborová data SHP tvoří 59 typů geografických objektů. Data zahrnují osm tematických oblastí sídelní, kulturní a hospodářské objekty, komunikace, produktovody a elektrické vedení, vodstvo, hranice územních jednotek, vegetace a povrch, terénní reliéf a popis. Souborová data produktu Data50 jsou poskytována stahovacími službami ATOM jako otevřená data, bezplatně, na základě licence Creative Commons CC BY 4.0.
 
+## [Veřejná databáze ČSÚ](https://vdb.czso.cz/vdbvo2/ " VDB ČSÚ")
+Český statistický úřad (ČSÚ) je ústředním orgánem státní správy České republiky. Byl zřízen dne 8. ledna 1969 zákonem č. 2/1969 Sb., o zřízení ministerstev a jiných ústředních orgánů státní správy. Veřejná databáze ČSÚ (VDB) je úzce napojená na statistický metainformační systém ČSÚ, zejména na systém ukazatelů a číselníků. Každý údaj v databázi je identifikován z hlediska věcného, časového i územního a také odkazem na zdroj dat. ČSÚ rámci VDB tedy poskytuje demografická statistická data vztažená k různým úrovním administrativních jednotek ČR, které je možné zdarma stahovat a připojit do GIS.
+
 ## [Natural Earth](https://www.naturalearthdata.com/ "Natural Earth Data")
 Natural Earth je veřejná mapová datová sada dostupná v měřítku 1:10 000 000, 1:50 000 000 a 1:110 000 000. K dispozici jsou pro každé měřítko vektorová (kategorie Physical a Cultural) a rastrová data. Databáze Natural Earth byla vybudována ve spolupráci mnoha dobrovolníků, je podporována NACIS (North American Cartographic Information Society) a lze zdarma použít v jakémkoli typu projektu.
 
