@@ -20,6 +20,24 @@ Digitální model reliéfu České republiky 5. generace (DMR 5G) představuje z
 
 Registr územní identifikace, adres a nemovitostí (RÚIAN) je jedním ze základních registrů veřejné správy. Je veřejným seznamem, nevede žádné osobní údaje a je jedinečným zdrojem adres nejen pro veřejnou správu. Obsahuje také údaje o územních prvcích, územně evidenčních jednotkách a jejich vzájemných vazbách.
 
+## [Data250](https://geoportal.cuzk.cz/(S(htwtba15ms3bpwjajv0aqpxq))/Default.aspx?mode=TextMeta&side=mapy_data250&text=dSady_mapyData250 "Databáze Data250")
+Databáze Data250 je digitální geografický model území České republiky odpovídající přesností a stupněm generalizace měřítku 1:250 000. Data250 je zpracována v rozsahu celého území České republiky, vznikla generalizací původní databáze Data200 v roce 2023.
+
+Aktuální vydání Data250 obsahuje cca 50 typů objektů. Data zahrnují osm tematických oblastí – hranice, vodstvo, popis, sídla, doprava, vegetace, reliéf a různé objekty. Souborová data produktu Data250 jsou poskytována stahovacími službami ATOM jako otevřená data, bezplatně, na základě licence Creative Commons CC BY 4.0.
+
+## [Data200](https://geoportal.cuzk.cz/(S(htwtba15ms3bpwjajv0aqpxq))/Default.aspx?mode=TextMeta&side=mapy_data200&text=dSady_mapyData200 "Databáze Data200")
+Databáze Data200 je digitální geografický model území České republiky (ČR) odpovídající přesností a stupněm generalizace měřítku 1:200 000. Data200 je zpracována v rozsahu celého území České republiky, vznikla na základě projektu EuroRegionalMap (ERM) evropského sdružení civilních zeměměřických a mapových služeb EuroGeographics. Zpracování ERM za Českou republiku zajišťuje Zeměměřický úřad od roku 2005.
+
+Databáze Data200 vychází z ERM a rozšiřuje ji o další objekty. Aktuální vydání Data200 obsahuje cca 50 typů objektů. Data zahrnují osm tematických oblastí – hranice, vodstvo, popis, sídla, doprava, vegetace, reliéf a různé objekty. Díky svému původu jsou tato data homogenní v rámci Evropy a vystykovaná na státních hranicích, takže je lze kombinovat s daty ERM ostatních států a získat tak kvalitní podklad pro řešení nejen národních, ale i různých přeshraničních projektů.
+
+V Zeměměřickém úřadu tato databáze slouží jako zdroj pro tvorbu kartografických výstupů odpovídajícího měřítka a pro aktualizaci tematických nadstaveb včetně ERM. Data200 jsou od dubna 2019 poskytována jako otevřená data ve formátu SHP.
+
+## [Data50](https://geoportal.cuzk.cz/(S(htwtba15ms3bpwjajv0aqpxq))/Default.aspx?mode=TextMeta&side=mapy_data50&text=dSady_mapyData50 "Databáze Data50")
+Data50 je digitální geografický model území České republiky odvozený z kartografické databáze pro Základní mapu ČR 1 : 50 000. Souborová data SHP tvoří 59 typů geografických objektů. Data zahrnují osm tematických oblastí sídelní, kulturní a hospodářské objekty, komunikace, produktovody a elektrické vedení, vodstvo, hranice územních jednotek, vegetace a povrch, terénní reliéf a popis. Souborová data produktu Data50 jsou poskytována stahovacími službami ATOM jako otevřená data, bezplatně, na základě licence Creative Commons CC BY 4.0.
+
+## [Natural Earth](https://www.naturalearthdata.com/ "Natural Earth Data")
+Natural Earth je veřejná mapová datová sada dostupná v měřítku 1:10 000 000, 1:50 000 000 a 1:110 000 000. K dispozici jsou pro každé měřítko vektorová (kategorie Physical a Cultural) a rastrová data. Databáze Natural Earth byla vybudována ve spolupráci mnoha dobrovolníků, je podporována NACIS (North American Cartographic Information Society) a lze zdarma použít v jakémkoli typu projektu.
+
 ## Kód, skripty
 
 ### Codeblocks
