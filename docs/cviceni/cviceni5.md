@@ -24,14 +24,6 @@ Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Sou�
 - [Císařské otisky stabilního katastru](../../data/#cisarske-otisky-stabilniho-katastru)
 - [DMR 4G](../../data/#dmr-5g)
 
-## Pozn
-
-- video georeferencování
-- data pro cvičení - buď Netolice nebo Zhůří (Zhůří není moc vhodné, když tam teď nic není)
-- data pro sem. práci - ideálně každý jinou obec- promyslet a domluvit s ČUZK
-- nahrát data CO
-
-
 ## Náplň cvičení
 
 ### Ukázka nejčastějších rastrových typů dat
