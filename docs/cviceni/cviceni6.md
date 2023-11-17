@@ -24,10 +24,6 @@ Ukázka automatického ořezu footprintu. Tvorba vlastní geodatabáze, vektoriz
 - [Státní mapa 1 : 5 000 – odvozená](../../data/#statni-mapa-1-:-5-500-0-–-odvozena)
 - klad SMO5
 
-## Pozn
-
-- nahrát data smo5 rastry + smo5 klad
-
 ## Náplň cvičení
 
 ### Založení nové geodatabáze
