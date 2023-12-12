@@ -19,9 +19,9 @@ Práce nad rámec základního zadání bude ohodnocena bonusovými body. Přík
 
 **5.** Připojte WMS, WMTS či WFS službu dle vašeho výběru (např. historickou mapu, ortofoto či katastrální mapu). Lze připojit až v ArcGIS Online.
 
-**6.** Georeferencujte rastry Státní mapy 1 : 5 000 – odvozené z 50. let 20. století. Najdete se na disku S. Georeferencujte pouze rastry, na kterých se vaše území nachází. Z georeferencovaných rastrů vytvořte mozaiku.
+**6.** Georeferencujte rastry Státní mapy 1 : 5 000 – odvozené z 50. let 20. století. Najdete na disku S. Georeferencujte pouze rastry, na kterých se vaše území nachází. Z georeferencovaných rastrů vytvořte mozaiku.
 
-**7.** Na podkladu SMO5 vektorizujte území v okruku 500 metrů od definičního bodu obce. Ten vypočítejte jako těžiště polygonu obce. Tato data slučte na základě typů využití ploch (funkce Dissolve).
+**7.** Na podkladu SMO5 vektorizujte území v okruhu 500 metrů od definičního bodu obce. Ten vypočítejte jako těžiště polygonu obce. Tato data slučte na základě typů využití ploch (funkce Dissolve).
 
 Rozlišujte následující typy využití ploch: 
 
