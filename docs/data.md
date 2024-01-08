@@ -1,5 +1,9 @@
 # Data
 
+[ČÚZK ArcGIS REST server **POLOHOPIS** – stahovací služba](https://ags.cuzk.cz/arcgis/rest/services)
+
+[ČÚZK ArcGIS REST server **VÝŠKOPIS** – stahovací služba](https://ags.cuzk.cz/arcgis2/rest/services)
+
 ## [ArcČR 500](https://www.arcgis.com/home/item.html?id=527cdeb48a8b4456a00ed4b35cbed799 "Odkaz na stažení")
 
 ArcČR 500 je digitální vektorová geografická databáze České republiky, zpracována na úrovni podrobnosti 1 : 500 000. Navazuje na podobné databáze, zpracované firmou Esri. Obsahem databáze jsou přehledné geografické informace o ČR. Data umožňují široké spektrum prostorových analýz a vizualizace a poskytují možnost propojení na statistická data.

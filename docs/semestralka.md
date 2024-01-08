@@ -11,37 +11,62 @@ Práce nad rámec základního zadání bude ohodnocena bonusovými body. Přík
 
 **1.** Z databáze RÚIAN vyberte zadanou obec a vyexportujte ji do samostatné vrstvy.
 
-**2.** Zjistěte, zda se na území zadané lokality nachází chráněné území (zdroj: ZABAGED). Pokud ano, zobrazte jej v mapě jako samostatnou vrstvu.
+**2.** Určete počet adresních míst na území dané obce (zdroj: RÚIAN).
 
-**3.** Vytvořte samostatnou vrstvu, která bude obsahovat data způsobu využití půdy (zdroj: ZABAGED). Vrstvu vhodně symbolizujte na základě typů využití půdy.
+**3.** Zjistěte, zda se na území zadané obce a v 10 km kolem ní nachází chráněné území (zdroj: ZABAGED). Pokud ano, zobrazte jej v mapě jako samostatnou vrstvu. 
 
-**4.** Pro zadanou obec a obce s ní přímo sousedící stáhněte vámi zvolená data z Českého statistického úřadu (např. výsledky voleb či data cestovního ruchu). Tato data musejí mít dané údaje rozdělené dle obcí (ukazatel *OB*). Data propojte s atributovou tabulkou vybrané vrstvy obcí a jedoduše vizualizujte v samostatné vrstě.
+**4.** Vytvořte samostatnou vrstvu, která bude obsahovat data způsobu využití pozemku (zdroj: RÚIAN – vrstva *Parcela*). Na základě atributů v tabulce níže vypočítejte pro data nový sloupec *TYP_VYUZITI*, na základě kterého vrstvu následně vhodně vizualizujte. Číselníky pro přiřazení kódů: [Způsob využití pozemku](https://www.cuzk.cz/Katastr-nemovitosti/Poskytovani-udaju-z-KN/Ciselniky-ISKN/Ciselniky-k-nemovitosti/Zpusob-vyuziti-pozemku.aspx), [Kód druhu pozemku](https://www.cuzk.cz/Katastr-nemovitosti/Poskytovani-udaju-z-KN/Ciselniky-ISKN/Ciselniky-k-nemovitosti/Druh-pozemku.aspx). Závěrem proveďte *Dissolve* dle atributu *TYP_VYUZITI*.
 
-**5.** Připojte WMS, WMTS či WFS službu dle vašeho výběru (např. historickou mapu, ortofoto či katastrální mapu). Lze připojit až v ArcGIS Online.
+|  Typ využití pozemku *TYP_VYUZITI* (vypočtené)       | Kód druhu pozemku *SC_D_POZEMKU*        | Způsob využití pozemku *SC_ZP_VYUZITI_POZ*            
+| ------------ | ------------------------- |----------------|
+| orná půda    | 2 | -|
+| lesní půda | 10 |  -|
+| trvalý travní porost   | 7, 8 | -|
+| zahrada    | 5, 6 | -|
+| vodstvo   | 11 | -|
+| zastavěná plocha     |  13  | *Null* |
+| nádvoří     |  13  | *Not Null* |
+| komunikace   | 3, 4 , 14 | 14, 15, 16, 17|
+| ostatní   | 3, 4 , 14 | vše kromě 14, 15, 16, 17|
 
-**6.** Georeferencujte rastry Státní mapy 1 : 5 000 – odvozené z 50. let 20. století. Najdete na disku S. Georeferencujte pouze rastry, na kterých se vaše území nachází. Z georeferencovaných rastrů vytvořte mozaiku.
 
-**7.** Na podkladu SMO5 vektorizujte území v okruhu 500 metrů od definičního bodu obce. Ten vypočítejte jako těžiště polygonu obce. Tato data slučte na základě typů využití ploch (funkce Dissolve).
+???+ note "&nbsp;<span style="color:#448aff">Poznámka</span>"
+      V případě určování typu využití pozemku (sloupec *TYP_VYUZITI*) pro atributy *ostatní* a *komunikace* musí platit výběr prvků ze sloupců *Kód druhu pozemku* a *Způsob využití pozemku* zároveň (tedy využití *AND* ve funkci *Select by attributes*).
 
-Rozlišujte následující typy využití ploch: 
+**6.** Georeferencujte rastry Státní mapy 1 : 5 000 – odvozené (SMO5) z 50. let 20. století. Najdete je na disku S. Georeferencujte pouze rastry, kterých se dotýká území v okruhu 500 metrů od definičního bodu obce. Ten vypočítejte jako těžiště polygonu obce (musí být uvnitř polygonu). Z georeferencovaných rastrů vytvořte mozaiku.
+
+**7.** Na podkladu SMO5 vektorizujte území v okruhu 500 metrů od definičního bodu obce. Tato data slučte na základě typů využití ploch (funkce Dissolve). 
+
+Rozlišujte následující typy využití ploch (stejně jako v bodě 5 pro data z RÚIAN): 
 
 - orná půda
 
-- les
+- lesní půda
 
-- trvalé travnaté porosty (louky, pastviny)
+- trvalý travní porosty (louky, pastviny)
 
-- budovy
+- zahrada
 
-- cestní síť (cesty, silnice)
+- vodstvo (řeky, potoky, rybníky), nevektorizujte malé vodní toky vyznačené pouze liniově
 
-- vodní plochy (řeky, potoky, rybníky), nevektorizujte malé vodní toky vyznačené pouze liniově
+- zastavěná plocha
 
-- ostatní plochy (nádvoří, lomy, neúrodná půda apod.)
+- nádvoří (okolí domů, neoznačené zahrady, veřejné prostory v intravilánu)
 
-**8.** Vektorizaci topologicky zkontrolujte dle pravidel *Must Not Have Gaps (Area)*, *Must Not Overlap With (Area-Area)* a *Must Not Overlap (Area)*.
+- komunikace (cesty, silnice, železnice)
 
-**9.** Ve výsledné aplikaci porovnejte vývoj využití krajiny v 50. letech 20. století (vektorizace z SMO5) se současností (ZABAGED). Způsob porovnání zvolte dle vlastního uvážení (posuvník v aplikaci, nová vrstva s vypočtenými rozdíly apod.).
+- ostatní lomy, neúrodná půda apod.)
+
+<figure markdown>
+![SMO5_legenda](../assets/cviceni6/SMO5_legenda.png "Legenda SMO5"){ width="600" }
+    <figcaption>Značkový klíč SMO5</figcaption>
+</figure>
+
+**8.** Vektorizaci SMO5 topologicky zkontrolujte dle pravidel *Must Not Have Gaps (Area)*, *Must Not Overlap With (Area-Area)* a *Must Not Overlap (Area)*.
+
+**9.** Ve výsledné aplikaci porovnejte vývoj využití krajiny v 50. letech 20. století (vektorizace z SMO5) se současností (RÚIAN – vrstva *Parcela*). Způsob porovnání zvolte dle vlastního uvážení (posuvník v aplikaci, nová vrstva s vypočtenými rozdíly apod.).
+
+**10.** Jako samostatnou vrstvu do svého projektu připojte WMS, WMTS či WFS službu dle vašeho výběru (např. historickou mapu, ortofoto či katastrální mapu). Tato vrstva musí být součástí výsledné mapové aplikace.
 
 ## Konkrétní zadání
 

@@ -117,7 +117,7 @@ Pro analýzu rastrových map, je téměř vždy nutná jejich vektorizace, tedy 
 
 <figure markdown>
 ![SMO5_legenda](../assets/cviceni6/SMO5_legenda.png "Legenda SMO5"){ width="600" }
-    <figcaption>Legenda SMO5</figcaption>
+    <figcaption>Značkový klíč SMO5</figcaption>
 </figure>
 
 **2.** Pro vytvoření třídy prvků musíme kliknout pravým tlačítkem na příslušný *Feature Dataset* v *Catalogu* -> *New* -> *Feature Class*.
