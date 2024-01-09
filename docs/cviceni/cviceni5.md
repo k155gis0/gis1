@@ -134,12 +134,6 @@ Rastrovým vrstvám lze (stejně jako vektorovým) měnit vzhled v záložce [_
 
       - XML – informace o souřadnicovém systému a parametrech georeference
 
-**Video-návod ke georeferencování map:**
-
-<div style="text-align: center;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/H7m7rX9fswE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-
 ### Vytvoření mozaiky
 
 Pro vytvoření ucelené mapové vrstvy a následné zpracování rastrů, se využívá _Mosaic Dataset_. Do mozaiky přesuneme požadované rastry. Mozaika vygeneruje vektorové vrstvy _Footprint_ a *Boundary*. _Footprint_ slouží k ořezu mimorámových údajů každého rastru a *Boundary* je ohraničení celé mozaiky.

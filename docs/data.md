@@ -1,5 +1,9 @@
 # Data
 
+[ČÚZK ArcGIS REST server **POLOHOPIS** – stahovací služba](https://ags.cuzk.cz/arcgis/rest/services)
+
+[ČÚZK ArcGIS REST server **VÝŠKOPIS** – stahovací služba](https://ags.cuzk.cz/arcgis2/rest/services)
+
 ## [ArcČR 500](https://www.arcgis.com/home/item.html?id=527cdeb48a8b4456a00ed4b35cbed799 "Odkaz na stažení")
 
 ArcČR 500 je digitální vektorová geografická databáze České republiky, zpracována na úrovni podrobnosti 1 : 500 000. Navazuje na podobné databáze, zpracované firmou Esri. Obsahem databáze jsou přehledné geografické informace o ČR. Data umožňují široké spektrum prostorových analýz a vizualizace a poskytují možnost propojení na statistická data.
@@ -35,63 +39,14 @@ V Zeměměřickém úřadu tato databáze slouží jako zdroj pro tvorbu kartogr
 ## [Data50](https://geoportal.cuzk.cz/(S(htwtba15ms3bpwjajv0aqpxq))/Default.aspx?mode=TextMeta&side=mapy_data50&text=dSady_mapyData50 "Databáze Data50")
 Data50 je digitální geografický model území České republiky odvozený z kartografické databáze pro Základní mapu ČR 1 : 50 000. Souborová data SHP tvoří 59 typů geografických objektů. Data zahrnují osm tematických oblastí sídelní, kulturní a hospodářské objekty, komunikace, produktovody a elektrické vedení, vodstvo, hranice územních jednotek, vegetace a povrch, terénní reliéf a popis. Souborová data produktu Data50 jsou poskytována stahovacími službami ATOM jako otevřená data, bezplatně, na základě licence Creative Commons CC BY 4.0.
 
+## [ZABAGED (polohopis)](https://geoportal.cuzk.cz/(S(4d3ixwvvpejhs0flnqsgbbbh))/default.aspx?mode=TextMeta&text=dSady_zabaged&side=zabaged&menu=24 "Základní báze geografických dat České republiky - polohopis")
+Základní báze geografických dat České republiky (ZABAGED®) je vektorový geografický digitální model území České republiky (ČR), který je spravován Zeměměřickým úřadem ve veřejném zájmu. ZABAGED® je součástí informačního systému zeměměřictví podle zákona č. 200/1994 Sb., o zeměměřictví a o změně a doplnění některých zákonů souvisejících s jeho zavedením, ve znění pozdějších předpisů (dále jen „zákon o zeměměřictví“). Obsah a předmět správy ZABAGED® je dán vyhláškou č. 31/1995 Sb., kterou se provádí zákon o zeměměřictví. Souborová data ZABAGED® jsou od 1. 7. 2023 poskytována ve vybraných formátech stahovacími službami ATOM jako otevřená data, bezplatně na základě licence Creative Commons CC BY 4.0.
+
+## [OpenStreetMap](https://download.geofabrik.de/europe/czech-republic.html "Data OSM pro ČR")
+OpenStreetMap je projekt, jehož cílem je tvorba volně dostupných geografických dat a následně jejich vizualizace do podoby topografických map (např. silniční mapa, turistická mapa, cyklomapa a navigování v nich). Pro tvorbu geodat se jako podklad využívá záznamů z přijímačů globálního družicového polohového systému nebo jiné zpravidla digitalizované mapy, která jsou licenčně kompatibilní. Projekt byl založen v roce 2004 a využívá kolektivní spolupráce spolu s koncepcí Otevřeného software. Data jsou poskytována pod licencí Open Database License.
+
 ## [Veřejná databáze ČSÚ](https://vdb.czso.cz/vdbvo2/ " VDB ČSÚ")
 Český statistický úřad (ČSÚ) je ústředním orgánem státní správy České republiky. Byl zřízen dne 8. ledna 1969 zákonem č. 2/1969 Sb., o zřízení ministerstev a jiných ústředních orgánů státní správy. Veřejná databáze ČSÚ (VDB) je úzce napojená na statistický metainformační systém ČSÚ, zejména na systém ukazatelů a číselníků. Každý údaj v databázi je identifikován z hlediska věcného, časového i územního a také odkazem na zdroj dat. ČSÚ rámci VDB tedy poskytuje demografická statistická data vztažená k různým úrovním administrativních jednotek ČR, které je možné zdarma stahovat a připojit do GIS.
 
 ## [Natural Earth](https://www.naturalearthdata.com/ "Natural Earth Data")
 Natural Earth je veřejná mapová datová sada dostupná v měřítku 1:10 000 000, 1:50 000 000 a 1:110 000 000. K dispozici jsou pro každé měřítko vektorová (kategorie Physical a Cultural) a rastrová data. Databáze Natural Earth byla vybudována ve spolupráci mnoha dobrovolníků, je podporována NACIS (North American Cartographic Information Society) a lze zdarma použít v jakémkoli typu projektu.
-
-## Kód, skripty
-
-### Codeblocks
-
-Some `code` goes here.
-
-### Plain codeblock
-
-A plain codeblock:
-
-```
-Some code here
-def myfunction()
-// some comment
-```
-
-#### Code for a specific language
-
-Some more code with the `py` at the start:
-
-```py
-import tensorflow as tf
-def whatever()
-```
-
-#### With a title
-
-```py title="bubble_sort.py"
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] > items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-```
-
-#### With line numbers
-
-```py linenums="1"
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] > items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-```
-
-#### Highlighting lines
-
-```py hl_lines="2 3"
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] > items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-```
