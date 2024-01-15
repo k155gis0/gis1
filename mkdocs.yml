@@ -1,6 +1,6 @@
 site_name: 155GIS1
 nav:
-  - Charakterisika předmětu: index.md
+  - Charakteristika předmětu: index.md
   - Cvičení:
       - Cvičení 1: cviceni/cviceni1.md
       - Cvičení 2: cviceni/cviceni2.md
