@@ -15,49 +15,49 @@ Naučíte se
 :material-map-outline:
 {: .icon_important}
 
-**zpracovávat** a **analyzovat** prostorová (geografická, mapová) data
+__zpracovávat__ a __analyzovat__ prostorová (geografická, mapová) data
 </div>
 <div class="grid_item grid_item_flex" markdown>
 :material-vector-polygon:
 {: .icon_important}
 
-porozumět rozdílu mezi **vektorovými** a **rastrovými** daty
+porozumět rozdílu mezi __vektorovými__ a __rastrovými__ daty
 </div>
 <div class="grid_item grid_item_flex" markdown>
 :material-filter-outline:
 {: .icon_important}
 
-**filtrovat** data pomocí atributových a prostorových dotazů
+__filtrovat__ data pomocí atributových a prostorových dotazů
 </div>
 <div class="grid_item grid_item_flex" markdown>
 :material-tools:
 {: .icon_important}
 
-aplikovat základní **prostorové funkce** (nástroje geoprocessingu)
+aplikovat základní __prostorové funkce__ (nástroje geoprocessingu)
 </div>
 <div class="grid_item grid_item_flex" markdown>
 :material-creation-outline:
 {: .icon_important}
 
-**tvořit** a **editovat** GIS data
+__tvořit__ a __editovat__ GIS data
 </div>
 <div class="grid_item grid_item_flex" markdown>
-:octicons-gear-16:
+:material-vector-difference:
 {: .icon_important}
 
-tvořit modely pro **automatizované zpracování** (nástroj _ModelBuilder_)
+základy datové __topologie__
 </div>
 <div class="grid_item grid_item_flex" markdown>
 :octicons-share-16:
 {: .icon_important}
 
-**sdílet** data prostřednictvím webu (systém _ArcGIS Online_, webové mapové aplikace)
+__sdílet__ data prostřednictvím webu (systém _ArcGIS Online_, webové mapové aplikace)
 </div>
 <div class="grid_item grid_item_flex" markdown>
 :simple-qgis:
 {: .icon_important}
 
-získat základy ovládání **alternativního GIS software** (_QGIS_)
+získat základy ovládání __alternativního GIS software__ (_QGIS_)
 </div>
 </div>
 

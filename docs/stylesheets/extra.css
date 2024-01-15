@@ -1,16 +1,18 @@
 /* HEADINGS + RULES */
 h2 {font-weight: 700 !important;}                                                                   /* Pokus – zmena formatu nadpisu 2 */
+h3 {font-size: 1.4em !important;}
 .page_title {
   font-weight: bold !important;
   text-align: center;
 }
-hr.level-1 {         /* Break Line – LEVEL 1 */
-    background-color: var(--md-primary-fg-color);
-    height: 2px;
-}
 hr {                 /* Break Line – general */
     margin-top: 2.5rem !important;
     margin-bottom: 4rem !important;
+}
+hr.level-1 {         /* Break Line – LEVEL 1 */
+  background-color: var(--md-primary-fg-color);
+  height: 2px;
+  margin-bottom: 6rem !important;
 }
 
 /* IMAGES + CAPTIONS */
@@ -135,7 +137,8 @@ code.outlined .twemoji {vertical-align:-10% !important;}
 .grid_item:hover {
   transition: all .1s ease-in-out;
   /* box-shadow: 0 0 10px 16px rgba(0,0,0,0.2); */
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; /* SOURCE: https://getcssscan.com/css-box-shadow-examples */
+  box-shadow: color-mix(in srgb, var(--md-default-fg-color) 10%, transparent) 0px 5px 15px;
+  /*box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; /* SOURCE: https://getcssscan.com/css-box-shadow-examples */
 }
 
 .gallery_container p {

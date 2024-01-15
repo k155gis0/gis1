@@ -1,5 +1,4 @@
 
-
 # Vektorová data, atributové dotazy, prostorové dotazy
 
 <!-- ## Cíl cvičení -->
@@ -111,9 +110,13 @@ Pomocí přepínátka ![](../assets/cviceni1/img_36.png){: .off-glb style="verti
 
 Prostorový dotaz (Spatial Query) je metoda výběru/filtrace prvků jedné vrstvy na základě vzájemné polohy s prvky druhé vrstvy. Funkce využívá jako vstup <code>__vrstvu vybíraných prvků__</code>, <code>__vrstvu pro překryvnou analýzu__</code> a <code>__vztah pro překryvnou analýzu__</code>.
 
-![](https://geo.fsv.cvut.cz/data/cehak/155SGEA/img_01.svg){ .off-glb .no-filter }
+<!-- ![](https://geo.fsv.cvut.cz/data/cehak/155SGEA/img_01.svg){ .off-glb .no-filter }
 ![](https://geo.fsv.cvut.cz/data/cehak/155SGEA/img_02.svg){ .off-glb .no-filter }
-{: .process_container style="flex-wrap:wrap; row-gap: 10px;"}
+{: .process_container style="flex-wrap:wrap; row-gap: 10px;"} -->
+
+![](https://geo.fsv.cvut.cz/data/cehak/155SGEA/img_01.svg){ .no-filter }
+![](https://geo.fsv.cvut.cz/data/cehak/155SGEA/img_02.svg){ .no-filter }
+{: .process_container}
 
 <div class="table_headerless table_small_padding table_centered centered_tab_labels" markdown> <!-- trik: vlastnosti tabulky pro vsechny podrizene -->
 
@@ -274,8 +277,10 @@ Prostorový dotaz (Spatial Query) je metoda výběru/filtrace prvků jedné vrst
           <tr><td>Crossed by the outline of</td><td>A, E, G, J, K</td></tr>
           <tr><td>Have their center in</td><td>C, E, F, G, H, K, L</td></tr>
         </table>
-
+        
 </div>
+
+<!-- <figcaption markdown>zdroj: [Select By Location graphic examples](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/select-by-location-graphical-examples.htm)</figcaption> -->
 
 
 [:material-open-in-new: Select features by location](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/select-features-by-location.htm){ .md-button .md-button--primary .button_smaller target="\_blank"}
@@ -286,5 +291,8 @@ Prostorový dotaz (Spatial Query) je metoda výběru/filtrace prvků jedné vrst
 <br><br><br><br><br><br>
 
 <!-- ## Zadání domácího úkolu k semestrální práci -->
+
+
+asdfasdf
 
 

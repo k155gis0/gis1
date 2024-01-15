@@ -257,11 +257,12 @@ __Přidání dat do mapy__ (lokálně uložených): _:material-tab: Map_{: .outl
 <figcaption>Pokud se soubor ve struktuře neobjevuje, lze dialog obnovit klávesou F5</figcaption>
 
 [Add data from the Add Data dialog box](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/add-layers-to-a-map.htm#ESRI_SECTION2_1C48753A1FD546F385580EF9197DBB8C){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/01-pridani_dat.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 ---
 
-Aby pro procházení dat nebylo nutné pokaždé procházet adresářovou strukturu, hodí se si adresáře s daty _připojit do projektu_.
+Aby pro procházení dat nebylo nutné pokaždé procházet adresářovou strukturu, hodí se adresáře s daty _připojit do projektu_.
 
 __Připojení adresáře do projektu__: V _Catalog Pane_ ( _:material-tab: View_{: .outlined} → _:material-button-cursor: Catalog Pane_{: .outlined} ) přes pravé tl. myši na "_Folders_" vybrat _:material-form-dropdown: Add Folder Connection_{: .outlined} → vložit nebo zvolit cestu... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
 
@@ -278,6 +279,7 @@ __Připojení adresáře do projektu__: V _Catalog Pane_ ( _:material-tab: View_
 
 [Connect to a folder](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-a-folder.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 [The Project Pane](https://pro.arcgis.com/en/pro-app/latest/help/projects/the-project-pane.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/02-pripojeni_adresare.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 ---
@@ -298,6 +300,7 @@ __Připojení geodatabáze do projektu__: V _Catalog Pane_ ( _:material-tab: Vie
 <figcaption>Cesta ke zvolené geodatabázi zůstane v nabídce mezi položkami "Databases". Cesta opět nemusí být pouze lokální.</figcaption>
 
 [:material-open-in-new: Connect to a database](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-a-database.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
+[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/03-pripojeni_databaze.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 ---
@@ -312,6 +315,9 @@ __Pořadí vrstev__: V obsahu mapy (_Contents Pane_) se zobrazují všechny vrst
 {: .process_container}
 
 <figcaption>Contents Pane a změna pořadí a přepínání viditelnosti vrstev</figcaption>
+
+[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/04-poradi_vrstev.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
+{: .button_array}
 
 ---
 
@@ -338,6 +344,9 @@ Pro začátek jsou zajímavé tyto položky:
     - Informace o souřadnicovém systému zobrazení mapy (zvlášť pro polohu a pro výšku).
     - __POZOR__, pokud se souř. systém __vložených dat__ liší od systému __mapy__, jsou data __dočasně__ převedena do souř. systému __mapy__. Jedná se však o tzv. __On-the-fly__ transformaci, která je pro kombinaci některých souř. systémů __zjednodušená__ a data na sebe nemusí správně navazovat. Tato situace se __nedoporučuje__, neboť může přinést __nepřesné výsledky__ mapové vizualizace i datových analýz. [__Podrobnější informace__](https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/projection-on-the-fly-and-geographic-transformations)
     {: style="color:#888;font-size:smaller; line-height:1.1;"}
+
+[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/05-vlastnosti_mapy.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
+{: .button_array}
 
 <hr class="level-1">
 
@@ -371,6 +380,9 @@ __Připojení streamovaných dat__: _bude součástí budoucích cvičení_
 - připojení datových služeb přes URL adresu, nevyžaduje ruční lokální ukládání, existuje více standardů pro poskytování těchto služeb
 {: style="color:#888;font-size:smaller; line-height:1.1;"}
 
+[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/06-stazeni_dat.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
+{: .button_array}
+
 <hr class="level-1">
 
 ### Ovládání mapy
@@ -393,6 +405,7 @@ __Explore Tool__: Pohyb v mapě a vyvolávání pop-upů (vyskakovacích oken), 
 
 [Navigation](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/navigation-in-arcgis-pro.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 [Navigate maps and scenes](https://pro.arcgis.com/en/pro-app/latest/get-started/navigate-your-data.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/07-ovladani_mapy.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 ---
@@ -414,6 +427,7 @@ __Select Tool__{: #select-tool}: Pohyb v mapě a interaktivní vybírání prvk�
 
 [Select features interactively](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/select-features-interactively.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 [Select features for editing](https://pro.arcgis.com/en/pro-app/latest/help/editing/select-features-for-editing.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/08-vybery.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 ---
@@ -428,6 +442,7 @@ __Measure Tool__: Interaktivní měření vzdáleností, úhlů apod.
 {: .process_container}
 
 [Measure](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/measure.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/09-mereni.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 <hr class="level-1">
@@ -437,6 +452,34 @@ __Doplňkové zdroje:__
 
 [<span>pro.arcgis.com</span><br>ArcGIS Pro keyboard shortcuts](https://pro.arcgis.com/en/pro-app/latest/get-started/arcgis-pro-keyboard-shortcuts.htm){ .md-button .md-button--primary .server_name .external_link_icon_small target="_blank"}
 [<span>:octicons-file-16: PDF</span><br>ArcGIS Pro shortcuts](https://www.esri.com/content/dam/esrisites/en-us/media/pdf/g526942-arcgis-pro-kybrd-shrtct-FINAL.pdf){ .md-button .md-button--primary .server_name target="_blank"}
+{: .button_array}
+
+<hr class="level-1">
+
+### Atributová tabulka
+
+Atributová tabulka je __doplňkem k prostorovým datům__ – obohacuje každý prvek (geometrii) o __další informace__ (tzv. atributy). Tyto informace jsou pro práci v GIS klíčové, protože geometrie sama o sobě (bez atributů) nám mnoho informací nepřinese. Atributová tabulka je proto součástí každé (vektorové) vrstvy.
+
+Tabulka obsahuje sloupce – tzv. __atributy__ (fields), a řádky – tzv. __záznamy__ (records). Každý prvek tak obsahuje hodnoty všech atributů – příklad viz obr. níže.
+
+![](../assets/cviceni1/img_37.png)
+{: .process_container}
+
+<figcaption>Atributová tabulka</figcaption>
+
+Otevřít atributovou tabulku
+
+Vybrat záznamy
+
+Zjistit počet prvků / počet vybraných prvků
+
+Přidat pole / editovat pole
+
+[Tables](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/tables-in-arcgis-pro.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[Open tabular data](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/open-tabular-data.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[Interact with a table](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/interact-with-a-table.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[Select records in a table interactively](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/select-records-in-a-table-interactively.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[Edit an active table](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/edit-an-active-table.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 {: .button_array}
 
 <hr class="level-1">
