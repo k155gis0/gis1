@@ -1,3 +1,8 @@
+---
+icon: material/numeric-9-box
+title: Cvičení 9
+---
+
 # Volně dostupné GIS nástroje (QGIS)
 
 ## Cíl cvičení

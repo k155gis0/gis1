@@ -1,3 +1,8 @@
+---
+icon: material/numeric-4-box
+title: Cvičení 4
+---
+
 # Práce s externími daty (Excel, CSV), join
 
 ## Cíl cvičení

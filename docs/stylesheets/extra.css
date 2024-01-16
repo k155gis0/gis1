@@ -201,3 +201,9 @@ code.outlined .twemoji {vertical-align:-10% !important;}
     -webkit-mask-image: var(--md-admonition-icon--task-fg-color);
             mask-image: var(--md-admonition-icon--task-fg-color);
   }
+
+
+  :root {
+    --md-accent-fg-color: #066b61;
+    --md-primary-fg-color: #009485;
+  }

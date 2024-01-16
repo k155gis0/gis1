@@ -1,3 +1,8 @@
+---
+icon: material/numeric-10-box
+title: Cvičení 10
+---
+
 # QGIS – online publikace dat
 
 ## Cíl cvičení

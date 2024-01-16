@@ -1,3 +1,8 @@
+---
+icon: material/numeric-6-box
+title: Cvičení 6
+---
+
 # Vektorizace, tvorba geodatabáze, kontrola topologie
 
 ## Cíl cvičení

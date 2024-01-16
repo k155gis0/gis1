@@ -1,3 +1,7 @@
+---
+icon: material/numeric-1-box
+title: Cvičení 1
+---
 
 
 # Úvod do práce v prostředí ArcGIS, prostorová data, datové zdroje

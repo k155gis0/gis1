@@ -1,3 +1,8 @@
+---
+icon: material/numeric-5-box
+title: Cvičení 5
+---
+
 # Rastrová data, georeferencování
 
 ## Cíl cvičení

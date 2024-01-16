@@ -1,3 +1,8 @@
+---
+icon: material/numeric-7-box
+title: Cvičení 7
+---
+
 # ArcGIS Online, webové služby, připojení do ArcGIS Pro
 
 ## Cíl cvičení

@@ -1,19 +1,19 @@
-site_name: 155GIS1
+site_name: GIS 1 (155GIS1)
 nav:
   - Charakteristika předmětu: index.md
   - Cvičení:
-      - Cvičení 1: cviceni/cviceni1.md
-      - Cvičení 2: cviceni/cviceni2.md
-      - Cvičení 3: cviceni/cviceni3.md
-      - Cvičení 4: cviceni/cviceni4.md
-      - Cvičení 5: cviceni/cviceni5.md
-      - Cvičení 6: cviceni/cviceni6.md
-      - Cvičení 7: cviceni/cviceni7.md
-      - Cvičení 8: cviceni/cviceni8.md
-      - Cvičení 9: cviceni/cviceni9.md
-      - Cvičení 10: cviceni/cviceni10.md
-      - Cvičení 11: cviceni/cviceni11.md
-      - Cvičení 12: cviceni/cviceni12.md
+      - Úvod do práce v prostředí ArcGIS, prostorová data, datové zdroje: cviceni/cviceni1.md
+      - Vektorová data, atributové dotazy, prostorové dotazy: cviceni/cviceni2.md
+      - Prostorové funkce (geoprocessing), spatial join: cviceni/cviceni3.md
+      - Práce s externími daty (Excel, CSV), join: cviceni/cviceni4.md
+      - Rastrová data, georeferencování: cviceni/cviceni5.md
+      - Vektorizace, tvorba geodatabáze, kontrola topologie: cviceni/cviceni6.md
+      - ArcGIS Online, webové služby, připojení do ArcGIS Pro: cviceni/cviceni7.md
+      - Ukázky webové prezentace map, Experience Builder, Instant Apps, Dashboards: cviceni/cviceni8.md
+      - Volně dostupné GIS nástroje (QGIS): cviceni/cviceni9.md
+      - QGIS – online publikace dat: cviceni/cviceni10.md
+      - rezerva: cviceni/cviceni11.md
+      - rezerva: cviceni/cviceni12.md
   - Data: data.md
   - Hodnocení: hodnoceni.md
   - Semestrální práce: semestralka.md
@@ -36,7 +36,11 @@ plugins:
       caption_position: bottom
 theme:
   name: material
+  custom_dir: overrides
   favicon: assets/favicon.png
+  logo: assets/favicon.svg
+  icon:
+    annotation: material/plus-circle
   features:
     - navigation.tabs
     # - navigation.tabs.sticky
@@ -48,20 +52,21 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - content.tooltips
   language: cs
   palette:
     - scheme: default
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-      primary: teal
-      accent: purple
+      primary: custom
+      accent: custom
     - scheme: slate
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-      primary: teal
-      accent: lime
+      primary: custom
+      accent: custom
 extra:
   social:
     - icon: fontawesome/brands/twitter

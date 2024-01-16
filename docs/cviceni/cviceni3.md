@@ -1,3 +1,8 @@
+---
+icon: material/numeric-3-box
+title: Cvičení 3
+---
+
 # Prostorové funkce (geoprocessing), spatial join
 
 ## Cíl cvičení
