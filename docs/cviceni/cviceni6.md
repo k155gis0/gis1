@@ -277,8 +277,3 @@ Na obrázku níže je zobrazena ukázka dvou nalezených topologických chyb (le
       - Odkaz na schématicky popsaná pravidla kontroly topologie je [**ZDE**](https://pro.arcgis.com/en/pro-app/latest/help/editing/pdf/topology_rules_poster.pdf).
 
 
-## Zadání domácího úkolu k semestrální práci
-
-1. Dle postupu ze cvičení vektorizujte plochy SMO5 na zadaném katastrálním území. Při vektorizaci rozlišujte typy využití ploch stejně jako na cvičení. 
-
-2. Proveďte kontrolu topologie a veškerá data mějte přehledně uložená v geodatabázi.
