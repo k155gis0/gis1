@@ -96,3 +96,22 @@ V této fázi je vždy rozumné provést validaci pomocí *Validate Join*. Jedn�
 
 ???+ note "&nbsp;<span style="color:#448aff">Pozn.</span>"
       Pokud si přejeme vrstvu s připojenými daty trvale uložit např. do geodatabáze, lze po pravém kliknutí na vrstvu vybrat *Data* a funkci *Export Features*. Takto exportovaná data budou o nové záznamy obohacena, tzn. budou obsahovat veškerá původně připojená data. Naopak, pokud připojená data sloužila např. pouze k výpočtu nového atributu a pro další práci již nejsou potřeba, je vhodné *joiny* odstranit pomocí *Joins and relates* a *Remove Join* (s následným výběrem daného joinu) či *Remove all joins* pro kompletní odebrání připojených dat.
+      
+## Úlohy k procvičení
+
+!!! task-fg-color "Úlohy"
+
+    K řešení následujích úloh použijte datovou sadu [ArcČR
+    500](../../data/#arccr-500) verzi 3.3 dostupnou na disku *S* ve složče
+    ``K155\Public\data\GIS\ArcCR500 3.3``. Zde také najdete souboru s
+    popisem dat ve formátu PDF. Další datové vrstvy, která budete
+    potřebovat pro vyřešení následujících úloh, jsou dostupné ke stažení
+    jako [zip archiv](https://geo.fsv.cvut.cz/vyuka/155gis1/geodata/gis1-cviceni04.zip).
+
+    1. Zjistěte kolik kamer pro měření rychlosti se nachází na území hlavního města Prahy?
+
+    2. Určete celkovou výměru budov m^2^. Vrstvu budov je třeba
+       transformovat na 2 měřené body podobnostní transformací
+
+    3. Kolik vodojemů leží na území obcí pro které platí, že leží na
+       hranici mapového listu TM100 a mají statuskod roven 3?

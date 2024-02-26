@@ -292,6 +292,106 @@ Prostorový dotaz (Spatial Query) je metoda výběru/filtrace prvků jedné vrst
 [:material-open-in-new: Select By Location graphic examples](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/select-by-location-graphical-examples.htm){ .md-button .md-button--primary .button_smaller target="\_blank"}
 {: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
 
-<br><br><br><br><br><br>
+## Úlohy k procvičení
 
+!!! task-fg-color "Úlohy k atributovým dotazům"
 
+    K řešení následujích úloh použijte datovou sadu [ArcČR
+    500](../../data/#arccr-500) verzi 3.3 dostupnou na disku *S* ve složče
+    ``K155\Public\data\GIS\ArcCR500 3.3``. Zde také najdete souboru s
+    popisem dat ve formátu PDF.
+
+    1. Kolik je v ČR rybníků?
+
+    2. Jaká je celková délka (v km) přirozených vodních toků v ČR?
+
+    3. Jaká je průměrná nadmořská výška (v m) vodních nádrží v ČR?
+
+    4. Kolik silnic v ČR má více než dva jizdní pruhy?
+
+    5. Jaká je délka (v km) dálnic v ČR, které mají šest jízdních pruhů?
+
+    6. Kolik železničních stanic v ČR obsahuje ve svém názvu předložku 'nad'?
+
+    7. Jaká je celková plocha (v km^2^) sídel v ČR u kterých jejich název začíná na písmeno 'K'?
+
+    8. Ve které obci Ústeckého kraje je největší nezaměstnanost a kolik to je?
+
+    9. Najděte obec v ČR, kde je nejvyšší poměr mezi muži a ženami a kolik to je?
+
+    10. V kolika obcích v ČR převyšuje počet sňatků počet rozvodů. V jaké
+        obci je počet sňatků nejvyšší vzhledem k aktuálnímu počtu
+        obyvatel?
+    
+    11. Jaká je průměrná hodnota nezaměstnanosti v ORP Beroun?
+
+    12. Kolik katastrálních území spadá do oblasti s kódem LAU1 'CZ0327' a
+        jakou mají celkovou výměru (v km^2^)?
+
+    13. V kolika případech se shoduje název obce s názvem katastrálního území?
+
+    14. Kolik katastrálních území začíná na písmeno 'R' a má přesně tři znaky ve svém názvu?
+
+    15. Ve kterých krajích je míra nezaměstranosti mužů větší než u žen?
+
+    16. Jaká je celková délka silnic 1., 2. a 3. třídy?
+
+    17. Jaký název pro obec je nejfrekventovanější, kolik obcí s tímto názvem v ČR je?
+
+    18. Pro každý typ vodní plochy najděte nejvyšší nadmořskou výšku.
+
+    19. Jaký je poměr mezinárodních ku vnitrostátním letištím v ČR?
+
+    20. Který okres v ČR se skládá z největšího počtu obcí a kolik to je?
+
+!!! task-fg-color "Úlohy k prostorovým dotazům"
+
+    K řešení následujích úloh použijte datovou sadu [ArcČR
+    500](../../data/#arccr-500) verzi 3.3 dostupnou na disku *S* ve složče
+    ``K155\Public\data\GIS\ArcCR500 3.3``. Zde také najdete souboru s
+    popisem dat ve formátu PDF.
+
+    1. Existuje v ČR letiště, jehož reprezentační bod leží v lese? Jak se jmenuje?
+
+    2. Kolika obcemi v ČR neprochází žádná silnice?
+
+    3. Kolik obcí leží na hranici ČR?
+
+    4. Vyberte silnice, které kříží vodní toky. Kolik procent z těchto
+       silnic tvoří silnice první třídy?
+
+    5. Kolik procent rybníků z celkového počtu leží celou svojí plochou na
+       území Jihočeského kraje?
+
+    6. Na kolika mapových listech Základní mapy 1:25 000 leží alespoň
+       částečně okres Litoměřice. Kolik mapových listů potom leží v tomto
+       okresu celou svojí plochou?
+
+    7. Kolik železničních stanic leží v lese a zároveň jejich název
+       nezačíná na písmeno 'L'?
+
+    8. Které silnice (uveďte jejich číslo) druhé třídy procházejí oblastí
+       bažin a rašelinišť?
+
+    9. Jaká je průměrná nadmořská výška výškových kót na území
+       Středočeského kraje?
+
+    10. Kolik vodních ploch leží alespoň částí své plochy ve vzdálenosti
+        do 10 km od poledníku se zeměpisnou délkou 15°?
+
+    11. Kolik obcí se dotýká alespoň jedním liniovým segmentem hranice kraje?
+
+    12. Vyberte katastrální území, ve kterých leží alespoň částečně jedna
+        vodní plocha, seskupte tyto území podle kódu NUTS (LAU1). Uveďte
+        jaký kód NUTS má největší výměru a z kolika katastrálních území se
+        skládá?
+
+    13. Uveďte souřadnice reprezentačního bodu (centroidu) největší vodní
+        nádrže v Libereckém kraji. O jakou vodní nádrž se jedná?
+
+    14. Kolik obcí leží celou svojí plochou na mapovém listu "Pardubice"
+        ZM 1<nowiki>:</nowiki>25 000. Do kolika ORP tyto obce patří a
+        které to jsou?
+
+    15. Kolik obcí v ČR leží svoji plochou alespoň na dvou mapových
+        listech Základní mapy 1:50 000?

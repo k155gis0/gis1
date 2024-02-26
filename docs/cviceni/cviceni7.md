@@ -287,3 +287,52 @@ Na obrázku níže je zobrazena ukázka dvou nalezených topologických chyb (le
 
 2. Proveďte kontrolu zobrazení a symboliky a vrstvu uložte jako položku WebMap do svého uživatelského prostoru.
 
+## Úlohy k procvičení
+
+!!! task-fg-color "Úlohy"
+
+    K řešení následujích úloh použijte datovou sadu [ArcČR
+    500](../../data/#arccr-500) verzi 3.3 dostupnou na disku *S* ve složče
+    ``K155\Public\data\GIS\ArcCR500 3.3``. Zde také najdete souboru s
+    popisem dat ve formátu PDF. 
+    
+    1. Vytvořte mapu obcí s rozšířenou působností jednoho z krajů ČR.
+
+        Použijte data ORP z datové sady ArcČR
+        (ObceSRozsirenouPusobnosti_Polygony), vyexportujte do nové třídy prvků
+        pouze zvolený kraj. Mapu doplňte zastavěnými oblastmi obcí nad 5 tisíc
+        obyvatel.
+
+        Vyexportujte mapu (Share As ► Service ► My hosted content) a umístěte
+        na ArcGIS Online do svého umístění. Jako typ zvolte Feature Service,
+        nikoli Tile Layer. Můžete nasdílet se skupinou CTU Prague.
+
+        Jednotlivé plochy ORP popište. Barevnost zvolte tak, aby z mapy byla
+        zároveň poznat i příslušnost ORP k okresům (ORP jsou do okresů
+        skladebné).
+
+
+    2. Vytvořte mapovou službu WMS (OGC standard) nebo Mapping Service
+       (Esri nativní) silnic a železnic ve vašem kraji.
+
+        Použijte příslušné vrstvy z ArcČR, ořízněte na velikost kraje.
+
+        Vyexportujte mapu (Share As ► Service ► ArcGIS Server) a umístěte na
+        server *gis.fsv.cvut.cz* do složky GIS1_2018. Jako typ zvolte mimo
+        Mapping také standard *WMS*, případně jiné.
+
+        Připravte si ještě vrstvu vodních ploch (VodniPlochy_Polygony),
+        ořízněte ji na plochu kraje a uložte do své složky jako shapefile,
+        poslouží později.
+
+
+    3. Vyzkoušejte si vytvořit mapovou kompozici kraje s využitím dat z různého umístění.
+
+        V mapové kompozici můžete využívat data umístěná v různých formátech:
+
+        - data z ArcGIS Online nebo z vlastního Portal for ArcGIS,
+        - data z WMS, WMTS služeb,
+        - data ze služeb ArcGIS Serveru,
+        - data z WFS služeb,
+        - souborová data uložená jako SHP, CSV, GPX aj.,
+        - dynamické vrstvy *Živého atlasu Esri*

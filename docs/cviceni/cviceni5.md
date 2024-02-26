@@ -209,3 +209,21 @@ Pro vytvoření ucelené mapové vrstvy a následné zpracování rastrů, se v
 
 ## Zdroje
 Český úřad zeměměřický a katastrální [online]. [cit. 2024-01-05]. Dostupné z: [https://www.cuzk.cz/](https://www.cuzk.cz/)
+
+## Úlohy k procvičení
+
+!!! task-fg-color "Úlohy"
+
+    K řešení následujích úloh použijte datovou sadu [ArcČR
+    500](../../data/#arccr-500) verzi 3.3 dostupnou na disku *S* ve složče
+    ``K155\Public\data\GIS\ArcCR500 3.3``. Zde také najdete souboru s
+    popisem dat ve formátu PDF. Další datové vrstvy, která budete
+    potřebovat pro vyřešení následujících úloh, jsou dostupné ke stažení
+    jako [zip archiv](https://geo.fsv.cvut.cz/vyuka/155gis1/geodata/gis1-cviceni05.zip).
+
+    1. Vizuálně zjistěte jaká je nejvíce zastoupená "barva" podloží v okrese Pelhřimov.
+
+    2. Vizuálně zjistěte na jakém mapovém listu ZM25 leží Mšené Žehrovice.
+
+    3. Vytvořte výsledný rastr, který bude v souřadnicovém systému UTM-33N
+       (velikost pixelu 300m). Vrstvu vyexportujte do formátu GeoTIFF.
