@@ -90,6 +90,7 @@ Podklady: [Prostorové dotazování](https://gismentors.github.io/qgis-zacatecni
 ### Pokročilé dotazování
 
 Pokročilé dotazování pomocí jazyka SQL umožňuje *Databázový manager*.
+<!---
 
 ## Zadání domácího úkolu k semestrální práci
 
@@ -99,3 +100,4 @@ Pomocí jazyka SQL zkuste vyřešit následující úlohy:
 
 1. Zjistěte průměrnou nezaměstnanost v daném okrese
 2. Proveďte agregace údajů na úrovni kraje
+-->

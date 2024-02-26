@@ -34,7 +34,8 @@ Nejprve si nainstalujeme zásuvný modul Gisquick.
 
 Poté se pomocí zásuvného modulu přihlásíme do prostředí publikační
 platformy Gisquick a připravený projekt publikujeme.
-
+<!---
 ## Zadání domácího úkolu k semestrální práci
 
 Vytvořte si projekt vaší obce, kde žijete a publikute jej v prostředí platformy Gisquick.
+--> 

@@ -294,9 +294,4 @@ Prostorový dotaz (Spatial Query) je metoda výběru/filtrace prvků jedné vrst
 
 <br><br><br><br><br><br>
 
-<!-- ## Zadání domácího úkolu k semestrální práci -->
-
-
-asdfasdf
-
 
