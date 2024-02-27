@@ -31,10 +31,6 @@ Uživatelé mohou vytvářet a upravovat **atributy** a **geometrii** prvků, pr
 ### Prostorová (GIS) data <span style="font-size:60%;font-style:italic;vertical-align:10%;margin-left:15px;">(vektorová)</span>
 Geografický informační systém (GIS) využívá obecně jakákoliv data obsahující __prostorovou (polohovou) informaci__. Poloha může být reprezentována nejen kombinací souřadnic (_X + Y_, _šířka + délka_ aj.), ale také např. adresou (o libovolné podrobnosti). Doplňkem k polohové informaci obvykle bývá připojena jakákoliv další informace formou atributů v __atributové tabulce__.
 
-<!-- ![](../assets/cviceni1/img_28.png){ style="width:80%;"}
-{: style="margin-bottom:0px;" align=center }
-<figcaption>Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption> -->
-
 <style>
     #id_01 > div > div > div.tabbed-block {
         text-align: center;
