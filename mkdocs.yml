@@ -13,9 +13,9 @@ nav:
       - Volně dostupné GIS nástroje (QGIS): cviceni/cviceni9.md
       - QGIS – online publikace dat: cviceni/cviceni10.md
   - Data: data.md
-  - Hodnocení: hodnoceni.md
+  # - Hodnocení: hodnoceni.md
   - Semestrální práce: semestralka.md
-  - Výuková videa: videa.md
+  # - Výuková videa: videa.md
   - Kvíz: quiz.md
 plugins:
   - search

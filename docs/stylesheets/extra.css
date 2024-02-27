@@ -153,9 +153,57 @@ code.outlined .twemoji {vertical-align:-10% !important;}
   display: block;
 }
 
+
+
+
+
+
+
+
+.grid.cards.smaller_padding li {padding:.6rem .8rem !important;}
+
+
+.grid_icon_info ul li p:first-child span{
+  min-width: var(--md-icon-size);
+  aspect-ratio: 1 / 1;
+}
+
+.grid_icon_info.circular_icons ul li p:first-child span{
+  color: var(--md-default-fg-color--light);
+  background-color: var(--md-default-fg-color--lightest);
+  border-radius: 50%;
+  padding: .4rem;
+}
+
+.grid_icon_info ul li p:first-child{
+  display: table-cell;
+  padding-right: .8rem;
+  vertical-align: middle; /* aby se nemuselo psat pod kazdy odstavec "{.middle}" */
+}
+
+.grid_icon_info ul li p:nth-child(2){
+  display: table-cell;
+  line-height: 120%;
+  vertical-align: middle; /* aby se nemuselo psat pod kazdy odstavec "{.middle}" */
+}
+
+
+
+
+
+
+
+
+
+
+
 /* TABS */
 .centered_tab_labels .tabbed-labels {justify-content:center;}
 .centered_tab_labels .tabbed-labels::before {transition:unset !important;}
+
+
+
+
 
 
 
