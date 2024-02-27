@@ -94,6 +94,10 @@ __prof. Ing. Lena Halounová, CSc.__
 
 [![](../assets/index/schedule.svg){.off-glb .no-filter}](https://kos.cvut.cz/schedule/course/1551GIS/semester/B232){target="_blank"}
 
+<a href="https://kos.cvut.cz/schedule/course/1551GIS/semester/B232" target="_blank">
+![](../assets/index/schedule.svg){.off-glb .no-filter}
+</a>
+
 ---
 
 [Stránka předmětu v KOS :custom-kos-logo-BW:{.lg .middle}](https://kos.cvut.cz/course-syllabus/1551GIS/B232){ .md-button .md-button--primary target="_blank"}
