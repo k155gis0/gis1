@@ -1,11 +1,9 @@
 # Semestrální práce - Analýza území
 
 ## Zadání
-Nad zadaným územím proveďte následující analýzy s využitím GIS softwaru. Výsledky následně publikujte formou webové mapové aplikace na ArcGIS Online či pomocí open-source řešení (např. GISQuick). Tato aplikace může mít libovolnou formu – takovou, kterou uznáte za vhodnou či zajímavou (ArcGIS Instant Apps, Story Maps, Dashboards, Experience Builder,...). 
+Nad zadaným územím proveďte následující analýzy s využitím GIS softwaru. Výsledky následně publikujte formou webové mapové aplikace na ArcGIS Online či pomocí open-source řešení (např. GISQuick). Tato aplikace může mít libovolnou formu – takovou, kterou uznáte za vhodnou či zajímavou (ArcGIS Instant Apps, Story Maps, Experience Builder,...). 
 
-Svou aplikaci na konci semestru krátce odprezentujete před ostatními v 5 minutové prezentaci. Zároveň odevzdáte technickou zprávu s popisem postupu práce, vybranými vrstvami a důvodu výběru výsledného vizuálního stylu webové mapové aplikace.
-
-Práce nad rámec základního zadání bude ohodnocena bonusovými body. Příklad: Místo klasické webové mapové aplikace vytvoříte interaktivní Story Maps s popisem dat a příslušnými obrázky.    
+Svou aplikaci na konci semestru krátce odprezentujete před ostatními v 5 minutové prezentaci. 
 
 **Pro zadané území vypracujte následující úkoly:**
 
