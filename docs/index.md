@@ -10,11 +10,11 @@ GIS 1 je v tomto tématu úvodním kurzem. Zatímco přednášky vás provedou z
 Naučíte se
 {: align=center style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px;"}
 
-<div class="grid cards grid_icon_info smaller_padding" markdown>
+<div class="grid cards grid_icon_info smaller_padding" markdown> <!-- specificky format gridu (trida "grid_icon_info") na miru uvodni strance predmetu -->
 
 -   :material-map-outline:{ .xl }
 
-    __zpracovávat__ a __analyzovat__ prostorová ( tj. geografická, mapová) data
+    __zpracovávat__ a __analyzovat__ prostorová (tj. geografická, mapová) data
 
 -   :material-vector-polygon:{ .xl }
 
@@ -96,7 +96,7 @@ __prof. Ing. Lena Halounová, CSc.__
 
 ---
 
-[Stránka předmětu v KOS :custom-kos-logo-BW:{.lg .middle}](https://kos.cvut.cz/course-syllabus/1551GIS/B232){ .md-button .md-button--primary target="_blank"}
+[Stránka předmětu v :custom-kos-logo-img-BW:{.middle style="margin-left:3px;"} :custom-kos-logo-BW:{.xl .middle}](https://kos.cvut.cz/course-syllabus/1551GIS/B232){ .md-button .md-button--primary target="_blank"}
 {align=center}
 
 <br>

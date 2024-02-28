@@ -3,10 +3,7 @@ icon: material/numeric-1-box
 title: Cvičení 1
 ---
 
-
 # Úvod do práce v prostředí ArcGIS, prostorová data, datové zdroje
-
-<!-- <hr class="level-1"> -->
 
 ## Cíl cvičení
 
@@ -31,152 +28,36 @@ Uživatelé mohou vytvářet a upravovat **atributy** a **geometrii** prvků, pr
 ### Prostorová (GIS) data <span style="font-size:60%;font-style:italic;vertical-align:10%;margin-left:15px;">(vektorová)</span>
 Geografický informační systém (GIS) využívá obecně jakákoliv data obsahující __prostorovou (polohovou) informaci__. Poloha může být reprezentována nejen kombinací souřadnic (_X + Y_, _šířka + délka_ aj.), ale také např. adresou (o libovolné podrobnosti). Doplňkem k polohové informaci obvykle bývá připojena jakákoliv další informace formou atributů v __atributové tabulce__.
 
-<style>
-    #id_01 > div > div > div.tabbed-block {
-        text-align: center;
-    }
-
-    #id_01 > div > div > div.tabbed-block > :is(p, div) {
-        display: inline-block;
-        vertical-align: top;
-        margin-left: 10px;
-        margin-right:10px;
-    }
-
-    #id_01 img {
-        height: 200px;
-    }
-
-    #id_01 .md-typeset__scrollwrap {
-        width: 300px;
-    }
-
-    @media screen and (max-width: 767px) {
-        #id_01 > div > div > div.tabbed-block > :is(p, div) {
-            margin-top:15px;
-            margin-bottom:0px;
-        }
-    }
-
-    #id_01 .md-typeset__scrollwrap::before {
-        content:"Atributová tabulka:\a";    /* source: https://www.educative.io/answers/how-to-add-a-line-break-using-css */
-        white-space: pre;
-        font-weight: bold;
-    }
-
-    #id_01 .tabbed-block:nth-child(2) .md-typeset__table::before {
-        content:"Odpadkové koše:\a";    /* source: https://www.educative.io/answers/how-to-add-a-line-break-using-css */
-        white-space: pre;
-        font-size:smaller;
-    }
-
-    #id_01 .tabbed-block:nth-child(3) .md-typeset__table::before {
-        content:"Ulice:\a";    /* source: https://www.educative.io/answers/how-to-add-a-line-break-using-css */
-        white-space: pre;
-        font-size:smaller;
-    }
-
-    #id_01 .tabbed-block:nth-child(4) .md-typeset__table::before {
-        content:"Budovy a veřejné plochy:\a";    /* source: https://www.educative.io/answers/how-to-add-a-line-break-using-css */
-        white-space: pre;
-        font-size:smaller;
-    }
-</style>
-
-<!-- <div id="id_01" class="table_no_cell_padding table_no_cell_min_width centered_tab_labels" markdown>
-=== "Body"
-
-    ![](https://geo.fsv.cvut.cz/data/cehak/image001.svg)
-    
-    ![](https://geo.fsv.cvut.cz/data/cehak/image002-body.svg)
-
-    |category|load [%]|cl./week|
-    |:------:|:------:|:------:|
-    |mix|91|7|
-    |plastic|26|2|
-    |mix|14|5|
-    |mix|14|5|
-    |paper|58|2|
-
-=== "Linie"
-
-    ![](https://geo.fsv.cvut.cz/data/cehak/image001.svg)
-    
-    ![](https://geo.fsv.cvut.cz/data/cehak/image003-linie.svg)
-
-    |class|cars|trucks|length|
-    |:---:|:--:|:----:|:----:|
-    |street C1|1|yes|164,21|
-    |street C3|1|no|621,5|
-    |street C4|0|no|32,24|
-    |street C1|1|no|495,01|
-    |street C3|0|no|221,49|
-
-=== "Polygony"
-
-    ![](https://geo.fsv.cvut.cz/data/cehak/image001.svg)
-    
-    ![](https://geo.fsv.cvut.cz/data/cehak/image004-polygony.svg)
-
-    |category|administrator|status|
-    |:------:|:-----------:|:----:|
-    |public|Municipality|OK|
-    |public|Company Inc.|OK|
-    |restricted|Company Inc.|OK|
-    |restricted|Municipality|!alert!|
-    |residential|private|OK|
-</div>
-
-<figcaption style="clear:both">Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption> -->
-
-
-<div id="id_01" class="table_no_cell_padding table_no_cell_min_width centered_tab_labels" markdown>
+<div class="centered_tab_labels" markdown>
 === "CELÁ MAPA"
 
-    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/image001.png)
-    
-    __Mapa obsahuje 3 druhy geometrie:__  
-    (viz jednotlivé přepínací karty)
-    {: style="width:300px; height:214.9px"}
+    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/tab-01.png){.no-filter width="500"}
+    {align=center}
+
+    <figcaption>Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption>
 
 === "Body"
     
-    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/image002-body.png)
+    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/tab-02.png){.no-filter width="500"}
+    {align=center}
 
-    |category|load [%]|cleaning/week|
-    |:------:|:------:|:-----------:|
-    |mix|91|7|
-    |plastic|26|2|
-    |mix|14|5|
-    |mix|14|5|
-    |paper|58|2|
+    <figcaption>Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption>
 
 === "Linie"
 
-    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/image003-linie.png)
+    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/tab-03.png){.no-filter width="500"}
+    {align=center}
 
-    |class|cars|trucks|length|
-    |:---:|:--:|:----:|:----:|
-    |street C1|1|yes|164,21|
-    |street C3|1|no|621,5|
-    |street C4|0|no|32,24|
-    |street C1|1|no|495,01|
-    |street C3|0|no|221,49|
+    <figcaption>Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption>
 
 === "Polygony"
 
-    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/image004-polygony.png)
+    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/tab-04.png){.no-filter width="500"}
+    {align=center}
 
-    |category|administrator|status|
-    |:------:|:-----------:|:----:|
-    |public|Municipality|OK|
-    |public|Company Inc.|OK|
-    |restricted|Company Inc.|OK|
-    |restricted|Municipality|!alert!|
-    |residential|private|OK|
+    <figcaption>Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption>
+
 </div>
-
-<figcaption>Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption>
 
 
 __Ukládání prostorových dat__: Data lze ukládat mnoha různými způsoby. Datových formátů existuje mnoho, pro začátek uvedeme některé základní.
@@ -199,8 +80,8 @@ __Ukládání prostorových dat__: Data lze ukládat mnoha různými způsoby. D
 Při spuštění probíhá ověření licence přes příslušnost k organizaci (ČVUT v Praze) – pomocí přihlášení k univerzitnímu účtu. Adresa (URL) pro ČVUT je *ctuprague.maps.arcgis.com* – poté proběhne automatické přesměrování na stránku s univerzitním přihlášením (ve formátu *username@cvut.cz* a heslo to KOSu).
 
 <div class="process_container">
-  <div class="process_image"><iframe class="video" src="https://www.youtube.com/embed/8nDVpVmxM-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-  <div class="process_image"><img src="../../assets/cviceni1/img_01.png"></div>
+  <iframe class="video" src="https://www.youtube.com/embed/8nDVpVmxM-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <img src="../../assets/cviceni1/img_01.png">
 </div> <!-- kvuli tomu iframe to nejde bez html (nenasel jsem zpusob) -->
 
 Uživatelské protředí programu se skládá ze tří základních prvků:
@@ -354,12 +235,6 @@ Pro začátek jsou zajímavé tyto položky:
 
 __Lokálně uložené soubory__:  přístup přes systémovou cestu, např.:
 
-<!-- _C:\Users\Student1\Documents\Geodatabase.gdb\Layer1_
-{: align="center" style="font-size:smaller;line-height:1.1;"}
-
-_\\\\data.fsv.cvut.cz\Shares\K155\Public\data\PragueRoads.gdb_
-{: align="center" style="font-size:smaller;line-height:1.1;"} -->
-
 `C:\Users\Student1\Documents\Geodatabase.gdb\Layer1`
 `\\\\data.fsv.cvut.cz\Shares\K155\Public\data\PragueRoads.gdb`
 {: align="center" style="font-size:smaller;line-height:1.1; column-gap:50px;" .button_array}
@@ -482,6 +357,7 @@ Přidat pole / editovat pole
 [Edit an active table](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/edit-an-active-table.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 {: .button_array}
 
+<!-- 
 <hr class="level-1">
 
 ## Úlohy k procvičení
@@ -500,32 +376,5 @@ Přidat pole / editovat pole
     - Individuální zadání
         - DODĚLAT
 
-
-<br><br><br><br><br><br><br><br><br><br><br>
-
-<!-- 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-
-<hr class="level-1">
-
-<span style="font-size:50px;text-transform:uppercase;font-weight:800;">Test nadpisů:</span>
-
-# Nadpis 1
-
-## Nadpis 2
-
-### Nadpis 3
-
-#### Nadpis 4
-
-##### Nadpis 5
-
-###### Nadpis 6
-
-...další text...
-
  -->
-
-
+<br><br><br><br><br>
