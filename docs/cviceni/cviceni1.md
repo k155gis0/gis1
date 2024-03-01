@@ -3,7 +3,7 @@ icon: material/numeric-1-box
 title: Cvičení 1
 ---
 
-# Úvod do práce v prostředí ArcGIS, prostorová data, datové zdroje
+# Úvod do práce v prostředí ArcGIS, prostorová data, datové zdroje, atributová tabulka
 
 ## Cíl cvičení
 
@@ -26,7 +26,7 @@ Uživatelé mohou vytvářet a upravovat **atributy** a **geometrii** prvků, pr
     Vzhledem k vysokým pořizovacím nákladům se systém ArcGIS využívá především ve velkých firmách a orgánech státní správy. V menších podnicích je rozšířenější jeho open source alternativa [QGIS](https://www.qgis.org/){: target="_blank"} (tomu bude věnována pozornost v [závěru kurzu](/cviceni/cviceni9/)).
 
 ### Prostorová (GIS) data <span style="font-size:60%;font-style:italic;vertical-align:10%;margin-left:15px;">(vektorová)</span>
-Geografický informační systém (GIS) využívá obecně jakákoliv data obsahující __prostorovou (polohovou) informaci__. Poloha může být reprezentována nejen kombinací souřadnic (_X + Y_, _šířka + délka_ aj.), ale také např. adresou (o libovolné podrobnosti). Doplňkem k polohové informaci obvykle bývá připojena jakákoliv další informace formou atributů v __atributové tabulce__.
+Geografický informační systém (GIS) využívá obecně jakákoliv data obsahující __prostorovou (polohovou) informaci__. Poloha může být reprezentována nejen kombinací souřadnic (_X + Y_, _šířka + délka_ aj.), ale také _např._{.primary_color .icon-example .no-dec} adresou (o libovolné podrobnosti). Doplňkem k polohové informaci obvykle bývá připojena jakákoliv další informace formou atributů v __atributové tabulce__.
 
 <div class="centered_tab_labels" markdown>
 === "CELÁ MAPA"
@@ -89,8 +89,8 @@ Uživatelské protředí programu se skládá ze tří základních prvků:
 <div class="table_headerless table_small_padding table_centered" markdown>
 |   |   |
 | - | - |
-| __RIBBON__ | nabídka funkcí programu (prvek shodný s jinými programy, např. Microsoft Word), nabídka se kontextově mění podle akcí uživatele       |
-| __PANE__   | panely a vlastnosti funkcí, mnoho funkcí spouští svůj Pane, přes který se daná funkce ovládá, např. Obsah mapy (Contents), Symbologie |
+| __RIBBON__ | nabídka funkcí programu (prvek shodný s jinými programy, _např._{.primary_color .icon-example .no-dec} Microsoft Word), nabídka se kontextově mění podle akcí uživatele       |
+| __PANE__   | panely a vlastnosti funkcí, mnoho funkcí spouští svůj Pane, přes který se daná funkce ovládá, _např._{.primary_color .icon-example .no-dec} Obsah mapy (Contents), Symbologie |
 | __VIEW__   | okno s mapou (2D) nebo scénou (3D)                                                                                                    |
 </div>  <!-- prazdne radky nelze smazat, Markdown nebere tabulky bez zahlavi, musel jsem vyresit pres css -->
 
@@ -116,7 +116,7 @@ __Další zdroje:__
 
 ### Přidání dat do mapy
 
-__Vytvoření mapy:__ _:material-tab: Insert_{: .outlined} :octicons-arrow-right-24: _:material-button-cursor: New Map_{: .outlined}
+__Vytvoření mapy__: na kartě _:material-tab: Insert_{: .outlined_button} :octicons-arrow-right-24: _:material-button-cursor: New Map_{: .outlined_button}
 
 ![](../assets/cviceni1/img_09.png)
 {: .process_container}
@@ -126,7 +126,7 @@ __Vytvoření mapy:__ _:material-tab: Insert_{: .outlined} :octicons-arrow-right
 
 ---
 
-__Přidání dat do mapy__ (lokálně uložených): _:material-tab: Map_{: .outlined} → _:material-button-cursor: Add Data_{: .outlined} → _:material-button-cursor: Data_{: .outlined} → vybrat soubor...
+__Přidání dat do mapy__ (lokálně uložených): _:material-tab: Map_{: .outlined_button} → _:material-button-cursor: Add Data_{: .outlined_button} → _:material-button-cursor: Data_{: .outlined_button} → vybrat soubor...
 
 ![](../assets/cviceni1/img_10.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -145,7 +145,7 @@ __Přidání dat do mapy__ (lokálně uložených): _:material-tab: Map_{: .outl
 
 Aby pro procházení dat nebylo nutné pokaždé procházet adresářovou strukturu, hodí se adresáře s daty _připojit do projektu_.
 
-__Připojení adresáře do projektu__: V _Catalog Pane_ ( _:material-tab: View_{: .outlined} → _:material-button-cursor: Catalog Pane_{: .outlined} ) přes pravé tl. myši na "_Folders_" vybrat _:material-form-dropdown: Add Folder Connection_{: .outlined} → vložit nebo zvolit cestu... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
+__Připojení adresáře do projektu__: V _Catalog Pane_ ( _:material-tab: View_{: .outlined_button} → _:material-button-cursor: Catalog Pane_{: .outlined_button} ) přes pravé tl. myši na "_Folders_" vybrat _:material-form-dropdown: Add Folder Connection_{: .outlined_button} → vložit nebo zvolit cestu... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
 
 ![](../assets/cviceni1/img_05.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -167,7 +167,7 @@ __Připojení adresáře do projektu__: V _Catalog Pane_ ( _:material-tab: View_
 
 ...totéž lze udělat s geodatabází. V geodatabázi jsou data uložena efektivněji, nelze do ní však vložit cokoli.
 
-__Připojení geodatabáze do projektu__: V _Catalog Pane_ ( _:material-tab: View_{: .outlined} → _:material-button-cursor: Catalog Pane_{: .outlined} ) přes pravé tl. myši na "_Databases_" vybrat _:material-form-dropdown: Add Database_{: .outlined} → vložit nebo zvolit cestu ke geodatabázi... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
+__Připojení geodatabáze do projektu__: V _Catalog Pane_ ( _:material-tab: View_{: .outlined_button} → _:material-button-cursor: Catalog Pane_{: .outlined_button} ) přes pravé tl. myši na "_Databases_" vybrat _:material-form-dropdown: Add Database_{: .outlined_button} → vložit nebo zvolit cestu ke geodatabázi... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
 
 ![](../assets/cviceni1/img_05.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -202,7 +202,7 @@ __Pořadí vrstev__: V obsahu mapy (_Contents Pane_) se zobrazují všechny vrst
 
 ---
 
-__Nastavení (vlastnosti) mapy__: V _Contents Pane_ (Obsah) přes pravé tl. myši na název mapy vybrat _:material-form-dropdown: Properties_{: .outlined}
+__Nastavení (vlastnosti) mapy__: V _Contents Pane_ (Obsah) přes pravé tl. myši na název mapy vybrat _:material-form-dropdown: Properties_{: .outlined_button}
 
 ![](../assets/cviceni1/img_21.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -213,14 +213,14 @@ __Nastavení (vlastnosti) mapy__: V _Contents Pane_ (Obsah) přes pravé tl. my�
 
 Pro začátek jsou zajímavé tyto položky:
 
-- Záložka _:material-label-outline: General_{: .outlined}
+- Záložka _:material-label-outline: General_{: .outlined_button}
 
     - __Name__ (Název mapy)
     - __Reference scale__ (Referenční měřítko): Zafixuje velikost mapové symbologie pro zadané měřítko. 
     [:material-open-in-new: Map reference scales](https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/map-reference-scales.htm){ .md-button .md-button--primary .button_smaller target="_blank" align=right}
     - __Rotation__: Úhel natočení mapy
 
-- Záložka _:material-label-outline: Coordinate systems_{: .outlined}
+- Záložka _:material-label-outline: Coordinate systems_{: .outlined_button}
 
     - Informace o souřadnicovém systému zobrazení mapy (zvlášť pro polohu a pro výšku).
     - __POZOR__, pokud se souř. systém __vložených dat__ liší od systému __mapy__, jsou data __dočasně__ převedena do souř. systému __mapy__. Jedná se však o tzv. __On-the-fly__ transformaci, která je pro kombinaci některých souř. systémů __zjednodušená__ a data na sebe nemusí správně navazovat. Tato situace se __nedoporučuje__, neboť může přinést __nepřesné výsledky__ mapové vizualizace i datových analýz. [__Podrobnější informace__](https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/projection-on-the-fly-and-geographic-transformations)
@@ -231,13 +231,11 @@ Pro začátek jsou zajímavé tyto položky:
 
 <hr class="level-1">
 
-### Kde získat data
+### Jak data získat
 
-__Lokálně uložené soubory__:  přístup přes systémovou cestu, např.:
+__Ruční tvorba__ (pomocí kreslicích a editačních nástrojů ArcGIS Pro) _součástí budoucích cvičení_{: style="color:#888;margin-left:1rem;"}
 
-`C:\Users\Student1\Documents\Geodatabase.gdb\Layer1`
-`\\\\data.fsv.cvut.cz\Shares\K155\Public\data\PragueRoads.gdb`
-{: align="center" style="font-size:smaller;line-height:1.1; column-gap:50px;" .button_array}
+__Externě získaná data__ (např. zaslaná přes e-mail)
 
 __Data online ke stažení__: stažení z libovolného zdroje na lokální disk ve formě souborů, dále shodný přístup jako s lokálně uloženými soubory (viz výše)
 {: id="data_online" }
@@ -249,8 +247,16 @@ __Data online ke stažení__: stažení z libovolného zdroje na lokální disk 
 [geoportál ČSÚ](https://geodata.statistika.cz){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 {: .button_array}
 
-__Připojení streamovaných dat__: _bude součástí budoucích cvičení_
-{: style="color:#888"}
+
+ve výše zmíněných případech se jedná o __lokálně uložená data__ (na disku počítače), přístup přes systémovou cestu, _např._{.primary_color .icon-example .no-dec}:
+
+`C:\Users\Student1\Documents\Geodatabase.gdb\Layer1`
+`\\data.fsv.cvut.cz\Shares\K155\Public\data\PragueRoads.shp`
+{: align="center" style="font-size:smaller;line-height:1.1; column-gap:50px;" .button_array}
+
+---
+
+__Připojení streamovaných dat__ _součástí budoucích cvičení_{: style="color:#888;margin-left:1rem;"}
 
 - připojení datových služeb přes URL adresu, nevyžaduje ruční lokální ukládání, existuje více standardů pro poskytování těchto služeb
 {: style="color:#888;font-size:smaller; line-height:1.1;"}
@@ -322,6 +328,84 @@ __Measure Tool__: Interaktivní měření vzdáleností, úhlů apod.
 
 <hr class="level-1">
 
+### Atributová tabulka
+
+Atributová tabulka je __doplňkem k prostorovým datům__ – obohacuje každý prvek (geometrii) o __další informace__ (tzv. atributy). Tyto informace jsou pro práci v GIS klíčové, protože geometrie sama o sobě (bez atributů) nám mnoho informací nepřinese. __Atributová tabulka je proto součástí každé (vektorové) vrstvy__.
+
+Tabulka obsahuje sloupce – tzv. __:material-table-column: atributy__ (fields), a řádky – tzv. __:material-table-row: záznamy__ (records, rows). Každý prvek tak obsahuje hodnoty všech atributů – příklad viz obr. níže.
+
+![](../assets/cviceni1/img_37.png)
+{: .process_container}
+
+<figcaption>Atributová tabulka v ArcGIS Pro</figcaption>
+
+__Otevření atributové tabulky__: V _Contents Pane_ ( _:material-tab: View_{: .outlined_button} → _:material-button-cursor: Contents_{: .outlined_button} ) přes pravé tl. myši na vrstvu vybrat _:material-form-dropdown: Attribute Table_{: .outlined_button}.
+
+![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/101.png)
+{: .process_container}
+
+__Vybrání záznamů__: Klikem levého tl. myši na číslo řádku vlevo od tabulky [Select records in a table interactively](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/select-records-in-a-table-interactively.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+
+__Zrušení výběru__: Tlačítkem _:material-button-cursor: Clear_{: .outlined_button}
+
+![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/102.png)
+{: .process_container}
+
+__Počet prvků / počet vybraných prvků__: viz obrázek výše
+
+__Přidat pole / editovat pole / smazat pole__: V pravém horním rohu atr. tabulky kliknout na _:material-menu:_{.outlined_button} hamburger menu a vybrat možnost _:material-form-dropdown: Fields View_{: .outlined_button}
+
+- Kliknutím pod poslední řádek tabulky polí ("Click here to add a new field") se __přidá pole__
+- Dvojklikem do jednotlivých polí lze __měnit text či jiné parametry__
+- Přes pravé tl. myši na začátek řádku vlevo vybrat _:material-button-cursor: Delete_{: .outlined_button} a dané __pole se smaže__
+
+![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/104.png)
+![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/105.png)
+![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/106.png)
+{: .process_container}
+
+- __Název pole__ (Field Name) má určitá omezení – _např._{.primary_color .icon-example .no-dec} nesmí začínat číslem, některé znaky nelze použít (`–`, `+`, `%`, znak mezery aj.) max. délka je 29 znaků (pozor, délka se může lišit pro různé formáty souboru), nesmí být shodný s názvem jiného pole, není doporučeno používat diakritiku [Define fields in tables](https://pro.arcgis.com/en/pro-app/3.1/help/data/geodatabases/overview/defining-fields-in-tables.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+- __Alias__ se používá jako zástupce pro název pole, má menší omezení a většinou slouží pro převedení názvu pole do "lidské řeči"
+- __Datový typ__ (Data Type) určuje typ dat, který je možné do pole vkládat. Jiný typ je _např._{.primary_color .icon-example .no-dec} `číslo`, `text` nebo `datum`. _Pozor_{.primary_color .icon-exclm .no-dec}, existuje více datových typů pro číslo, datum apod. Liší se primárně počtem bitů alokovaných pro jeden záznam, nejběžnějšími datovými typy jsou `Text` (String), `Short` (celé číslo, 16-bit), `Float` (číslo s des. čárkou, 32-bit) [ArcGIS field data types](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/arcgis-field-data-types.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+
+!!! note-grey "Poznámka"
+
+    __Některá pole není možné smazat ani editovat__ (_např._{.primary_color .icon-example .no-dec} `OBJECTID`, `Shape`, `SHAPE_Length`). Jde o tzv. __system managed fields__, mají v datové struktuře speciální význam a jejich hodnoty jsou __automaticky generované__ programem. Pokud tato pole v tabulce překáží, lze je skrýt (pravé tl. na záhlaví atributové tabulky → _:material-button-cursor: Hide Field_{: .outlined_button})
+
+    __Datový typ existujícího pole nelze měnit__! Existují však osvědčené metody řešení tohoto problému, viz zdroj: [Change the data type of an existing field in ArcGIS Pro](https://support.esri.com/en-us/knowledge-base/how-to-change-the-data-type-of-an-existing-field-in-arc-000023089){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+
+---
+
+__Editace záznamů (prvků, řádků) tabulky__: Dvojklikem přímo do hodnoty v tabulce je možné hodnotu změnit/přepsat, klávesou Enter potvrdit. [Edit a value in a table cell](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/edit-a-value-in-a-table-cell.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+
+![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/107.png)
+{: .process_container}
+
+__Uložení editací__{.icon-exclm}: na kartě _:material-tab: Edit_{: .outlined_button} :octicons-arrow-right-24: _:material-button-cursor: Save_{: .outlined_button} – tím dojde k zápisu úprav do databáze. [Edit an active table](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/edit-an-active-table.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+
+!!! note-grey "Poznámka"
+
+    __Uložení dat (editací) je v GIS odděleno od ukládání projektu__. Do projektu se ukládá např. nastavení mapy, seznam vrstev v mapě a jejich symbologie, rozložení oken apod. __Uložením projektu se tedy neuloží úpravy dat!__
+
+[Interact with a table](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/interact-with-a-table.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+{: .button_array}
+
+<hr class="level-1">
+
+### Tabulky bez geometrie
+
+Některá data mohou obsahovat __pouze atributovou tabulku__ (tedy žádné prvky). I přes absenci geometrie se však může jednak o __prostorová data__. Prostorová složka může být nahrazena tabulkovými záznamy – _např._{.primary_color .icon-example .no-dec} __bodovými souřadnicemi__ či __adresou__ (slovní reprezentace polohy). Tyto údaje je totiž možné pomocí GIS analýzy __převést na geometrii__.
+
+I kdyby však data prostorovou složku vůbec neměla, mohou v GIS dobře posloužit – přes tzv. __Join__ je lze napojit na jiná data, která už polohové údaje mají (toto téma bude probíráno v další části kurzu).
+
+Tabulková data lze do ArcGIS Pro načíst jak z `geodatabáze`, tak z externího souboru `CSV` či `XLSX`.
+
+[Tables](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/tables-in-arcgis-pro.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+[Open tabular data](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/open-tabular-data.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+{: .button_array}
+
+<hr class="level-1">
+
 __Doplňkové zdroje:__
 {: align=center}
 
@@ -329,33 +413,6 @@ __Doplňkové zdroje:__
 [<span>:octicons-file-16: PDF</span><br>ArcGIS Pro shortcuts](https://www.esri.com/content/dam/esrisites/en-us/media/pdf/g526942-arcgis-pro-kybrd-shrtct-FINAL.pdf){ .md-button .md-button--primary .server_name target="_blank"}
 {: .button_array}
 
-<hr class="level-1">
-
-### Atributová tabulka
-
-Atributová tabulka je __doplňkem k prostorovým datům__ – obohacuje každý prvek (geometrii) o __další informace__ (tzv. atributy). Tyto informace jsou pro práci v GIS klíčové, protože geometrie sama o sobě (bez atributů) nám mnoho informací nepřinese. Atributová tabulka je proto součástí každé (vektorové) vrstvy.
-
-Tabulka obsahuje sloupce – tzv. __atributy__ (fields), a řádky – tzv. __záznamy__ (records). Každý prvek tak obsahuje hodnoty všech atributů – příklad viz obr. níže.
-
-![](../assets/cviceni1/img_37.png)
-{: .process_container}
-
-<figcaption>Atributová tabulka</figcaption>
-
-Otevřít atributovou tabulku
-
-Vybrat záznamy
-
-Zjistit počet prvků / počet vybraných prvků
-
-Přidat pole / editovat pole
-
-[Tables](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/tables-in-arcgis-pro.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
-[Open tabular data](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/open-tabular-data.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
-[Interact with a table](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/interact-with-a-table.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
-[Select records in a table interactively](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/select-records-in-a-table-interactively.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
-[Edit an active table](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/edit-an-active-table.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
-{: .button_array}
 
 <!-- 
 <hr class="level-1">

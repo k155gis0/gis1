@@ -45,7 +45,7 @@ title: Cvičení 2
 Atributový dotaz (Attribute Query) je metoda výběru/filtrace prvků na základě **hodnot jejich atributů**. Doplňuje tak metodu [interaktivního výběru prvků](/cviceni/cviceni1/#select-tool) z 1. cvičení. Základem je pravidlo pro výběr – tzv. **výraz** (Expression). ArcGIS Pro umožňuje sestavovat výrazy interaktivně pomocí dialogu, nicméně pro využití plného potenciálu výrazů je vhodné využít kód v jazyce _SQL_.
 <br><br>
 
-**Atributový dotaz** (nad daty v mapě): _:material-tab: Map_{: .outlined} → _:material-button-cursor: Select By Attributes_{: .outlined} → vyplnit údaje do dialogu nástroje...
+**Atributový dotaz** (nad daty v mapě): _:material-tab: Map_{: .outlined_button} → _:material-button-cursor: Select By Attributes_{: .outlined_button} → vyplnit údaje do dialogu nástroje...
 [Select features using attributes](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/select-features-using-attributes.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 
 ![](../assets/cviceni1/img_33.png)
