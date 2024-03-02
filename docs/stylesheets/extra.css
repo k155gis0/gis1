@@ -35,8 +35,8 @@ figcaption {                        /* Figure Caption Formatting */
 /* ====== */
 div.table_headerless thead {display: none;}   /* table without header (no other way with markdown) */
 div.table_small_padding :where(th,td) {padding: 5px 10px !important;}
-div.table_no_cell_padding :where(th,td) {padding: 0px 10px !important;}
-div.table_no_cell_min_width th {min-width: initial !important;}
+div.table_no_padding :where(th,td) {padding: 0px 10px !important;}
+div.table_min_width th {min-width: initial !important;}
 div.table_centered .md-typeset__scrollwrap {text-align: center;}
 
 /* BUTTONS */
@@ -105,14 +105,22 @@ div.table_centered .md-typeset__scrollwrap {text-align: center;}
 .underlined {
   border-radius: .1rem;
   background-color: var(--md-code-bg-color);
-  /* color: var(--md-code-fg-color); */
   border-bottom:2px solid var(--md-primary-fg-color);
   padding:.1em .4em;
   white-space: nowrap;
 }
-.underlined,.outlined_button .twemoji {vertical-align:-10% !important;}
 
-.outlined_button {
+.outlined {
+  border-radius: .1rem;
+  background-color: var(--md-code-bg-color);
+  border:2px solid var(--md-primary-fg-color);
+  padding:.1em .4em;
+  white-space: nowrap;
+}
+
+.underlined .twemoji,.outlined_code .twemoji {vertical-align:-10% !important;}
+
+.outlined_code {
   font-family: var(--md-code-font-family);
   border-radius: .1rem;
   font-size: .85em;

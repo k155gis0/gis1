@@ -116,7 +116,7 @@ __Další zdroje:__
 
 ### Přidání dat do mapy
 
-__Vytvoření mapy__: na kartě _:material-tab: Insert_{: .outlined_button} :octicons-arrow-right-24: _:material-button-cursor: New Map_{: .outlined_button}
+__Vytvoření mapy__: na kartě _:material-tab: Insert_{.outlined_code} :octicons-arrow-right-24: _:material-button-cursor: New Map_{.outlined_code}
 
 ![](../assets/cviceni1/img_09.png)
 {: .process_container}
@@ -126,7 +126,7 @@ __Vytvoření mapy__: na kartě _:material-tab: Insert_{: .outlined_button} :oct
 
 ---
 
-__Přidání dat do mapy__ (lokálně uložených): _:material-tab: Map_{: .outlined_button} → _:material-button-cursor: Add Data_{: .outlined_button} → _:material-button-cursor: Data_{: .outlined_button} → vybrat soubor...
+__Přidání dat do mapy__ (lokálně uložených): _:material-tab: Map_{: .outlined_code} → _:material-button-cursor: Add Data_{: .outlined_code} → _:material-button-cursor: Data_{: .outlined_code} → vybrat soubor...
 
 ![](../assets/cviceni1/img_10.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -145,7 +145,7 @@ __Přidání dat do mapy__ (lokálně uložených): _:material-tab: Map_{: .outl
 
 Aby pro procházení dat nebylo nutné pokaždé procházet adresářovou strukturu, hodí se adresáře s daty _připojit do projektu_.
 
-__Připojení adresáře do projektu__: V _Catalog Pane_ ( _:material-tab: View_{: .outlined_button} → _:material-button-cursor: Catalog Pane_{: .outlined_button} ) přes pravé tl. myši na "_Folders_" vybrat _:material-form-dropdown: Add Folder Connection_{: .outlined_button} → vložit nebo zvolit cestu... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
+__Připojení adresáře do projektu__: V _Catalog Pane_ ( _:material-tab: View_{: .outlined_code} → _:material-button-cursor: Catalog Pane_{: .outlined_code} ) přes pravé tl. myši na "_Folders_" vybrat _:material-form-dropdown: Add Folder Connection_{: .outlined_code} → vložit nebo zvolit cestu... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
 
 ![](../assets/cviceni1/img_05.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -167,7 +167,7 @@ __Připojení adresáře do projektu__: V _Catalog Pane_ ( _:material-tab: View_
 
 ...totéž lze udělat s geodatabází. V geodatabázi jsou data uložena efektivněji, nelze do ní však vložit cokoli.
 
-__Připojení geodatabáze do projektu__: V _Catalog Pane_ ( _:material-tab: View_{: .outlined_button} → _:material-button-cursor: Catalog Pane_{: .outlined_button} ) přes pravé tl. myši na "_Databases_" vybrat _:material-form-dropdown: Add Database_{: .outlined_button} → vložit nebo zvolit cestu ke geodatabázi... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
+__Připojení geodatabáze do projektu__: V _Catalog Pane_ ( _:material-tab: View_{: .outlined_code} → _:material-button-cursor: Catalog Pane_{: .outlined_code} ) přes pravé tl. myši na "_Databases_" vybrat _:material-form-dropdown: Add Database_{: .outlined_code} → vložit nebo zvolit cestu ke geodatabázi... → data ve složce přetáhnout (Drag&Drop) do prostoru mapy
 
 ![](../assets/cviceni1/img_05.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -202,7 +202,7 @@ __Pořadí vrstev__: V obsahu mapy (_Contents Pane_) se zobrazují všechny vrst
 
 ---
 
-__Nastavení (vlastnosti) mapy__: V _Contents Pane_ (Obsah) přes pravé tl. myši na název mapy vybrat _:material-form-dropdown: Properties_{: .outlined_button}
+__Nastavení (vlastnosti) mapy__: V _Contents Pane_ (Obsah) přes pravé tl. myši na název mapy vybrat _:material-form-dropdown: Properties_{: .outlined_code}
 
 ![](../assets/cviceni1/img_21.png)
 ![](../assets/cviceni1/arrow.svg){: .off-glb .process_icon}
@@ -213,14 +213,14 @@ __Nastavení (vlastnosti) mapy__: V _Contents Pane_ (Obsah) přes pravé tl. my�
 
 Pro začátek jsou zajímavé tyto položky:
 
-- Záložka _:material-label-outline: General_{: .outlined_button}
+- Záložka _:material-label-outline: General_{: .outlined_code}
 
     - __Name__ (Název mapy)
     - __Reference scale__ (Referenční měřítko): Zafixuje velikost mapové symbologie pro zadané měřítko. 
     [:material-open-in-new: Map reference scales](https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/map-reference-scales.htm){ .md-button .md-button--primary .button_smaller target="_blank" align=right}
     - __Rotation__: Úhel natočení mapy
 
-- Záložka _:material-label-outline: Coordinate systems_{: .outlined_button}
+- Záložka _:material-label-outline: Coordinate systems_{: .outlined_code}
 
     - Informace o souřadnicovém systému zobrazení mapy (zvlášť pro polohu a pro výšku).
     - __POZOR__, pokud se souř. systém __vložených dat__ liší od systému __mapy__, jsou data __dočasně__ převedena do souř. systému __mapy__. Jedná se však o tzv. __On-the-fly__ transformaci, která je pro kombinaci některých souř. systémů __zjednodušená__ a data na sebe nemusí správně navazovat. Tato situace se __nedoporučuje__, neboť může přinést __nepřesné výsledky__ mapové vizualizace i datových analýz. [__Podrobnější informace__](https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/projection-on-the-fly-and-geographic-transformations)
@@ -332,32 +332,32 @@ __Measure Tool__: Interaktivní měření vzdáleností, úhlů apod.
 
 Atributová tabulka je __doplňkem k prostorovým datům__ – obohacuje každý prvek (geometrii) o __další informace__ (tzv. atributy). Tyto informace jsou pro práci v GIS klíčové, protože geometrie sama o sobě (bez atributů) nám mnoho informací nepřinese. __Atributová tabulka je proto součástí každé (vektorové) vrstvy__.
 
-Tabulka obsahuje sloupce – tzv. __:material-table-column: atributy__ (fields), a řádky – tzv. __:material-table-row: záznamy__ (records, rows). Každý prvek tak obsahuje hodnoty všech atributů – příklad viz obr. níže.
+Tabulka obsahuje sloupce – tzv. __:octicons-columns-16: atributy__ (fields), a řádky – tzv. __:octicons-rows-16: záznamy__ (records, rows). Každý prvek tak obsahuje hodnoty všech atributů – příklad viz obr. níže.
 
 ![](../assets/cviceni1/img_37.png)
 {: .process_container}
 
 <figcaption>Atributová tabulka v ArcGIS Pro</figcaption>
 
-__Otevření atributové tabulky__: V _Contents Pane_ ( _:material-tab: View_{: .outlined_button} → _:material-button-cursor: Contents_{: .outlined_button} ) přes pravé tl. myši na vrstvu vybrat _:material-form-dropdown: Attribute Table_{: .outlined_button}.
+__Otevření atributové tabulky__: V _Contents Pane_ ( _:material-tab: View_{: .outlined_code} → _:material-button-cursor: Contents_{: .outlined_code} ) přes pravé tl. myši na vrstvu vybrat _:material-form-dropdown: Attribute Table_{: .outlined_code}.
 
 ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/101.png)
 {: .process_container}
 
-__Vybrání záznamů__: Klikem levého tl. myši na číslo řádku vlevo od tabulky [Select records in a table interactively](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/select-records-in-a-table-interactively.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+__Výběr záznamů__: Klikem levého tl. myši na číslo řádku vlevo od tabulky [Select records in a table interactively](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/select-records-in-a-table-interactively.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 
-__Zrušení výběru__: Tlačítkem _:material-button-cursor: Clear_{: .outlined_button}
+__Zrušení výběru__: Tlačítkem _:material-button-cursor: Clear_{: .outlined_code}
 
 ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/102.png)
 {: .process_container}
 
 __Počet prvků / počet vybraných prvků__: viz obrázek výše
 
-__Přidat pole / editovat pole / smazat pole__: V pravém horním rohu atr. tabulky kliknout na _:material-menu:_{.outlined_button} hamburger menu a vybrat možnost _:material-form-dropdown: Fields View_{: .outlined_button}
+__Přidat pole / editovat pole / smazat pole__: V pravém horním rohu atr. tabulky kliknout na _:material-menu:_{.outlined_code} hamburger menu a vybrat možnost _:material-form-dropdown: Fields View_{: .outlined_code}
 
 - Kliknutím pod poslední řádek tabulky polí ("Click here to add a new field") se __přidá pole__
 - Dvojklikem do jednotlivých polí lze __měnit text či jiné parametry__
-- Přes pravé tl. myši na začátek řádku vlevo vybrat _:material-button-cursor: Delete_{: .outlined_button} a dané __pole se smaže__
+- Přes pravé tl. myši na začátek řádku vlevo vybrat _:material-button-cursor: Delete_{: .outlined_code} a dané __pole se smaže__
 
 ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/104.png)
 ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/105.png)
@@ -370,7 +370,7 @@ __Přidat pole / editovat pole / smazat pole__: V pravém horním rohu atr. tabu
 
 !!! note-grey "Poznámka"
 
-    __Některá pole není možné smazat ani editovat__ (_např._{.primary_color .icon-example .no-dec} `OBJECTID`, `Shape`, `SHAPE_Length`). Jde o tzv. __system managed fields__, mají v datové struktuře speciální význam a jejich hodnoty jsou __automaticky generované__ programem. Pokud tato pole v tabulce překáží, lze je skrýt (pravé tl. na záhlaví atributové tabulky → _:material-button-cursor: Hide Field_{: .outlined_button})
+    __Některá pole není možné smazat ani editovat__ (_např._{.primary_color .icon-example .no-dec} `OBJECTID`, `Shape`, `SHAPE_Length`). Jde o tzv. __system managed fields__, mají v datové struktuře speciální význam a jejich hodnoty jsou __automaticky generované__ programem. Pokud tato pole v tabulce překáží, lze je skrýt (pravé tl. na záhlaví atributové tabulky → _:material-button-cursor: Hide Field_{: .outlined_code})
 
     __Datový typ existujícího pole nelze měnit__! Existují však osvědčené metody řešení tohoto problému, viz zdroj: [Change the data type of an existing field in ArcGIS Pro](https://support.esri.com/en-us/knowledge-base/how-to-change-the-data-type-of-an-existing-field-in-arc-000023089){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 
@@ -381,7 +381,7 @@ __Editace záznamů (prvků, řádků) tabulky__: Dvojklikem přímo do hodnoty 
 ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/107.png)
 {: .process_container}
 
-__Uložení editací__{.icon-exclm}: na kartě _:material-tab: Edit_{: .outlined_button} :octicons-arrow-right-24: _:material-button-cursor: Save_{: .outlined_button} – tím dojde k zápisu úprav do databáze. [Edit an active table](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/edit-an-active-table.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+__Uložení editací__{.icon-exclm}: na kartě _:material-tab: Edit_{: .outlined_code} :octicons-arrow-right-24: _:material-button-cursor: Save_{: .outlined_code} – tím dojde k zápisu úprav do databáze. [Edit an active table](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/edit-an-active-table.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 
 !!! note-grey "Poznámka"
 

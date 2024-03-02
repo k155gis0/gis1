@@ -7,8 +7,8 @@ GIS má široké uplatnění, od __městského plánování__, přes __správu p
 
 GIS 1 je v tomto tématu úvodním kurzem. Zatímco přednášky vás provedou základní teorií, cvičení se věnují praktickému ovládání GIS software – zejména porozumění práce s daty a provádění jednodušších analýz. Během výuky je používán software __:simple-arcgis: Esri ArcGIS Pro__{: style="white-space: nowrap;"}, ke konci kurzu bude pak věnován prostor i možným alternativám (program __:simple-qgis: QGIS__).
 
-Naučíte se
-{: align=center style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px;"}
+<h2 style="text-align:center;">Naučíte se</h2>
+<!-- styl je zde pridany HTML tagem (ne pomoci '##'), aby se text neobjevil v tabulce obsahu vlevo na strance -->
 
 <div class="grid cards grid_icon_info smaller_padding" markdown> <!-- specificky format gridu (trida "grid_icon_info") na miru uvodni strance predmetu -->
 
@@ -46,7 +46,6 @@ Naučíte se
 
 
 </div>
-
 
 <div class="gallery_container" markdown>
 ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/01.jpg){: .no-filter }
