@@ -4,13 +4,13 @@ __STRÁNKA: Charakteristika předmětu__{style="font-size:200%;color:var(--md-pr
 
 ## Název předmětu
 
-``` markdown
+Třída `page_title` zarovnává na střed a mění váhu fontu.
+
+``` md
 # Nejlepší předmět {.page_title}
 ```
 
 # Nejlepší předmět {.page_title}
-
-Přidává třídu `page_title`
 
 <hr class=level-1>
 
@@ -18,7 +18,11 @@ Přidává třídu `page_title`
 
 Stručně vyjmenované nejzajímavější části vyučované v rámci předmětu
 
-```
+Vychází z [MkDocs Material – GRIDS](https://squidfunk.github.io/mkdocs-material/reference/grids/), jen přidává třídy `grid_icon_info` (kvůli vertikálnímu zarovnání ikony a textu) a `smaller_padding` (pro zmenšení místa kolem okraje).
+
+Vždy 2 sloupce (na užších displejích pak jen 1), 1 ikona, __text max 3 řádky__ (kvůli vzhledu)
+
+``` md
 <div class="grid cards grid_icon_info smaller_padding" markdown>
 
 -   :material-information:{ .xl }
@@ -61,45 +65,41 @@ Stručně vyjmenované nejzajímavější části vyučované v rámci předmět
 
 </div>
 
-Vychází z [MkDocs Material – GRIDS](https://squidfunk.github.io/mkdocs-material/reference/grids/), jen přidává třídy `grid_icon_info` (kvůli vertikálnímu zarovnání ikony a textu) a `smaller_padding` (pro zmenšení místa kolem okraje).
-
-Vždy 2 sloupce, 1 ikona, __text max 3 řádky__
-
 <hr class=level-1>
 
 ## Galerie předmětu
 
 Nalákat/získat pozornost pomocí sexy obrázků
 
-```
-<div class="gallery_container" markdown>
-![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
-![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
-![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
-![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
-![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
-![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
-![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
-![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
-</div>
-```
-
-<div class="gallery_container" markdown>
-![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
-![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
-![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
-![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
-![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
-![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
-![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
-![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
-</div>
-
 Třída `gallery_container` nastavuje uspořádání obrázků, třída `no-filter` vypíná stín pod obrázky (ten je jinak pod každým obrázkem na stránce)
 
 Všechny obrázky musí mít __stejný poměr stran__ (lze případně do budoucna vyřešit jinak)
 
 Mělo by to asi být něco, co se v předmětu dělá. Ale to zas nebude moc sexy...
+
+``` md
+<div class="gallery_container" markdown>
+![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
+![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
+![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
+![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
+![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
+![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
+![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
+![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
+</div>
+```
+
+<div class="gallery_container" markdown>
+![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
+![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
+![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
+![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
+![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
+![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
+![](https://dummyimage.com/600x350/009485/a6dad4){: .no-filter }
+![](https://dummyimage.com/600x350/a6dad4/009485){: .no-filter }
+</div>
 
 <hr class=level-1>
 
@@ -353,7 +353,7 @@ Třída `table_centered`
 
 ### Sada obrázků s ikonami
 
-Třída `process_container`, obrázky jsou __vždy pouze na jedno řádku__ (na užším displeji se zmenší), jejich __maximální velikost je 150 px__, mezery mezi nimi se mění v závislosti na šířce displeje.
+Třída `process_container`, obrázky jsou __vždy pouze na jednom řádku__ (na užším displeji se zmenší, ale nezalamují se), jejich __maximální velikost je 150 px__, mezery mezi nimi se mění v závislosti na šířce displeje.
 
 ```
 ![](https://dummyimage.com/600x350/a6dad4/009485)
@@ -484,6 +484,7 @@ __pozor__{style="color:#c22521;" .icon-exclm .no-dec}
 
 Třída `centered_tab_labels`
 
+```
 <div class="centered_tab_labels" markdown>
 === "Záložka 1"
 
@@ -508,7 +509,33 @@ Třída `centered_tab_labels`
     {.process_container}
 
     <figcaption>Popisek obrázku</figcaption>
+</div>
+```
 
+<div class="centered_tab_labels" markdown>
+=== "Záložka 1"
+
+    ![](https://dummyimage.com/600x350/a6dad4/009485)
+    ![](https://dummyimage.com/600x350/009485/a6dad4)
+    ![](https://dummyimage.com/600x350/a6dad4/009485)
+    {.process_container}
+
+    <figcaption>Popisek obrázku</figcaption>
+
+=== "Záložka 2"
+    
+    ![](https://dummyimage.com/600x350/a6dad4/009485)
+    ![](https://dummyimage.com/600x350/009485/a6dad4)
+    {.process_container}
+
+    <figcaption>Popisek obrázku</figcaption>
+
+=== "Záložka 3"
+
+    ![](https://dummyimage.com/600x350/a6dad4/009485)
+    {.process_container}
+
+    <figcaption>Popisek obrázku</figcaption>
 </div>
 
 
@@ -518,8 +545,8 @@ Třída `centered_tab_labels`
 
 ### Poznámka (note-grey)
 
-<div class="table_centered table_small_padding" markdown>
-
+```
+<div class="table_centered table_no_padding" markdown>
 ???+ note-grey "Poznámka"
 
     Libovolný text, _např._{.primary_color .icon-example .no-dec} __tučné písmo__, _kurzíva_, `kód`, _:material-format-color-highlight: zvýraznění_{.no-dec .outlined} obrázek
@@ -533,12 +560,34 @@ Třída `centered_tab_labels`
     | ------- | ------------- |
     | obsah   | obsah tabulky |
     | obsah   | obsah tabulky |
+</div>
+```
 
+<div class="table_centered table_no_padding" markdown>
+???+ note-grey "Poznámka"
+
+    Libovolný text, _např._{.primary_color .icon-example .no-dec} __tučné písmo__, _kurzíva_, `kód`, _:material-format-color-highlight: zvýraznění_{.no-dec .outlined} obrázek
+
+    ![](https://dummyimage.com/600x350/a6dad4/009485)
+    {.process_container}
+
+    Tabulka (výše zmíněné úpravy se musí použít v `div` o úroveň výše!)
+
+    | záhlaví |    záhlaví    |
+    | ------- | ------------- |
+    | obsah   | obsah tabulky |
+    | obsah   | obsah tabulky |
 </div>
 
 ---
 
 ### Admonition v primární barvě webu (task-fg-color)
+
+```
+???+ task-fg-color "Úkol"
+
+    Obsah úkolu
+```
 
 ???+ task-fg-color "Úkol"
 
