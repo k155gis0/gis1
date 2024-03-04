@@ -91,7 +91,8 @@ __prof. Ing. Lena Halounová, CSc.__
 
 ## Harmonogram {: style="margin-bottom:0;"}
 
-[![](./assets/index/schedule.svg){.off-glb .no-filter}](https://kos.cvut.cz/schedule/course/1551GIS/semester/B232){target="_blank"}
+[![](./assets/index/schedule.svg#only-light){.off-glb .no-filter}](https://kos.cvut.cz/schedule/course/1551GIS/semester/B232){target="_blank"}
+[![](./assets/index/schedule_dark.svg#only-dark){.off-glb .no-filter}](https://kos.cvut.cz/schedule/course/1551GIS/semester/B232){target="_blank"}
 
 ---
 
