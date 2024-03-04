@@ -5,11 +5,15 @@ title: Cvičení 2
 
 # Vektorová data, atributové dotazy, prostorové dotazy
 
-<!-- ## Cíl cvičení -->
+## Cíl cvičení
 
-## Základní pojmy
+- Vysvětlení rozdílu mezi vektorovými a rastrovými GIS daty
+- Selekce prvků podle atributů
+- Selekce prvků na základě vzájemných prostorových vztahů
 
-### Vektorová a rastrová prostorová data
+<hr class="level-1">
+
+## Vektorová a rastrová prostorová data
 
 <div class="grid cards" markdown>
 
@@ -38,14 +42,14 @@ title: Cvičení 2
 
 </div>
 
-## Náplň cvičení
+<hr class="level-1">
 
-### Atributové dotazy
+## Atributové dotazy
 
 Atributový dotaz (Attribute Query) je metoda výběru/filtrace prvků na základě **hodnot jejich atributů**. Doplňuje tak metodu [interaktivního výběru prvků](/cviceni/cviceni1/#select-tool) z 1. cvičení. Základem je pravidlo pro výběr – tzv. **výraz** (Expression). ArcGIS Pro umožňuje sestavovat výrazy interaktivně pomocí dialogu, nicméně pro využití plného potenciálu výrazů je vhodné využít kód v jazyce _SQL_.
 <br><br>
 
-**Atributový dotaz** (nad daty v mapě): _:material-tab: Map_{: .outlined_button} → _:material-button-cursor: Select By Attributes_{: .outlined_button} → vyplnit údaje do dialogu nástroje...
+**Atributový dotaz** (nad daty v mapě): _:material-tab: Map_{: .outlined_code} → _:material-button-cursor: Select By Attributes_{: .outlined_code} → vyplnit údaje do dialogu nástroje...
 [Select features using attributes](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/select-features-using-attributes.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 
 ![](../assets/cviceni1/img_33.png)
@@ -79,9 +83,9 @@ Pomocí přepínátka ![](../assets/cviceni1/img_36.png){: .off-glb style="verti
 
 <hr class="level-1">
 
-### Prostorové dotazy
+## Prostorové dotazy
 
-Prostorový dotaz (Spatial Query) je metoda výběru/filtrace prvků jedné vrstvy na základě vzájemné polohy s prvky druhé vrstvy. Funkce využívá jako vstup __`vrstvu vybíraných prvků`__, __`vrstvu pro překryvnou analýzu`__ a __`vztah pro překryvnou analýzu`__.
+__Prostorový dotaz__ (Spatial Query) je metoda výběru/filtrace prvků jedné vrstvy __na základě vzájemné polohy s prvky druhé vrstvy__. Funkce využívá jako vstup `vrstvu vybíraných prvků`, `vrstvu pro překryvnou analýzu` a `vztah pro překryvnou analýzu`.
 
 ![](https://geo.fsv.cvut.cz/data/cehak/155SGEA/img_01.svg){ .no-filter }
 ![](https://geo.fsv.cvut.cz/data/cehak/155SGEA/img_02.svg){ .no-filter }
@@ -257,6 +261,8 @@ Prostorový dotaz (Spatial Query) je metoda výběru/filtrace prvků jedné vrst
 [:material-open-in-new: Select By Location graphic examples](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/select-by-location-graphical-examples.htm){ .md-button .md-button--primary .button_smaller target="\_blank"}
 {: align=center style="display:flex; justify-content:center; align-items:center; column-gap:20px; row-gap:10px; flex-wrap:wrap;"}
 
+<hr class="level-1">
+
 ## Úlohy k procvičení
 
 !!! task-fg-color "Úlohy k atributovým dotazům"
@@ -360,3 +366,8 @@ Prostorový dotaz (Spatial Query) je metoda výběru/filtrace prvků jedné vrst
 
     15. Kolik obcí v ČR leží svoji plochou alespoň na dvou mapových
         listech Základní mapy 1:50 000?
+
+<br><br><br><br><br>
+
+<!-- __:material-account-edit:{.lg .middle}VC__{style="font-size:70%;color:var(--md-code-fg-color);background-color:var(--md-code-bg-color);padding:.3em .5em;border-radius:.5rem;"}
+{align=center} -->

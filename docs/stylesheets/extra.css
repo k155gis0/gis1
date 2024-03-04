@@ -33,6 +33,7 @@ figcaption {                        /* Figure Caption Formatting */
 
 /* TABLES */
 /* ====== */
+table thead{background-color:var(--md-code-bg-color);}
 div.table_headerless thead {display: none;}   /* table without header (no other way with markdown) */
 div.table_small_padding :where(th,td) {padding: 5px 10px !important;}
 div.table_no_padding :where(th,td) {padding: 0px 10px !important;}

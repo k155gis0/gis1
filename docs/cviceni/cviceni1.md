@@ -7,14 +7,15 @@ title: Cvičení 1
 
 ## Cíl cvičení
 
-Seznámení s programem ArcGIS Pro, základní orientace v prostředí programu, přidávání dat do mapy a ovládání mapy
+- Seznámení s ArcGIS Pro, základní orientace v prostředí programu
+- Přidávání dat do mapy a ovládání mapy
+- Jak získat data pro práci v GIS
+- Význam atributové tabulky v GIS
 
 <hr class="level-1">
 
-## Základní pojmy
-
-### Software pro výuku
-Během většiny výuky bude používán program **ArcGIS Pro** – pokročilý desktopový geografický informační systém (GIS) vyvinutý společností **Esri**. Umožňuje uživatelům **vytvářet**, **editovat**, **analyzovat** a **vizualizovat** prostorová data v různých vrstvách, včetně **rastrových** a **vektorových** map, **ortofotomap**, **digitálního výškového modelu** a dalších datasetů.  
+## Software pro výuku
+Během většiny výuky bude používán program **ArcGIS Pro** – pokročilý desktopový geografický informační systém (GIS) vyvinutý společností **Esri**. Umožňuje uživatelům **vytvářet**, **editovat**, **analyzovat** a **vizualizovat** geoprostorová data v různých vrstvách, včetně **rastrových** a **vektorových** map, **ortofotomap**, **digitálního výškového modelu** a dalších datasetů.  
 Uživatelé mohou vytvářet a upravovat **atributy** a **geometrii** prvků, provádět pokročilé **analýzy**, vytvářet a **publikovat mapové vrstvy** a vytvářet **interaktivní mapové aplikace**. Program obsahuje také nástroje pro **vizualizaci** dat, tvorbu mapových prezentací a **sdílení výsledků** s ostatními uživateli.  
 
 ![](../assets/cviceni1/agp_logo.png#only-light){ .no-filter .off-glb width=200px}
@@ -23,9 +24,9 @@ Uživatelé mohou vytvářet a upravovat **atributy** a **geometrii** prvků, pr
 
 !!! note-grey "Pozn."
 
-    Vzhledem k vysokým pořizovacím nákladům se systém ArcGIS využívá především ve velkých firmách a orgánech státní správy. V menších podnicích je rozšířenější jeho open source alternativa [QGIS](https://www.qgis.org/){: target="_blank"} (tomu bude věnována pozornost v [závěru kurzu](/cviceni/cviceni9/)).
+    Vzhledem k vysokým pořizovacím nákladům se systém :simple-arcgis: ArcGIS využívá především ve velkých firmách a orgánech státní správy. V menších podnicích je rozšířenější jeho open source alternativa [:simple-qgis: QGIS](https://www.qgis.org/){: target="_blank"} (tomu bude věnována pozornost v [závěru kurzu](/cviceni/cviceni9/)).
 
-### Prostorová (GIS) data <span style="font-size:60%;font-style:italic;vertical-align:10%;margin-left:15px;">(vektorová)</span>
+## Geoprostorová (GIS) data <span style="font-size:60%;vertical-align:10%;margin-left:15px;font-weight:normal;">(vektorová)</span>
 Geografický informační systém (GIS) využívá obecně jakákoliv data obsahující __prostorovou (polohovou) informaci__. Poloha může být reprezentována nejen kombinací souřadnic (_X + Y_, _šířka + délka_ aj.), ale také _např._{.primary_color .icon-example .no-dec} adresou (o libovolné podrobnosti). Doplňkem k polohové informaci obvykle bývá připojena jakákoliv další informace formou atributů v __atributové tabulce__.
 
 <div class="centered_tab_labels" markdown>
@@ -34,48 +35,46 @@ Geografický informační systém (GIS) využívá obecně jakákoliv data obsah
     ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/tab-01.png){.no-filter width="500"}
     {align=center}
 
-    <figcaption>Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption>
+    <figcaption>Schematická ukázka geoprostorových dat a k nim přiřazených atributových tabulek</figcaption>
 
 === "Body"
     
     ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/tab-02.png){.no-filter width="500"}
     {align=center}
 
-    <figcaption>Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption>
+    <figcaption>Schematická ukázka geoprostorových dat a k nim přiřazených atributových tabulek</figcaption>
 
 === "Linie"
 
     ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/tab-03.png){.no-filter width="500"}
     {align=center}
 
-    <figcaption>Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption>
+    <figcaption>Schematická ukázka geoprostorových dat a k nim přiřazených atributových tabulek</figcaption>
 
 === "Polygony"
 
     ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/tab-04.png){.no-filter width="500"}
     {align=center}
 
-    <figcaption>Schematická ukázka prostorových dat a k nim přiřazených atributových tabulek</figcaption>
+    <figcaption>Schematická ukázka geoprostorových dat a k nim přiřazených atributových tabulek</figcaption>
 
 </div>
 
 
-__Ukládání prostorových dat__: Data lze ukládat mnoha různými způsoby. Datových formátů existuje mnoho, pro začátek uvedeme některé základní.
+__Ukládání geoprostorových dat__: Data lze ukládat mnoha různými způsoby. Datových formátů existuje mnoho, pro začátek uvedeme některé základní.
 
 - __Shapefile__: formát od spol. _Esri_ s převážně otevřenou specifikací, obsahuje geometrii a vlastnosti (atributy) prostorových prvků, v současnosti asi nejpoužívanější, přestože má mnoho nevýhod a z dnešního pohledu je poněkud zastaralý, jedna z charakteristik formátu je povinné rozdělení do více souborů (`.shp`, `.shx` a `.dbf`, příp. další nepovinné), což přináší obtíže při přesouvání, kopírování apod.
 - __Geodatabáze (GDB)__: nativní datová struktura systému _ArcGIS_ – primární datový formát pro správu a editaci dat, obsahuje kolekci datasetů různých typů (vektor, rastr i jiné), zároveň dokáže uchovávat údaje o datové integritě (domény, subtypy apod.) nebo topologii
 - __GeoJSON__: otevřený standard reprezentující vektorová data a přiřazené atributy, založen na formátu `JSON` a je tedy uživatelsky čitelný a velmi rozšířený
 - __GML / KML__: podobně jako GeoJSON – otevřený standard reprezentující vektorová data a přiřazené atributy, založen na formátu `XML`, tedy opět uživatelsky čitelný
 - __GeoPackage (GPKG)__: relativně nový formát _standardu OGC_, podporuje vektorová i rastrová data, překonává mnoho limitů formátu `Shapefile` (např. se jedná o pouze 1 soubor), výchozí formát systému _QGIS_
-- __CSV__: sice není formátem přímo určeným pro prostorová data, nicméně často se jako výměnný formát používá, soubor obsahuje pouze atributy, z nichž některé mohou reprezentovat prostorovou složku (souřadnice či adresu) – tu pak GIS software rozpozná a polohově vizualizuje
+- __CSV__: sice není formátem přímo určeným pro geoprostorová data, nicméně často se jako výměnný formát používá, soubor obsahuje pouze atributy, z nichž některé mohou reprezentovat prostorovou složku (souřadnice či adresu) – tu pak GIS software rozpozná a polohově umístí
 
 <!-- Ve výčtu chybí některé __rastrové formáty__, těm se bude výuka věnovat v průběhu pozdějších cvičení. -->
 
 <hr class="level-1">
 
-## Náplň cvičení
-
-### Spuštění a základní orientace v programu
+## Spuštění a základní orientace v programu
 
 Při spuštění probíhá ověření licence přes příslušnost k organizaci (ČVUT v Praze) – pomocí přihlášení k univerzitnímu účtu. Adresa (URL) pro ČVUT je *ctuprague.maps.arcgis.com* – poté proběhne automatické přesměrování na stránku s univerzitním přihlášením (ve formátu *username@cvut.cz* a heslo to KOSu).
 
@@ -114,7 +113,7 @@ __Další zdroje:__
 
 <hr class="level-1">
 
-### Přidání dat do mapy
+## Přidání dat do mapy
 
 __Vytvoření mapy__: na kartě _:material-tab: Insert_{.outlined_code} :octicons-arrow-right-24: _:material-button-cursor: New Map_{.outlined_code}
 
@@ -231,7 +230,7 @@ Pro začátek jsou zajímavé tyto položky:
 
 <hr class="level-1">
 
-### Jak data získat
+## Jak data získat
 
 __Ruční tvorba__ (pomocí kreslicích a editačních nástrojů ArcGIS Pro) _součástí budoucích cvičení_{: style="color:#888;margin-left:1rem;"}
 
@@ -266,7 +265,7 @@ __Připojení streamovaných dat__ _součástí budoucích cvičení_{: style="c
 
 <hr class="level-1">
 
-### Ovládání mapy
+## Ovládání mapy
 
 __Explore Tool__: Pohyb v mapě a vyvolávání pop-upů (vyskakovacích oken), funkce tlačítek myši viz obr.
 
@@ -328,9 +327,9 @@ __Measure Tool__: Interaktivní měření vzdáleností, úhlů apod.
 
 <hr class="level-1">
 
-### Atributová tabulka
+## Atributová tabulka
 
-Atributová tabulka je __doplňkem k prostorovým datům__ – obohacuje každý prvek (geometrii) o __další informace__ (tzv. atributy). Tyto informace jsou pro práci v GIS klíčové, protože geometrie sama o sobě (bez atributů) nám mnoho informací nepřinese. __Atributová tabulka je proto součástí každé (vektorové) vrstvy__.
+Atributová tabulka je __doplňkem ke geoprostorovým datům__ – obohacuje každý prvek (geometrii) o __další informace__ (tzv. atributy). Tyto informace jsou pro práci v GIS klíčové, protože geometrie sama o sobě (bez atributů) nám mnoho informací nepřinese. __Atributová tabulka je proto součástí každé (vektorové) vrstvy__.
 
 Tabulka obsahuje sloupce – tzv. __:octicons-columns-16: atributy__ (fields), a řádky – tzv. __:octicons-rows-16: záznamy__ (records, rows). Každý prvek tak obsahuje hodnoty všech atributů – příklad viz obr. níže.
 
@@ -345,6 +344,8 @@ __Otevření atributové tabulky__: V _Contents Pane_ ( _:material-tab: View_{: 
 {: .process_container}
 
 __Výběr záznamů__: Klikem levého tl. myši na číslo řádku vlevo od tabulky [Select records in a table interactively](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/select-records-in-a-table-interactively.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+
+- Výběr vytvořený tímto způsobem se neliší od interaktivního výběru v mapovém okně (viz výše). Rozdílný je však kontext, ve kterém uživatel výběr tvoří. V atributové tabulce uživatel vybírá na základě atributů – nevidí, kde v mapě se prvek nachází (nemůže tak např. vybrat dva prvky, které spolu sousedí). V mapovém okně je oproti tomu kontext čistě prostorový (vybírá se na základě polohy).
 
 __Zrušení výběru__: Tlačítkem _:material-button-cursor: Clear_{: .outlined_code}
 
@@ -381,7 +382,9 @@ __Editace záznamů (prvků, řádků) tabulky__: Dvojklikem přímo do hodnoty 
 ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/107.png)
 {: .process_container}
 
-__Uložení editací__{.icon-exclm}: na kartě _:material-tab: Edit_{: .outlined_code} :octicons-arrow-right-24: _:material-button-cursor: Save_{: .outlined_code} – tím dojde k zápisu úprav do databáze. [Edit an active table](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/edit-an-active-table.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
+
+<!-- pokud chci ruznou barvu ikonky a textu, nelze jinak -->
+__&nbsp;__{style="color:#c22521;" .icon-exclm .no-dec}__Uložení editací__: na kartě _:material-tab: Edit_{: .outlined_code} :octicons-arrow-right-24: _:material-button-cursor: Save_{: .outlined_code} – tím dojde k zápisu úprav do databáze. [Edit an active table](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/edit-an-active-table.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 
 !!! note-grey "Poznámka"
 
@@ -392,9 +395,9 @@ __Uložení editací__{.icon-exclm}: na kartě _:material-tab: Edit_{: .outlined
 
 <hr class="level-1">
 
-### Tabulky bez geometrie
+## Tabulky bez geometrie
 
-Některá data mohou obsahovat __pouze atributovou tabulku__ (tedy žádné prvky). I přes absenci geometrie se však může jednak o __prostorová data__. Prostorová složka může být nahrazena tabulkovými záznamy – _např._{.primary_color .icon-example .no-dec} __bodovými souřadnicemi__ či __adresou__ (slovní reprezentace polohy). Tyto údaje je totiž možné pomocí GIS analýzy __převést na geometrii__.
+Některá data mohou obsahovat __pouze atributovou tabulku__ (tedy žádné prvky). I přes absenci geometrie se však může jednak o __geoprostorová data__. Prostorová složka může být nahrazena tabulkovými záznamy – _např._{.primary_color .icon-example .no-dec} __bodovými souřadnicemi__ či __adresou__ (slovní reprezentace polohy). Tyto údaje je totiž možné pomocí GIS analýzy __převést na geometrii__.
 
 I kdyby však data prostorovou složku vůbec neměla, mohou v GIS dobře posloužit – přes tzv. __Join__ je lze napojit na jiná data, která už polohové údaje mají (toto téma bude probíráno v další části kurzu).
 
@@ -435,3 +438,6 @@ __Doplňkové zdroje:__
 
  -->
 <br><br><br><br><br>
+
+<!-- __:material-account-edit:{.lg .middle}VC__{style="font-size:70%;color:var(--md-code-fg-color);background-color:var(--md-code-bg-color);padding:.3em .5em;border-radius:.5rem;"}
+{align=center} -->
