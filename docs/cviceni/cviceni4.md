@@ -24,6 +24,8 @@ Prostřednictvím společného pole (klíče) lze přiřadit záznamy v jedné t
 - Polygony [městských částí](../assets/cviceni4/MESTSKECASTI.zip) Prahy
 - Tabulka pražských [poboček Městské policie](../assets/cviceni4/objekty_MPP.xlsx) ve fromátu XLSX
 
+Pozn. Data jsou dostupná rovněž na S:\K155\Public\155GIS1
+
 ## Pracovní postup
 
 **1.** Přidáme polygonovou vrstvu městských částí Prahy do projektu, prohlédneme atributovou tabulku, seznámíme se s daty. V nastavení projektu zvolíme souřadnicový systém S-JTSK (EPSG:5514).
