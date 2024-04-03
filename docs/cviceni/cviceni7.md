@@ -52,7 +52,7 @@ Náplní cvičení je seznámení s prostředním ArcGIS Online. V rámci cviče
     ``K155\Public\data\GIS\``). Zde také případně najdete soubor s
     popisem dat ve formátu PDF. 
     
-    1. Vytvořte mapu obcí s rozšířenou působností jednoho z krajů ČR.
+    1. **Vytvořte mapu obcí s rozšířenou působností jednoho z krajů ČR.**
 
         Použijte data ORP z datové sady ArcČR
         (ObceSRozsirenouPusobnosti_Polygony), vyexportujte do nové třídy prvků
@@ -68,7 +68,7 @@ Náplní cvičení je seznámení s prostředním ArcGIS Online. V rámci cviče
         skladebné).
 
 
-    2. Vyexportujte shapefile silnic a železnic ve vašem kraji.
+    2. **Vyexportujte shapefile silnic a železnic ve vašem kraji.**
 
         Použijte příslušné vrstvy z ArcČR, ořízněte na velikost kraje.
 
@@ -77,7 +77,7 @@ Náplní cvičení je seznámení s prostředním ArcGIS Online. V rámci cviče
         poslouží později.
 
 
-    3. Vyzkoušejte si vytvořit mapovou kompozici kraje s využitím dat z různého umístění.
+    3. **Vyzkoušejte si vytvořit mapovou kompozici kraje s využitím dat z různého umístění.**
 
         V mapové kompozici můžete využívat data umístěná v různých formátech:
 
@@ -88,4 +88,4 @@ Náplní cvičení je seznámení s prostředním ArcGIS Online. V rámci cviče
         - souborová data uložená jako SHP, CSV, GPX aj.,
         - dynamické vrstvy *Živého atlasu Esri*
 
-    4. Vyzkoušejte si práci s úpravou pop-up (kontextového menu s atributy, které se zobrazí po  kliknutí), s nastavením stylu apod.
+    4. **Vyzkoušejte si práci s úpravou pop-up (kontextového menu s atributy, které se zobrazí po  kliknutí), s nastavením stylu apod.**
