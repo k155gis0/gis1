@@ -52,7 +52,7 @@ Náplní cvičení je seznámení s prostředním ArcGIS Online. V rámci cviče
     ``K155\Public\data\GIS\ArcCR500 3.3``). Zde také případně najdete soubor s
     popisem dat ve formátu PDF. 
     
-    **1. Vytvořte mapu obcí s rozšířenou působností jednoho z krajů ČR.**
+    1. Vytvořte mapu obcí s rozšířenou působností jednoho z krajů ČR.
 
         Použijte data ORP z datové sady ArcČR
         (ObceSRozsirenouPusobnosti_Polygony), vyexportujte do nové třídy prvků
