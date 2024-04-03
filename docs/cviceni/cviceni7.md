@@ -48,8 +48,8 @@ Náplní cvičení je seznámení s prostředním ArcGIS Online. V rámci cviče
 !!! task-fg-color "Úlohy"
 
     K řešení následují úlohy použijte datovou sadu ArcČR
-    500 ve verzi 3.3 (dostupnou na disku *S* ve složce
-    ``K155\Public\data\GIS\ArcCR500 3.3``). Zde také případně najdete soubor s
+    500 ve verzi 3.3 a DATA250(oboje dostupné na disku *S* ve složce
+    ``K155\Public\data\GIS\``). Zde také případně najdete soubor s
     popisem dat ve formátu PDF. 
     
     1. Vytvořte mapu obcí s rozšířenou působností jednoho z krajů ČR.
