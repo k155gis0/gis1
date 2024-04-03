@@ -1,3 +1,8 @@
+---
+icon: material/numeric-5-box
+title: Cvičení 5
+---
+
 # Rastrová data, georeferencování
 
 ## Cíl cvičení
@@ -11,12 +16,19 @@ Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Sou�
 - [**pixel (buňka)**](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/pixel-size-of-image-and-raster-data-pro-.htm) – základní geometrický prvek zpravidla čtvercového tvaru; jeho množina vytváří rastrový digitální obraz; 1 buňka = 1 hodnota
 - [**prostorové rozlišení rastru**](https://pro.arcgis.com/en/pro-app/latest/tool-reference/environment-settings/cell-size.htm) – velikost 1 buňky (pixelu) rastru (cell size)
 - [**resample**](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/resample.htm) – změna prostorového rozlišení rastru
-- **digitální model reliéfu (DMR)** – digitální reprezentace zemského povrchu; rastr; neobsahuje lidské stavby
-- **digitální model terénu (DMT)** – digitální reprezentace zemského povrchu; rastr; obsahuje lidské stavby
+- **digitální model terénu (DMT)** – digitální reprezentace prostorových objektů (obecný pojem obsahující různé způsoby vyjádření terénního reiéfu nebo povrchu)
+- **digitální model reliéfu (DMR)** – digitální reprezentace zemského povrchu (NEbsahuje vegetaci a lidské stavby)
+- **digitální model povrchu (DMP)** – digitální reprezentace zemského povrchu (obsahuje vegetaci a lidské stavby, které jsou pevně spojené s reliéfem)
 - [**transformace**](https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/geographic-coordinate-system-transformation.htm) – obecný pojem pro výpočet, jehož cílem je převod souřadnic bodů z jednoho souřadnicového systému do druhého
 - [**georeference**](https://pro.arcgis.com/en/pro-app/3.0/help/data/imagery/overview-of-georeferencing.htm) – souřadnicové určení snímku
-- [**pyramidování rastru**](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/raster-pyramids.htm) – ukládání dat do menšího rozlišení pro rychlejší práci; pyramidy (náhledy) jsou uloženy v souborech .ovr
+- [**pyramidování rastru**](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/raster-pyramids.htm) – ukládání dat do menšího rozlišení pro rychlejší práci; pyramidy (náhledy) jsou uloženy v souborech *.ovr*
 - [**mosaic dataset**](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/mosaic-datasets.htm) – mozaika; datová sada sjednocující jeden či více rastrů; umožňuje ořez mimorámových údajů
+
+???+ note "&nbsp;<span style="color:#448aff">Digitální modely terénu České republiky</span>"
+     - **DMP 1G** – Digitální model povrchu České republiky 1. generace (DMP 1G) představuje zobrazení území včetně staveb a rostlinného pokryvu ve formě nepravidelné sítě výškových bodů (TIN) s úplnou střední chybou výšky **0,4 m** pro přesně vymezené objekty (budovy) a **0,7 m** pro objekty přesně neohraničené (lesy a další prvky rostlinného pokryvu). Model vznikl z dat pořízených metodou leteckého laserového skenování výškopisu území České republiky v letech 2009 až 2013. 
+     - **DMR 4G** – Digitální model reliéfu České republiky 4. generace (DMR 4G) představuje zobrazení přirozeného nebo lidskou činností upraveného zemského povrchu v digitálním tvaru ve formě výšek diskrétních bodů v pravidelné síti (5 x 5 m) bodů o souřadnicích X,Y,H, kde H reprezentuje nadmořskou výšku ve výškovém referenčním systému Balt po vyrovnání (Bpv) s úplnou střední chybou výšky **0,3 m** v odkrytém terénu a **1 m** v zalesněném terénu. Model vznikl z dat pořízených metodou leteckého laserového skenování výškopisu území České republiky v letech 2009 až 2013.
+     - **DMR 5G** – Digitální model reliéfu České republiky 5. generace (DMR 5G) představuje zobrazení přirozeného nebo lidskou činností upraveného zemského povrchu v digitálním tvaru ve formě výšek diskrétních bodů v nepravidelné trojúhelníkové síti (TIN) bodů o souřadnicích X,Y,H, kde H reprezentuje nadmořskou výšku ve výškovém referenčním systému Balt po vyrovnání (Bpv) s úplnou střední chybou výšky **0,18 m** v odkrytém terénu a **0,3 m** v zalesněném terénu. Model vznikl z dat pořízených metodou leteckého laserového skenování výškopisu území České republiky v letech 2009 až 2013. Dokončen byl k 30. 6. 2016 na celém území ČR. (Zdroj: ČÚZK)
+
 
 ## Použité datové podklady
 
@@ -195,8 +207,23 @@ Pro vytvoření ucelené mapové vrstvy a následné zpracování rastrů, se v
   <figcaption>Hotová mozaika georeferencovaného mapového listu</figcaption>
 </figure>
 
-## Zadání domácího úkolu k semestrální práci
+## Zdroje
+Český úřad zeměměřický a katastrální [online]. [cit. 2024-01-05]. Dostupné z: [https://www.cuzk.cz/](https://www.cuzk.cz/)
 
-1. Vytvořte ořez DMR 5G pro území zadané obce.
+## Úlohy k procvičení
 
-2. Vytvořte bezešvou mozaiku georeferencovaných rastrů císařských otisků stabilního katastru pro území zadané obce.
+!!! task-fg-color "Úlohy"
+
+    K řešení následujích úloh použijte datovou sadu [ArcČR
+    500](../../data/#arccr-500) verzi 3.3 dostupnou na disku *S* ve složče
+    ``K155\Public\data\GIS\ArcCR500 3.3``. Zde také najdete souboru s
+    popisem dat ve formátu PDF. Další datové vrstvy, která budete
+    potřebovat pro vyřešení následujících úloh, jsou dostupné ke stažení
+    jako [zip archiv](https://geo.fsv.cvut.cz/vyuka/155gis1/geodata/gis1-cviceni05.zip).
+
+    1. Vizuálně zjistěte jaká je nejvíce zastoupená "barva" podloží v okrese Pelhřimov.
+
+    2. Vizuálně zjistěte na jakém mapovém listu ZM25 leží Mšené Žehrovice.
+
+    3. Vytvořte výsledný rastr, který bude v souřadnicovém systému UTM-33N
+       (velikost pixelu 300m). Vrstvu vyexportujte do formátu GeoTIFF.

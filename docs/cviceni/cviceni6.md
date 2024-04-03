@@ -1,3 +1,8 @@
+---
+icon: material/numeric-6-box
+title: Cvičení 6
+---
+
 # Vektorizace, tvorba geodatabáze, kontrola topologie
 
 ## Cíl cvičení
@@ -271,9 +276,63 @@ Na obrázku níže je zobrazena ukázka dvou nalezených topologických chyb (le
       - Pro zjednodušení kontroly topologie je možné všechna kontrolovaná data sloučit do jedné vrstvy, kterou následně zkontrolujeme samotnou. Nemusíme tedy řešit překryvy jednotlivých vrstev mezi sebou (*Must Not Overlap With*), ale zkontrolujeme pouze novou vrstvu samostatně vůči sobě (*Must Not Overlap*). Důležité je však po kontrole nezapomenou opravit případné chyby v původních datech.
       - Odkaz na schématicky popsaná pravidla kontroly topologie je [**ZDE**](https://pro.arcgis.com/en/pro-app/latest/help/editing/pdf/topology_rules_poster.pdf).
 
+## Úlohy k procvičení
 
-## Zadání domácího úkolu k semestrální práci
+!!! task-fg-color "Úlohy"
 
-1. Dle postupu ze cvičení vektorizujte plochy SMO5 na zadaném katastrálním území. Při vektorizaci rozlišujte typy využití ploch stejně jako na cvičení. 
+    K řešení následujích úloh použijte datovou sadu [ArcČR
+    500](../../data/#arccr-500) verzi 3.3 dostupnou na disku *S* ve složče
+    ``K155\Public\data\GIS\ArcCR500 3.3``. Zde také najdete souboru s
+    popisem dat ve formátu PDF. 
 
-2. Proveďte kontrolu topologie a veškerá data mějte přehledně uložená v geodatabázi.
+    1. Zjistěte, jaká je délka silnic I. třídy, II. třídy a III. třídy na
+       mapovém listu ZM10 02-34-14
+
+           Postup:
+
+           - vytvořte datový model pro silniční síť ČR (včetně domén, příp. subtypů)
+           - nastavte topologická pravidla pro příslušný dataset (silnice se nesmí křížit, nesmí mít volné konce,...)
+           - připojte si pomocí služby ArcGIS Online (Add Data ► From ArcGIS Online) data ZM10 (datová vrstva *Základní mapy ČR (S-JTSK)*) 
+           - zvektorizujte území zájmového mapového listu 
+           - exportujte vektorizovaná data do souřadnicového systému S-JTSK (Krovak East North)
+           - určete délku jednotlivých typů silnic na mapovém listu
+
+    2. Zjistěte délku a průběh nejkratší silniční spojnice z křižovatky na
+       východ od osady Kocourov do ústřední křižovatky (350 m n. m.) ve
+       vsi Sutom. Zjistěte úhrnnou plochu lesů.
+
+           K vypracování úlohy využijte dvojice rastrů Státní mapy odvozené
+           (SMO-5) – původního vydání z počátku 50. let 20. století. Rastry
+           Litoměřice 7–5 a 7–6 jsou k dispozici
+           [zde](http://rytiny.fsv.cvut.cz/155GIS1/). Na stejném místě najdete
+           také klad Státní mapy 1 : 5000 v podobě Shapefile. Vyzkoušejte si
+           možnosti vizuální úpravy světlosti a barevnosti rastrů pomocí Image
+           analysis.
+
+           Postup:
+
+           - využijte dříve vytvořený datový model pro silniční síť ČR – v GDB založte novou třídu prvků
+           - stáhněte si klad listů Státní mapy 1 : 5000 a oba mapové listy (pracujte v systému S-JTSK)
+           - georeferencujte oba listy projektivní transformací na dodaný klad
+           - vytvořte bezešvý kus kresby SMO-5 formou mozaiky s mapovými listy oříznutými kladem na pouhé mapové pole
+           - zvektorizujte předmětné silnice mezi Kocourovem a Sutomí  
+           - odečtěte vzdálenost různými cestami, změřte a vyberte nejkratší
+           - založte třídu prvků pro lesy a zvektorizujte plochy lesů (neuvažujte lesopark ve Vlastislavi)
+           - zachovejte si data z dnešní hodiny – během cvičení na téma WFS si porovnáte vámi zvektorizované části silniční sítě a lesních ploch s daty ze ZABAGED
+
+           Pozn.: mapové listy SMO-5 jsou graficky upraveny, aby byl patrnější
+           obsah. Původně byly mapové listy zažloutlé a s nevýraznou
+           kresbou. Jedná se o vůbec první vydání tohoto mapového díla. V
+           současnosti se používá označení SM-5 (Státní mapa 1 : 5000) a vypadá
+           vizuálně poněkud jinak, přestože základní obsah je shodný a znakový
+           klíč doznal jen drobnějších změn.
+
+    3. Zjistěte délku katastrální hranice mezi k. ú. Pnětluky a
+       k. ú. Vlastislav.
+
+           K vypracování úlohy využijte rastr PCO tehdejšího katastráního území
+           *Netluk* (dnes Pnětluky u Podsedic; část obce Podsedice) z
+           roku 1843. Rastr je k dispozici ve stejné
+           [složce](http://rytiny.fsv.cvut.cz/155GIS1/) jako předchozí
+           data. Vyzkoušejte si obecně nerovnoběžníkový tvar ořezu rastru v
+           mozaice.

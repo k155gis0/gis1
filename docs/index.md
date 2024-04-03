@@ -5,60 +5,46 @@ Předmět vás seznámí se základy tzv. __geografických informačních systé
 
 GIS má široké uplatnění, od __městského plánování__, přes __správu přírodních zdrojů__ až po __krizový management__. Je nepostradatelným nástrojem pro efektivní rozhodování a řízení v různých odvětvích a pomáhá lépe pochopit složité geografické souvislosti.
 
-GIS 1 je v tomto tématu úvodním kurzem. Zatímco přednášky vás provedou základní teorií, cvičení se věnují praktickému ovládání GIS software – zejména porozumění práce s daty a provádění jednodušších analýz. Během výuky je používán software __:simple-arcgis: Esri ArcGIS Pro__{: style="white-space: nowrap;"}, ke konci kurzu bude pak věnován prostor i možným alternativám (program __QGIS__).
+GIS 1 je v tomto tématu úvodním kurzem. Zatímco přednášky vás provedou základní teorií, cvičení se věnují praktickému ovládání GIS software – zejména porozumění práce s daty a provádění jednodušších analýz. Během výuky je používán software __:simple-arcgis: Esri ArcGIS Pro__{: style="white-space: nowrap;"}, ke konci kurzu bude pak věnován prostor i možným alternativám (program __:simple-qgis: QGIS__).
 
-Naučíte se
-{: align=center style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px;"}
+<h2 style="text-align:center;">Naučíte se</h2>
+<!-- styl je zde pridany HTML tagem (ne pomoci '##'), aby se text neobjevil v tabulce obsahu vlevo na strance -->
 
-<div class="grid_container" markdown>
-<div class="grid_item grid_item_flex" markdown>
-:material-map-outline:
-{: .icon_important}
+<div class="grid cards grid_icon_info smaller_padding" markdown> <!-- specificky format gridu (trida "grid_icon_info") na miru uvodni strance predmetu -->
 
-__zpracovávat__ a __analyzovat__ prostorová (geografická, mapová) data
-</div>
-<div class="grid_item grid_item_flex" markdown>
-:material-vector-polygon:
-{: .icon_important}
+-   :material-map-outline:{ .xl }
 
-porozumět rozdílu mezi __vektorovými__ a __rastrovými__ daty
-</div>
-<div class="grid_item grid_item_flex" markdown>
-:material-filter-outline:
-{: .icon_important}
+    __zpracovávat__ a __analyzovat__ prostorová (tj. geografická, mapová) data
 
-__filtrovat__ data pomocí atributových a prostorových dotazů
-</div>
-<div class="grid_item grid_item_flex" markdown>
-:material-tools:
-{: .icon_important}
+-   :material-vector-polygon:{ .xl }
 
-aplikovat základní __prostorové funkce__ (nástroje geoprocessingu)
-</div>
-<div class="grid_item grid_item_flex" markdown>
-:material-creation-outline:
-{: .icon_important}
+    porozumět rozdílu mezi __vektorovými__ a __rastrovými__ daty
 
-__tvořit__ a __editovat__ GIS data
-</div>
-<div class="grid_item grid_item_flex" markdown>
-:material-vector-difference:
-{: .icon_important}
+-   :material-filter-outline:{ .xl }
 
-základy datové __topologie__
-</div>
-<div class="grid_item grid_item_flex" markdown>
-:octicons-share-16:
-{: .icon_important}
+    __filtrovat__ data pomocí atributových a prostorových dotazů
 
-__sdílet__ data prostřednictvím webu (systém _ArcGIS Online_, webové mapové aplikace)
-</div>
-<div class="grid_item grid_item_flex" markdown>
-:simple-qgis:
-{: .icon_important}
+-   :material-tools:{ .xl }
 
-získat základy ovládání __alternativního GIS software__ (_QGIS_)
-</div>
+    aplikovat základní __prostorové funkce__ (nástroje geoprocessingu)
+
+-   :material-creation-outline:{ .xl }
+
+    __tvořit__ a __editovat__ GIS data
+
+-   :material-vector-difference:{ .xl }
+
+    základy datové __topologie__
+
+-   :octicons-share-16:{ .xl }
+
+    __sdílet__ data prostřednictvím webu (systém _ArcGIS Online_, webové mapové aplikace)
+
+-   :simple-qgis:{ .xl }
+
+    získat základy ovládání __alternativního GIS software__ (_QGIS_)
+
+
 </div>
 
 <div class="gallery_container" markdown>
@@ -76,20 +62,20 @@ získat základy ovládání __alternativního GIS software__ (_QGIS_)
 ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/12.jpg){: .no-filter }
 </div>
 
-## Doporučená literatura
+<!-- ## Doporučená literatura
 
 1. Kolář, J.: Geografické informační systémy 10. Vydavatelství ČVUT, Praha 1998.
 2. Rapant, P. (2006): Geoinformatika a geoinformační technologie. VŠB-TU Ostrava, 500 str. ISBN 80-248-1264-9.
 3. Břehovský, M., Jedlička, K. (2005): Přednáškové texty pro Úvod do GIS. ZČU Plzeň, 116 s.
 4. Hrubý M.: Geografické Informační Systémy (GIS) - Studijní opora. VÚT v Brně, 91 str.
-5. Tuček J.: Geografické informační systémy, Praha Computer Press, 1998.
+5. Tuček J.: Geografické informační systémy, Praha Computer Press, 1998. -->
 
 ## Přednášky {: style="margin-bottom:0;"}
 
 účast doporučená
 {: style="opacity:50%;margin-top:0;"}
 
-<!-- Přednášející:  -->![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.5x-2.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"} 
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.5x-2.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"} 
 __prof. Ing. Lena Halounová, CSc.__
 
 1. Definice GIS, informatika, základní pojmy, aplikační oblasti GIS, prostor, topologie, historie GIS
@@ -105,13 +91,12 @@ __prof. Ing. Lena Halounová, CSc.__
 
 ## Harmonogram {: style="margin-bottom:0;"}
 
-návody na připojení kalendáře: [:fontawesome-brands-apple: iOS](#){: .md-button .md-button--primary .button_smaller } | [:fontawesome-brands-android: Android](#){: .md-button .md-button--primary .button_smaller } | [:simple-microsoftoutlook: Outlook](#){: .md-button .md-button--primary .button_smaller }
-{: style="color:#aaa;margin-top:0;"}
+[![](./assets/index/schedule.svg#only-light){.off-glb .no-filter}](https://kos.cvut.cz/schedule/course/1551GIS/semester/B232){target="_blank"}
+[![](./assets/index/schedule_dark.svg#only-dark){.off-glb .no-filter}](https://kos.cvut.cz/schedule/course/1551GIS/semester/B232){target="_blank"}
 
-<iframe src="https://outlook.office365.com/owa/calendar/4aa3e6ac783f4ae6bbcf3a50e0e59f01@fsv.cvut.cz/b7284de85f0a44d5a2111c09ecc144ba6463292263155698181/calendar.html" style="border: 0" width="100%" height="600" frameborder="0" scrolling=“no”></iframe>
+---
 
+[Stránka předmětu v :custom-kos-logo-img-BW:{.middle style="margin-left:3px;"} :custom-kos-logo-BW:{.xl .middle}](https://kos.cvut.cz/course-syllabus/1551GIS/B232){ .md-button .md-button--primary target="_blank"}
+{align=center}
 
-<!-- <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FPrague&showTitle=1&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showDate=1&showNav=1&title=155GIS1%3A%20GIS%201&src=dHFhajdoNWRiaHFhdjNvbXE2bTRib3I0YTg5dWVkMGRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D50000" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe> -->
-
-
-<br><br><br>
+<br>

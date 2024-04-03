@@ -3,7 +3,7 @@
    viewBox="0 0 24 24"
    version="1.1"
    id="svg1"
-   sodipodi:docname="vc-numeric-1-box-outline.svg"
+   sodipodi:docname="numeric-12-box.svg"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -22,7 +22,6 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:current-layer="svg1" />
   <path
-     d="M 19,19 H 5 V 5 H 19 M 19,3 H 5 C 3.8954305,3 3,3.8954305 3,5 v 14 c 0,1.104569 0.8954305,2 2,2 h 14 c 1.104569,0 2,-0.895431 2,-2 V 5 C 21,3.8954305 20.104569,3 19,3 m -7,14 h 2 V 7 h -4 v 2 h 2 m 4.540084,6.36287 h 2 V 5.3628692 h -4 v 2 h 2"
-     id="path1"
-     sodipodi:nodetypes="cccccsssssssccccccccccccc" />
+     id="path2"
+     d="M 5 3 A 2 2 0 0 0 3 5 L 3 19 A 2 2 0 0 0 5 21 L 19 21 C 20.109998 21 21 20.109998 21 19 L 21 5 C 21 3.9000022 20.109998 3 19 3 L 5 3 z M 6 7 L 10 7 L 10 17 L 8 17 L 8 9 L 6 9 L 6 7 z M 12 7 L 16 7 A 2 2 0 0 1 18 9 L 18 11 C 18 12.109998 17.099998 13 16 13 L 14 13 L 14 15 L 18 15 L 18 17 L 12 17 L 12 13 C 12 11.890002 12.900002 11 14 11 L 16 11 L 16 9 L 12 9 L 12 7 z " />
 </svg>
