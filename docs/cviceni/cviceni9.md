@@ -24,7 +24,16 @@ rovině je prezentován [QGIS](https://qgis.org).
 
 ## Použité datové podklady
 
+Cílem je používat data přímo od jejich poskytovatelů. Pro případ technických problémů je ale připraven balíček již připravených dat. Aktualizovat balíček.
+
 - [Data](https://geo.fsv.cvut.cz/vyuka/155gis1/geodata/gis1-cviceni10.zip)
+
+Přehled dat, které budeme používat:
+
+- balíček dat z RÚIAN pro jednu obec, budeme používat obec Zdiby. Pro kontrolu jednotlivých mezivýslednků doporučujeme použít totožnou obec.Stáhneme jako součást obsahu cvičení pomocí pluginu v QGIS.
+- [číselník druhu pozemku](https://services.cuzk.cz/sestavy/cis/SC_D_POZEMKU.zip) – tabulka obsahující kódové hodnoty existujících druhů pozemku spolu s jejich textovým popisem a dalšími informacemi ve formátu CSV. Stáhnout jako běžný soubor.
+- připravený styl pro *parcely* formou souboru ``parcely_styl.qmd``
+
 
 ## Náplň cvičení
 
@@ -34,9 +43,9 @@ začátečníky](https://gismentors.github.io/qgis-zacatecnik) skupiny
 
 ### Načtení vstupních dat
 
-Načteme polygonovou vrstvu obcí z RUIAN a tabulku s předvybranými
-informacemi o počtu nezaměstnaných v jednotlivých obcích z roku 2018
-za 10 měsíc.
+Otevřeme QGIS a nainstalujeme plugin pro data z RÚIAN. Následně stáhneme data pro obec Zdiby a výstup uložíme do souboru ``zdiby_ruian.gpkg``. Po potvrzení nastavení v dialogovém okně se data stáhnou a náseldně se rovnou i  načtou do mapového okna.
+
+Následně si stáhneme data číselníku druhu pozemku a načteme je do QGISu jako tabulková data bez geometrie.
 
 Podklady:
 
@@ -46,13 +55,10 @@ Podklady:
   hodnotami](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/import_delim.html#import-dat)
   (pozor na datové typy - přetažení vs formulář)
 
-U tabulky *nez01_data201810_orig* změníme filter na ``rok, mesic,
-vuk``.
 
 ### Připojení statistických dat
 
-Připojíme tabulku o nezaměstnaných k polygovové vrstvě obcí na základě
-kódu obce.
+Připojíme tabulku s druhy pozemků k polygonové vrstvě *parcely*.
 
 Podklady: [Postup
 připojení dat](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/join.html#postup-pripojeni)
