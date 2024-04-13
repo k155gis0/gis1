@@ -56,7 +56,7 @@ Podklady:
   (pozor na datové typy - přetažení vs formulář)
 
 
-### Připojení statistických dat
+### Připojení tabulkových dat
 
 Připojíme tabulku s druhy pozemků k polygonové vrstvě *parcely*. Propojení je možné nastavit na zákaldě atributu s kódem druhu pozemku. Ten se jmenuje ``KOD`` a``DruhPozemkuKod``.
 
@@ -89,23 +89,65 @@ Druhým krokem je sloučit parcely v jednotlivých katastrálních územích pod
 Pro aktualizaci plochy v atributu ``plocha_m `` použijeme nástroj aktualizce v atributové tabulce.
 Výslední data popisují dobře hodnoty, ale jejich uspořádání není vhodné na jednoduché zpracování.
 
+Podklady:
+
+- [Kalkulátor polí](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/editace.html#kalkulator-poli)
+- [Prostorové analýzy](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/prostorove_analyzy.html)
+- [Dissolve](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/prostorove_analyzy.html#rozpustit-dissolve)
+
+### Alternativní postup
+
 Druhý krok můžeme provést i za pomocí dotazu v *DB manageru*, kde si nejdříve musíme připojit ``zdiby_ruian.gpkg`` jako databázové připojení.
 
 Pro rozložení do jednotlivých kroků může tato úloha vypadat následovně:
 
 - SELECT DruhPozemkuKod, KatastralniUzemiKod, plocha_m FROM parcely
 - SELECT DruhPozemkuKod, KatastralniUzemiKod, sum(plocha_m) FROM parcely group by DruhPozemkuKod, KatastralniUzemiKod
-- SELECT DruhPozemkuKod, KatastralniUzemiKod, sum(CASE WHEN DruhPozemkuKod=2 THEN plocha_m) DruhPozemkuKod_2 FROM parcely group by DruhPozemkuKod, KatastralniUzemiKod  + ostatní kategorie dle druhu pozemku
+- SELECT DruhPozemkuKod, KatastralniUzemiKod, sum(CASE WHEN DruhPozemkuKod=2 THEN plocha_m END) DruhPozemkuKod_2 FROM parcely group by DruhPozemkuKod, KatastralniUzemiKod  + ostatní kategorie dle druhu pozemku
 
-Výseldnou vrstvu lze uložit jako samostatný výsledek a připojit k vrstvě *katastralniuzemi*.
-
+Výslednou vrstvu lze uložit jako samostatný výsledek a připojit k vrstvě *katastralniuzemi*. Pro tuto lze par vykreslit jednotlivé diagramy spočtených kategorií.
 
 Podklady:
 
-- [Kalkulátor polí](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/editace.html#kalkulator-poli)
-- [Prostorové analýzy](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/prostorove_analyzy.html)
-- [Dissolve](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/prostorove_analyzy.html#rozpustit-dissolve)
- 
+- [Kartodiagramy](https://gismentors.github.io/qgis-pokrocily/ruzne/grafy.html#zalozka-diagramdiagramy)
+
+## Simulace výběru pozemků pro fotovoltaické elektrárny
+
+Zjednodušeně si vyzkoušíme malou část takovéhoto postupu.
+Jedna část definuje výběr podle druhu pozemku. Druhá pak odstraní části parcel, které jsou v příliš malé vzdálensoti od vybraných typů stavebních obejktů.
+
+### Výběr parcel
+
+Parcely lze vybrat na základě druhu pozemku a způsobu využití.
+Nás zajímají parcely podle náseldující definice:
+
+- DruhPozemkuKod může nabývat hodnoty 2,8,10,14
+- ZpusobyVyuzitiPozemku může nabývat hodnoty  2,3,4,5,26. Pozor, tam kde je NULL hodnota, je pro nás také relevantní.
+
+Vybrané parcely uložíme jako mezivýsledek do nové vrstvy.
+
+Podklady:
+
+- [Atributové dotazování](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/dotazovani.html#atributove-dotazovani)
+
+
+### Okolí budov
+
+V odstupové vzdálenosti 500 m od určitých stavebních objektů nelze nic realizovat. 
+
+Vybereme stavební objekty podle způsobu jejich využití, kterých se toto omezení týká -  ZpusobVyuzitiKod nabývá hodnoty 2,6,7,8.
+
+Kolem vybraných budov pomocí funkce *BUFFER* obalovou zónu o velikosti 500 m. 
+
+Následně potřebujeme ořezat vybrané parcely ořezat vytvořenou obalovou zónou budov. Pro tento krok použijeme funkci *DIFFERENCE*
+
+Podklady:
+
+- [Obalová zóna dle pevné vzdálenosti (buffer)](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/prostorove_analyzy.html#obalova-zona-dle-pevne-vzdalenosti-buffer)
+- [Rozdíl (difference)](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/prostorove_analyzy.html#rozdil-difference)
+
+
+<!---
 ### Vytvoření obalové zóny kolem dálnic
 
 Přidáme vrstvu *silnice* a vybereme pomocí vzorce ``"typ" = 1``
