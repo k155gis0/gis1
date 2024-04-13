@@ -30,9 +30,9 @@ Cílem je používat data přímo od jejich poskytovatelů. Pro případ technic
 
 Přehled dat, které budeme používat:
 
-- balíček dat z RÚIAN pro jednu obec, budeme používat obec Zdiby. Pro kontrolu jednotlivých mezivýslednků doporučujeme použít totožnou obec.Stáhneme jako součást obsahu cvičení pomocí pluginu v QGIS.
+- balíček dat z RÚIAN pro jednu obec, budeme používat obec Zdiby. Pro kontrolu jednotlivých mezivýslednků doporučujeme použít totožnou obec. Stáhneme jako součást obsahu cvičení pomocí pluginu v QGIS.
 - [číselník druhu pozemku](https://services.cuzk.cz/sestavy/cis/SC_D_POZEMKU.zip) – tabulka obsahující kódové hodnoty existujících druhů pozemku spolu s jejich textovým popisem a dalšími informacemi ve formátu CSV. Stáhnout jako běžný soubor.
-- připravený styl pro *parcely* formou souboru ``parcely_styl.qmd``
+- připravený styl pro *parcely* formou souboru ``parcely_styl_druh.qml``
 
 
 ## Náplň cvičení
