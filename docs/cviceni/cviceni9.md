@@ -58,22 +58,53 @@ Podklady:
 
 ### Připojení statistických dat
 
-Připojíme tabulku s druhy pozemků k polygonové vrstvě *parcely*.
+Připojíme tabulku s druhy pozemků k polygonové vrstvě *parcely*. Propojení je možné nastavit na zákaldě atributu s kódem druhu pozemku. Ten se jmenuje ``KOD`` a``DruhPozemkuKod``.
 
 Podklady: [Postup
 připojení dat](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/join.html#postup-pripojeni)
  
 ### Nastavení stylu
 
-Nastavíme symbologii podle počtu nezaměstnaných v přidaných datech.
+Nastavíme symbologii pro *parcely* na základě druhu pozemku.
+Styl je možné také sdílet s konkrétním nastavením. Vlastní vytvořený styl si uložíme do samostatného souboru.
+Pro opačný postup použijeme již připravený styl pro vrstvu *parcely*, který lze načíst ze souboru ``parcely_styl.qmd``.
 
-Dále vypočteme hustotu počtu nezaměstnaných na km^2^ pomocí kalkulačky
-polí.
+Q: Je spolehlivější sdílet styl založený na původním atributu, anebo na připojeném? 
+
 
 Podklady:
 
 - [Nastavení stylu](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/vektor_data_prace.html#styl)
+- [Ukládání stylování do souboru](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/vektor_data_prace.html#ulozeni-a-nacteni-nastaveni-vrstvy-pomoci-souboru)
+
+### Výpočet plochy a její použití
+
+Dalším běžným úkolem je výpočet statistických údajů. Jedním z nejzákladnějších požadavků je práce s úrčováním plochy/výměry.
+Zadáním je určit podíl jednotlivých druhů pozemků podle jejich výměry pro jednotlivá katastrální území.
+Prvním krokem je spočítat plochu záznamům ve vrstvě *parcely* do atributu s názvem ``plocha_m `` pomocí *KALKULÁTORU POLÍ*.
+
+Q: Jaký je rozdíl mezi výměrou v datech o parcelách a tou spočtenou přímo z geometrie?
+
+Druhým krokem je sloučit parcely v jednotlivých katastrálních územích podle jejich druhu. Použijeme nástroj pro sloučení geometrii, kde je možné použít podmínku - *DISSOLVE*. Pole ``DruhPozemkuKod `` a ``KatastralniUzemiKod `` nastavíme jako parametry.
+Pro aktualizaci plochy v atributu ``plocha_m `` použijeme nástroj aktualizce v atributové tabulce.
+Výslední data popisují dobře hodnoty, ale jejich uspořádání není vhodné na jednoduché zpracování.
+
+Druhý krok můžeme provést i za pomocí dotazu v *DB manageru*, kde si nejdříve musíme připojit ``zdiby_ruian.gpkg`` jako databázové připojení.
+
+Pro rozložení do jednotlivých kroků může tato úloha vypadat následovně:
+
+- SELECT DruhPozemkuKod, KatastralniUzemiKod, plocha_m FROM parcely
+- SELECT DruhPozemkuKod, KatastralniUzemiKod, sum(plocha_m) FROM parcely group by DruhPozemkuKod, KatastralniUzemiKod
+- SELECT DruhPozemkuKod, KatastralniUzemiKod, sum(CASE WHEN DruhPozemkuKod=2 THEN plocha_m) DruhPozemkuKod_2 FROM parcely group by DruhPozemkuKod, KatastralniUzemiKod  + ostatní kategorie dle druhu pozemku
+
+Výseldnou vrstvu lze uložit jako samostatný výsledek a připojit k vrstvě *katastralniuzemi*.
+
+
+Podklady:
+
 - [Kalkulátor polí](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/editace.html#kalkulator-poli)
+- [Prostorové analýzy](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/prostorove_analyzy.html)
+- [Dissolve](https://gismentors.github.io/qgis-zacatecnik/vektorova_data/prostorove_analyzy.html#rozpustit-dissolve)
  
 ### Vytvoření obalové zóny kolem dálnic
 
