@@ -87,6 +87,106 @@ Proveďme v projektu následující změny:
 
 ![](../assets/cviceni10/ruian_result.png "Pořadí vrstev RÚIAN")
 
+#### WMS zdroje
+
+Do projektu přidáme vybrané [WMS
+služby](https://geoportal.cuzk.cz/(S(ktfz4kwhtke20faayarg2abz))/Default.aspx?mode=TextMeta&side=wms.verejne&text=WMS.verejne.uvod&head_tab=sekce-03-gp&menu=311)
+poskytované ĆÚZK. Pokud existuje ale ekvivaletní [WMTS](
+https://geoportal.cuzk.cz/(S(ktfz4kwhtke20faayarg2abz))/Default.aspx?mode=TextMeta&side=wmts.uvod&text=wmts.uvod&head_tab=sekce-03-gp&menu=315) služba, zvolíme raději tuto formu. WMTS by měla pozitivně ovlivnit rychlost načítání vrstvy.
+
+- ZTM5 - `https://ags.cuzk.cz/arcgis1/rest/services/ZTM/MapServer/WMTS`
+- Ortofoto - `https://ags.cuzk.cz/arcgis1/rest/services/ORTOFOTO/MapServer/WMTS`
+- Stínovaný model reliéfu - `https://ags.cuzk.cz/arcgis2/services/dmr5g/ImageServer/WMSServer`
+   - dmr5g:GrayscaleHillshadeZ10
+   - dmr5g:SlopeRGBMap
+   
+!!! tip
+
+   Dojem plastičnosti můžeme dosáhnout kombinací Základní topografické
+   mapy při dané míře průhlednosti a vrstvy
+   "dmr5g:SlopeRGBMap". Ukázka vizualizace při míře transparetnosti
+   75%:
+   
+   ![](../assets/cviceni10/cuzk_ztm5.png "Ukázka vizualizace Základní topografické mapy")
+   
+!!! tip "Tip pro pokročilé uživatele"
+
+    U WMTS vrstev by mohlo dojít k zlepšení rychlosti načítaní vrstev pří použití vrstev s měřítkovou sadou Google Maps a odpovídajícího nastavení při publikaci projektu.
+    
+Služby přidáme pomocí `Layer > Data Source Manager`:
+
+![](../assets/cviceni10/cuzk_wms.png "Definici WMS služby")
+
+Přidané WMS služby nahrajeme do mapového okna. 
+
+!!! tip
+
+    WMS vrstvy je užitečné seskupit do nové skupniny:
+    
+    ![](../assets/cviceni10/cuzk_wms_group.png "Seskupení WMS vrstev")
+
+### WFS zdroje
+
+Do projektu přidáme vybrané [WFS
+služby](https://geoportal.cuzk.cz/(S(ktfz4kwhtke20faayarg2abz))/Default.aspx?mode=TextMeta&side=wfs&text=wfs&head_tab=sekce-03-gp&menu=333)
+poskytované ĆÚZK. Vybereme následující vrtsvy z datového zdroje
+"Stahovací služba WFS - ZABAGED® - polohopis"
+(`https://ags.cuzk.cz/arcgis/services/ZABAGED_POLOHOPIS/MapServer/WFSServer`):
+
+- `zbg:Stožár_elektrického_vedení`
+- `zbg:Mohyla__pomník__náhrobek`
+- `zbg:Kříž__sloup_kulturního_významu`
+- `zbg:Úřad_veřejné_správy_-_definiční_bod`
+- `zbg:Škola_-_definiční_bod`
+- `zbg:Hasičská_stanice__zbrojnice_-_definiční_bod`
+- `zbg:Pošta_-_definiční_bod`
+- `zbg:Elektrické_vedení`
+- `zbg:Silnice__dálnice`
+- `zbg:Vodní_tok`
+- `zbg:Cesta`
+- `zbg:Železniční_trať`
+- `zbg:Hřbitov`
+- `zbg:Skládka`
+- `zbg:Maloplošné_zvlástě_chráněné_území`
+- `zbg:Lesní_půda_se_stromy_kategorizovaná__plocha_`
+- `zbg:Vinice`
+- `zbg:Vodní_plocha`
+- `zbg:Vodní_tok`
+
+![](../assets/cviceni10/zabaged_layers.png "Seznam WFS vrstev ZABAGED")
+
+U jednotlivých vrstev nastavíme symbologii a vrstvy přejmenujeme:
+
+![](../assets/cviceni10/zabaged_styl.png "Nastavení stylu u WFS vrstev")
+
+!!! todo
+    
+    Doplnit link na stažení stylů.
+    
+!!! warning "Důležité"
+
+    Vrstvy, u kterých budeme nastavovat kategorizovaný styl doporučujeme stáhnout do lokální databáze ve formátu GeoPackage:
+
+    ![](../assets/cviceni10/zabaged_db.png "Uložení dat do nového GeoPackage")
+
+    Při stažení dat nastavte korektně zájmové území(!!!):
+    
+    ![](../assets/cviceni10/wfs_download_canvas.png "Stažení dat WFS zájmové oblasti")
+
+!!! todo
+
+    Doplnit skript pro automatizaci stažení dat WFS
+
+Výsledek může pro zájmovou oblast vypadat následovně:
+
+![](../assets/cviceni10/zabaged_result.png "Příklad datových vrstev ZABAGED")
+
+Na závěr nastavme výchozí kompozici. V našem případě jsou parcely
+nastaveny na průhlednost 50%. Na pozadí stínovaná základní
+topografická mapa:
+
+![](../assets/cviceni10/project_to_publish.png "Výsledný projekt před publikací")
+
 ### Publikace projektu
 
 Nejprve si nainstalujeme zásuvný modul Gisquick.
