@@ -131,7 +131,7 @@ Dalším z datových zdrojů mohou být WMS služby poskytované agenturou
 
 ![](../assets/cviceni10/wms_cenia.png "Vrstva III. vojenského mapování")
 
-### WFS zdroje
+#### WFS zdroje
 
 Do projektu přidáme vybrané [WFS
 služby](https://geoportal.cuzk.cz/(S(ktfz4kwhtke20faayarg2abz))/Default.aspx?mode=TextMeta&side=wfs&text=wfs&head_tab=sekce-03-gp&menu=333)
@@ -193,13 +193,17 @@ topografická mapa:
 
 ![](../assets/cviceni10/project_to_publish.png "Výsledný projekt před publikací")
 
-### Další zdroje dat
+#### Další zdroje dat
 
 - [Národní katalog otevřených dat](https://data.gov.cz/datov%C3%A9-sady)
 
 !!! todo
 
     Doplnit další zdroje
+
+!!! todo
+    
+    Přidat ukázku pro OSM
     
 ### Publikace projektu
 
@@ -208,11 +212,74 @@ Podklady: [dokumentace Gisquick](https://gisquick.readthedocs.io)
 !!! note "Poznámka"
 
     Pro účel výuky budeme používat vlastní instanci publikačního serveru Gisquick provozované na <http://geo102.fsv.cvut.cz:8083/>.
-    
-Nejprve si nainstalujeme zásuvný modul Gisquick.
+
+Po [příhlášení](http://geo102.fsv.cvut.cz:8083/user/) se objeví profil uživatele:
+
+![](../assets/cviceni10/gisquick_new_project.png "Gisquick: nový projekt")
+
+Vytvoříme nový projekt. Objeví se žádost o instalaci zásuvného modulu:
+
+![](../assets/cviceni10/gisquick_plugin.png "Gisquick: instalace pluginu")
+
+Při instalaci postupuje podle [návodu](https://gisquick.readthedocs.io/en/latest/user-manual/before-publishing.html#qgis-gisquick-plugin).
 
 Poté se pomocí zásuvného modulu přihlásíme do prostředí publikační
-platformy Gisquick a připravený projekt publikujeme.
+platformy Gisquick (`Web > Publish in Gisquick`). Do publikačního prostředí platformy Gisquick nás přesměruje tlačítko `Open Browser`:
+
+![](../assets/cviceni10/gisquick_login_open.png "Gisquick: otevření")
+
+Po vytvoření projektu se objeví úvodní formulář se seznamem vrstev určených k publikaci:
+
+![](../assets/cviceni10/gisquick_data_layers.png "Gisquick: seznam vrstev")
+
+Nejrpve opravíme případné chyby (`Manage Layers Names` > `Generate Names` > `Update QGIS Project`):
+
+![](../assets/cviceni10/gisquick_data_layers_errors.png "Gisquick: seznam chyb")
+
+Dále povolíme WFS, abychom umožňili uživateli se dotazovat na vektorová data.
+
+![](../assets/cviceni10/gisquick_data_layers_wfs.png "Gisquick: zapnutí WFS")
+
+Datové vrstvy nahrajeme na publikační server:
+
+![](../assets/cviceni10/gisquick_data_layers_load.png "Gisquick: nahrání dat")
+
+![](../assets/cviceni10/gisquick_create_project.png "Gisquick: zadání jména projektu")
+
+Nastavíme titulek projektu:
+
+![](../assets/cviceni10/gisquick_title.png "Gisquick: zadání titulku projektu")
+
+Projdeme jednotlivá nastavení projektu
+
+![](../assets/cviceni10/gisquick_menu.png "Gisquick: menu")
+
+A připravený projekt publikujeme (`Publish`).
+
+Provedeme následující změny v nastavení:
+
+- prostorový rozsah nastavíme z vrstvy "Obce":
+
+    ![](../assets/cviceni10/gisquick_extent.png "Gisquick: prostorový rozsah")
+    
+- nastavíme vhodnou měřítkovou sadu:
+
+    ![](../assets/cviceni10/gisquick_scales.png "Gisquick: měřítka")
+
+Po publikaci projektu se objeví tlačítko
+
+![](../assets/cviceni10/gisquick_map.png "Gisquick: mapová aplikace")
+
+které nás přesměruje do mapové aplikace:
+
+![](../assets/cviceni10/gisquick_map_app.png "Gisquick: zobrazení mapové aplikace")
+
+!!! tip
+
+    Ve výchozím nastavení je projekt nastaven jako soukromý. Toto nastavení lze změnit v `Permissions`:
+    
+    ![](../assets/cviceni10/gisquick_permissions.png "Gisquick: nastavení")
+
 <!---
 ## Zadání domácího úkolu k semestrální práci
 
