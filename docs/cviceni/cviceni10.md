@@ -125,6 +125,12 @@ Přidané WMS služby nahrajeme do mapového okna.
     
     ![](../assets/cviceni10/cuzk_wms_group.png "Seskupení WMS vrstev")
 
+Dalším z datových zdrojů mohou být WMS služby poskytované agenturou
+[CENIA](https://geoportal.gov.cz/arcgis/rest/services/CENIA). Pro náš
+účel vyberme III. vojenské mapování: `https://geoportal.gov.cz/arcgis/services/CENIA/cenia_rt_III_vojenske_mapovani/MapServer/WMSServer`:
+
+![](../assets/cviceni10/wms_cenia.png "Vrstva III. vojenského mapování")
+
 ### WFS zdroje
 
 Do projektu přidáme vybrané [WFS
@@ -187,8 +193,22 @@ topografická mapa:
 
 ![](../assets/cviceni10/project_to_publish.png "Výsledný projekt před publikací")
 
+### Další zdroje dat
+
+- [Národní katalog otevřených dat](https://data.gov.cz/datov%C3%A9-sady)
+
+!!! todo
+
+    Doplnit další zdroje
+    
 ### Publikace projektu
 
+Podklady: [dokumentace Gisquick](https://gisquick.readthedocs.io)
+
+!!! note "Poznámka"
+
+    Pro účel výuky budeme používat vlastní instanci publikačního serveru Gisquick provozované na <http://geo102.fsv.cvut.cz:8083/>.
+    
 Nejprve si nainstalujeme zásuvný modul Gisquick.
 
 Poté se pomocí zásuvného modulu přihlásíme do prostředí publikační
