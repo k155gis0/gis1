@@ -282,4 +282,6 @@ které nás přesměruje do mapové aplikace:
 
 !!! task-fg-color "Úkol"
 
-    Změňte nastavení projektu... TODO
+    Změňte nastavení projektu:
+    
+    - z záložce `Layers` přesuňte vrstvy ze skupiny "WMS" do `Base Layers` (je nutné přesunout celou skupinu)
