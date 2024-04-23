@@ -7,7 +7,7 @@ title: Cvičení 10
 
 ## Cíl cvičení
 
-Ukázka publikace dat z prostředí QGIS do webového prostoru pomocí publikační plaftormy **Gisquick**.
+Ukázka publikace dat z prostředí QGIS do webového prostoru pomocí publikační platformy **Gisquick**.
 
 ## Základní pojmy
 
@@ -18,7 +18,6 @@ Ukázka publikace dat z prostředí QGIS do webového prostoru pomocí publikač
 
 - [RÚIAN](../../data/#ruian)
 - [ZABAGED](../../data#zabaged-polohopis)
-- [OpenStreetMap](../../data#openstreetmap)
 
 ## Náplň cvičení
 
@@ -30,7 +29,7 @@ Nahrajte do prostředí QGIS vstupní geografická data. Pro jednotlivé vrstvy 
 
 #### RÚIAN
 
-Nainstalujeme zásuvný modul pro práci s datovým zdrojem RÚIAN (viz [předchozí cvíčení](./cviceni9.md)).
+Nainstalujeme zásuvný modul pro práci s datovým zdrojem RÚIAN (viz [předchozí cvičeni](./cviceni9.md)).
 
 ![](../assets/cviceni9/plugin_install.png "Instalace pluginu")
 
@@ -51,7 +50,7 @@ Výchozí symbologie vrstev je nastavena zásuvným modulem:
 Provedeme v projektu následující změny:
 
 - odstraníme vrstvu "Části obcí" a "Adresní body"
-- přípojíme k vrstvě "Parcely" číselníky (viz [předchozí cvíčení](./cviceni9.md)):   
+- přípojíme k vrstvě "Parcely" číselníky (viz [předchozí cvičeni](./cviceni9.md)):   
     - [SC_D_POZEMKU](https://www.cuzk.cz/Katastr-nemovitosti/Poskytovani-udaju-z-KN/Ciselniky-ISKN/Ciselniky-k-nemovitosti/Druh-pozemku.aspx)
     - [SC_ZP_VYUZITI_POZ](https://www.cuzk.cz/Katastr-nemovitosti/Poskytovani-udaju-z-KN/Ciselniky-ISKN/Ciselniky-k-nemovitosti/Zpusob-vyuziti-pozemku.aspx)
 !!! warning "Důležité"
@@ -65,7 +64,7 @@ Provedeme v projektu následující změny:
 
 - podobně přípojíme číselník k vrstvě "Stavební objekty"
     - [SC_ZP_VYUZITI_BUD](https://www.cuzk.cz/Katastr-nemovitosti/Poskytovani-udaju-z-KN/Ciselniky-ISKN/Ciselniky-k-nemovitosti/Zpusob-vyuziti-stavby.aspx)
-- na základě připojených číselníků nastavíme symbologii vrstev
+- na základě připojených číselníků nastavíme symbologii vrstev (ke stažení [zde](https://geo.fsv.cvut.cz/vyuka/155gis1/gis1_cv10_styly.zip))
 
 ![](../assets/cviceni10/ruian_style.png "Nastavený styl parcel")
 
@@ -75,7 +74,7 @@ Provedeme v projektu následující změny:
     
     ![](../assets/cviceni10/ruian_regex.png "Popisky stavebních objektů")
     
-    Popisky nastavme tak, aby se zobrazovaly od meřítka 1:1000 (podobně jako u parcel).
+    Popisky nastavme tak, aby se zobrazovaly od měřítka 1:1000 (podobně jako u parcel).
     
 ![](../assets/cviceni10/ruian_style_buildings.png "Nastavení stylu u stavebních objektů")
     
@@ -88,9 +87,11 @@ Provedeme v projektu následující změny:
 #### WMS zdroje
 
 Do projektu přidáme vybrané [WMS
-služby](https://geoportal.cuzk.cz/(S(ktfz4kwhtke20faayarg2abz))/Default.aspx?mode=TextMeta&side=wms.verejne&text=WMS.verejne.uvod&head_tab=sekce-03-gp&menu=311)
-poskytované ČÚZK. Pokud existuje ale ekvivaletní [WMTS](
-https://geoportal.cuzk.cz/(S(ktfz4kwhtke20faayarg2abz))/Default.aspx?mode=TextMeta&side=wmts.uvod&text=wmts.uvod&head_tab=sekce-03-gp&menu=315) služba, zvolíme raději tuto formu. WMTS by měla pozitivně ovlivnit rychlost načítání vrstvy.
+služby](https://geoportal.cuzk.cz/(S(ktfz4kwhtke20faayarg2abz))/Default.aspx?mode=TextMeta&side=wms.verejne&text=WMS.verejne.uvod&headtab=sekce-03-gp&menu=311)
+poskytované ČÚZK. Pokud existuje ale ekvivalentní [WMTS](
+https://geoportal.cuzk.cz/(S(ktfz4kwhtke20faayarg2abz))/Default.aspx?mode=TextMeta&side=wmts.uvod&text=wmts.uvod&head_tab=sekce-03-gp&menu=315)
+služba, zvolíme raději tuto formu. WMTS by měla pozitivně ovlivnit
+rychlost načítání vrstvy.
 
 - ZTM5 - `https://ags.cuzk.cz/arcgis1/rest/services/ZTM/MapServer/WMTS`
 - Ortofoto - `https://ags.cuzk.cz/arcgis1/rest/services/ORTOFOTO/MapServer/WMTS`
@@ -102,7 +103,7 @@ https://geoportal.cuzk.cz/(S(ktfz4kwhtke20faayarg2abz))/Default.aspx?mode=TextMe
 
     Dojem plastičnosti můžeme dosáhnout kombinací Základní topografické
     mapy při dané míře průhlednosti a vrstvy
-    "dmr5g:SlopeRGBMap". Ukázka vizualizace při míře transparetnosti
+    "dmr5g:SlopeRGBMap". Ukázka vizualizace při míře transparentnosti
     75%:
    
     ![](../assets/cviceni10/cuzk_ztm5.png "Ukázka vizualizace Základní topografické mapy")
@@ -119,7 +120,7 @@ Přidané WMS služby nahrajeme do mapového okna.
 
 !!! tip
 
-    WMS vrstvy je užitečné seskupit do nové skupniny:
+    WMS vrstvy je užitečné seskupit do nové skupiny:
     
     ![](../assets/cviceni10/cuzk_wms_group.png "Seskupení WMS vrstev")
 
@@ -133,7 +134,7 @@ Dalším z datových zdrojů mohou být WMS služby poskytované agenturou
 
 Do projektu přidáme vybrané [WFS
 služby](https://geoportal.cuzk.cz/(S(ktfz4kwhtke20faayarg2abz))/Default.aspx?mode=TextMeta&side=wfs&text=wfs&head_tab=sekce-03-gp&menu=333)
-poskytované ĆÚZK. Vybereme následující vrtsvy z datového zdroje
+poskytované ČÚZK. Vybereme následující vrstvy z datového zdroje
 "Stahovací služba WFS - ZABAGED® - polohopis"
 (`https://ags.cuzk.cz/arcgis/services/ZABAGED_POLOHOPIS/MapServer/WFSServer`):
 
@@ -163,10 +164,6 @@ U jednotlivých vrstev nastavíme symbologii a vrstvy přejmenujeme:
 
 ![](../assets/cviceni10/zabaged_styl.png "Nastavení stylu u WFS vrstev")
 
-!!! todo
-    
-    Doplnit link na stažení stylů.
-    
 !!! warning "Důležité"
 
     Vrstvy, u kterých budeme nastavovat kategorizovaný styl doporučujeme stáhnout do lokální databáze ve formátu GeoPackage:
@@ -177,10 +174,8 @@ U jednotlivých vrstev nastavíme symbologii a vrstvy přejmenujeme:
     
     ![](../assets/cviceni10/wfs_download_canvas.png "Stažení dat WFS zájmové oblasti")
 
-!!! todo
-
-    Doplnit skript pro automatizaci stažení dat WFS
-
+    Kategorizované styly jsou ke stažení [zde](https://geo.fsv.cvut.cz/vyuka/155gis1/gis1_cv10_styly.zip).
+    
 Výsledek může pro zájmovou oblast vypadat následovně:
 
 ![](../assets/cviceni10/zabaged_result.png "Příklad datových vrstev ZABAGED")
@@ -195,14 +190,6 @@ topografická mapa:
 
 - [Národní katalog otevřených dat](https://data.gov.cz/datov%C3%A9-sady)
 
-!!! todo
-
-    Doplnit další zdroje
-
-!!! todo
-    
-    Přidat ukázku pro OSM
-    
 ### Publikace projektu
 
 Podklady: [dokumentace Gisquick](https://gisquick.readthedocs.io)
@@ -211,7 +198,7 @@ Podklady: [dokumentace Gisquick](https://gisquick.readthedocs.io)
 
     Pro účel výuky budeme používat vlastní instanci publikačního serveru Gisquick provozované na <http://geo102.fsv.cvut.cz:8083/>.
 
-Po [příhlášení](http://geo102.fsv.cvut.cz:8083/user/) se objeví profil uživatele:
+Po [přihlášeni](http://geo102.fsv.cvut.cz:8083/user/) se objeví profil uživatele:
 
 ![](../assets/cviceni10/gisquick_new_project.png "Gisquick: nový projekt")
 
@@ -221,10 +208,17 @@ Vytvoříme nový projekt. Objeví se žádost o instalaci zásuvného modulu:
 
 Při instalaci postupuje podle [návodu](https://gisquick.readthedocs.io/en/latest/user-manual/before-publishing.html#qgis-gisquick-plugin).
 
+Jelikož pracujeme v projektu s formátem GeoPackage, tak nainstalujeme
+verzi zásuvného modulu Gisquick s podporou dbhash. Tato verze
+zásuvného modulu zamezí znovu nahrávání datových zdrojů ve formátu
+GeoPackage například při změně viditelnosti vrstvy.
+
+![](../assets/cviceni10/gisquick_plugin_select.png "Gisquick: instalace pluginu")
+
 Poté se pomocí zásuvného modulu přihlásíme do prostředí publikační
 platformy Gisquick (`Web > Publish in Gisquick`). 
 
-![](../assets/cviceni10/gisquick_login.png "Gisquick: přihlašení")
+![](../assets/cviceni10/gisquick_login.png "Gisquick: přihlášeni")
 
 Do publikačního prostředí platformy Gisquick nás přesměruje tlačítko `Open Browser`:
 
@@ -238,7 +232,7 @@ Nejprve opravíme případné chyby (`Manage Layers Names` > `Generate Names` > 
 
 ![](../assets/cviceni10/gisquick_data_layers_errors.png "Gisquick: seznam chyb")
 
-Dále povolíme WFS, abychom umožňili uživateli se dotazovat na vektorové vrstvy:
+Dále povolíme WFS, abychom umožnili uživateli se dotazovat na vektorové vrstvy:
 
 ![](../assets/cviceni10/gisquick_data_layers_wfs.png "Gisquick: zapnutí WFS")
 
@@ -260,7 +254,9 @@ A provedeme následující změny v nastavení:
 
 - prostorový rozsah nastavíme z vrstvy "Obce":
 
-    ![](../assets/cviceni10/gisquick_extent.png "Gisquick: prostorový rozsah")
+<video controls="true" allowfullscreen="true" width=99%>
+<source src="../../assets/cviceni10/gisquick_extent.webm" type="video/webm" markdown="1">
+</video>
     
 - nastavíme vhodnou měřítkovou sadu:
 
@@ -280,8 +276,49 @@ které nás přesměruje do mapové aplikace:
     
     ![](../assets/cviceni10/gisquick_permissions.png "Gisquick: nastavení")
 
-!!! task-fg-color "Úkol"
+#### Další nastavení projektu
 
-    Změňte nastavení projektu:
+Zkusme změnit následující nastavení projektu:
     
-    - z záložce `Layers` přesuňte vrstvy ze skupiny "WMS" do `Base Layers` (je nutné přesunout celou skupinu)
+- skryjeme CSV tabulky v záložce `Layers`
+
+![](../assets/cviceni10/gisquick_csv_tables.png "Gisquick: CSV data")
+
+<video controls="true" allowfullscreen="true" width=99%>
+<source src="../../assets/cviceni10/gisquick_visibility.webm" type="video/webm" markdown="1">
+</video>
+
+- nastavíme viditelnost zvolených atributů u vrstvy "Parcely" (kmenové
+  číslo, pododdělení čísla, výměra a druh pozemku)
+  
+Nejprve v QGISu nastavíme u zvolených atributů aliasy (`Attributes Form` ve vlastnostech vrstvy).
+
+![](../assets/cviceni10/qgis_field_alias.png "QGIS: nastavení aliasů")
+
+Změny v QGIS projektu uložíme. V nastavení Gisquick projektu provedeme aktualizaci.
+
+<video controls="true" allowfullscreen="true" width=99%>
+<source src="../../assets/cviceni10/gisquick_update.webm" type="video/webm" markdown="1">
+</video>
+
+Viditelnost atributů nastavíme z záložce `Layers`.
+
+<video controls="true" allowfullscreen="true" width=99%>
+<source src="../../assets/cviceni10/gisquick_field_visibility.webm" type="video/webm" markdown="1">
+</video>
+
+Po uložení změn (`Save`) znovu načteme mapovou aplikaci.
+
+![](../assets/cviceni10/gisquick_field_alias.png "Gisquick: nastavení aliasů")
+
+- v záložce `Layers` přesuňte vrstvy ze skupiny "WMS" do `Base Layers` (je nutné přesunout celou skupinu)
+
+![](../assets/cviceni10/gisquick_base_layers.png "Gisquick: podkladové vrstvy")
+
+Po uložení změn se mezi podkladovými vrstvami jednoduše přepínat.
+
+![](../assets/cviceni10/gisquick_base_layers_switch.png "Gisquick: přepínaní mezi podkladovými vrstvami")
+
+!!! note "Poznámka"
+
+    Podkladovou vrstvu je možné mít zapnutou pouze jednu. Nelze tedy kombinovat základní topografickou mapu a stínovaný reliéf. Tyto vrstvy lze přesunou zpátky do "Overlays". To bude ale vyžadovat nejprve vrstvy v QGISu přesunout mimo skupinu "WMS" a poté změnit nastavení Gisquick záložce `Layers`.
