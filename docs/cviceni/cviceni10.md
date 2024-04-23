@@ -7,24 +7,22 @@ title: Cvičení 10
 
 ## Cíl cvičení
 
-Ukázka publikace dat z prostředí QGIS do webového prostoru pomocí publikační plaftormy [Gisquick](https://gisquick.org/).
+Ukázka publikace dat z prostředí QGIS do webového prostoru pomocí publikační plaftormy **Gisquick**.
 
 ## Základní pojmy
 
-- [**QGIS**](https://qgis.org) – svobodný a multiplatformní geografický informační systém (GIS)
+- [**QGIS**](https://qgis.org) – jeden z nejpoužívanějších open source GIS nástrojů v praxi
 - [**Gisquick**](https://gisquick.org/) – jedna z volně dostupných publikačních platforem pro QGIS
 
 ## Použité datové podklady
 
 - [RÚIAN](../../data/#ruian)
-- [Data50](../../data#data50)
-- [Veřejná databáze ČSÚ](../../data#verejna-databaze-csu)
 - [ZABAGED](../../data#zabaged-polohopis)
 - [OpenStreetMap](../../data#openstreetmap)
 
 ## Náplň cvičení
 
-Pro naši oblíbenou obec či město zpracujeme projekt v QGIS určený pro online publikaci.
+Pro naši zájmovou obec či menší město zpracujeme projekt v QGIS určený pro online publikaci.
 
 ### Příprava projektu
 
@@ -32,32 +30,32 @@ Nahrajte do prostředí QGIS vstupní geografická data. Pro jednotlivé vrstvy 
 
 #### RÚIAN
 
-Nainstalujme zásuvný modul pro práci s datovým zdrojem RÚIAN (viz [předchozí cvíčení](./cviceni9.md)).
+Nainstalujeme zásuvný modul pro práci s datovým zdrojem RÚIAN (viz [předchozí cvíčení](./cviceni9.md)).
 
 ![](../assets/cviceni9/plugin_install.png "Instalace pluginu")
 
-Vyberme zájmovou obec či město a stáhněme pomocí zásuvného modulu data RÚIAN.
+Vybereme zájmovou obec či město a stáhneme pomocí zásuvného modulu data RÚIAN.
 
 ![](../assets/cviceni10/ruian_download.png "Stažení dat RÚIAN")
 
-Symbologie vrstev je nastavena zásuvným modulem:
+Výchozí symbologie vrstev je nastavena zásuvným modulem:
 
 ![](../assets/cviceni10/ruian_data.png "Data RÚIAN")
 
 !!! note "Poznámka"
 
-    Seznam vrstev je ovlivněn dostupností datových vrstev. U menších obcí může například chybět vrstva ulic a pod.
+    Seznam vrstev je ovlivněn dostupností datových vrstev. U menších obcí může například chybět vrstva ulic a další.
     
     ![](../assets/cviceni10/ruian_layers.png "Seznam vrstev RÚIAN")
     
-Proveďme v projektu následující změny:
+Provedeme v projektu následující změny:
 
 - odstraníme vrstvu "Části obcí" a "Adresní body"
-- přípojme k vrstvě "Parcely" číselníky (viz [předchozí cvíčení](./cviceni9.md)):   
+- přípojíme k vrstvě "Parcely" číselníky (viz [předchozí cvíčení](./cviceni9.md)):   
     - [SC_D_POZEMKU](https://www.cuzk.cz/Katastr-nemovitosti/Poskytovani-udaju-z-KN/Ciselniky-ISKN/Ciselniky-k-nemovitosti/Druh-pozemku.aspx)
     - [SC_ZP_VYUZITI_POZ](https://www.cuzk.cz/Katastr-nemovitosti/Poskytovani-udaju-z-KN/Ciselniky-ISKN/Ciselniky-k-nemovitosti/Zpusob-vyuziti-pozemku.aspx)
 !!! warning "Důležité"
-    Data načíteje namísto prostého přetažení pomocí dialogu `Layer > Data Source Manager`. V tomto případě se korektně nastaví datové typy sloupců. Kódování znaků nastavíme na `windows-1250`.
+    Data načítejte namísto prostého přetažení pomocí dialogu `Layer > Data Source Manager`. V tomto případě se korektně nastaví datové typy sloupců. Kódování znaků nastavíme na `windows-1250`.
     
     ![](../assets/cviceni10/ruian_csv.png "Přidání CSV tabulek do projektu")
     
@@ -65,9 +63,9 @@ Proveďme v projektu následující změny:
 
 ![](../assets/cviceni10/ruian_csv_detail.png "Připojená CSV data")
 
-- podobně přípojme číselník k vrstvě "Stavební objekty"
+- podobně přípojíme číselník k vrstvě "Stavební objekty"
     - [SC_ZP_VYUZITI_BUD](https://www.cuzk.cz/Katastr-nemovitosti/Poskytovani-udaju-z-KN/Ciselniky-ISKN/Ciselniky-k-nemovitosti/Zpusob-vyuziti-stavby.aspx)
-- na základě připojených číselníků nastavíme symbologii
+- na základě připojených číselníků nastavíme symbologii vrstev
 
 ![](../assets/cviceni10/ruian_style.png "Nastavený styl parcel")
 
@@ -91,23 +89,23 @@ Proveďme v projektu následující změny:
 
 Do projektu přidáme vybrané [WMS
 služby](https://geoportal.cuzk.cz/(S(ktfz4kwhtke20faayarg2abz))/Default.aspx?mode=TextMeta&side=wms.verejne&text=WMS.verejne.uvod&head_tab=sekce-03-gp&menu=311)
-poskytované ĆÚZK. Pokud existuje ale ekvivaletní [WMTS](
+poskytované ČÚZK. Pokud existuje ale ekvivaletní [WMTS](
 https://geoportal.cuzk.cz/(S(ktfz4kwhtke20faayarg2abz))/Default.aspx?mode=TextMeta&side=wmts.uvod&text=wmts.uvod&head_tab=sekce-03-gp&menu=315) služba, zvolíme raději tuto formu. WMTS by měla pozitivně ovlivnit rychlost načítání vrstvy.
 
 - ZTM5 - `https://ags.cuzk.cz/arcgis1/rest/services/ZTM/MapServer/WMTS`
 - Ortofoto - `https://ags.cuzk.cz/arcgis1/rest/services/ORTOFOTO/MapServer/WMTS`
 - Stínovaný model reliéfu - `https://ags.cuzk.cz/arcgis2/services/dmr5g/ImageServer/WMSServer`
-   - dmr5g:GrayscaleHillshadeZ10
-   - dmr5g:SlopeRGBMap
+    - dmr5g:GrayscaleHillshadeZ10
+    - dmr5g:SlopeRGBMap
    
 !!! tip
 
-   Dojem plastičnosti můžeme dosáhnout kombinací Základní topografické
-   mapy při dané míře průhlednosti a vrstvy
-   "dmr5g:SlopeRGBMap". Ukázka vizualizace při míře transparetnosti
-   75%:
+    Dojem plastičnosti můžeme dosáhnout kombinací Základní topografické
+    mapy při dané míře průhlednosti a vrstvy
+    "dmr5g:SlopeRGBMap". Ukázka vizualizace při míře transparetnosti
+    75%:
    
-   ![](../assets/cviceni10/cuzk_ztm5.png "Ukázka vizualizace Základní topografické mapy")
+    ![](../assets/cviceni10/cuzk_ztm5.png "Ukázka vizualizace Základní topografické mapy")
    
 !!! tip "Tip pro pokročilé uživatele"
 
@@ -224,7 +222,11 @@ Vytvoříme nový projekt. Objeví se žádost o instalaci zásuvného modulu:
 Při instalaci postupuje podle [návodu](https://gisquick.readthedocs.io/en/latest/user-manual/before-publishing.html#qgis-gisquick-plugin).
 
 Poté se pomocí zásuvného modulu přihlásíme do prostředí publikační
-platformy Gisquick (`Web > Publish in Gisquick`). Do publikačního prostředí platformy Gisquick nás přesměruje tlačítko `Open Browser`:
+platformy Gisquick (`Web > Publish in Gisquick`). 
+
+![](../assets/cviceni10/gisquick_login.png "Gisquick: přihlašení")
+
+Do publikačního prostředí platformy Gisquick nás přesměruje tlačítko `Open Browser`:
 
 ![](../assets/cviceni10/gisquick_login_open.png "Gisquick: otevření")
 
@@ -232,11 +234,11 @@ Po vytvoření projektu se objeví úvodní formulář se seznamem vrstev určen
 
 ![](../assets/cviceni10/gisquick_data_layers.png "Gisquick: seznam vrstev")
 
-Nejrpve opravíme případné chyby (`Manage Layers Names` > `Generate Names` > `Update QGIS Project`):
+Nejprve opravíme případné chyby (`Manage Layers Names` > `Generate Names` > `Update QGIS Project`):
 
 ![](../assets/cviceni10/gisquick_data_layers_errors.png "Gisquick: seznam chyb")
 
-Dále povolíme WFS, abychom umožňili uživateli se dotazovat na vektorová data.
+Dále povolíme WFS, abychom umožňili uživateli se dotazovat na vektorové vrstvy:
 
 ![](../assets/cviceni10/gisquick_data_layers_wfs.png "Gisquick: zapnutí WFS")
 
@@ -250,13 +252,11 @@ Nastavíme titulek projektu:
 
 ![](../assets/cviceni10/gisquick_title.png "Gisquick: zadání titulku projektu")
 
-Projdeme jednotlivá nastavení projektu
+Projdeme jednotlivá nastavení projektu:
 
 ![](../assets/cviceni10/gisquick_menu.png "Gisquick: menu")
 
-A připravený projekt publikujeme (`Publish`).
-
-Provedeme následující změny v nastavení:
+A provedeme následující změny v nastavení:
 
 - prostorový rozsah nastavíme z vrstvy "Obce":
 
@@ -266,7 +266,7 @@ Provedeme následující změny v nastavení:
 
     ![](../assets/cviceni10/gisquick_scales.png "Gisquick: měřítka")
 
-Po publikaci projektu se objeví tlačítko
+A připravený projekt publikujeme (`Publish`). Po publikaci projektu se objeví tlačítko
 
 ![](../assets/cviceni10/gisquick_map.png "Gisquick: mapová aplikace")
 
@@ -280,8 +280,6 @@ které nás přesměruje do mapové aplikace:
     
     ![](../assets/cviceni10/gisquick_permissions.png "Gisquick: nastavení")
 
-<!---
-## Zadání domácího úkolu k semestrální práci
+!!! task-fg-color "Úkol"
 
-Vytvořte si projekt vaší obce, kde žijete a publikute jej v prostředí platformy Gisquick.
---> 
+    Změňte nastavení projektu... TODO
