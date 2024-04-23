@@ -27,6 +27,10 @@ Pro naši zájmovou obec či menší město zpracujeme projekt v QGIS určený p
 
 Nahrajte do prostředí QGIS vstupní geografická data. Pro jednotlivé vrstvy nastavte styl vykreslování.
 
+!!! warning "Důležité"
+
+    Nejprve vytvoříme na disku novou složku, do které posléze uložíme QGIS projekt a všechny lokální datové zdroje (v našem případě to bude databázový formát GeoPackage).
+
 #### RÚIAN
 
 Nainstalujeme zásuvný modul pro práci s datovým zdrojem RÚIAN (viz [předchozí cvičeni](./cviceni9.md)).
