@@ -219,7 +219,11 @@ Vytvoříme nový projekt. Objeví se žádost o instalaci zásuvného modulu:
 
 ![](../assets/cviceni10/gisquick_plugin.png "Gisquick: instalace pluginu")
 
-Při instalaci postupuje podle [návodu](https://gisquick.readthedocs.io/en/latest/user-manual/before-publishing.html#qgis-gisquick-plugin).
+!!! note "Poznámka"
+
+    Pokud se výše uvedená stránka neobjeví, tak ji najdete na <https://gisquick.org/plugin/>
+
+Při instalaci postupuje podle [návodu](https://gisquick.readthedocs.io/en/latest/user-manual/before-publishing.html#qgis-gisquick-plugin) v dokumentaci Gisquick.
 
 Jelikož pracujeme v projektu s formátem GeoPackage, tak nainstalujeme
 verzi zásuvného modulu Gisquick s podporou dbhash. Tato verze
