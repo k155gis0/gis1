@@ -12,7 +12,7 @@ Ukázka publikace dat z prostředí QGIS do webového prostoru pomocí publikač
 ## Základní pojmy
 
 - [**QGIS**](https://qgis.org) – jeden z nejpoužívanějších open source GIS nástrojů v praxi
-- [**Gisquick**](https://gisquick.org/) – jedna z volně dostupných publikačních platforem pro QGIS
+- [**Gisquick**](https://gisquick.org/) – jedna z volně dostupných publikačních open source platforem pro QGIS
 
 ## Použité datové podklady
 
@@ -37,7 +37,7 @@ Nainstalujeme zásuvný modul pro práci s datovým zdrojem RÚIAN (viz [předch
 
 ![](../assets/cviceni9/plugin_install.png "Instalace pluginu")
 
-Vybereme zájmovou obec či město a stáhneme pomocí zásuvného modulu data RÚIAN.
+Vybereme zájmovou obec či menší město a data stáhneme pomocí zásuvného modulu RÚIAN.
 
 ![](../assets/cviceni10/ruian_download.png "Stažení dat RÚIAN")
 
@@ -54,9 +54,9 @@ Výchozí symbologie vrstev je nastavena zásuvným modulem:
 Provedeme v projektu následující změny:
 
 - odstraníme vrstvu "Části obcí" a "Adresní body"
-- přípojíme k vrstvě "Parcely" číselníky (viz [předchozí cvičeni](./cviceni9.md)):   
+- vypneme vrstvu "Katastrální území"
+- přípojíme k vrstvě "Parcely" číselník (viz [předchozí cvičeni](./cviceni9.md)):   
     - [SC_D_POZEMKU](https://www.cuzk.cz/Katastr-nemovitosti/Poskytovani-udaju-z-KN/Ciselniky-ISKN/Ciselniky-k-nemovitosti/Druh-pozemku.aspx)
-    - [SC_ZP_VYUZITI_POZ](https://www.cuzk.cz/Katastr-nemovitosti/Poskytovani-udaju-z-KN/Ciselniky-ISKN/Ciselniky-k-nemovitosti/Zpusob-vyuziti-pozemku.aspx)
 !!! warning "Důležité"
     Data načítejte namísto prostého přetažení pomocí dialogu `Layer > Data Source Manager`. V tomto případě se korektně nastaví datové typy sloupců. Kódování znaků nastavíme na `windows-1250`.
     
@@ -68,6 +68,11 @@ Provedeme v projektu následující změny:
 
 - podobně přípojíme číselník k vrstvě "Stavební objekty"
     - [SC_ZP_VYUZITI_BUD](https://www.cuzk.cz/Katastr-nemovitosti/Poskytovani-udaju-z-KN/Ciselniky-ISKN/Ciselniky-k-nemovitosti/Zpusob-vyuziti-stavby.aspx)
+    
+!!! task-fg-color "Úkol"
+
+    Připojte další číselníky jako např. [SC_ZP_VYUZITI_POZ](https://www.cuzk.cz/Katastr-nemovitosti/Poskytovani-udaju-z-KN/Ciselniky-ISKN/Ciselniky-k-nemovitosti/Zpusob-vyuziti-pozemku.aspx) a další.
+    
 - na základě připojených číselníků nastavíme symbologii vrstev (ke stažení [zde](https://geo.fsv.cvut.cz/vyuka/155gis1/gis1_cv10_styly.zip))
 
 ![](../assets/cviceni10/ruian_style.png "Nastavený styl parcel")
@@ -83,7 +88,6 @@ Provedeme v projektu následující změny:
 ![](../assets/cviceni10/ruian_style_buildings.png "Nastavení stylu u stavebních objektů")
     
 - u vrstvy "Základní sídelní jednotky" nastavíme popisky podle atributu "Nazev" (pouze do měřítka 1:5000)
-- vypneme vrstvu "Katastrální území"
 - nastavíme cílové pořadí vrstev
 
 ![](../assets/cviceni10/ruian_result.png "Pořadí vrstev RÚIAN")
@@ -99,23 +103,7 @@ rychlost načítání vrstvy.
 
 - ZTM5 - `https://ags.cuzk.cz/arcgis1/rest/services/ZTM/MapServer/WMTS`
 - Ortofoto - `https://ags.cuzk.cz/arcgis1/rest/services/ORTOFOTO/MapServer/WMTS`
-- Stínovaný model reliéfu - `https://ags.cuzk.cz/arcgis2/services/dmr5g/ImageServer/WMSServer`
-    - dmr5g:GrayscaleHillshadeZ10
-    - dmr5g:SlopeRGBMap
    
-!!! tip
-
-    Dojem plastičnosti můžeme dosáhnout kombinací Základní topografické
-    mapy při dané míře průhlednosti a vrstvy
-    "dmr5g:SlopeRGBMap". Ukázka vizualizace při míře transparentnosti
-    75%:
-   
-    ![](../assets/cviceni10/cuzk_ztm5.png "Ukázka vizualizace Základní topografické mapy")
-   
-!!! tip "Tip pro pokročilé uživatele"
-
-    U WMTS vrstev by mohlo dojít k zlepšení rychlosti načítaní vrstev pří použití vrstev s měřítkovou sadou Google Maps a odpovídajícího nastavení při publikaci projektu.
-    
 Služby přidáme pomocí `Layer > Data Source Manager`:
 
 ![](../assets/cviceni10/cuzk_wms.png "Definici WMS služby")
@@ -134,6 +122,20 @@ Dalším z datových zdrojů mohou být WMS služby poskytované agenturou
 
 ![](../assets/cviceni10/wms_cenia.png "Vrstva III. vojenského mapování")
 
+!!! task-fg-color "Úkol"
+
+    Přidejte do projektu další zdroje dat jako např. Stínovaný model reliéfu - `https://ags.cuzk.cz/arcgis2/services/dmr5g/ImageServer/WMSServer`:
+    
+    - dmr5g:GrayscaleHillshadeZ10
+    - dmr5g:SlopeRGBMap
+   
+    Dojem plastičnosti můžeme dosáhnout kombinací Základní topografické
+    mapy při dané míře průhlednosti a vrstvy
+    "dmr5g:SlopeRGBMap". Ukázka vizualizace při míře transparentnosti
+    75%:
+   
+    ![](../assets/cviceni10/cuzk_ztm5.png "Ukázka vizualizace Základní topografické mapy")
+
 #### WFS zdroje
 
 Do projektu přidáme vybrané [WFS
@@ -142,23 +144,7 @@ poskytované ČÚZK. Vybereme následující vrstvy z datového zdroje
 "Stahovací služba WFS - ZABAGED® - polohopis"
 (`https://ags.cuzk.cz/arcgis/services/ZABAGED_POLOHOPIS/MapServer/WFSServer`):
 
-- `zbg:Stožár_elektrického_vedení`
-- `zbg:Mohyla__pomník__náhrobek`
-- `zbg:Kříž__sloup_kulturního_významu`
-- `zbg:Úřad_veřejné_správy_-_definiční_bod`
-- `zbg:Škola_-_definiční_bod`
-- `zbg:Hasičská_stanice__zbrojnice_-_definiční_bod`
-- `zbg:Pošta_-_definiční_bod`
-- `zbg:Elektrické_vedení`
-- `zbg:Silnice__dálnice`
-- `zbg:Vodní_tok`
-- `zbg:Cesta`
-- `zbg:Železniční_trať`
-- `zbg:Hřbitov`
-- `zbg:Skládka`
-- `zbg:Maloplošné_zvlástě_chráněné_území`
 - `zbg:Lesní_půda_se_stromy_kategorizovaná__plocha_`
-- `zbg:Vinice`
 - `zbg:Vodní_plocha`
 - `zbg:Vodní_tok`
 
@@ -180,15 +166,36 @@ U jednotlivých vrstev nastavíme symbologii a vrstvy přejmenujeme:
 
     Kategorizované styly jsou ke stažení [zde](https://geo.fsv.cvut.cz/vyuka/155gis1/gis1_cv10_styly.zip).
     
-Výsledek může pro zájmovou oblast vypadat následovně:
-
-![](../assets/cviceni10/zabaged_result.png "Příklad datových vrstev ZABAGED")
-
 Na závěr nastavme výchozí kompozici. V našem případě jsou parcely
 nastaveny na průhlednost 50%. Na pozadí stínovaná základní
 topografická mapa:
 
 ![](../assets/cviceni10/project_to_publish.png "Výsledný projekt před publikací")
+
+!!! task-fg-color "Úkol"
+
+    Přidejte do projektu další vhodné WFS vrstvy z datového zdroje ZABAGED, jako např.:
+    
+    - `zbg:Stožár_elektrického_vedení`
+    - `zbg:Mohyla__pomník__náhrobek`
+    - `zbg:Kříž__sloup_kulturního_významu`
+    - `zbg:Úřad_veřejné_správy_-_definiční_bod`
+    - `zbg:Škola_-_definiční_bod`
+    - `zbg:Hasičská_stanice__zbrojnice_-_definiční_bod`
+    - `zbg:Pošta_-_definiční_bod`
+    - `zbg:Elektrické_vedení`
+    - `zbg:Silnice__dálnice`
+    - `zbg:Vodní_tok`
+    - `zbg:Cesta`
+    - `zbg:Železniční_trať`
+    - `zbg:Hřbitov`
+    - `zbg:Skládka`
+    - `zbg:Maloplošné_zvlástě_chráněné_území`
+    - `zbg:Vinice`
+
+    Výsledek může pro zájmovou oblast vypadat následovně:
+
+    ![](../assets/cviceni10/zabaged_result.png "Příklad datových vrstev ZABAGED")
 
 #### Další zdroje dat
 
@@ -265,6 +272,11 @@ A provedeme následující změny v nastavení:
 - nastavíme vhodnou měřítkovou sadu:
 
     ![](../assets/cviceni10/gisquick_scales.png "Gisquick: měřítka")
+
+!!! tip "Tip pro pokročilé uživatele"
+
+    Ke zrychlení načítání vrstev může dojít při vhodně zvolené měřítkové sadě dle [specifikace ČÚZK](https://geoportal.cuzk.cz/Dokumenty/Dlazdicove_sluzby_CR_v1.1.pdf). Případně lze použít WMTS s měřítkovou sadou Google Maps.
+    
 
 A připravený projekt publikujeme (`Publish`). Po publikaci projektu se objeví tlačítko
 
