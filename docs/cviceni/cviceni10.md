@@ -18,6 +18,8 @@ Ukázka publikace dat z prostředí QGIS do webového prostoru pomocí publikač
 
 - [RÚIAN](../../data/#ruian)
 - [ZABAGED](../../data#zabaged-polohopis)
+- [Prohlížecí služby ČÚZK - WMTS](https://geoportal.cuzk.cz/(S(2eblduiqqs0a0zubvb2ofuit))/Default.aspx?mode=TextMeta&side=wmts.uvod&text=wmts.uvod&head_tab=sekce-03-gp&menu=315)
+- [Stahovací služby ČÚZK - WFS](https://geoportal.cuzk.cz/(S(2eblduiqqs0a0zubvb2ofuit))/Default.aspx?mode=TextMeta&side=wfs&text=wfs&head_tab=sekce-03-gp&menu=333)
 
 ## Náplň cvičení
 
