@@ -76,7 +76,7 @@ Provedeme v projektu následující změny:
 
     Připojte další číselníky jako např. [SC_ZP_VYUZITI_POZ](https://www.cuzk.cz/Katastr-nemovitosti/Poskytovani-udaju-z-KN/Ciselniky-ISKN/Ciselniky-k-nemovitosti/Zpusob-vyuziti-pozemku.aspx) a další.
     
-- na základě připojených číselníků nastavíme symbologii vrstev (ke stažení [zde](https://geo.fsv.cvut.cz/vyuka/155gis1/gis1_cv10_styly.zip))
+- na základě připojených číselníků nastavíme symbologii vrstev
 
 ![](../assets/cviceni10/ruian_style.png "Nastavený styl parcel")
 
