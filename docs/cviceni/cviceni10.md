@@ -20,6 +20,7 @@ Ukázka publikace dat z prostředí QGIS do webového prostoru pomocí publikač
 - [ZABAGED](../../data#zabaged-polohopis)
 - [Prohlížecí služby ČÚZK - WMTS](https://geoportal.cuzk.cz/(S(2eblduiqqs0a0zubvb2ofuit))/Default.aspx?mode=TextMeta&side=wmts.uvod&text=wmts.uvod&head_tab=sekce-03-gp&menu=315)
 - [Stahovací služby ČÚZK - WFS](https://geoportal.cuzk.cz/(S(2eblduiqqs0a0zubvb2ofuit))/Default.aspx?mode=TextMeta&side=wfs&text=wfs&head_tab=sekce-03-gp&menu=333)
+- [OpenStreetMap](../../data#openstreetmap)
 
 ## Náplň cvičení
 
@@ -202,16 +203,35 @@ topografická mapa:
 #### Další zdroje dat
 
 - [Národní katalog otevřených dat](https://data.gov.cz/datov%C3%A9-sady)
+- [OpenStreetMap](https://wiki.openstreetmap.org/wiki/Cs:Map_Features)
+
+!!! task-fg-color "Úkol"
+
+    Přidejte do projektu vrstvu "Občanské vybavenosti" ([amenity](https://wiki.openstreetmap.org/wiki/Cs:Map_Features#Ob%C4%8Dansk%C3%A1_vybavenost_(Amenity))). 
+    
+    Doinstalujte do QGISu zásuvný modul QuickOSM a pomocí něj vytvořte vrstvu občanské vybavenosti (rozsah území nastavte na základě vrstvy "Obce"):
+    
+    ![](../assets/cviceni10/quick_osm.png "QuickOSM")
+    
+    Prvky ležící na území obce omezte pomocí nástroje *Clip* a uložte do nové vrstvy. Nastavte kategorizovanou symbologii podle atributu ``amenity`` a přeložte popisky v legendě do češtiny:
+    
+    ![](../assets/cviceni10/qgis_osm.png "Vrstva občanské vybavenosti")
+    
+    Přidejte do projektu další vhodné vrstvy na základě [OpenStreetMap](https://wiki.openstreetmap.org/wiki/Cs:Map_Features).
+
+!!! note "Poznámka"
+
+    Ukázkový QGIS projekt ke stažení [zde](https://geo.fsv.cvut.cz/vyuka/155gis1/gis1_cv10_projekt.zip).
 
 ### Publikace projektu
 
 Podklady: [dokumentace Gisquick](https://gisquick.readthedocs.io)
 
-!!! note "Poznámka"
+!!! warning "Důležité"
 
-    Pro účel výuky budeme používat vlastní instanci publikačního serveru Gisquick provozované na <http://geo102.fsv.cvut.cz:8083/>.
+    Pro účel výuky budeme používat vlastní instanci publikačního serveru Gisquick provozované na **<http://geo102.fsv.cvut.cz:8083/>**.
 
-Po [přihlášeni](http://geo102.fsv.cvut.cz:8083/user/) se objeví profil uživatele:
+Po [přihlášení](http://geo102.fsv.cvut.cz:8083/user/) se objeví profil uživatele:
 
 ![](../assets/cviceni10/gisquick_new_project.png "Gisquick: nový projekt")
 
@@ -279,6 +299,10 @@ A provedeme následující změny v nastavení:
 
     ![](../assets/cviceni10/gisquick_scales.png "Gisquick: měřítka")
 
+- v záložce `Layers` přesuňte vrstvy ze skupiny "WMS" do `Base Layers` (je nutné přesunout celou skupinu)
+
+![](../assets/cviceni10/gisquick_base_layers.png "Gisquick: podkladové vrstvy")
+
 !!! tip "Tip pro pokročilé uživatele"
 
     Ke zrychlení načítání vrstev může dojít při vhodně zvolené měřítkové sadě dle [specifikace ČÚZK](https://geoportal.cuzk.cz/Dokumenty/Dlazdicove_sluzby_CR_v1.1.pdf). Případně lze použít WMTS s měřítkovou sadou Google Maps.
@@ -333,16 +357,14 @@ Po uložení změn (`Save`) znovu načteme mapovou aplikaci.
 
 ![](../assets/cviceni10/gisquick_field_alias.png "Gisquick: nastavení aliasů")
 
-- v záložce `Layers` přesuňte vrstvy ze skupiny "WMS" do `Base Layers` (je nutné přesunout celou skupinu)
-
-![](../assets/cviceni10/gisquick_base_layers.png "Gisquick: podkladové vrstvy")
-
 Po uložení změn se mezi podkladovými vrstvami jednoduše přepínat.
 
 ![](../assets/cviceni10/gisquick_base_layers_switch.png "Gisquick: přepínaní mezi podkladovými vrstvami")
 
-!!! note "Poznámka"
+!!! task-fg-color "Úkol"
 
-    Podkladovou vrstvu je možné mít zapnutou pouze jednu. Nelze tedy kombinovat základní topografickou mapu a stínovaný reliéf. Tyto vrstvy lze přesunou zpátky do "Overlays". To bude ale vyžadovat nejprve vrstvy v QGISu přesunout mimo skupinu "WMS" a poté změnit nastavení Gisquick záložce `Layers`.
+    Podkladovou vrstvu je možné mít zapnutou pouze jednu. Nelze tedy kombinovat základní topografickou mapu a stínovaný reliéf. Tyto vrstvy lze přesunou zpátky do "Overlays". To bude ale vyžadovat nejprve vrstvy v QGISu přesunout mimo skupinu "WMS" a poté změnit nastavení Gisquick záložce `Layers`. Výsledek může vypadat následovně:
+    
+    ![](../assets/cviceni10/gisquick_map_app_hillshade.png "Gisquick: zobrazení mapové aplikace")
 
 Ukázkovou mapovou aplikaci najdete na adrese <http://geo102.fsv.cvut.cz:8083/?PROJECT=gis1/cv10>
