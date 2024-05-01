@@ -32,28 +32,28 @@ Geografický informační systém (GIS) využívá obecně jakákoliv data obsah
 <div class="centered_tab_labels" markdown>
 === "CELÁ MAPA"
 
-    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/tab-01.png){.no-filter width="500"}
+    ![](../assets/cviceni1/tab-01.png){.no-filter width="500"}
     {align=center}
 
     <figcaption>Schematická ukázka geoprostorových dat a k nim přiřazených atributových tabulek</figcaption>
 
 === "Body"
     
-    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/tab-02.png){.no-filter width="500"}
+    ![](../assets/cviceni1/tab-02.png){.no-filter width="500"}
     {align=center}
 
     <figcaption>Schematická ukázka geoprostorových dat a k nim přiřazených atributových tabulek</figcaption>
 
 === "Linie"
 
-    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/tab-03.png){.no-filter width="500"}
+    ![](../assets/cviceni1/tab-03.png){.no-filter width="500"}
     {align=center}
 
     <figcaption>Schematická ukázka geoprostorových dat a k nim přiřazených atributových tabulek</figcaption>
 
 === "Polygony"
 
-    ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/tab-04.png){.no-filter width="500"}
+    ![](../assets/cviceni1/tab-04.png){.no-filter width="500"}
     {align=center}
 
     <figcaption>Schematická ukázka geoprostorových dat a k nim přiřazených atributových tabulek</figcaption>
@@ -137,7 +137,7 @@ __Přidání dat do mapy__ (lokálně uložených): _:material-tab: Map_{: .outl
 <figcaption>Pokud se soubor ve struktuře neobjevuje, lze dialog obnovit klávesou F5</figcaption>
 
 [Add data from the Add Data dialog box](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/add-layers-to-a-map.htm#ESRI_SECTION2_1C48753A1FD546F385580EF9197DBB8C){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
-[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/01-pridani_dat.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
+[:octicons-video-16: Video](../assets/cviceni1/01-pridani_dat.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 ---
@@ -159,7 +159,7 @@ __Připojení adresáře do projektu__: V _Catalog Pane_ ( _:material-tab: View_
 
 [Connect to a folder](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-a-folder.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 [The Project Pane](https://pro.arcgis.com/en/pro-app/latest/help/projects/the-project-pane.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
-[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/02-pripojeni_adresare.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
+[:octicons-video-16: Video](../assets/cviceni1/02-pripojeni_adresare.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 ---
@@ -180,7 +180,7 @@ __Připojení geodatabáze do projektu__: V _Catalog Pane_ ( _:material-tab: Vie
 <figcaption>Cesta ke zvolené geodatabázi zůstane v nabídce mezi položkami "Databases". Cesta opět nemusí být pouze lokální.</figcaption>
 
 [:material-open-in-new: Connect to a database](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-a-database.htm){ .md-button .md-button--primary .button_smaller target="_blank"}
-[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/03-pripojeni_databaze.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
+[:octicons-video-16: Video](../assets/cviceni1/03-pripojeni_databaze.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 ---
@@ -196,7 +196,7 @@ __Pořadí vrstev__: V obsahu mapy (_Contents Pane_) se zobrazují všechny vrst
 
 <figcaption>Contents Pane a změna pořadí a přepínání viditelnosti vrstev</figcaption>
 
-[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/04-poradi_vrstev.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
+[:octicons-video-16: Video](../assets/cviceni1/04-poradi_vrstev.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 ---
@@ -225,7 +225,7 @@ Pro začátek jsou zajímavé tyto položky:
     - __POZOR__, pokud se souř. systém __vložených dat__ liší od systému __mapy__, jsou data __dočasně__ převedena do souř. systému __mapy__. Jedná se však o tzv. __On-the-fly__ transformaci, která je pro kombinaci některých souř. systémů __zjednodušená__ a data na sebe nemusí správně navazovat. Tato situace se __nedoporučuje__, neboť může přinést __nepřesné výsledky__ mapové vizualizace i datových analýz. [__Podrobnější informace__](https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/projection-on-the-fly-and-geographic-transformations)
     {: style="color:#888;font-size:smaller; line-height:1.1;"}
 
-[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/05-vlastnosti_mapy.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
+[:octicons-video-16: Video](../assets/cviceni1/05-vlastnosti_mapy.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 <hr class="level-1">
@@ -260,7 +260,7 @@ __Připojení streamovaných dat__ _součástí budoucích cvičení_{: style="c
 - připojení datových služeb přes URL adresu, nevyžaduje ruční lokální ukládání, existuje více standardů pro poskytování těchto služeb
 {: style="color:#888;font-size:smaller; line-height:1.1;"}
 
-[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/06-stazeni_dat.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
+[:octicons-video-16: Video](../assets/cviceni1/06-stazeni_dat.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 <hr class="level-1">
@@ -285,7 +285,7 @@ __Explore Tool__: Pohyb v mapě a vyvolávání pop-upů (vyskakovacích oken), 
 
 [Navigation](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/navigation-in-arcgis-pro.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 [Navigate maps and scenes](https://pro.arcgis.com/en/pro-app/latest/get-started/navigate-your-data.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
-[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/07-ovladani_mapy.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
+[:octicons-video-16: Video](../assets/cviceni1/07-ovladani_mapy.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 ---
@@ -307,7 +307,7 @@ __Select Tool__{: #select-tool}: Pohyb v mapě a interaktivní vybírání prvk�
 
 [Select features interactively](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/select-features-interactively.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 [Select features for editing](https://pro.arcgis.com/en/pro-app/latest/help/editing/select-features-for-editing.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
-[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/08-vybery.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
+[:octicons-video-16: Video](../assets/cviceni1/08-vybery.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 ---
@@ -322,7 +322,7 @@ __Measure Tool__: Interaktivní měření vzdáleností, úhlů apod.
 {: .process_container}
 
 [Measure](https://pro.arcgis.com/en/pro-app/latest/help/mapping/navigation/measure.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
-[:octicons-video-16: Video](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/09-mereni.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
+[:octicons-video-16: Video](../assets/cviceni1/09-mereni.mp4){ .md-button .md-button--primary .button_smaller target="_blank"}
 {: .button_array}
 
 <hr class="level-1">
@@ -340,7 +340,7 @@ Tabulka obsahuje sloupce – tzv. __:octicons-columns-16: atributy__ (fields), a
 
 __Otevření atributové tabulky__: V _Contents Pane_ ( _:material-tab: View_{: .outlined_code} → _:material-button-cursor: Contents_{: .outlined_code} ) přes pravé tl. myši na vrstvu vybrat _:material-form-dropdown: Attribute Table_{: .outlined_code}.
 
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/101.png)
+![](../assets/cviceni1/101.png)
 {: .process_container}
 
 __Výběr záznamů__: Klikem levého tl. myši na číslo řádku vlevo od tabulky [Select records in a table interactively](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/select-records-in-a-table-interactively.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
@@ -349,7 +349,7 @@ __Výběr záznamů__: Klikem levého tl. myši na číslo řádku vlevo od tabu
 
 __Zrušení výběru__: Tlačítkem _:material-button-cursor: Clear_{: .outlined_code}
 
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/102.png)
+![](../assets/cviceni1/102.png)
 {: .process_container}
 
 __Počet prvků / počet vybraných prvků__: viz obrázek výše
@@ -360,9 +360,9 @@ __Přidat pole / editovat pole / smazat pole__: V pravém horním rohu atr. tabu
 - Dvojklikem do jednotlivých polí lze __měnit text či jiné parametry__
 - Přes pravé tl. myši na začátek řádku vlevo vybrat _:material-button-cursor: Delete_{: .outlined_code} a dané __pole se smaže__
 
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/104.png)
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/105.png)
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/106.png)
+![](../assets/cviceni1/104.png)
+![](../assets/cviceni1/105.png)
+![](../assets/cviceni1/106.png)
 {: .process_container}
 
 - __Název pole__ (Field Name) má určitá omezení – _např._{.primary_color .icon-example .no-dec} nesmí začínat číslem, některé znaky nelze použít (`–`, `+`, `%`, znak mezery aj.) max. délka je 29 znaků (pozor, délka se může lišit pro různé formáty souboru), nesmí být shodný s názvem jiného pole, není doporučeno používat diakritiku [Define fields in tables](https://pro.arcgis.com/en/pro-app/3.1/help/data/geodatabases/overview/defining-fields-in-tables.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
@@ -379,7 +379,7 @@ __Přidat pole / editovat pole / smazat pole__: V pravém horním rohu atr. tabu
 
 __Editace záznamů (prvků, řádků) tabulky__: Dvojklikem přímo do hodnoty v tabulce je možné hodnotu změnit/přepsat, klávesou Enter potvrdit. [Edit a value in a table cell](https://pro.arcgis.com/en/pro-app/latest/help/data/tables/edit-a-value-in-a-table-cell.htm){ .md-button .md-button--primary .button_smaller .external_link_icon target="_blank"}
 
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/gis-1/cviceni1/107.png)
+![](../assets/cviceni1/107.png)
 {: .process_container}
 
 

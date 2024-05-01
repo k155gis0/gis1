@@ -48,18 +48,18 @@ GIS 1 je v tomto tématu úvodním kurzem. Zatímco přednášky vás provedou z
 </div>
 
 <div class="gallery_container" markdown>
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/01.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/02.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/03.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/04.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/05.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/06.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/07.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/08.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/09.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/10.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/11.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/12.jpg){: .no-filter }
+![](./assets/index/01.jpg){: .no-filter }
+![](./assets/index/02.jpg){: .no-filter }
+![](./assets/index/03.jpg){: .no-filter }
+![](./assets/index/04.jpg){: .no-filter }
+![](./assets/index/05.jpg){: .no-filter }
+![](./assets/index/06.jpg){: .no-filter }
+![](./assets/index/07.jpg){: .no-filter }
+![](./assets/index/08.jpg){: .no-filter }
+![](./assets/index/09.jpg){: .no-filter }
+![](./assets/index/10.jpg){: .no-filter }
+![](./assets/index/11.jpg){: .no-filter }
+![](./assets/index/12.jpg){: .no-filter }
 </div>
 
 <!-- ## Doporučená literatura
