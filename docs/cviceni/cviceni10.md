@@ -200,6 +200,99 @@ topografická mapa:
 
     ![](../assets/cviceni10/zabaged_result.png "Příklad datových vrstev ZABAGED")
 
+    **Tip pro pokročilejší uživatele:** QGIS umožňuje také automatizaci ve formě Python skriptů. Ukázka skriptu níže:
+    
+    - stáhne vybrané vrstvy z WFS
+    - ořeže prvky hranicí obce
+    - uloží na disk ve formátu OGC GeoPackage
+    
+    ```py
+    # download WFS layer and store in output GPKG
+    def download_wfs_layer(url, typename_name, layer_ref, output_path, layer_name):
+        # define WFS connection
+        uri = f"pagingEnabled='true' preferCoordinatesForWfsT11='false' restrictToRequestBBOX='1' " \
+              f"srsname='EPSG:5514' typename='{typename_name}' url='{url}' version='auto'"
+        layer = QgsVectorLayer(uri, "WFS_Layer", "WFS")
+        if not layer.isValid():
+            return None
+
+        options = QgsVectorFileWriter.SaveVectorOptions()
+        options.driverName = "GPKG"
+        options.layerName = layer_name
+        options.filterExtent = layer_ref.extent()
+
+        # define temporary output
+        dest = QgsProcessingParameterVectorDestination(name=layer_name)
+        layer_tmp_path = dest.generateTemporaryDestination()
+
+        # download WFS data
+        res = QgsVectorFileWriter.writeAsVectorFormatV3(
+            layer,
+            layer_tmp_path,
+            layer.transformContext(),
+            options
+        )
+
+        # clip features by reference layer
+        processing.run('native:clip', {
+            'INPUT': layer_tmp_path,
+            'OVERLAY': layer_ref,
+            'OUTPUT': f'ogr:dbname="{output_path}" table="{layer_name}" (geom)'
+        })
+
+    url = "https://ags.cuzk.cz/arcgis/services/ZABAGED_POLOHOPIS/MapServer/WFSServer"
+    layers = [
+        'zbg:Stožár_elektrického_vedení', 
+        'zbg:Mohyla__pomník__náhrobek', 
+        'zbg:Kříž__sloup_kulturního_významu', 
+        'zbg:Úřad_veřejné_správy_-_definiční_bod', 
+        'zbg:Škola_-_definiční_bod', 
+        'zbg:Hasičská_stanice__zbrojnice_-_definiční_bod',
+        'zbg:Pošta_-_definiční_bod',
+        'zbg:Elektrické_vedení',
+        'zbg:Silnice__dálnice',
+        'zbg:Vodní_tok',
+        'zbg:Cesta',
+        'zbg:Železniční_trať',
+        'zbg:Hřbitov',
+        'zbg:Skládka',
+        'zbg:Maloplošné_zvlástě_chráněné_území',
+        'zbg:Vinice',
+        'zbg:Lesní_půda_se_stromy_kategorizovaná__plocha_',
+        'zbg:Vodní_plocha',
+    ]
+
+    output_path  = os.path.join(QgsProject.instance().readPath("./"), "zabaged.gpkg")
+    group_name = "ZABAGED TEST"
+
+    # get reference layer
+    layer_extent = QgsProject.instance().mapLayersByName('Obce')[0]
+
+    # find/add group into layer tree
+    root = QgsProject.instance().layerTreeRoot()
+    group = root.findGroup(group_name)
+    if group is None:
+        group = root.insertGroup(0, group_name)
+
+    for type_name in layers:
+        print(f"Processing {type_name}...")
+        layer_name = type_name.lstrip('zbg:').replace('_', ' ')
+        # remove non-ascii characters
+        layer_output = re.sub(r'[^\x00-\x7F]', ' ', layer_name).replace(' ', '_').lower()
+
+        download_wfs_layer(url, type_name, layer_extent, output_path, layer_output)
+        # add new layer into layer tree
+        layer_new = QgsVectorLayer(f"{output_path}|layername={layer_output}", layer_name, "ogr")
+        QgsProject.instance().addMapLayer(layer_new, False)
+        group.addLayer(layer_new)
+
+    print("done")
+    ```
+    
+    <video controls="true" allowfullscreen="true" width=99%>
+    <source src="../../assets/cviceni10/qgis_wfs_download.webm" type="video/webm" markdown="1">
+    </video>
+
 #### Další zdroje dat
 
 - [Národní katalog otevřených dat](https://data.gov.cz/datov%C3%A9-sady)
