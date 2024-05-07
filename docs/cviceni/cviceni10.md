@@ -233,9 +233,16 @@ topografická mapa:
             options
         )
 
+        # fix invalid geometries
+        proc = processing.run("native:fixgeometries", {
+            'INPUT': layer_tmp_path,
+            'METHOD':1,
+            'OUTPUT': 'TEMPORARY_OUTPUT',
+        })
+
         # clip features by reference layer
         processing.run('native:clip', {
-            'INPUT': layer_tmp_path,
+            'INPUT': proc['OUTPUT'],
             'OVERLAY': layer_ref,
             'OUTPUT': f'ogr:dbname="{output_path}" table="{layer_name}" (geom)'
         })
@@ -263,7 +270,7 @@ topografická mapa:
     ]
 
     output_path  = os.path.join(QgsProject.instance().readPath("./"), "zabaged.gpkg")
-    group_name = "ZABAGED TEST"
+    group_name = "ZABAGED"
 
     # get reference layer
     layer_extent = QgsProject.instance().mapLayersByName('Obce')[0]
