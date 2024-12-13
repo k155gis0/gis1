@@ -207,6 +207,11 @@ Pro vytvoření ucelené mapové vrstvy a následné zpracování rastrů, se v
   <figcaption>Hotová mozaika georeferencovaného mapového listu</figcaption>
 </figure>
 
+???+ note "&nbsp;<span style="color:#448aff">Obnovení cesty k rastrům v mozaice</span>"
+      Pokud se změní umístění původních rastrových georeferencovaných souborů, které tvoří mozaiku, je možné cestu k nim jednoduše obnovit. 
+
+      Kliknutím pravého tlačítka myši na danou mozaiku v sekci *Catalog* -> _Modify_ -> _Repair Mosaic Dataset Paths..._ se nastaví nová cesta k rastrům.
+
 ## Zdroje
 Český úřad zeměměřický a katastrální [online]. [cit. 2024-01-05]. Dostupné z: [https://www.cuzk.cz/](https://www.cuzk.cz/)
 
