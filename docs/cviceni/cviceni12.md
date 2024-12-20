@@ -12,5 +12,3 @@ title: Cvičení 12
 ## Použité datové podklady
 
 ## Náplň cvičení
-
-## Zadání domácího úkolu k semestrální práci
