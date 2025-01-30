@@ -1,11 +1,13 @@
-# Semestrální práce - Analýza území
+# Semestrální práce - Analýza území {: .page_title}
 
 ## Zadání
 Nad zadaným územím proveďte následující analýzy s využitím GIS softwaru. Výsledky jednotlivých úloh následně publikujte formou webové mapové aplikace na ArcGIS Online či pomocí open-source řešení (např. GISQuick). Tato aplikace může mít libovolnou formu, takovou, kterou uznáte za vhodnou či zajímavou (ArcGIS Instant Apps, Story Maps, Experience Builder,...). 
 
-Svou aplikaci na konci semestru **30.4.2024** krátce odprezentujete před ostatními v 5 minutové prezentaci. 
+Svou aplikaci na konci semestru **30.4.2024** krátce odprezentujete před ostatními v **5 minutové prezentaci**. 
 
 Dotazy či připomínky k semestrální práci směřujte sem: *frantisek.muzik@fsv.cvut.cz*
+
+<hr class="level-1">
 
 **Pro zadané území vypracujte následující úkoly:**
 
@@ -67,6 +69,8 @@ Rozlišujte následující typy využití ploch (stejně jako v bodě 5 pro da
 **8.** Ve výsledné aplikaci porovnejte vývoj využití krajiny v 50. letech 20. století (vektorizace z SMO5) se současností (RÚIAN – vrstva *Parcela*). Způsob porovnání zvolte dle vlastního uvážení (posuvník v aplikaci, nová vrstva s vypočtenými rozdíly apod.).
 
 **9.** Jako samostatnou vrstvu do svého projektu připojte WMS, WMTS či WFS službu dle vašeho výběru (např. historickou mapu, ortofoto či katastrální mapu). Tato vrstva musí být součástí výsledné mapové aplikace.
+
+<hr class="level-1">
 
 ## Konkrétní zadání
 Bude rozesláno emailem.
