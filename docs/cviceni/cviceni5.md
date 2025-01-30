@@ -7,7 +7,7 @@ title: Cvičení 5
 
 ## Cíl cvičení
 
-Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Souřadnicové připojení rastrových dat. Práce s Mosaic Dataset.
+Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Souřadnicové připojení rastrových dat. Práce s Mosaic Dataset. 
 
 ## Základní pojmy
 
@@ -59,7 +59,7 @@ Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Sou�
     ---
     ![](../assets/cviceni5/co.jpg)
 
--   :fontawesome-solid-satellite:{ .lg .middle } __Ortofoto__
+-   :material-airplane:{ .lg .middle } __Ortofoto__
 
     ---
     ![](../assets/cviceni5/ortofoto.jpg)
