@@ -24,6 +24,30 @@ Digitální model reliéfu České republiky 5. generace (DMR 5G) představuje z
 
 Registr územní identifikace, adres a nemovitostí (RÚIAN) je jedním ze základních registrů veřejné správy. Je veřejným seznamem, nevede žádné osobní údaje a je jedinečným zdrojem adres nejen pro veřejnou správu. Obsahuje také údaje o územních prvcích, územně evidenčních jednotkách a jejich vzájemných vazbách.
 
+**Připojení dat RÚIAN do ArcGIS Pro**
+
+Z Map Serveru ČÚZK se zkopíruje odkaz k Prohlížecí a vyhledávací službě nad daty RUIAN ČR.
+
+[Prohlížecí služba nad daty RÚIAN :simple-databricks:](https://ags.cuzk.gov.cz/arcgis/rest/services/RUIAN/MapServer){ .md-button .md-button--primary }
+{: .button_array}
+
+Připojení služby do ArcGIS Pro proběhne přes tlačítko _Connections_{: .outlined_code} v záložce _Insert_{: .outlined_code} v horní části programu. Po rozkliknutí nabídky se zvolí _Server_{: .outlined_code} → _New ArcGIS Server_{: .outlined_code}. 
+
+Do *Server URL* se zkopíruje adresa služby ```https://ags.cuzk.gov.cz/arcgis/rest/services/RUIAN/MapServer```.
+
+V záložce _Catalog_{: .outlined_code} se zobrazí nově připojený server s daty z ČÚZK. Vrstvy RÚIAN nalezneme v příslušné složce.
+
+<figure markdown>
+![new_gdb](../assets/data/ruian_import.png)
+    <figcaption>Import dat RÚIAN a jejich nalezení v záložce Catalog</figcaption>
+</figure>
+
+Pokud chceme vybrat pouze část dat, které je potřeba exportovat do samostatné vrstvy (např. pouze jednu obec), pak vybereme požadovaný rozsah dat a do nové vrstvy je vyexportujeme funkcí _Select_{: .outlined_code}. Ta se ukrývá v záložce _Geoprocessing_{: .outlined_code}. 
+
+Pozor - neplést s výběrem prvků _Select :fontawesome-solid-arrow-pointer:_{: .outlined_code}.
+
+
+
 ## [Data250](https://geoportal.cuzk.cz/(S(htwtba15ms3bpwjajv0aqpxq))/Default.aspx?mode=TextMeta&side=mapy_data250&text=dSady_mapyData250 "Databáze Data250")
 Databáze Data250 je digitální geografický model území České republiky odpovídající přesností a stupněm generalizace měřítku 1:250 000. Data250 je zpracována v rozsahu celého území České republiky, vznikla generalizací původní databáze Data200 v roce 2023.
 
