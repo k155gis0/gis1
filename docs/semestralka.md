@@ -26,7 +26,7 @@ Dotazy či připomínky k semestrální práci směřujte sem: *frantisek.muzik@
 
 **Pro zadané území vypracujte následující úkoly:**
 
-**1.** Zjistěte v jaké obci se nachází zadaný definiční bod. Z databáze [RÚIAN](../../data/#ruian) tuto obec vyberte a vyexportujte ji do samostatné vrstvy.
+**1.** Zjistěte v jaké obci se nachází zadaný definiční bod. Z databáze [RÚIAN](https://k155cvut.github.io/gis-1/data/#ruian) tuto obec vyberte a vyexportujte ji do samostatné vrstvy.
 
 **2.** Určete počet adresních míst na území dané obce (zdroj: RÚIAN).
 
