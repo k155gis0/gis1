@@ -76,7 +76,7 @@ GIS 1 je v tomto tématu úvodním kurzem. Zatímco přednášky vás provedou z
 {: style="opacity:50%;margin-top:0;"}
 
 ![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.5x-2.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"} 
-__prof. Ing. Lena Halounová, CSc.__
+[__prof. Ing. Lena Halounová, CSc.__](https://geomatics.fsv.cvut.cz/employees/lena-halounova/)
 
 1. Definice GIS, informatika, základní pojmy, aplikační oblasti GIS, prostor, topologie, historie GIS
 2. Reálný svět × GIS, model v GIS, vztahy objektů, typy modelů, geometrické typy objektů, rozlišovací schopnost

@@ -7,7 +7,7 @@ title: Cvičení 5
 
 ## Cíl cvičení
 
-Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Souřadnicové připojení rastrových dat. Práce s Mosaic Dataset.
+Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Souřadnicové připojení rastrových dat. Práce s Mosaic Dataset. 
 
 ## Základní pojmy
 
@@ -40,26 +40,36 @@ Seznámení se s rastrovými daty v GIS a ukázka využití těchto dat. Sou�
 
 ### Ukázka nejčastějších rastrových typů dat
 
-**1. Digitální model terénu/reliéfu**
+<div class="grid cards" markdown>
 
-<figure markdown>
-![DMR](../assets/cviceni5/dmr_ukazka.png "DMR 4G"){ width="800" }
-    <figcaption>Digitální model reliéfu 4. generace (zdroj: ArcČR 500 v3.3)</figcaption>
-</figure>
+-   :material-elevation-rise:{ .lg .middle height} __Digitální model terénu/reliéfu__
 
-**2. Stínovaný reliéf**
+    ---
 
-<figure markdown>
-![stin_relief](../assets/cviceni5/stin_relief.png "Stínovaný reliéf"){ width="800" }
-    <figcaption>Stínovaný reliéf (zdroj: ArcČR 500 v3.3)</figcaption>
-</figure>
+    ![](../assets/cviceni5/dmr_ukazka.png)
 
-**3. Naskenovaný mapový list**
+-   :material-grid:{ .lg .middle } __Stínovaný reliéf__
 
-<figure markdown>
-![CO](../assets/cviceni5/co.jpg "Císařské otisky stabilního katastru"){ width="800" }
-    <figcaption>Císařské otisky stabilního katastru (zdroj: ČÚZK)</figcaption>
-</figure>
+    ---
+
+    ![](../assets/cviceni5/stin_relief.png)
+
+-   :material-map:{ .lg .middle } __Naskenovaný mapový list__
+
+    ---
+    ![](../assets/cviceni5/co.jpg)
+
+-   :material-airplane:{ .lg .middle } __Ortofoto__
+
+    ---
+    ![](../assets/cviceni5/ortofoto.jpg)
+
+-   :fontawesome-solid-satellite:{ .lg .middle } __Družicová data__
+
+    ---
+    ![](../assets/cviceni5/landsat.jpg)
+</div>
+
 
 ### Práce s digitálním modelem reliéfu
 
@@ -75,21 +85,21 @@ DMR 4G představuje hodnoty nadmořské výšky pro Českou republiku s rozliš
 **4.** Export vybraného okresu do samostatné vrstvy provedeme přes pravý klik myši na vybranou vrstvu -> _Data_ -> _Export Features_.
 
 <figure markdown>
-  ![Export features](../assets/cviceni5/export_features.png "Export features"){ width="800" }
+  ![Export features](../assets/cviceni5/export_features.png){ width="800" }
   <figcaption>Export features</figcaption>
 </figure>
 
 **5.** Ořez rastru lze provést několika způsoby. Nejjednodušší možností je funkce [Clip Raster](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/clip.htm), která vytvoří ořez dle nejmenšího ohraničujícího obdélníku.
 
 <figure markdown>
-![Clip raster](../assets/cviceni5/dmr_clip_raster.png "Clip raster")
+![Clip raster](../assets/cviceni5/dmr_clip_raster.png)
     <figcaption>Clip raster</figcaption>
 </figure>
 
 **6.** Další možností je funkce [Extract by Mask](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/extract-by-mask.htm), jež ořízne rastr přesně dle polygonu (s přesností na pixely).
 
 <figure markdown>
-![Extract by mask](../assets/cviceni5/dmr_extract_by_mask.png "Extract by mask")
+![Extract by mask](../assets/cviceni5/dmr_extract_by_mask.png)
     <figcaption>Extract by mask</figcaption>
 </figure>
 
@@ -98,7 +108,7 @@ DMR 4G představuje hodnoty nadmořské výšky pro Českou republiku s rozliš
 Rastrovým vrstvám lze (stejně jako vektorovým) měnit vzhled v záložce [_Symbology_](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/symbology-pane.htm). Nabídka se zobrazí pravým klinutím myši na danou vrstvu -> _Symbology_.
 
 <figure markdown>
-  ![dmr_symbol](../assets/cviceni5/dmr_symbol.png "Nastavení symbologie DMR")
+  ![dmr_symbol](../assets/cviceni5/dmr_symbol.png)
   <figcaption>Nastavení symbologie DMR</figcaption>
 </figure>
 
@@ -113,7 +123,7 @@ Rastrovým vrstvám lze (stejně jako vektorovým) měnit vzhled v záložce [_
 **2.** Následně zapneme funkci Georeference: záložka _Imagery_ -> _Georeference_.
 
 <figure markdown>
-  ![gref1](../assets/cviceni5/gref1.png "Georeferencování rastru")
+  ![gref1](../assets/cviceni5/gref1.png)
   <figcaption>Georeferencování rastru</figcaption>
 </figure>
 
@@ -128,7 +138,7 @@ Rastrovým vrstvám lze (stejně jako vektorovým) měnit vzhled v záložce [_
 **7.** V některých případech je velmi obtížné najít identické body, zejména u starších archiválií. Na příkladu, který je uveden v tomto návodu, je patrná obrovská změna využití ploch v České Třebové.
 
 <figure markdown>
-  ![gref2](../assets/cviceni5/gref2.png "Georeferencovaný mapový list")
+  ![gref2](../assets/cviceni5/gref2.png)
   <figcaption>Georeferencovaný mapový list</figcaption>
 </figure>
 
@@ -153,14 +163,14 @@ Pro vytvoření ucelené mapové vrstvy a následné zpracování rastrů, se v
 **1.** _Mosaic Dataset_ vytvoříme kliknutím pravého tlačítka myši na geodatabázi v záložce _Catalog_ -> _New_ -> _Mosaic Dataset_.
 
 <figure markdown>
-  ![mosaic1](../assets/cviceni5/mosaic1.png "Vytvoření Mosaic Dataset")
+  ![mosaic1](../assets/cviceni5/mosaic1.png)
   <figcaption>Vytvoření Mosaic Dataset</figcaption>
 </figure>
 
 **2.** V záložce _Geoprocessing_ vyplníme název mozaiky _Mosaic Dataset Name_ a příslušný souřadnicový systém _Coordinate System_ (ten je vhodné zvolit stejný jako v mapě – _Current Map_). Ostaní parametry ponecháme ve výchozím nastavení.
 
 <figure markdown>
-  ![mosaic2](../assets/cviceni5/mosaic2.png "Vytvoření Mosaic Dataset")
+  ![mosaic2](../assets/cviceni5/mosaic2.png)
   <figcaption>Vytvoření Mosaic Dataset</figcaption>
 </figure>
 
@@ -169,14 +179,14 @@ Pro vytvoření ucelené mapové vrstvy a následné zpracování rastrů, se v
 **4.** Pravým kliknutím na mozaiku v záložce _Catalog_ -> _Add Rasters_ otevřeme funkci importu rastrů do mozaiky. Funkci lze najít i v záložce _Geoprocessing_.
 
 <figure markdown>
-  ![mosaic3](../assets/cviceni5/mosaic3.png "Přidání rastrů do mozaiky")
+  ![mosaic3](../assets/cviceni5/mosaic3.png)
   <figcaption>Přidání rastrů do mozaiky</figcaption>
 </figure>
 
 **5.** Ve funkci _Add Rasters To Mosaic Dataset_ zvolíme výstupní mozaiku a ikonou s plusem v části _Input Data_ nahrajeme soubory. Pokud máme více georeferencovaných rastrů, je vhodné je uchovávat v jedné složce (včetně souborů určujících parametry transformace), kterou pak do mozaiky nahrajeme celou. V jiném případě můžeme nahrát přímo soubor tak, že změníme v *Input Data* _Folder_ na _File_. Při výběru souboru v průzkumníku pak změníme CSV na všechny typy souborů a najdeme potřebné soubory. Ostatní parametry nyní ponecháme ve výchozím stavu.
 
 <figure markdown>
-  ![mosaic4](../assets/cviceni5/mosaic4.png "Přidání rastrů do mozaiky")
+  ![mosaic4](../assets/cviceni5/mosaic4.png)
   <figcaption>Přidání rastrů do mozaiky</figcaption>
 </figure>
 
@@ -187,7 +197,7 @@ Pro vytvoření ucelené mapové vrstvy a následné zpracování rastrů, se v
 **2.** V záložce _Edit_ zvolíme _Edit Vertices_ a pro přidání, odebrání či posunutí lomových bodů využíváme nově otevřenou nabídku ikon v dolní části obrazovky. Pro uložení editace musíme stisknout ikonu _Finish_ dole ve zmíněné nabídce ikon a následovně _Save_ nahoře vlevo v záložce _Edit_. Vzhledem k tomu, že císařské otisky stabilního katastru jsou mapy bez pravidelného jednotného kladu mapových listů, je nutné editaci _Footprintu_ oklikat ručně. Automatický ořez _Footprintu_ lze použít například na data Státní mapy 1 : 5 000 – odvozené. Tato metoda je probírána v následujícím cvičení.
 
 <figure markdown>
-  ![mosaic5](../assets/cviceni5/mosaic5.png "Editace Footprintu")
+  ![mosaic5](../assets/cviceni5/mosaic5.png)
   <figcaption>Editace Footprintu</figcaption>
 </figure>
 
@@ -196,14 +206,14 @@ Pro vytvoření ucelené mapové vrstvy a následné zpracování rastrů, se v
 **4.** Ořez rastru dle _Footprintu_ je nutné nastavit v parametrech mozaiky: v *Catalogu* -> kliknutím pravého tlačítka na mozaiku -> _Properties_ -> _Defaults_ -> zaškrtnout _Always Clip the Raster to its Footprint_. Pokud se nebudou další případné změny _Footprintu_ projevovat v mapě, je potřeba ve stejné nabídce vždy změnit _Default Mosaic Operator_ z *First* na _Last_ a naopak.
 
 <figure markdown>
-  ![mosaic6](../assets/cviceni5/mosaic6.png "Parametry mozaiky")
+  ![mosaic6](../assets/cviceni5/mosaic6.png)
   <figcaption>Parametry mozaiky</figcaption>
 </figure>
 
 **5.** Po potvrzení změny parametrů v parametrech mozaiky by se měly oříznout vybrané mimorámové údaje z mapového listu.
 
 <figure markdown>
-  ![mosaic7](../assets/cviceni5/mosaic7.png "Hotová mozaika georeferencovaného mapového listu"){ width="800" }
+  ![mosaic7](../assets/cviceni5/mosaic7.png){ width="800" }
   <figcaption>Hotová mozaika georeferencovaného mapového listu</figcaption>
 </figure>
 
