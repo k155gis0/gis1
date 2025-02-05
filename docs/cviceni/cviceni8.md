@@ -18,23 +18,23 @@ Tvorba aplikace pomocí Instant Apps je intuitivní a skládá se z několika kl
 
 **Dostupné šablony a jejich stručný popis:**
 
-- Nearby: Umožňuje uživatelům vyhledávat body zájmu (např. restaurace, obchody, památky) v blízkosti zadané adresy. Ideální pro aplikace typu "najdi nejbližší".
-- 3D Viewer: Zobrazuje 3D scény s interaktivními nástroji pro navigaci a analýzu. Skvělé pro prezentaci 3D modelů měst, terénu nebo budov.
-- Atlas: Prezentuje sbírku map a vrstev s možností vyhledávání, prohlížení a zkoumání. Vhodné pro aplikace typu "mapový průvodce".
-- Countdown: Zobrazuje odpočet do určité události (např. konference, výstavy, termínu odevzdání).
-- Chart: Umožňuje vytvářet interaktivní grafy z vašich dat (např. sloupcové, koláčové, čárové).
-- Directions: Nabízí navigaci a výpočet trasy mezi dvěma body. Užitečné pro aplikace s dopravní tématikou.
-- Edit: Umožňuje uživatelům editovat prvky ve vaší mapě (např. přidávat, mazat nebo upravovat body, linie a polygony).
-- Filter: Umožňuje filtrovat prvky ve vaší mapě podle různých kritérií (např. typ, kategorie, hodnota).
-- Fullscreen: Zobrazuje mapu na celou obrazovku pro maximální vizuální zážitek.
-- Legend: Zobrazuje legendu k mapě pro lepší orientaci v datech.
-- Media: Umožňuje přidávat do aplikace obrázky, videa a další média pro obohacení obsahu.
-- Popup: Zobrazuje interaktivní okno s informacemi o vybraném prvku v mapě.
-- Search: Umožňuje vyhledávat místa a adresy v mapě pomocí textového vyhledávání.
-- Sidebar: Zobrazuje postranní panel s doplňujícími informacemi, nástroji nebo ovládacími prvky.
-- Sketch: Umožňuje uživatelům kreslit a přidávat poznámky do mapy (např. značky, čáry, polygony).
-- Swipe: Umožňuje porovnávat dvě mapy pomocí posuvníku (např. pro zobrazení změn v čase nebo rozdílů mezi scénáři).
-- Time: Umožňuje zobrazovat data v čase pomocí časové osy nebo animace.
+- **Nearby**: Umožňuje uživatelům vyhledávat body zájmu (např. restaurace, obchody, památky) v blízkosti zadané adresy. Ideální pro aplikace typu "najdi nejbližší".
+- **3D Viewer**: Zobrazuje 3D scény s interaktivními nástroji pro navigaci a analýzu. Skvělé pro prezentaci 3D modelů měst, terénu nebo budov.
+- **Atlas**: Prezentuje sbírku map a vrstev s možností vyhledávání, prohlížení a zkoumání. Vhodné pro aplikace typu "mapový průvodce".
+- **Countdown**: Zobrazuje odpočet do určité události (např. konference, výstavy, termínu odevzdání).
+- **Chart**: Umožňuje vytvářet interaktivní grafy z vašich dat (např. sloupcové, koláčové, čárové).
+- **Directions**: Nabízí navigaci a výpočet trasy mezi dvěma body. Užitečné pro aplikace s dopravní tématikou.
+- **Edit**: Umožňuje uživatelům editovat prvky ve vaší mapě (např. přidávat, mazat nebo upravovat body, linie a polygony).
+- **Filter**: Umožňuje filtrovat prvky ve vaší mapě podle různých kritérií (např. typ, kategorie, hodnota).
+- **Fullscreen**: Zobrazuje mapu na celou obrazovku pro maximální vizuální zážitek.
+- **Legend**: Zobrazuje legendu k mapě pro lepší orientaci v datech.
+- **Media**: Umožňuje přidávat do aplikace obrázky, videa a další média pro obohacení obsahu.
+- **Popup**: Zobrazuje interaktivní okno s informacemi o vybraném prvku v mapě.
+- **Search**: Umožňuje vyhledávat místa a adresy v mapě pomocí textového vyhledávání.
+- **Sidebar**: Zobrazuje postranní panel s doplňujícími informacemi, nástroji nebo ovládacími prvky.
+- **Sketch**: Umožňuje uživatelům kreslit a přidávat poznámky do mapy (např. značky, čáry, polygony).
+- **Swipe**: Umožňuje porovnávat dvě mapy pomocí posuvníku (např. pro zobrazení změn v čase nebo rozdílů mezi scénáři).
+- **Time**: Umožňuje zobrazovat data v čase pomocí časové osy nebo animace.
 
 
 ## Cíl cvičení
