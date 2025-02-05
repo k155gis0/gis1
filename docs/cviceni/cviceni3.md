@@ -122,11 +122,11 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
 
 *Pracovní postup:*
 
-1.  Stáhněte si prostorová data (z OSM přes BBBike): Vyberte ohraničení kolem vaší alma mater (cca 2 km^2), vyplňte formát, jméno a mail a stiskněte *Extract*. Odkaz na stažení vám bude zaslán na vaši e-mailovou adresu, jakmile bude proces online extrakce hotový.
+1.  Stáhněte si prostorová data (z OSM přes BBBike): Vyberte ohraničení kolem vaší univerzity (cca 2 km^2^), vyplňte formát, jméno a mail a stiskněte *Extract*. Odkaz na stažení vám bude zaslán na vaši e-mailovou adresu, jakmile bude proces online extrakce hotový.
 
-2.  Načtěte a vyberte data v aplikaci ArcGIS Pro: Ve vlastnostech mapy použijte projekci Equal Earth. Do mapy importujte shapefile *points.shp*. Prozkoumejte atributovou tabulku, zejména pole *type*. Najděte a vyberte bod představující vaši univerzitu.
+2.  Načtěte a vyberte data v aplikaci ArcGIS Pro: Do mapy importujte shapefile *points.shp*. Prozkoumejte atributovou tabulku, zejména pole *type*. Najděte a vyberte bod představující vaši univerzitu.
 
-3.  Prostorová analýza (část 1): Po výběru bodu (vaší univerzity) vytvořte pomocí geoprocessingového nástroje *Buffer* kolem tohoto bodu obalovou zónu o velikosti 1 míle. Funkce zpracuje pouze 1 obalovou zónu kolem vybraného bodu, pokud je výběr aktivní.
+3.  Prostorová analýza (část 1): Po výběru bodu (vaší univerzity) vytvořte pomocí geoprocessingového nástroje *Buffer* (metoda *planar*) kolem tohoto bodu obalovou zónu o velikosti 1 míle. Funkce zpracuje pouze 1 obalovou zónu kolem vybraného bodu, pokud je výběr aktivní.
 
 4.  Atributový dotaz: Proveďte *Select by Attributes* a vyhledejte body související s kulturou pomocí atributu *typ* (vyhledávání divadel, muzeí atd.). Vyberte všechny prvky v nejméně 5 různých kategoriích kultury a extrahujte tato data do geodatabáze projektu.
 
@@ -142,7 +142,7 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
 
 10. Dokončete rozvržení: vložte mapové okno, přidejte nadpis, podnadpis, legendu a tiráž. Níže inspirace.
 
-![](../assets/cviceni3/culturemile.png){ .no-filter .off-glb }
+![](../assets/cviceni3/culturemile.png){ .no-filter .off-glb }{ height=300px }
 {: align=center}
 
 ## Úlohy k procvičení
