@@ -142,7 +142,7 @@ Jakou finanční úsporu jste schopni svým návrhem zajistit, pokud by provoz j
 
 10. Dokončete rozvržení: vložte mapové okno, přidejte nadpis, podnadpis, legendu a tiráž. Níže inspirace.
 
-![](../assets/cviceni3/culturemile.png){ .no-filter .off-glb }{ width=600px }
+![](../assets/cviceni3/culturemile.png){ .no-filter .off-glb }{width=600px}
 {: align=center}
 
 ## Úlohy k procvičení
