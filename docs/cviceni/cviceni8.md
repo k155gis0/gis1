@@ -3,7 +3,7 @@ icon: material/numeric-8-box
 title: Cvičení 8
 ---
 
-# Buildery webových mapových aplikací – Instant Apps a Story Maps
+# Základní buildery webových mapových aplikací: Instant Apps & Story Maps
 
 ## ArcGIS Instant Apps: webová mapová aplikace během několika minut
 
@@ -37,12 +37,35 @@ Tvorba aplikace pomocí Instant Apps je intuitivní a skládá se z několika kl
 - **Time**: Umožňuje zobrazovat data v čase pomocí časové osy nebo animace.
 
 
-## Cíl cvičení
+## ArcGIS Story Maps: Mapy s příběhem
 
-## Základní pojmy
+V prostředí ArcGIS StoryMaps dokážete vytvořit zajímavé a inspirující příběhy, které využívají potenciál map. Díky nim totiž můžete lépe ilustrovat prostorové vztahy, které jsou ve vašem vyprávění důležité, dodat informacím vizuální přitažlivost a zvýšit jejich důvěryhodnost.
 
-## Použité datové podklady
+Při tvorbě můžete použít webové mapy ArcGIS, ale můžete si udělat i vlastní mapy, přidávat text, fotografie nebo videa, a vytvořit tak interaktivní prezentaci, kterou lze snadno publikovat a sdílet. Mapy s příběhem poskytnou širší kontext tématům, jako jsou například blogové články, informace veřejné správy určené pro veřejnost či výsledky vědeckých výzkumů.
 
-## Náplň cvičení
+[<span>https://www.arcdata.cz/cs-cz/produkty/arcgis/arcgis-storymaps/galerie</span><br>Galerie map s příběhem](https://www.arcdata.cz/cs-cz/produkty/arcgis/arcgis-storymaps/galerie){ .md-button .md-button--primary .server_name .external_link_icon_small target="_blank"}{: .button_array}
 
-## Zadání domácího úkolu k semestrální práci
+### Fungování StoryMaps
+**Vyprávění příběhů přesně podle vás**
+
+Mapy s příběhem jsou nástroj pro sestavení videa, fotografií a dalšího obsahu do přesvědčivého a interaktivního vyprávění, které lze snadno publikovat a sdílet. V intuitivním editačním prostředí můžete text přehledně formátovat, použít profesionálně navržené styly a vše doplnit webovými mapami.
+
+<figure markdown>
+![](../assets/data/storymaps3.jpg)
+</figure>
+
+**Jednoduchá tvorba expresních map**
+
+Díky expresním mapám můžete vytvářet praktické a estetické mapy, aniž byste museli opustit aplikaci ArcGIS StoryMaps. Během několika minut navrhnete vlastní interaktivní mapu a přidáte body, vyskakovací okna nebo šipky, které váš příběh obohatí. Můžete také použít své stávající webové mapy a scény, vytvořit novou mapu pomocí demografických dat anebo si vybrat z hotových map na ArcGIS Living Atlas of the World.
+
+<figure markdown>
+![](../assets/data/storymaps1.jpg)
+</figure>
+
+**Prezentace dat v moderním designu**
+
+Jedním kliknutím můžete změnit celý vzhled. Snadno si tak můžete vyzkoušet různé motivy designu a vybrat si ten, který se k vašemu příběhu hodí nejlépe – není třeba stylizovat každý prvek zvlášť. Styly je navíc možné upravit podle firemních barev a firemního loga. Na své publikum tak zapůsobíte profesionálně vypadajícím obsahem.
+
+<figure markdown>
+![](../assets/data/storymaps2.jpg)
+</figure>
