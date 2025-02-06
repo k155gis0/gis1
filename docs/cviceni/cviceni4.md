@@ -102,8 +102,9 @@ V této fázi je vždy rozumné provést validaci pomocí *Validate Join*. Jedn�
 **9.** Výsledek však nemusí zůstat jen u čtení tabulárních dat; relativní data vztažená k administrativním dílům lze vizualizovat pomocí kartografické metody zvané kartogram
 (více o metodách tematické kartografie se dozvíte v předmětech Kartografie 2 a Kartografie 3 viz [samostatná dokumentace](../kar2/kartogram)). Po pravém kliknutí na vrstvu
 a kliknutí na *Symbology* lze změnit *Primary symbology* na *Graduated Colors* z kategorie vizualizace kvantitativních dat. Pak stačí zvolit atribut, který bude pro vizualizaci
-použit (případně další parametry, podrobněji viz zmíněná dokumentace kartografických předmětů). Kompozici možno doplnit o názvy; v panelu *Labeling* stačí aktivovat popis a vybrat
-atribut, kterým budou polygony popsány. Opět se jedná o téma, kterému se věnuje detailně [samostatná dokumentace](../kar2/popisy).
+použit (případně další parametry, podrobněji viz zmíněná dokumentace kartografických předmětů).
+
+Kompozici možno doplnit o názvy; v panelu *Labeling* stačí aktivovat popis a vybrat atribut, kterým budou polygony popsány. Opět se jedná o téma, kterému se věnuje detailně [samostatná dokumentace](../kar2/popisy).
       
 ## Úlohy k procvičení
 
