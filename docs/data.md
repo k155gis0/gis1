@@ -31,11 +31,11 @@ Z Map Serveru ČÚZK se zkopíruje odkaz k Prohlížecí a vyhledávací služb�
 [Prohlížecí služba nad daty RÚIAN :simple-databricks:](https://ags.cuzk.gov.cz/arcgis/rest/services/RUIAN/MapServer){ .md-button .md-button--primary }
 {: .button_array}
 
-Připojení služby do ArcGIS Pro proběhne přes tlačítko _Connections_{: .outlined_code} v záložce _Insert_{: .outlined_code} v horní části programu. Po rozkliknutí nabídky se zvolí _Server_{: .outlined_code} → _New ArcGIS Server_{: .outlined_code}. 
+Připojení služby do ArcGIS Pro proběhne přes tlačítko _:material-button-cursor: Connections_{: .outlined_code} v záložce _:material-tab: Insert_{: .outlined_code} v horní části programu. Po rozkliknutí nabídky se zvolí _:material-form-dropdown: Server_{: .outlined_code} → _:material-form-dropdown: New ArcGIS Server_{: .outlined_code}. 
 
 Do *Server URL* se zkopíruje adresa služby ```https://ags.cuzk.gov.cz/arcgis/rest/services/RUIAN/MapServer```.
 
-V záložce _Catalog_{: .outlined_code} se zobrazí nově připojený server s daty z ČÚZK. Vrstvy RÚIAN nalezneme v příslušné složce.
+V záložce _:material-tab: Catalog_{: .outlined_code} se zobrazí nově připojený server s daty z ČÚZK. Vrstvy RÚIAN nalezneme v příslušné složce.
 
 <figure markdown>
 ![new_gdb](../assets/data/ruian_import.png)
