@@ -69,6 +69,56 @@ Základní báze geografických dat České republiky (ZABAGED®) je vektorový 
 ## [OpenStreetMap](https://download.geofabrik.de/europe/czech-republic.html "Data OSM pro ČR")
 OpenStreetMap je projekt, jehož cílem je tvorba volně dostupných geografických dat a následně jejich vizualizace do podoby topografických map (např. silniční mapa, turistická mapa, cyklomapa a navigování v nich). Pro tvorbu geodat se jako podklad využívá záznamů z přijímačů globálního družicového polohového systému nebo jiné zpravidla digitalizované mapy, která jsou licenčně kompatibilní. Projekt byl založen v roce 2004 a využívá kolektivní spolupráce spolu s koncepcí Otevřeného software. Data jsou poskytována pod licencí Open Database License.
 
+### How to: Download OSM data
+
+**1.** Přímo z OSM
+
+První metodou je stažení přímo z webových stránek OpenStreetMap pomocí jejich exportéru. Jednoduše přejděte na stránku [OSM](www.openstreetmap.org) a najděte oblast, pro kterou chcete stáhnout data. Stiskněte tlačítko *Export* a můžete ručně vybrat požadovanou oblast podle ohraničení. Poté si můžete stáhnout soubor ve formátu .osm. Při práci v aplikaci ArcGIS Pro je třeba stáhnout a nainstalovat speciální rozšíření *Data Interoperability*, které není součástí standardního balíčku a vyžaduje zvláštní licenci od koordinátora licencí pro danou lokalitu.
+
+[<span>openstreetmap.org</span><br>OSM](https://www.openstreetmap.org){ .md-button .md-button--primary .server_name .external_link_icon_small target="_blank"}
+{: .button_array}
+
+**2.** Geofabrik
+
+Tento server obsahuje připravené extrakty dat z projektu OpenStreetMap, které jsou obvykle aktualizovány každý den. V nabídce vyberte svůj kontinent a poté zemi, která vás zajímá. Tuto službu stahování otevřených dat nabízí společnost Geofabrik GmbH zdarma.
+
+[<span>http://download.geofabrik.de/</span><br>Geofabrik](http://download.geofabrik.de/){ .md-button .md-button--primary .server_name .external_link_icon_small target="_blank"}
+{: .button_array}
+
+
+**3.** Overpass Turbo
+
+Jedná se o webový nástroj pro filtrování a stahování dat OSM. Pomocí **overpass turbo** můžete spouštět dotazy *Overpass API* a výsledná data OSM interaktivně analyzovat v mapě. K dispozici je integrovaný *Wizard*, který usnadňuje vytváření dotazů a přípravu dat pro stažení.
+
+[<span>https://overpass-turbo.eu/</span><br>OverpassTurbo](https://overpass-turbo.eu/){ .md-button .md-button--primary .server_name .external_link_icon_small target="_blank"}
+{: .button_array}
+
+*ukázková query 1: najdi všechny výškové kóty v bounding boxu*
+
+    [out:json];
+    node[natural=peak]({{bbox}});
+    out body;
+
+*ukázková query 2: najdi všechny železniční zastávky v Praze*
+
+    area[name="Praha"];
+    nwr(area)[railway=station];
+    out;
+
+**4.** BBBike
+
+BBBike extrahuje umožňuje extrahovat data z OSM dle zadané oblasti ve formátu OSM, PBF, o5m, Garmin, Organic Maps, mbtiles, OsmAnd, Esri shapefile, mapsforge, OPL, GeoJSON, SQLite, text nebo CSV. Maximální velikost oblasti je 24 000 000 km2 nebo velikost souboru 1500 MB a vytvoření oblasti trvá cca 5 minut.
+
+[<span>https://extract.bbbike.org//</span><br>BBBike](https://extract.bbbike.org/){ .md-button .md-button--primary .server_name .external_link_icon_small target="_blank"}
+{: .button_array}
+
+Jak používat službu výpisu BBBike:
+
+-   přesuňte mapu na požadované místo
+-   kliknutím vytvoříte ohraničení zájmové oblasti
+-   vyberte formát, zadejte svou e-mailovou adresu a název oblasti, kterou chcete extrahovat
+-   klikněte na tlačítko extrahovat. Počkejte na oznámení e-mailem a stáhněte mapu
+
 ## [Veřejná databáze ČSÚ](https://vdb.czso.cz/vdbvo2/ " VDB ČSÚ")
 Český statistický úřad (ČSÚ) je ústředním orgánem státní správy České republiky. Byl zřízen dne 8. ledna 1969 zákonem č. 2/1969 Sb., o zřízení ministerstev a jiných ústředních orgánů státní správy. Veřejná databáze ČSÚ (VDB) je úzce napojená na statistický metainformační systém ČSÚ, zejména na systém ukazatelů a číselníků. Každý údaj v databázi je identifikován z hlediska věcného, časového i územního a také odkazem na zdroj dat. ČSÚ rámci VDB tedy poskytuje demografická statistická data vztažená k různým úrovním administrativních jednotek ČR, které je možné zdarma stahovat a připojit do GIS.
 
