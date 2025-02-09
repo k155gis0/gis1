@@ -282,6 +282,9 @@ Na obrázku níže je zobrazena ukázka dvou nalezených topologických chyb (le
       [:material-vector-polygon-variant: Schématicky popsaná pravidla kontroly topologie](https://pro.arcgis.com/en/pro-app/latest/help/editing/pdf/topology_rules_poster.pdf){ .md-button .md-button--primary }
       {: .button_array}
 
+???+ note "&nbsp;<span style="color:#448aff">Zajímavé odkazy</span>"
+      - Draw Detailed Polygons in ArcGIS Pro, Fast and Easy: [https://youtu.be/Ab9aqsHj8X8?si=C4CCfrIkuYrrwDoK](https://youtu.be/Ab9aqsHj8X8?si=C4CCfrIkuYrrwDoK)
+
 ## Úlohy k procvičení
 
 !!! task-fg-color "Úlohy"
