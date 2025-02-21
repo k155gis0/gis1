@@ -284,6 +284,7 @@ Na obrázku níže je zobrazena ukázka dvou nalezených topologických chyb (le
 
 ???+ note "&nbsp;<span style="color:#448aff">Zajímavé odkazy</span>"
       - Draw Detailed Polygons in ArcGIS Pro, Fast and Easy: [https://youtu.be/Ab9aqsHj8X8?si=C4CCfrIkuYrrwDoK](https://youtu.be/Ab9aqsHj8X8?si=C4CCfrIkuYrrwDoK)
+      - Copy features between layers: [https://learn.arcgis.com/en/projects/copy-features-between-layers/](https://learn.arcgis.com/en/projects/copy-features-between-layers/)
 
 ## Úlohy k procvičení
 
